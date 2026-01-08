@@ -1,0 +1,73 @@
+{
+  "name": "@trx/ui-common",
+  "version": "1.0.0",
+  "description": "TRX Systems - Shared UI Components and Utilities",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./themes": "./src/styles/themes.css",
+    "./styles": "./src/styles/index.css",
+    "./primevue": {
+      "import": "./dist/primevue/index.js",
+      "types": "./dist/primevue/index.d.ts"
+    },
+    "./utils": {
+      "import": "./dist/utils/index.js",
+      "types": "./dist/utils/index.d.ts"
+    },
+    "./composables": {
+      "import": "./dist/composables/index.js",
+      "types": "./dist/composables/index.d.ts"
+    },
+    "./components": {
+      "import": "./dist/components/index.js",
+      "types": "./dist/components/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src/styles"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vue-tsc && vite build",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0",
+    "pinia": "^2.2.0",
+    "primevue": "^4.5.0",
+    "@primevue/themes": "^4.5.0",
+    "axios": "^1.7.0",
+    "dayjs": "^1.11.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^5.4.11",
+    "vite-plugin-dts": "^4.3.0",
+    "typescript": "^5.5.4",
+    "vue-tsc": "^2.2.0",
+    "@types/node": "^22.10.2",
+    "vue": "^3.5.13",
+    "primevue": "^4.5.0",
+    "@primevue/themes": "^4.5.0",
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13"
+  },
+  "keywords": [
+    "trx",
+    "vue",
+    "primevue",
+    "components",
+    "ui"
+  ],
+  "author": "TRX Systems",
+  "license": "UNLICENSED"
+}

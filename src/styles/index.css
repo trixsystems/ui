@@ -1,0 +1,7 @@
+/* TRX UI Common - Main Styles Entry */
+@import './themes.css';
+
+/* Tailwind directives - to be processed by each app */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
