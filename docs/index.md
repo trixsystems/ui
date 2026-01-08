@@ -165,6 +165,6 @@ Este e um projeto interno da TRX Systems. Para contribuir:
 
 ## Licenca
 
-Proprietario - TRX Systems
+Proprietario - [TRIX Systems](https://trixsystems.io/)
 
-&copy; 2024-2026 TRX Systems. Todos os direitos reservados.
+&copy; 2024-2026 TRIX Systems. Todos os direitos reservados.
