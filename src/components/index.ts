@@ -7,6 +7,14 @@ export { default as TrxLoadingOverlay } from './TrxLoadingOverlay.vue'
 export { default as TrxEmptyState } from './TrxEmptyState.vue'
 export { default as TrxLoginForm } from './TrxLoginForm.vue'
 
+// Card Components
+export { default as TrxCard } from './TrxCard.vue'
+export { default as TrxStatCard } from './TrxStatCard.vue'
+
+// Data Components
+export { default as TrxDataTable } from './TrxDataTable.vue'
+export { default as TrxStatus } from './TrxStatus.vue'
+
 // Layout Components
 export { default as TrxAppLayout } from './TrxAppLayout.vue'
 export { default as TrxNotFound } from './TrxNotFound.vue'

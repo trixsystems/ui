@@ -1,7 +1,10 @@
-/* TRX UI Common - Main Styles Entry */
-@import './themes.css';
+/* ============================================
+   TRX UI Common - Main Styles Entry
+   Pacote independente de estilos TRX
+   ============================================ */
 
-/* Tailwind directives - to be processed by each app */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Utility Classes (substitui PrimeFlex) */
+@import './utilities.css';
+
+/* TRX Theme System (Light + Dark Dracula) */
+@import './themes.css';

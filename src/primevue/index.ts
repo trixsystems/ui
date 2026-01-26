@@ -2,10 +2,80 @@
 import type { App } from 'vue'
 import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
+import { definePreset } from '@primevue/themes'
 import ToastService from 'primevue/toastservice'
 import ConfirmationService from 'primevue/confirmationservice'
 import DialogService from 'primevue/dialogservice'
 import Tooltip from 'primevue/tooltip'
+
+// Custom TRX preset based on Aura
+const TrxPreset = definePreset(Aura, {
+  semantic: {
+    primary: {
+      50: '{emerald.50}',
+      100: '{emerald.100}',
+      200: '{emerald.200}',
+      300: '{emerald.300}',
+      400: '{emerald.400}',
+      500: '{emerald.500}',
+      600: '{emerald.600}',
+      700: '{emerald.700}',
+      800: '{emerald.800}',
+      900: '{emerald.900}',
+      950: '{emerald.950}'
+    }
+  },
+  components: {
+    button: {
+      colorScheme: {
+        light: {
+          secondary: {
+            background: '#f1f5f9',
+            hoverBackground: '#e2e8f0',
+            activeBackground: '#cbd5e1',
+            borderColor: '#cbd5e1',
+            hoverBorderColor: '#6ee7b7',
+            activeBorderColor: '#6ee7b7',
+            color: '#334155',
+            hoverColor: '#1e293b',
+            activeColor: '#1e293b'
+          },
+          text: {
+            primary: {
+              hoverBackground: '#f1f5f9',
+              activeBackground: '#e2e8f0',
+              color: '#64748b',
+              hoverColor: '#6ee7b7',
+              activeColor: '#5ddba8'
+            }
+          }
+        },
+        dark: {
+          secondary: {
+            background: '#44475a',
+            hoverBackground: '#44475a',
+            activeBackground: '#6272a4',
+            borderColor: '#6272a4',
+            hoverBorderColor: '#bd93f9',
+            activeBorderColor: '#bd93f9',
+            color: '#f8f8f2',
+            hoverColor: '#f8f8f2',
+            activeColor: '#f8f8f2'
+          },
+          text: {
+            primary: {
+              hoverBackground: '#44475a',
+              activeBackground: '#6272a4',
+              color: '#f8f8f2',
+              hoverColor: '#bd93f9',
+              activeColor: '#caa9fc'
+            }
+          }
+        }
+      }
+    }
+  }
+})
 
 export interface TrxPrimeVueOptions {
   ripple?: boolean
@@ -18,10 +88,10 @@ export interface TrxPrimeVueOptions {
 export function configurePrimeVue(app: App, options: TrxPrimeVueOptions = {}) {
   const { ripple = true, prefix = 'p' } = options
 
-  // PrimeVue with Aura theme
+  // PrimeVue with TRX custom preset
   app.use(PrimeVue, {
     theme: {
-      preset: Aura,
+      preset: TrxPreset,
       options: {
         prefix,
         darkModeSelector: '.dark',
@@ -45,7 +115,7 @@ export function configurePrimeVue(app: App, options: TrxPrimeVueOptions = {}) {
  */
 export const primeVueConfig = {
   theme: {
-    preset: Aura,
+    preset: TrxPreset,
     options: {
       prefix: 'p',
       darkModeSelector: '.dark',
@@ -55,4 +125,4 @@ export const primeVueConfig = {
   ripple: true
 }
 
-export { Aura }
+export { Aura, TrxPreset }

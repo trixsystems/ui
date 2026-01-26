@@ -1,4 +1,5 @@
 // @trx/ui-common - Toast Composable
+// IMPORTANT: Named useTrxToast to avoid conflicts with PrimeVue's useToast
 import { useToast as usePrimeToast } from 'primevue/usetoast'
 
 export interface ToastOptions {
@@ -8,9 +9,10 @@ export interface ToastOptions {
 }
 
 /**
- * Composable for showing toast notifications
+ * Composable for showing toast notifications with convenience methods
+ * MUST be called inside a component setup that has <Toast /> mounted
  */
-export function useToast() {
+export function useTrxToast() {
   const toast = usePrimeToast()
 
   const success = (message: string, title = 'Sucesso', options: ToastOptions = {}) => {
@@ -75,3 +77,9 @@ export function useToast() {
     toast
   }
 }
+
+/**
+ * Alias for backwards compatibility
+ * @deprecated Use useTrxToast instead
+ */
+export const useToastNotify = useTrxToast

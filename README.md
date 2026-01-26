@@ -6,7 +6,8 @@ Pacote compartilhado de componentes, estilos e utilitarios para o ecossistema TR
 
 O `@trx/ui-common` centraliza toda a infraestrutura de frontend compartilhada entre os apps TRX:
 
-- **TRX Call** - PABX IP
+- **TRX Call** - PABX IP (Asterisk)
+- **TRX Switch** - Telefonia de Alto Volume (FreeSWITCH)
 - **TRX Phone** - Softphone WebRTC
 - **TRX Dialer** - Motor de discagem
 - **TRX Predictive** - Discagem preditiva
@@ -20,12 +21,12 @@ O `@trx/ui-common` centraliza toda a infraestrutura de frontend compartilhada en
 | TypeScript | 5.5 | Linguagem |
 | Vite | 5.4 | Build tool |
 | PrimeVue | 4.5 | Componentes UI |
-| Tailwind CSS | 3.4 | Utility CSS |
 | Pinia | 2.2 | State management |
 | Vue Router | 4.5 | Routing |
 | Axios | 1.7 | HTTP client |
 | dayjs | 1.11 | Datas |
-| Chart.js | 4.5 | Graficos |
+
+> **Nota:** Este pacote e **independente** - nao requer PrimeFlex ou Tailwind. Todas as classes utilitarias estao incluidas.
 
 ## Instalacao
 
@@ -41,19 +42,14 @@ npm link
 # 2. Link em cada app
 cd /path/to/call/frontend
 npm link @trx/ui-common
-
-cd /path/to/phone/frontend
-npm link @trx/ui-common
-
-# ... repetir para outros apps
 ```
 
-### Via package.json (futuro)
+### Via package.json
 
 ```json
 {
   "dependencies": {
-    "@trx/ui-common": "file:../trx-ui-common"
+    "@trx/ui-common": "file:../../trx-ui-common"
   }
 }
 ```
@@ -83,11 +79,16 @@ trx-ui-common/
 │   │   ├── TrxLoadingOverlay.vue
 │   │   ├── TrxEmptyState.vue
 │   │   ├── TrxLoginForm.vue
-│   │   ├── TrxAppLayout.vue       # Layout principal com sidebar
-│   │   ├── TrxNotFound.vue        # Pagina 404
-│   │   └── TrxLoginPage.vue       # Pagina de login completa
+│   │   ├── TrxCard.vue
+│   │   ├── TrxStatCard.vue
+│   │   ├── TrxDataTable.vue
+│   │   ├── TrxStatus.vue
+│   │   ├── TrxAppLayout.vue        # Layout principal com sidebar
+│   │   ├── TrxNotFound.vue         # Pagina 404
+│   │   └── TrxLoginPage.vue        # Pagina de login completa
 │   └── styles/
-│       ├── themes.css              # Sistema de temas
+│       ├── utilities.css           # Classes utilitarias (substitui PrimeFlex)
+│       ├── themes.css              # Sistema de temas Light/Dark
 │       └── index.css               # Entry point CSS
 ├── dist/                           # Build output
 ├── package.json
@@ -104,13 +105,12 @@ trx-ui-common/
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { createRouter, createWebHistory } from 'vue-router'
-import { configurePrimeVue } from '@trx/ui-common/primevue'
+import { configurePrimeVue } from '@trx/ui-common'
 import App from './App.vue'
 
-// Estilos
-import '@trx/ui-common/themes'
+// Estilos TRX (inclui utilities + themes)
 import 'primeicons/primeicons.css'
-import 'primeflex/primeflex.css'
+import '@trx/ui-common/styles'
 
 const app = createApp(App)
 
@@ -129,15 +129,16 @@ app.mount('#app')
 ### 2. Tema (Light/Dark)
 
 ```typescript
-import { useTheme } from '@trx/ui-common/composables'
+import { useTheme } from '@trx/ui-common'
 
 const {
   theme,           // 'light' | 'dark'
   isDark,          // boolean
-  fontSize,        // 'font-small' | 'font-normal' | 'font-large' | 'font-xlarge'
+  fontSize,        // number (12-20)
   toggleTheme,     // () => void
   setTheme,        // (theme: TrxTheme) => void
-  setFontSize      // (size: TrxFontSize) => void
+  increaseFontSize,// () => void
+  decreaseFontSize // () => void
 } = useTheme()
 
 // Toggle
@@ -145,531 +146,449 @@ toggleTheme()
 
 // Set especifico
 setTheme('dark')
-setFontSize('font-large')
 ```
 
-### 3. Autenticacao Unificada
-
-```typescript
-import { useAuth } from '@trx/ui-common/composables'
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
-
-const auth = useAuth({
-  appName: 'call',           // 'call' | 'phone' | 'dialer' | 'predictive' | 'omnichannel'
-  authUrl: '/api/v1',        // URL do backend TRX Call
-  tokenKey: 'access_token',  // Key no localStorage
-  onLogout: () => router.push('/login')
-})
-
-// Inicializar (verificar token existente)
-await auth.initialize()
-
-// Login
-const result = await auth.login({
-  email: 'usuario@empresa.com',
-  password: 'senha123'
-})
-
-if (result.success) {
-  router.push('/dashboard')
-} else {
-  console.error(result.error)
-}
-
-// Verificar autenticacao
-if (auth.isAuthenticated.value) {
-  console.log('Usuario:', auth.user.value)
-}
-
-// Verificar permissoes
-if (auth.isAdmin.value) { /* admin */ }
-if (auth.isSupervisor.value) { /* admin ou supervisor */ }
-
-// Logout
-await auth.logout()
-
-// Refresh token
-await auth.refreshAccessToken()
-
-// Alterar senha
-const pwdResult = await auth.changePassword('senhaAtual', 'novaSenha')
-```
-
-### 4. Toast Notifications
-
-```typescript
-import { useToast } from '@trx/ui-common/composables'
-
-const toast = useToast()
-
-// Tipos de notificacao
-toast.success('Registro salvo com sucesso!')
-toast.error('Erro ao processar requisicao')
-toast.warn('Atencao: dados incompletos')
-toast.info('Nova versao disponivel')
-
-// Com titulo customizado
-toast.success('Operacao realizada', 'Sucesso!')
-
-// Com opcoes
-toast.error('Falha na conexao', 'Erro', {
-  life: 10000,      // Duracao em ms
-  closable: true    // Permitir fechar
-})
-
-// Limpar
-toast.clear()
-toast.clearAll()
-```
-
-### 5. API Client
-
-```typescript
-import { useApi, createApiClient } from '@trx/ui-common/composables'
-
-// Uso basico com loading state
-const { loading, error, data, get, post, put, del } = useApi()
-
-// GET
-const users = await get('/users')
-
-// POST
-const newUser = await post('/users', { name: 'Joao', email: 'joao@email.com' })
-
-// PUT
-await put('/users/123', { name: 'Joao Silva' })
-
-// DELETE
-await del('/users/123')
-
-// Verificar loading
-if (loading.value) {
-  // Mostrar spinner
-}
-
-// Verificar erro
-if (error.value) {
-  console.error(error.value)
-}
-
-// Cliente customizado
-const api = createApiClient({
-  baseURL: '/api/v2',
-  tokenKey: 'my_token',
-  onUnauthorized: () => router.push('/login')
-})
-```
-
-### 6. Utilitarios
-
-```typescript
-import {
-  // Datas
-  formatDate,
-  formatDateTime,
-  formatTime,
-  formatRelative,
-  dayjs,
-
-  // Numeros
-  formatCurrency,
-  formatNumber,
-  formatPercent,
-
-  // Strings
-  formatPhone,
-  formatCPF,
-  formatCNPJ,
-  formatDuration,
-  truncate,
-
-  // Funcoes
-  debounce,
-  throttle,
-  deepClone,
-  isEmpty,
-  uuid,
-  sleep
-} from '@trx/ui-common/utils'
-
-// Datas
-formatDate('2026-01-08')              // "08/01/2026"
-formatDateTime('2026-01-08T14:30:00') // "08/01/2026 14:30"
-formatTime('2026-01-08T14:30:45')     // "14:30:45"
-
-// Numeros
-formatCurrency(1234.56)               // "R$ 1.234,56"
-formatNumber(1234567, 2)              // "1.234.567,00"
-formatPercent(75.5)                   // "75,5%"
-
-// Strings brasileiras
-formatPhone('11999998888')            // "(11) 99999-8888"
-formatCPF('12345678901')              // "123.456.789-01"
-formatCNPJ('12345678000199')          // "12.345.678/0001-99"
-
-// Duracao
-formatDuration(3661)                  // "01:01:01"
-formatDuration(125)                   // "02:05"
-
-// Texto
-truncate('Texto muito longo...', 10)  // "Texto muit..."
-
-// Funcoes utilitarias
-const debouncedSearch = debounce((q) => search(q), 300)
-const throttledScroll = throttle(() => handleScroll(), 100)
-const copy = deepClone(objeto)
-isEmpty(null)                         // true
-isEmpty('')                           // true
-isEmpty([])                           // true
-uuid()                                // "a1b2c3d4-..."
-await sleep(1000)                     // Aguarda 1 segundo
-```
-
-### 7. Componentes
+### 3. Componentes
 
 ```vue
 <script setup lang="ts">
 import {
-  // Base
-  TrxLogo,
-  TrxThemeToggle,
   TrxPageHeader,
-  TrxStatusBadge,
-  TrxLoadingOverlay,
+  TrxCard,
+  TrxStatCard,
+  TrxDataTable,
+  TrxStatus,
   TrxEmptyState,
-  TrxLoginForm,
-
-  // Layout
-  TrxAppLayout,
-  TrxNotFound,
-  TrxLoginPage,
-
-  // Types
-  type MenuItem,
-  type MenuSection
-} from '@trx/ui-common/components'
-
-const loading = ref(false)
-const items = ref([])
+  TrxNotFound
+} from '@trx/ui-common'
 </script>
 
 <template>
-  <!-- Logo -->
-  <TrxLogo size="md" />
-  <TrxLogo size="lg" variant="icon" />
-
-  <!-- Toggle de tema -->
-  <TrxThemeToggle />
-
   <!-- Cabecalho de pagina -->
   <TrxPageHeader
-    title="Usuarios"
-    subtitle="Gerenciamento de usuarios do sistema"
-    icon="pi pi-users"
+    title="Dashboard"
+    subtitle="Visao geral do sistema"
+    icon="pi pi-home"
   >
     <template #actions>
-      <Button label="Novo" icon="pi pi-plus" />
+      <Button label="Atualizar" icon="pi pi-refresh" />
     </template>
   </TrxPageHeader>
 
-  <!-- Badge de status -->
-  <TrxStatusBadge status="Ativo" />
-  <TrxStatusBadge status="Pendente" />
-  <TrxStatusBadge status="Erro" type="danger" />
+  <!-- Cards de estatisticas -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <TrxStatCard
+      title="Usuarios"
+      :value="150"
+      icon="pi pi-users"
+      color="primary"
+    />
+    <TrxStatCard
+      title="Chamadas"
+      :value="1250"
+      icon="pi pi-phone"
+      color="success"
+    />
+  </div>
+
+  <!-- Status -->
+  <TrxStatus status="online" label="Conectado" />
 
   <!-- Estado vazio -->
   <TrxEmptyState
     v-if="items.length === 0"
-    title="Nenhum usuario encontrado"
-    description="Cadastre seu primeiro usuario para comecar"
-    icon="pi pi-users"
-  >
-    <template #actions>
-      <Button label="Cadastrar Usuario" icon="pi pi-plus" />
-    </template>
-  </TrxEmptyState>
-
-  <!-- Loading overlay -->
-  <TrxLoadingOverlay
-    :visible="loading"
-    message="Carregando dados..."
+    title="Nenhum registro"
+    description="Nao ha dados para exibir"
+    icon="pi pi-inbox"
   />
 </template>
 ```
 
-### 8. Tela de Login
+---
 
-```vue
-<script setup lang="ts">
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
-import { TrxLoginForm } from '@trx/ui-common/components'
-import { useAuth } from '@trx/ui-common/composables'
+## Classes CSS Utilitarias
 
-const router = useRouter()
-const loading = ref(false)
-const error = ref<string | null>(null)
+O `@trx/ui-common` inclui um conjunto completo de classes utilitarias, eliminando a necessidade de PrimeFlex ou Tailwind.
 
-const auth = useAuth({
-  appName: 'call',
-  authUrl: '/api/v1',
-  onLogout: () => router.push('/login')
-})
+### Display
 
-const handleLogin = async (credentials: { email: string; password: string }) => {
-  loading.value = true
-  error.value = null
-
-  const result = await auth.login(credentials)
-
-  if (result.success) {
-    router.push('/dashboard')
-  } else {
-    error.value = result.error || 'Falha no login'
-  }
-
-  loading.value = false
-}
-</script>
-
-<template>
-  <TrxLoginForm
-    app-name="Call"
-    app-title="Entrar no Sistema"
-    :loading="loading"
-    :error="error"
-    @submit="handleLogin"
-  >
-    <template #subtitle>
-      Sistema de PABX IP institucional
-    </template>
-
-    <template #forgot-password>
-      <router-link to="/forgot-password">Esqueceu a senha?</router-link>
-    </template>
-
-    <template #footer>
-      <p>Suporte: suporte@trixsystems.com</p>
-    </template>
-  </TrxLoginForm>
-</template>
+```css
+.hidden          /* display: none */
+.block           /* display: block */
+.inline          /* display: inline */
+.inline-block    /* display: inline-block */
+.flex            /* display: flex */
+.inline-flex     /* display: inline-flex */
+.grid            /* display: grid */
 ```
 
-#### Props do TrxLoginForm
+### Flexbox
 
-| Prop | Tipo | Descricao |
-|------|------|-----------|
-| `appName` | string | Nome do app (exibido ao lado do logo) |
-| `appTitle` | string | Titulo da pagina de login |
-| `loading` | boolean | Estado de carregamento |
-| `error` | string | Mensagem de erro |
+```css
+/* Direcao */
+.flex-row, .flex-row-reverse
+.flex-column, .flex-column-reverse
+.flex-wrap, .flex-nowrap
 
-#### Eventos
+/* Justify Content */
+.justify-content-start, .justify-content-end
+.justify-content-center, .justify-content-between
+.justify-content-around, .justify-content-evenly
 
-| Evento | Payload | Descricao |
-|--------|---------|-----------|
-| `submit` | `{ email: string, password: string }` | Emitido ao submeter o form |
+/* Align Items */
+.align-items-start, .align-items-end
+.align-items-center, .align-items-baseline
+.align-items-stretch
 
-#### Slots
+/* Align Self */
+.align-self-start, .align-self-end
+.align-self-center, .align-self-stretch
 
-| Slot | Descricao |
-|------|-----------|
-| `subtitle` | Texto abaixo do titulo |
-| `forgot-password` | Link "Esqueceu a senha?" |
-| `actions` | Acoes extras abaixo do botao |
-| `footer` | Rodape do card |
-
-### 9. Layout Principal (TrxAppLayout)
-
-Componente de layout completo com sidebar, topbar e area de conteudo.
-
-```vue
-<script setup lang="ts">
-import { TrxAppLayout, type MenuItem } from '@trx/ui-common/components'
-import { useAuthStore } from '@/stores/auth'
-
-const authStore = useAuthStore()
-
-const menuItems: MenuItem[] = [
-  { label: 'Dashboard', icon: 'pi pi-home', path: '/' },
-  { label: 'Usuarios', icon: 'pi pi-users', path: '/users' },
-  { label: 'Relatorios', icon: 'pi pi-chart-bar', path: '/reports' },
-  { label: 'Configuracoes', icon: 'pi pi-cog', path: '/settings' }
-]
-
-const handleLogout = async () => {
-  await authStore.logout()
-}
-</script>
-
-<template>
-  <TrxAppLayout
-    app-name="Call"
-    app-icon="pi pi-phone"
-    :menu-items="menuItems"
-    :user-name="authStore.user?.name"
-    :user-role="authStore.user?.role"
-    show-status
-    status-label="Online"
-    status-type="online"
-    :on-logout="handleLogout"
-  >
-    <router-view />
-  </TrxAppLayout>
-</template>
+/* Flex Grow/Shrink */
+.flex-grow-0, .flex-grow-1
+.flex-shrink-0, .flex-shrink-1
+.flex-1, .flex-auto, .flex-none
 ```
 
-#### Props do TrxAppLayout
+### Grid
 
-| Prop | Tipo | Descricao |
-|------|------|-----------|
-| `appName` | string | Nome do app (obrigatorio) |
-| `appIcon` | string | Classe do icone (default: pi pi-box) |
-| `menuItems` | MenuItem[] | Lista simples de itens do menu |
-| `menuSections` | MenuSection[] | Menu com secoes agrupadas |
-| `userName` | string | Nome do usuario logado |
-| `userRole` | string | Role do usuario |
-| `showStatus` | boolean | Exibir badge de status |
-| `statusLabel` | string | Label do status |
-| `statusType` | 'online' \| 'offline' \| 'busy' \| 'paused' | Tipo do status |
-| `onLogout` | () => void | Callback de logout |
+```css
+/* Colunas (12-column grid) */
+.col, .col-1 ate .col-12
 
-#### Menu com Secoes
-
-```typescript
-const menuSections: MenuSection[] = [
-  {
-    key: 'main',
-    label: 'Principal',
-    items: [
-      { label: 'Dashboard', icon: 'pi pi-home', path: '/' },
-      { label: 'Conversas', icon: 'pi pi-comments', path: '/conversations' }
-    ]
-  },
-  {
-    key: 'management',
-    label: 'Gestao',
-    items: [
-      { label: 'Agentes', icon: 'pi pi-users', path: '/agents' },
-      { label: 'Relatorios', icon: 'pi pi-chart-bar', path: '/reports' }
-    ]
-  }
-]
+/* Grid Template */
+.grid-cols-1, .grid-cols-2, .grid-cols-3
+.grid-cols-4, .grid-cols-5, .grid-cols-6
+.grid-cols-12
 ```
 
-### 10. Pagina 404 (TrxNotFound)
+### Gap
 
-```vue
-<template>
-  <TrxNotFound
-    code="404"
-    title="Pagina nao encontrada"
-    message="A pagina que voce esta procurando nao existe."
-    button-label="Voltar ao Inicio"
-    redirect-to="/"
-  />
-</template>
+```css
+.gap-0    /* 0 */
+.gap-1    /* 0.25rem */
+.gap-2    /* 0.5rem */
+.gap-3    /* 1rem */
+.gap-4    /* 1.5rem */
+.gap-5    /* 2rem */
+.gap-6    /* 3rem */
+.gap-7    /* 4rem */
+.gap-8    /* 5rem */
+
+.row-gap-0 ate .row-gap-6
+.column-gap-0 ate .column-gap-6
 ```
 
-#### Props do TrxNotFound
+### Spacing (Padding)
 
-| Prop | Tipo | Default | Descricao |
-|------|------|---------|-----------|
-| `code` | string \| number | '404' | Codigo do erro |
-| `title` | string | 'Pagina nao encontrada' | Titulo |
-| `message` | string | 'A pagina que voce esta procurando...' | Mensagem |
-| `buttonLabel` | string | 'Voltar ao Inicio' | Texto do botao |
-| `redirectTo` | string | '/' | Rota de redirecionamento |
+```css
+/* Padding all sides */
+.p-0 ate .p-8
 
-### 11. Pagina de Login Completa (TrxLoginPage)
+/* Padding horizontal/vertical */
+.px-0 ate .px-6
+.py-0 ate .py-6
 
-Pagina de login com background animado, controles de acessibilidade e tema.
-
-```vue
-<script setup lang="ts">
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
-import { TrxLoginPage } from '@trx/ui-common/components'
-import { useAuth } from '@trx/ui-common/composables'
-
-const router = useRouter()
-const loading = ref(false)
-const error = ref<string | null>(null)
-
-const auth = useAuth({
-  appName: 'phone',
-  authUrl: '/api/v1',
-  onLogout: () => router.push('/login')
-})
-
-interface LoginCredentials {
-  email: string
-  password: string
-  rememberMe: boolean
-}
-
-const handleLogin = async (credentials: LoginCredentials) => {
-  loading.value = true
-  error.value = null
-
-  const result = await auth.login(credentials)
-
-  if (result.success) {
-    router.push('/')
-  } else {
-    error.value = result.error || 'Falha no login'
-  }
-
-  loading.value = false
-}
-</script>
-
-<template>
-  <TrxLoginPage
-    app-name="Phone"
-    app-tagline="Softphone WebRTC"
-    :loading="loading"
-    :error="error"
-    @submit="handleLogin"
-  >
-    <template #icon>
-      <!-- SVG customizado do app -->
-      <svg viewBox="0 0 100 100" style="width: 50px; height: 50px;">
-        <circle cx="50" cy="50" r="40" fill="white" />
-      </svg>
-    </template>
-  </TrxLoginPage>
-</template>
+/* Padding individual */
+.pt-0 ate .pt-6  /* top */
+.pr-0 ate .pr-6  /* right */
+.pb-0 ate .pb-6  /* bottom */
+.pl-0 ate .pl-6  /* left */
 ```
 
-#### Props do TrxLoginPage
+### Spacing (Margin)
 
-| Prop | Tipo | Default | Descricao |
-|------|------|---------|-----------|
-| `appName` | string | - | Nome do app (obrigatorio) |
-| `appTagline` | string | '' | Subtitulo/tagline do app |
-| `loading` | boolean | false | Estado de loading |
-| `error` | string | null | Mensagem de erro |
-| `showRememberMe` | boolean | true | Exibir checkbox "Lembrar" |
-| `showForgotPassword` | boolean | true | Exibir link "Esqueceu senha" |
-| `showFontControls` | boolean | true | Controles de tamanho de fonte |
-| `showLanguageToggle` | boolean | true | Toggle de idioma |
+```css
+/* Margin all sides */
+.m-0 ate .m-8
+.m-auto
 
-#### Eventos
+/* Margin horizontal/vertical */
+.mx-0 ate .mx-6, .mx-auto
+.my-0 ate .my-6, .my-auto
 
-| Evento | Payload | Descricao |
-|--------|---------|-----------|
-| `submit` | `{ email, password, rememberMe }` | Submissao do form |
-| `forgotPassword` | - | Click em "Esqueceu senha" |
+/* Margin individual */
+.mt-0 ate .mt-6, .mt-auto
+.mr-0 ate .mr-6, .mr-auto
+.mb-0 ate .mb-6, .mb-auto
+.ml-0 ate .ml-6, .ml-auto
 
-#### Slots
+/* Margin negativo */
+.-mt-1 ate .-mt-6
+.-mr-1 ate .-mr-4
+.-mb-1 ate .-mb-4
+.-ml-1 ate .-ml-4
+```
 
-| Slot | Descricao |
-|------|-----------|
-| `icon` | Icone/SVG customizado do app |
-| `footer` | Conteudo do rodape |
+### Space Between
+
+```css
+.space-x-1 ate .space-x-6  /* margin-left entre filhos */
+.space-y-1 ate .space-y-6  /* margin-top entre filhos */
+```
+
+### Width
+
+```css
+.w-full, .w-screen, .w-auto
+.w-min, .w-max, .w-fit
+
+/* Width em rem */
+.w-1rem ate .w-30rem
+
+.min-w-0, .min-w-full
+.max-w-full, .max-w-screen
+```
+
+### Height
+
+```css
+.h-full, .h-screen, .h-auto
+.h-min, .h-max, .h-fit
+
+/* Height em rem */
+.h-1rem ate .h-20rem
+
+.min-h-0, .min-h-full, .min-h-screen
+.max-h-full, .max-h-screen
+```
+
+### Typography
+
+```css
+/* Alinhamento */
+.text-left, .text-center, .text-right, .text-justify
+
+/* Peso da fonte */
+.font-light      /* 300 */
+.font-normal     /* 400 */
+.font-medium     /* 500 */
+.font-semibold   /* 600 */
+.font-bold       /* 700 */
+
+/* Tamanho da fonte */
+.text-xs    /* 0.75rem */
+.text-sm    /* 0.875rem */
+.text-base  /* 1rem */
+.text-lg    /* 1.125rem */
+.text-xl    /* 1.25rem */
+.text-2xl   /* 1.5rem */
+.text-3xl   /* 1.875rem */
+.text-4xl   /* 2.25rem */
+.text-5xl   /* 3rem */
+.text-6xl   /* 3.75rem */
+
+/* Line Height */
+.line-height-1  /* 1 */
+.line-height-2  /* 1.25 */
+.line-height-3  /* 1.5 */
+.line-height-4  /* 2 */
+
+/* Transform */
+.uppercase, .lowercase, .capitalize, .normal-case
+
+/* Decoration */
+.underline, .line-through, .no-underline
+
+/* White Space */
+.white-space-normal, .white-space-nowrap
+.white-space-pre, .white-space-pre-line, .white-space-pre-wrap
+
+/* Overflow */
+.text-overflow-ellipsis, .text-overflow-clip
+```
+
+### Border
+
+```css
+/* Border Width */
+.border-none
+.border-1, .border-2, .border-3
+
+/* Border Sides */
+.border-top-none, .border-top-1, .border-top-2
+.border-right-none, .border-right-1, .border-right-2
+.border-bottom-none, .border-bottom-1, .border-bottom-2
+.border-left-none, .border-left-1, .border-left-2
+.border-x-none, .border-x-1
+.border-y-none, .border-y-1
+
+/* Border Radius */
+.border-noround   /* 0 */
+.border-round-sm  /* 4px */
+.border-round     /* 6px */
+.border-round-md  /* 8px */
+.border-round-lg  /* 12px */
+.border-round-xl  /* 16px */
+.border-round-2xl /* 24px */
+.border-round-3xl /* 32px */
+.border-circle    /* 50% */
+
+.border-round-top, .border-round-bottom
+.border-round-left, .border-round-right
+```
+
+### Position
+
+```css
+.static, .relative, .absolute, .fixed, .sticky
+
+.top-0, .top-50, .top-100
+.right-0, .right-50, .right-100
+.bottom-0, .bottom-50, .bottom-100
+.left-0, .left-50, .left-100
+.inset-0
+```
+
+### Overflow
+
+```css
+.overflow-auto, .overflow-hidden
+.overflow-visible, .overflow-scroll
+
+.overflow-x-auto, .overflow-x-hidden
+.overflow-x-visible, .overflow-x-scroll
+
+.overflow-y-auto, .overflow-y-hidden
+.overflow-y-visible, .overflow-y-scroll
+```
+
+### Z-Index
+
+```css
+.z-0, .z-1, .z-2, .z-3, .z-4, .z-5
+.z-10, .z-20, .z-50, .z-100
+.z-auto
+```
+
+### Shadow
+
+```css
+.shadow-none
+.shadow-1  /* leve */
+.shadow-2
+.shadow-3
+.shadow-4
+.shadow-5
+.shadow-6
+.shadow-7
+.shadow-8  /* forte */
+```
+
+### Opacity
+
+```css
+.opacity-0, .opacity-10, .opacity-20
+.opacity-30, .opacity-40, .opacity-50
+.opacity-60, .opacity-70, .opacity-80
+.opacity-90, .opacity-100
+```
+
+### Cursor
+
+```css
+.cursor-auto, .cursor-default, .cursor-pointer
+.cursor-wait, .cursor-text, .cursor-move
+.cursor-not-allowed, .cursor-grab, .cursor-grabbing
+```
+
+### User Select
+
+```css
+.select-none, .select-text, .select-all, .select-auto
+```
+
+### Visibility
+
+```css
+.visible, .invisible
+.pointer-events-none, .pointer-events-auto
+```
+
+### Transition
+
+```css
+.transition-none
+.transition-all
+.transition-colors
+.transition-transform
+.transition-opacity
+.transition-shadow
+
+.transition-duration-100
+.transition-duration-200
+.transition-duration-300
+.transition-duration-500
+```
+
+### Transform
+
+```css
+/* Rotate */
+.rotate-45, .rotate-90, .rotate-180
+.-rotate-45, .-rotate-90
+
+/* Scale */
+.scale-50, .scale-75, .scale-100
+.scale-125, .scale-150
+
+/* Translate */
+.translate-x-0, .translate-y-0
+.-translate-x-50, .-translate-y-50
+```
+
+### Colors (usando variaveis TRX)
+
+```css
+/* Text */
+.text-primary, .text-secondary, .text-muted
+.text-success, .text-warning, .text-danger
+.text-info, .text-purple
+.text-white, .text-black
+
+/* Background */
+.bg-primary, .bg-secondary, .bg-tertiary
+.bg-card, .bg-elevated
+.bg-success, .bg-warning, .bg-danger
+.bg-info, .bg-purple
+.bg-white, .bg-black, .bg-transparent
+
+/* Soft Backgrounds */
+.bg-success-soft, .bg-warning-soft
+.bg-danger-soft, .bg-info-soft, .bg-purple-soft
+
+/* Border Colors */
+.border-primary, .border-subtle
+.border-success, .border-warning
+.border-danger, .border-info, .border-purple
+.border-white, .border-transparent
+```
+
+### Animation
+
+```css
+.fadein      /* Fade in */
+.fadeout     /* Fade out */
+.scalein     /* Scale in */
+.slidedown   /* Slide down */
+.slideup     /* Slide up */
+.animate-spin /* Spin infinito */
+```
+
+### Responsivo
+
+Prefixos disponiveis: `sm:` (640px+), `md:` (768px+), `lg:` (1024px+), `xl:` (1280px+)
+
+```css
+/* Exemplos */
+.md:hidden        /* Oculto em 768px+ */
+.lg:flex          /* Flex em 1024px+ */
+.md:grid-cols-2   /* 2 colunas em 768px+ */
+.lg:grid-cols-4   /* 4 colunas em 1024px+ */
+.sm:text-center   /* Centralizado em 640px+ */
+```
+
+---
 
 ## Sistema de Temas
 
@@ -702,24 +621,19 @@ const handleLogin = async (credentials: LoginCredentials) => {
 --trx-warning-color   /* Amarelo - aviso */
 --trx-danger-color    /* Vermelho - erro */
 --trx-info-color      /* Azul - informacao */
+--trx-purple-color    /* Roxo */
 
 /* Sombras */
---trx-shadow-sm
---trx-shadow-md
---trx-shadow-lg
---trx-shadow-xl
+--trx-shadow-sm, --trx-shadow-md
+--trx-shadow-lg, --trx-shadow-xl
 
 /* Gradientes */
---trx-gradient-primary
---trx-gradient-success
---trx-gradient-warning
---trx-gradient-danger
---trx-gradient-info
+--trx-gradient-primary, --trx-gradient-success
+--trx-gradient-warning, --trx-gradient-danger
+--trx-gradient-info, --trx-gradient-purple
 
 /* Card */
---trx-card-border
---trx-card-radius
---trx-card-shadow
+--trx-card-border, --trx-card-radius, --trx-card-shadow
 ```
 
 ### Cores por Tema
@@ -729,51 +643,55 @@ const handleLogin = async (credentials: LoginCredentials) => {
 | `--trx-bg-primary` | #ffffff | #282a36 |
 | `--trx-bg-secondary` | #f8fafc | #1e1f29 |
 | `--trx-text-primary` | #1e293b | #f8f8f2 |
-| `--trx-accent-color` | #6ee7b7 | #bd93f9 |
+| `--trx-accent-color` | #6ee7b7 (verde) | #bd93f9 (roxo) |
 | `--trx-success-color` | #10b981 | #50fa7b |
 | `--trx-warning-color` | #f59e0b | #ffb86c |
 | `--trx-danger-color` | #ef4444 | #ff5555 |
 | `--trx-info-color` | #06b6d4 | #8be9fd |
 
-### Classes Utilitarias
+---
 
-```css
-/* Backgrounds */
-.trx-bg-primary
-.trx-bg-secondary
-.trx-bg-card
+## Componentes Disponiveis
 
-/* Texto */
-.trx-text-primary
-.trx-text-secondary
-.trx-text-muted
+| Componente | Descricao |
+|------------|-----------|
+| `TrxPageHeader` | Cabecalho de pagina com titulo, subtitulo e acoes |
+| `TrxCard` | Card com titulo e icone |
+| `TrxStatCard` | Card de estatistica com valor e icone |
+| `TrxDataTable` | Tabela de dados com filtro global |
+| `TrxStatus` | Badge de status (online/offline) |
+| `TrxStatusBadge` | Badge generico de status |
+| `TrxEmptyState` | Estado vazio com icone e mensagem |
+| `TrxLoadingOverlay` | Overlay de carregamento |
+| `TrxAppLayout` | Layout principal com sidebar |
+| `TrxLoginPage` | Pagina de login completa |
+| `TrxLoginForm` | Formulario de login |
+| `TrxNotFound` | Pagina 404 |
+| `TrxLogo` | Logo TRX |
+| `TrxThemeToggle` | Toggle de tema |
 
-/* Status */
-.trx-status-success
-.trx-status-warning
-.trx-status-danger
-.trx-status-info
+---
 
-/* Borda */
-.trx-border
-```
+## Composables Disponiveis
+
+| Composable | Descricao |
+|------------|-----------|
+| `useTheme` | Gerenciamento de tema (dark/light, font size) |
+| `useApi` | Cliente HTTP com loading state |
+| `useAuth` | Autenticacao unificada |
+| `useToast` | Notificacoes toast |
+
+---
 
 ## Desenvolvimento
 
 ### Scripts
 
 ```bash
-# Instalar dependencias
-npm install
-
-# Build para producao
-npm run build
-
-# Watch mode (desenvolvimento)
-npm run dev
-
-# Type check
-npm run typecheck
+npm install      # Instalar dependencias
+npm run build    # Build para producao
+npm run dev      # Watch mode
+npm run typecheck # Type check
 ```
 
 ### Adicionar novo componente
@@ -782,51 +700,20 @@ npm run typecheck
 2. Exportar em `src/components/index.ts`
 3. Rebuild: `npm run build`
 
-### Adicionar nova funcao utilitaria
-
-1. Adicionar em `src/utils/index.ts`
-2. Rebuild: `npm run build`
-
-### Adicionar novo composable
-
-1. Criar arquivo em `src/composables/useNome.ts`
-2. Exportar em `src/composables/index.ts`
-3. Rebuild: `npm run build`
-
-## Migracao de Apps Existentes
-
-### Antes (app individual)
-
-```typescript
-// main.ts
-import PrimeVue from 'primevue/config'
-import Aura from '@primevue/themes/aura'
-import './assets/themes.css'
-
-app.use(PrimeVue, {
-  theme: { preset: Aura, options: { darkModeSelector: '.dark' } }
-})
-```
-
-### Depois (usando @trx/ui-common)
-
-```typescript
-// main.ts
-import { configurePrimeVue } from '@trx/ui-common/primevue'
-import '@trx/ui-common/themes'
-
-configurePrimeVue(app)
-```
+---
 
 ## Apps do Ecossistema
 
 | App | Diretorio | Descricao |
 |-----|-----------|-----------|
-| Call | `call/frontend` | PABX IP |
+| Call | `call/frontend` | PABX IP (Asterisk) |
+| Switch | `switch/frontend` | Telefonia Alto Volume (FreeSWITCH) |
 | Phone | `phone/frontend` | Softphone WebRTC |
 | Dialer | `dailer/web/frontend` | Motor de discagem |
 | Predictive | `predictive/web/frontend` | Discagem preditiva |
 | Omnichannel | `omnichannel/frontend` | Atendimento multicanal |
+
+---
 
 ## Licenca
 

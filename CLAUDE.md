@@ -1,6 +1,6 @@
 # @trx/ui-common
 
-Pacote compartilhado de UI para o ecossistema TRX.
+Pacote compartilhado de UI para o ecossistema TRX. **Independente** - nao requer PrimeFlex ou Tailwind.
 
 ## Estrutura
 
@@ -23,12 +23,21 @@ trx-ui-common/
 │   │   ├── TrxLogo.vue
 │   │   ├── TrxThemeToggle.vue
 │   │   ├── TrxPageHeader.vue
+│   │   ├── TrxCard.vue
+│   │   ├── TrxStatCard.vue
+│   │   ├── TrxDataTable.vue
+│   │   ├── TrxStatus.vue
 │   │   ├── TrxStatusBadge.vue
 │   │   ├── TrxLoadingOverlay.vue
-│   │   └── TrxEmptyState.vue
+│   │   ├── TrxEmptyState.vue
+│   │   ├── TrxLoginForm.vue
+│   │   ├── TrxLoginPage.vue
+│   │   ├── TrxAppLayout.vue
+│   │   └── TrxNotFound.vue
 │   └── styles/               # CSS
+│       ├── utilities.css     # Classes utilitarias (substitui PrimeFlex)
 │       ├── themes.css        # Unified theme (Light + Dracula Dark)
-│       └── index.css
+│       └── index.css         # Entry point (imports utilities + themes)
 ├── package.json
 ├── vite.config.ts
 └── tsconfig.json
@@ -42,6 +51,7 @@ trx-ui-common/
 - **UI**: PrimeVue 4.5 (tema Aura)
 - **HTTP**: Axios
 - **Dates**: dayjs
+- **CSS**: Classes proprias (sem dependencias externas)
 
 ## Tema
 
@@ -50,32 +60,54 @@ trx-ui-common/
 - **Dark Mode**: class-based (`.dark` no html)
 - **Font**: Inter, system-ui
 
+## CSS Utilities
+
+O pacote inclui ~700 classes CSS utilitarias em `utilities.css`:
+
+- Display: `.flex`, `.grid`, `.hidden`, `.block`
+- Flexbox: `.flex-row`, `.justify-content-*`, `.align-items-*`
+- Grid: `.col-1` a `.col-12`, `.grid-cols-*`
+- Gap: `.gap-0` a `.gap-8`
+- Spacing: `.p-*`, `.m-*`, `.px-*`, `.py-*`, `.pt-*`, `.mt-*`, etc.
+- Width/Height: `.w-full`, `.h-screen`, `.w-*rem`
+- Typography: `.text-*`, `.font-*`, `.line-height-*`
+- Border: `.border-*`, `.border-round-*`
+- Position: `.relative`, `.absolute`, `.fixed`
+- Overflow, Z-Index, Shadow, Opacity, Cursor
+- Colors: `.text-primary`, `.bg-card`, `.border-success`
+- Animation: `.fadein`, `.scalein`, `.animate-spin`
+- Responsivo: `.sm:*`, `.md:*`, `.lg:*`, `.xl:*`
+
 ## Uso nos Apps
 
 ```typescript
 // main.ts
-import { configurePrimeVue } from '@trx/ui-common/primevue'
-import '@trx/ui-common/themes'
+import { configurePrimeVue } from '@trx/ui-common'
+import 'primeicons/primeicons.css'
+import '@trx/ui-common/styles'  // Inclui utilities + themes
 
 configurePrimeVue(app)
 ```
 
 ```typescript
 // Composables
-import { useTheme, useAuth, useToast, useApi } from '@trx/ui-common/composables'
+import { useTheme, useAuth, useToast, useApi } from '@trx/ui-common'
 
 // Utils
-import { formatDate, formatCurrency, debounce } from '@trx/ui-common/utils'
+import { formatDate, formatCurrency, debounce } from '@trx/ui-common'
 
 // Components
-import { TrxPageHeader, TrxStatusBadge } from '@trx/ui-common/components'
+import {
+  TrxPageHeader, TrxCard, TrxStatCard,
+  TrxDataTable, TrxStatus, TrxEmptyState
+} from '@trx/ui-common'
 ```
 
 ## Autenticacao Unificada
 
 ```typescript
 const auth = useAuth({
-  appName: 'call',  // call, phone, dialer, predictive, omnichannel
+  appName: 'call',  // call, switch, phone, dialer, predictive, omnichannel
   authUrl: '/api/v1',
   onLogout: () => router.push('/login')
 })
@@ -101,8 +133,9 @@ npm link       # Link para uso local
 
 ## Apps que usam
 
-- TRX Call (`call/frontend`)
-- TRX Phone (`phone/frontend`)
-- TRX Omnichannel (`omnichannel/frontend`)
-- TRX Predictive (`predictive/web/frontend`)
-- TRX Dailer (`dailer/web/frontend`)
+- TRX Call (`call/frontend`) - PABX IP
+- TRX Switch (`switch/frontend`) - Telefonia Alto Volume
+- TRX Phone (`phone/frontend`) - Softphone WebRTC
+- TRX Omnichannel (`omnichannel/frontend`) - Atendimento Multicanal
+- TRX Predictive (`predictive/web/frontend`) - Discagem Preditiva
+- TRX Dialer (`dialer/web/frontend`) - Motor de Discagem
