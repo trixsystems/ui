@@ -1,17 +1,21 @@
 # @trx/ui-common
 
-Pacote compartilhado de componentes, estilos e utilitarios para o ecossistema TRX Systems.
+Pacote compartilhado de componentes, estilos e utilitarios para os produtos TRX Systems.
 
 ## Visao Geral
 
-O `@trx/ui-common` centraliza toda a infraestrutura de frontend compartilhada entre os apps TRX:
+O `@trx/ui-common` centraliza toda a infraestrutura de frontend compartilhada entre os dois produtos TRX:
 
-- **TRX Call** - PABX IP (Asterisk)
-- **TRX Switch** - Telefonia de Alto Volume (FreeSWITCH)
-- **TRX Phone** - Softphone WebRTC
-- **TRX Dialer** - Motor de discagem
-- **TRX Predictive** - Discagem preditiva
-- **TRX Omnichannel** - Atendimento multicanal
+**TRX Call** (produto standalone - PABX IP):
+- `call/frontend` - PABX IP (Asterisk)
+
+**TRX Stack** (plataforma unificada):
+- `trx-stack/switch/frontend` - Telefonia de Alto Volume (FreeSWITCH)
+- `trx-stack/phone/frontend` - Softphone WebRTC
+- `trx-stack/dailer/frontend` - Motor de discagem
+- `trx-stack/omnichannel/frontend` - Atendimento multicanal
+
+> **Nota:** Call e Stack sao produtos independentes. Call tem auth standalone; Stack usa trx-auth centralizado.
 
 ## Stack Unificada
 
@@ -54,6 +58,16 @@ npm link @trx/ui-common
 }
 ```
 
+### Via GitHub
+
+```json
+{
+  "dependencies": {
+    "@trx/ui-common": "github:trxcommunications/trx-ui-common"
+  }
+}
+```
+
 ## Estrutura do Pacote
 
 ```
@@ -65,27 +79,27 @@ trx-ui-common/
 │   ├── composables/
 │   │   ├── index.ts
 │   │   ├── useTheme.ts             # Gerenciamento de tema
-│   │   ├── useToast.ts             # Notificacoes toast
+│   │   ├── useToast.ts             # Notificacoes toast (+ re-export useToast do PrimeVue)
 │   │   ├── useApi.ts               # Cliente HTTP
-│   │   └── useAuth.ts              # Autenticacao unificada
+│   │   ├── useAuth.ts              # Autenticacao unificada
+│   │   ├── useConfirm.ts           # Confirm dialog (PT-BR defaults)
+│   │   └── useDialog.ts            # Dynamic dialog (re-export PrimeVue)
 │   ├── utils/
 │   │   └── index.ts                # Funcoes utilitarias
 │   ├── components/
-│   │   ├── index.ts
-│   │   ├── TrxLogo.vue
-│   │   ├── TrxThemeToggle.vue
-│   │   ├── TrxPageHeader.vue
-│   │   ├── TrxStatusBadge.vue
-│   │   ├── TrxLoadingOverlay.vue
-│   │   ├── TrxEmptyState.vue
-│   │   ├── TrxLoginForm.vue
-│   │   ├── TrxCard.vue
-│   │   ├── TrxStatCard.vue
-│   │   ├── TrxDataTable.vue
-│   │   ├── TrxStatus.vue
-│   │   ├── TrxAppLayout.vue        # Layout principal com sidebar
-│   │   ├── TrxNotFound.vue         # Pagina 404
-│   │   └── TrxLoginPage.vue        # Pagina de login completa
+│   │   ├── index.ts                # Barrel (base + todos os wrappers PrimeVue)
+│   │   ├── Trx*.vue                # 14 componentes base (custom TRX)
+│   │   ├── form/index.ts           # 32 componentes + 4 aliases legacy
+│   │   ├── button/index.ts         # 4 componentes
+│   │   ├── data/index.ts           # 12 componentes + re-export PvDataTable
+│   │   ├── panel/index.ts          # 23 componentes + 1 alias + re-exports PvCard, PvTabView
+│   │   ├── overlay/index.ts        # 6 componentes + 2 aliases legacy
+│   │   ├── menu/index.ts           # 10 componentes
+│   │   ├── message/index.ts        # 3 componentes
+│   │   ├── media/index.ts          # 4 componentes
+│   │   ├── file/index.ts           # 1 componente (enhanced PT-BR)
+│   │   ├── chart/index.ts          # 1 componente
+│   │   └── misc/index.ts           # 14 componentes
 │   └── styles/
 │       ├── utilities.css           # Classes utilitarias (substitui PrimeFlex)
 │       ├── themes.css              # Sistema de temas Light/Dark
@@ -159,7 +173,8 @@ import {
   TrxDataTable,
   TrxStatus,
   TrxEmptyState,
-  TrxNotFound
+  TrxNotFound,
+  TrxButton
 } from '@trx/ui-common'
 </script>
 
@@ -171,7 +186,7 @@ import {
     icon="pi pi-home"
   >
     <template #actions>
-      <Button label="Atualizar" icon="pi pi-refresh" />
+      <TrxButton label="Atualizar" icon="pi pi-refresh" />
     </template>
   </TrxPageHeader>
 
@@ -203,6 +218,70 @@ import {
   />
 </template>
 ```
+
+---
+
+## PrimeVue Wrappers (~110 componentes)
+
+Todos os componentes PrimeVue 4.5 possuem wrappers `Trx*` organizados por categoria. Os wrappers fazem pass-through completo de attrs e slots, garantindo compatibilidade total com a API do PrimeVue.
+
+### Categorias
+
+| Categoria | Quantidade | Exemplos |
+|-----------|-----------|----------|
+| Form | 32 + 4 aliases | `TrxInputText`, `TrxSelect`, `TrxDatePicker`, `TrxPassword` |
+| Button | 4 | `TrxButton`, `TrxSplitButton`, `TrxSpeedDial` |
+| Data | 12 | `TrxPaginator`, `TrxColumn`, `TrxTree`, `TrxTimeline` |
+| Panel | 23 + 1 alias | `TrxAccordion`, `TrxTabs`, `TrxPanel`, `TrxToolbar` |
+| Overlay | 6 + 2 aliases | `TrxDialog`, `TrxDrawer`, `TrxConfirmDialog`, `TrxPopover` |
+| Menu | 10 | `TrxMenu`, `TrxMenubar`, `TrxContextMenu`, `TrxBreadcrumb` |
+| Message | 3 | `TrxToast`, `TrxMessage`, `TrxInlineMessage` |
+| Media | 4 | `TrxImage`, `TrxCarousel`, `TrxGalleria` |
+| File | 1 | `TrxFileUpload` |
+| Chart | 1 | `TrxChart` |
+| Misc | 14 | `TrxAvatar`, `TrxBadge`, `TrxChip`, `TrxTag`, `TrxSkeleton` |
+
+### Componentes Enhanced (com defaults PT-BR)
+
+Alguns wrappers adicionam valores padrao em portugues:
+
+| Componente | Defaults |
+|---|---|
+| `TrxDatePicker` | `dateFormat="dd/mm/yy"`, `showIcon=true` |
+| `TrxInputNumber` | `locale="pt-BR"`, `minFractionDigits=2` |
+| `TrxPassword` | `weakLabel="Fraco"`, `mediumLabel="Medio"`, `strongLabel="Forte"` |
+| `TrxSelect` | `placeholder="Selecione..."`, `emptyMessage="Nenhum resultado"` |
+| `TrxMultiSelect` | `placeholder="Selecione..."`, `emptyMessage="Nenhum resultado"` |
+| `TrxAutoComplete` | `placeholder="Buscar..."` |
+| `TrxDialog` | `modal=true`, `closable=true`, `draggable=false` |
+| `TrxConfirmDialog` | `acceptLabel="Sim"`, `rejectLabel="Nao"` |
+| `TrxFileUpload` | `chooseLabel="Escolher"`, `uploadLabel="Enviar"`, `cancelLabel="Cancelar"` |
+| `TrxToast` | `position="top-right"` |
+| `TrxPaginator` | `rowsPerPageOptions=[10,25,50]` |
+
+### Aliases Legacy
+
+Para compatibilidade com versoes anteriores do PrimeVue:
+
+| Alias | Aponta para |
+|-------|-------------|
+| `TrxDropdown` | `TrxSelect` |
+| `TrxCalendar` | `TrxDatePicker` |
+| `TrxChips` | `TrxInputChips` |
+| `TrxInputSwitch` | `TrxToggleSwitch` |
+| `TrxSidebar` | `TrxDrawer` |
+| `TrxOverlayPanel` | `TrxPopover` |
+| `TrxTabView` | `TrxTabs` |
+
+### Re-exports PrimeVue (componentes raw)
+
+Para casos onde o componente base TRX (custom) tem API diferente do PrimeVue original:
+
+| Re-export | Origem | Motivo |
+|-----------|--------|--------|
+| `PvCard` | `primevue/card` | `TrxCard` e um componente custom com API diferente |
+| `PvDataTable` | `primevue/datatable` | `TrxDataTable` e um componente custom com filtro global |
+| `PvTabView` | `primevue/tabview` | API legada diferente de `TrxTabs` (nova API PrimeVue 4) |
 
 ---
 
@@ -653,6 +732,8 @@ Prefixos disponiveis: `sm:` (640px+), `md:` (768px+), `lg:` (1024px+), `xl:` (12
 
 ## Componentes Disponiveis
 
+### Componentes Base (custom TRX)
+
 | Componente | Descricao |
 |------------|-----------|
 | `TrxPageHeader` | Cabecalho de pagina com titulo, subtitulo e acoes |
@@ -670,6 +751,10 @@ Prefixos disponiveis: `sm:` (640px+), `md:` (768px+), `lg:` (1024px+), `xl:` (12
 | `TrxLogo` | Logo TRX |
 | `TrxThemeToggle` | Toggle de tema |
 
+### PrimeVue Wrappers (~110 componentes)
+
+Veja a secao [PrimeVue Wrappers](#primevue-wrappers-110-componentes) para detalhes completos.
+
 ---
 
 ## Composables Disponiveis
@@ -679,7 +764,10 @@ Prefixos disponiveis: `sm:` (640px+), `md:` (768px+), `lg:` (1024px+), `xl:` (12
 | `useTheme` | Gerenciamento de tema (dark/light, font size) |
 | `useApi` | Cliente HTTP com loading state |
 | `useAuth` | Autenticacao unificada |
-| `useToast` | Notificacoes toast |
+| `useTrxToast` | Notificacoes toast com metodos de conveniencia (success, error, warn, info) |
+| `useToast` | Re-export do useToast do PrimeVue (acesso direto) |
+| `useConfirm` | Confirm dialog com defaults PT-BR (Sim/Nao) |
+| `useDialog` | Dynamic dialog (re-export do PrimeVue) |
 
 ---
 
@@ -696,22 +784,38 @@ npm run typecheck # Type check
 
 ### Adicionar novo componente
 
+**Componente base (custom TRX):**
+
 1. Criar arquivo em `src/components/TrxNomeComponente.vue`
 2. Exportar em `src/components/index.ts`
 3. Rebuild: `npm run build`
 
+**Wrapper PrimeVue:**
+
+1. Criar arquivo em `src/components/<categoria>/TrxNomeComponente.vue`
+   - Categorias: `form/`, `button/`, `data/`, `panel/`, `overlay/`, `menu/`, `message/`, `media/`, `file/`, `chart/`, `misc/`
+2. Exportar em `src/components/<categoria>/index.ts`
+3. O barrel `src/components/index.ts` ja faz `export *` de todas as categorias
+4. Rebuild: `npm run build`
+
 ---
 
-## Apps do Ecossistema
+## Apps que Usam
+
+### TRX Call (produto standalone)
 
 | App | Diretorio | Descricao |
 |-----|-----------|-----------|
 | Call | `call/frontend` | PABX IP (Asterisk) |
-| Switch | `switch/frontend` | Telefonia Alto Volume (FreeSWITCH) |
-| Phone | `phone/frontend` | Softphone WebRTC |
-| Dialer | `dailer/web/frontend` | Motor de discagem |
-| Predictive | `predictive/web/frontend` | Discagem preditiva |
-| Omnichannel | `omnichannel/frontend` | Atendimento multicanal |
+
+### TRX Stack (plataforma unificada)
+
+| App | Diretorio | Descricao |
+|-----|-----------|-----------|
+| Switch | `trx-stack/switch/frontend` | Telefonia Alto Volume (FreeSWITCH) |
+| Phone | `trx-stack/phone/frontend` | Softphone WebRTC |
+| Dialer | `trx-stack/dailer/frontend` | Motor de discagem |
+| Omnichannel | `trx-stack/omnichannel/frontend` | Atendimento multicanal |
 
 ---
 

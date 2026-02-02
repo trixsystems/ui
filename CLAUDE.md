@@ -15,25 +15,25 @@ trx-ui-common/
 │   │   ├── useTheme.ts       # Theme management
 │   │   ├── useToast.ts       # Toast notifications
 │   │   ├── useApi.ts         # API client
-│   │   └── useAuth.ts        # Unified auth
+│   │   ├── useAuth.ts        # Unified auth
+│   │   ├── useConfirm.ts     # Confirm dialog (PT-BR defaults)
+│   │   └── useDialog.ts      # Dynamic dialog
 │   ├── utils/                # Utility functions
 │   │   └── index.ts
 │   ├── components/           # Vue components
-│   │   ├── index.ts
-│   │   ├── TrxLogo.vue
-│   │   ├── TrxThemeToggle.vue
-│   │   ├── TrxPageHeader.vue
-│   │   ├── TrxCard.vue
-│   │   ├── TrxStatCard.vue
-│   │   ├── TrxDataTable.vue
-│   │   ├── TrxStatus.vue
-│   │   ├── TrxStatusBadge.vue
-│   │   ├── TrxLoadingOverlay.vue
-│   │   ├── TrxEmptyState.vue
-│   │   ├── TrxLoginForm.vue
-│   │   ├── TrxLoginPage.vue
-│   │   ├── TrxAppLayout.vue
-│   │   └── TrxNotFound.vue
+│   │   ├── index.ts          # Barrel (base + all PrimeVue wrappers)
+│   │   ├── Trx*.vue          # 14 base components (custom TRX)
+│   │   ├── form/index.ts     # 32 components + 4 aliases
+│   │   ├── button/index.ts   # 4 components
+│   │   ├── data/index.ts     # 12 components
+│   │   ├── panel/index.ts    # 23 components + 1 alias
+│   │   ├── overlay/index.ts  # 6 components + 2 aliases
+│   │   ├── menu/index.ts     # 10 components
+│   │   ├── message/index.ts  # 3 components
+│   │   ├── media/index.ts    # 4 components
+│   │   ├── file/index.ts     # 1 component
+│   │   ├── chart/index.ts    # 1 component
+│   │   └── misc/index.ts     # 14 components
 │   └── styles/               # CSS
 │       ├── utilities.css     # Classes utilitarias (substitui PrimeFlex)
 │       ├── themes.css        # Unified theme (Light + Dracula Dark)
@@ -91,17 +91,54 @@ configurePrimeVue(app)
 
 ```typescript
 // Composables
-import { useTheme, useAuth, useToast, useApi } from '@trx/ui-common'
+import { useTheme, useAuth, useToast, useApi, useConfirm, useDialog } from '@trx/ui-common'
 
 // Utils
 import { formatDate, formatCurrency, debounce } from '@trx/ui-common'
 
-// Components
+// Base Components
 import {
   TrxPageHeader, TrxCard, TrxStatCard,
   TrxDataTable, TrxStatus, TrxEmptyState
 } from '@trx/ui-common'
+
+// PrimeVue Wrappers (all ~100 components available)
+import {
+  TrxButton, TrxInputText, TrxSelect, TrxDialog,
+  TrxMenu, TrxToast, TrxAccordion, TrxTabs,
+  TrxDatePicker, TrxPassword, TrxFileUpload
+} from '@trx/ui-common'
 ```
+
+## PrimeVue Wrappers
+
+Todos os ~86 componentes PrimeVue 4.5 possuem wrappers `Trx*` com:
+- Pass-through de attrs e slots
+- Defaults PT-BR nos componentes Enhanced (DatePicker, Select, Password, Dialog, etc.)
+- Aliases legacy: `TrxDropdown`=Select, `TrxCalendar`=DatePicker, `TrxSidebar`=Drawer, `TrxTabView`=Tabs
+
+### Componentes Enhanced (com defaults PT-BR)
+| Componente | Defaults |
+|---|---|
+| TrxDatePicker | `dateFormat="dd/mm/yy"`, `showIcon=true` |
+| TrxInputNumber | `locale="pt-BR"`, `minFractionDigits=2` |
+| TrxPassword | `weakLabel="Fraco"`, `mediumLabel="Medio"`, `strongLabel="Forte"` |
+| TrxSelect | `placeholder="Selecione..."`, `emptyMessage="Nenhum resultado"` |
+| TrxMultiSelect | `placeholder="Selecione..."`, `emptyMessage="Nenhum resultado"` |
+| TrxAutoComplete | `placeholder="Buscar..."` |
+| TrxDialog | `modal=true`, `closable=true`, `draggable=false` |
+| TrxConfirmDialog | `acceptLabel="Sim"`, `rejectLabel="Nao"` |
+| TrxFileUpload | `chooseLabel="Escolher"`, `uploadLabel="Enviar"`, `cancelLabel="Cancelar"` |
+| TrxToast | `position="top-right"` |
+| TrxPaginator | `rowsPerPageOptions=[10,25,50]` |
+
+## Re-exports PrimeVue
+
+Para casos onde os componentes base TRX tem API diferente do PrimeVue original:
+- `PvCard` - Card original do PrimeVue (TrxCard e custom)
+- `PvDataTable` - DataTable original do PrimeVue (TrxDataTable e custom com filtro global)
+- `PvTabView` - TabView legado do PrimeVue (TrxTabs usa a nova API PrimeVue 4)
+- `useToast` - Re-export do `primevue/usetoast` para acesso direto (alem do `useTrxToast` com conveniencia)
 
 ## Autenticacao Unificada
 
@@ -133,9 +170,13 @@ npm link       # Link para uso local
 
 ## Apps que usam
 
+### TRX Call (produto standalone)
 - TRX Call (`call/frontend`) - PABX IP
-- TRX Switch (`switch/frontend`) - Telefonia Alto Volume
-- TRX Phone (`phone/frontend`) - Softphone WebRTC
-- TRX Omnichannel (`omnichannel/frontend`) - Atendimento Multicanal
-- TRX Predictive (`predictive/web/frontend`) - Discagem Preditiva
-- TRX Dialer (`dialer/web/frontend`) - Motor de Discagem
+
+### TRX Stack (plataforma unificada)
+- TRX Switch (`trx-stack/switch/frontend`) - Telefonia Alto Volume
+- TRX Phone (`trx-stack/phone/frontend`) - Softphone WebRTC
+- TRX Omnichannel (`trx-stack/omnichannel/frontend`) - Atendimento Multicanal
+- TRX Dialer (`trx-stack/dailer/frontend`) - Motor de Discagem
+
+> **Nota:** Call e Stack sao produtos independentes. Call tem autenticacao standalone; Stack usa trx-auth centralizado.

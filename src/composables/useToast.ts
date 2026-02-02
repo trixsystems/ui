@@ -83,3 +83,8 @@ export function useTrxToast() {
  * @deprecated Use useTrxToast instead
  */
 export const useToastNotify = useTrxToast
+
+/**
+ * Re-export PrimeVue's useToast for direct access via @trx/ui-common
+ */
+export { useToast } from 'primevue/usetoast'

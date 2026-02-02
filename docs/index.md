@@ -22,9 +22,9 @@ Biblioteca de componentes, composables e utilitarios Vue 3 compartilhada para o 
 O `@trx/ui-common` e um pacote npm que centraliza toda a infraestrutura de frontend compartilhada entre os aplicativos TRX:
 
 - **TRX Call** - Sistema PABX IP
+- **TRX Switch** - Telefonia de Alto Volume
 - **TRX Phone** - Softphone WebRTC
 - **TRX Dialer** - Motor de discagem
-- **TRX Predictive** - Discagem preditiva
 - **TRX Omnichannel** - Atendimento multicanal
 
 ## Recursos Principais
@@ -32,12 +32,21 @@ O `@trx/ui-common` e um pacote npm que centraliza toda a infraestrutura de front
 ### Componentes Vue
 {: .text-purple-300 }
 
-Componentes reutilizaveis prontos para uso:
+14 componentes base custom prontos para uso:
 - `TrxAppLayout` - Layout completo com sidebar
 - `TrxLoginPage` - Pagina de login com animacoes
 - `TrxPageHeader` - Cabecalho de pagina
 - `TrxStatusBadge` - Badges de status
 - E muito mais...
+
+### PrimeVue Wrappers
+{: .text-red-300 }
+
+~110 wrappers `Trx*` para todos os componentes PrimeVue 4.5:
+- Pass-through completo de attrs e slots
+- Defaults PT-BR nos componentes enhanced (DatePicker, Select, Dialog, etc.)
+- Aliases legacy para compatibilidade (TrxDropdown, TrxCalendar, TrxSidebar)
+- Re-exports raw (PvCard, PvDataTable, PvTabView) para acesso direto
 
 ### Composables
 {: .text-blue-300 }
@@ -45,8 +54,10 @@ Componentes reutilizaveis prontos para uso:
 Logica reativa reutilizavel:
 - `useAuth` - Autenticacao unificada
 - `useTheme` - Gerenciamento de tema
-- `useToast` - Notificacoes toast
+- `useTrxToast` - Notificacoes toast com conveniencia
 - `useApi` - Cliente HTTP
+- `useConfirm` - Confirm dialog com defaults PT-BR
+- `useDialog` - Dynamic dialog
 
 ### Utilitarios
 {: .text-green-300 }
@@ -112,8 +123,9 @@ npm link @trx/ui-common
 ```typescript
 // main.ts
 import { createApp } from 'vue'
-import { configurePrimeVue } from '@trx/ui-common/primevue'
-import '@trx/ui-common/themes'
+import { configurePrimeVue } from '@trx/ui-common'
+import 'primeicons/primeicons.css'
+import '@trx/ui-common/styles'
 
 const app = createApp(App)
 configurePrimeVue(app)
@@ -122,9 +134,15 @@ app.mount('#app')
 
 ```vue
 <script setup lang="ts">
-import { TrxAppLayout, TrxPageHeader } from '@trx/ui-common/components'
-import { useAuth } from '@trx/ui-common/composables'
-import { formatDate } from '@trx/ui-common/utils'
+import {
+  TrxAppLayout,
+  TrxPageHeader,
+  TrxButton,
+  TrxInputText,
+  TrxDialog
+} from '@trx/ui-common'
+import { useAuth, useConfirm } from '@trx/ui-common'
+import { formatDate } from '@trx/ui-common'
 </script>
 
 <template>
@@ -145,9 +163,9 @@ Todos os aplicativos TRX compartilham a mesma base de UI, garantindo consistenci
 | App | Descricao | Status |
 |:----|:----------|:-------|
 | TRX Call | PABX IP institucional | Producao |
+| TRX Switch | Telefonia Alto Volume | Producao |
 | TRX Phone | Softphone WebRTC | Producao |
 | TRX Dialer | Motor de discagem | Producao |
-| TRX Predictive | Discagem preditiva | Producao |
 | TRX Omnichannel | Atendimento multicanal | Producao |
 
 ---

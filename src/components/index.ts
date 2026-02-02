@@ -22,3 +22,36 @@ export { default as TrxLoginPage } from './TrxLoginPage.vue'
 
 // Types
 export type { MenuItem, MenuSection } from './TrxAppLayout.vue'
+
+// PrimeVue Wrappers - Form
+export * from './form'
+
+// PrimeVue Wrappers - Button
+export * from './button'
+
+// PrimeVue Wrappers - Data
+export * from './data'
+
+// PrimeVue Wrappers - Panel
+export * from './panel'
+
+// PrimeVue Wrappers - Overlay
+export * from './overlay'
+
+// PrimeVue Wrappers - Menu
+export * from './menu'
+
+// PrimeVue Wrappers - Message
+export * from './message'
+
+// PrimeVue Wrappers - Media
+export * from './media'
+
+// PrimeVue Wrappers - File
+export * from './file'
+
+// PrimeVue Wrappers - Chart
+export * from './chart'
+
+// PrimeVue Wrappers - Misc
+export * from './misc'

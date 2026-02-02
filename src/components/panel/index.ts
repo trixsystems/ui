@@ -1,0 +1,32 @@
+export { default as TrxAccordion } from './TrxAccordion.vue'
+export { default as TrxAccordionContent } from './TrxAccordionContent.vue'
+export { default as TrxAccordionHeader } from './TrxAccordionHeader.vue'
+export { default as TrxAccordionPanel } from './TrxAccordionPanel.vue'
+export { default as TrxDeferredContent } from './TrxDeferredContent.vue'
+export { default as TrxDivider } from './TrxDivider.vue'
+export { default as TrxFieldset } from './TrxFieldset.vue'
+export { default as TrxPanel } from './TrxPanel.vue'
+export { default as TrxScrollPanel } from './TrxScrollPanel.vue'
+export { default as TrxSplitter } from './TrxSplitter.vue'
+export { default as TrxSplitterPanel } from './TrxSplitterPanel.vue'
+export { default as TrxStepper } from './TrxStepper.vue'
+export { default as TrxStep } from './TrxStep.vue'
+export { default as TrxStepItem } from './TrxStepItem.vue'
+export { default as TrxStepList } from './TrxStepList.vue'
+export { default as TrxStepPanel } from './TrxStepPanel.vue'
+export { default as TrxStepPanels } from './TrxStepPanels.vue'
+export { default as TrxTabs } from './TrxTabs.vue'
+export { default as TrxTab } from './TrxTab.vue'
+export { default as TrxTabList } from './TrxTabList.vue'
+export { default as TrxTabPanel } from './TrxTabPanel.vue'
+export { default as TrxTabPanels } from './TrxTabPanels.vue'
+export { default as TrxToolbar } from './TrxToolbar.vue'
+
+// Legacy alias (new Tabs API)
+export { default as TrxTabView } from './TrxTabs.vue'
+
+// Re-export PrimeVue Card directly (TrxCard is a custom enhanced component)
+export { default as PvCard } from 'primevue/card'
+
+// Re-export legacy PrimeVue TabView (different API from TrxTabs/TrxTabView)
+export { default as PvTabView } from 'primevue/tabview'

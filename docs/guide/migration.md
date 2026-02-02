@@ -26,8 +26,9 @@ A migracao envolve:
 1. Adicionar @trx/ui-common como dependencia
 2. Atualizar configuracao do PrimeVue
 3. Substituir CSS local pelo tema unificado
-4. Substituir componentes locais pelos do pacote
-5. Usar composables unificados
+4. Substituir imports PrimeVue por wrappers Trx*
+5. Substituir componentes locais pelos do pacote
+6. Usar composables unificados
 
 ---
 
@@ -44,6 +45,16 @@ npm link @trx/ui-common
 {
   "dependencies": {
     "@trx/ui-common": "file:../trx-ui-common"
+  }
+}
+```
+
+Ou via GitHub:
+
+```json
+{
+  "dependencies": {
+    "@trx/ui-common": "github:trxcommunications/trx-ui-common"
   }
 }
 ```
@@ -78,8 +89,9 @@ app.use(ToastService)
 ```typescript
 // main.ts (DEPOIS)
 import { createApp } from 'vue'
-import { configurePrimeVue } from '@trx/ui-common/primevue'
-import '@trx/ui-common/themes'
+import { configurePrimeVue } from '@trx/ui-common'
+import 'primeicons/primeicons.css'
+import '@trx/ui-common/styles'
 
 const app = createApp(App)
 configurePrimeVue(app)
@@ -97,6 +109,7 @@ A funcao `configurePrimeVue` configura PrimeVue, ToastService, ConfirmationServi
 - `src/assets/themes.css`
 - `src/assets/variables.css`
 - Configuracoes duplicadas de tema
+- `import 'primeflex/primeflex.css'` (o @trx/ui-common substitui completamente o PrimeFlex)
 
 ### Manter
 
@@ -106,12 +119,78 @@ A funcao `configurePrimeVue` configura PrimeVue, ToastService, ConfirmationServi
 ### Importar
 
 ```typescript
-// Tema unificado
-import '@trx/ui-common/themes'
+// Tema unificado + classes utilitarias (substitui PrimeFlex)
+import '@trx/ui-common/styles'
 
-// PrimeIcons e PrimeFlex (se nao estiver no pacote)
+// PrimeIcons
 import 'primeicons/primeicons.css'
-import 'primeflex/primeflex.css'
+```
+
+{: .warning }
+Nao importe `primeflex/primeflex.css`. O pacote ja inclui ~700 classes utilitarias em `utilities.css` que substituem o PrimeFlex.
+
+---
+
+## Passo 3.5: Substituir imports PrimeVue por wrappers TRX
+
+### Antes
+
+```typescript
+import Button from 'primevue/button'
+import InputText from 'primevue/inputtext'
+import Dialog from 'primevue/dialog'
+import Select from 'primevue/select'
+import DatePicker from 'primevue/datepicker'
+import DataTable from 'primevue/datatable'
+import Column from 'primevue/column'
+```
+
+### Depois
+
+```typescript
+import {
+  TrxButton,
+  TrxInputText,
+  TrxDialog,
+  TrxSelect,
+  TrxDatePicker,
+  PvDataTable,    // ou TrxDataTable se quiser o custom com filtro global
+  TrxColumn
+} from '@trx/ui-common'
+```
+
+{: .note }
+Os wrappers `Trx*` fazem pass-through completo de attrs e slots, entao a migracao e direta: basta trocar o nome do componente no template. Os wrappers enhanced (como `TrxSelect`, `TrxDatePicker`) adicionam defaults PT-BR que podem ser sobrescritos via props.
+
+### No template
+
+```vue
+<!-- ANTES -->
+<Button label="Salvar" />
+<InputText v-model="nome" />
+<Dialog v-model:visible="show" header="Titulo">...</Dialog>
+
+<!-- DEPOIS -->
+<TrxButton label="Salvar" />
+<TrxInputText v-model="nome" />
+<TrxDialog v-model:visible="show" header="Titulo">...</TrxDialog>
+```
+
+### Aliases legacy
+
+Se o app usava nomes antigos do PrimeVue (v3), os aliases facilitam a migracao:
+
+```typescript
+// Nomes antigos continuam funcionando via aliases
+import {
+  TrxDropdown,    // = TrxSelect
+  TrxCalendar,    // = TrxDatePicker
+  TrxSidebar,     // = TrxDrawer
+  TrxInputSwitch, // = TrxToggleSwitch
+  TrxChips,       // = TrxInputChips
+  TrxOverlayPanel,// = TrxPopover
+  TrxTabView      // = TrxTabs
+} from '@trx/ui-common'
 ```
 
 ---
@@ -145,7 +224,7 @@ import 'primeflex/primeflex.css'
 </template>
 
 <script setup lang="ts">
-import { TrxAppLayout } from '@trx/ui-common/components'
+import { TrxAppLayout } from '@trx/ui-common'
 </script>
 ```
 
@@ -166,7 +245,7 @@ import { TrxAppLayout } from '@trx/ui-common/components'
 </template>
 
 <script setup lang="ts">
-import { TrxLoginPage } from '@trx/ui-common/components'
+import { TrxLoginPage } from '@trx/ui-common'
 </script>
 ```
 
@@ -187,7 +266,7 @@ import { TrxLoginPage } from '@trx/ui-common/components'
 </template>
 
 <script setup lang="ts">
-import { TrxNotFound } from '@trx/ui-common/components'
+import { TrxNotFound } from '@trx/ui-common'
 </script>
 ```
 
@@ -205,7 +284,7 @@ const login = async (email: string, password: string) => {
 }
 
 // DEPOIS
-import { useAuth } from '@trx/ui-common/composables'
+import { useAuth } from '@trx/ui-common'
 
 const auth = useAuth({
   appName: 'meu-app',
@@ -228,7 +307,7 @@ const toggleTheme = () => {
 }
 
 // DEPOIS
-import { useTheme } from '@trx/ui-common/composables'
+import { useTheme } from '@trx/ui-common'
 
 const { isDark, toggleTheme } = useTheme()
 ```
@@ -243,10 +322,37 @@ const toast = useToast()
 toast.add({ severity: 'success', summary: 'Sucesso', detail: 'Ok!', life: 3000 })
 
 // DEPOIS
-import { useToast } from '@trx/ui-common/composables'
+import { useTrxToast } from '@trx/ui-common'
 
-const toast = useToast()
+const toast = useTrxToast()
 toast.success('Ok!', 'Sucesso')
+```
+
+### Confirm
+
+```typescript
+// ANTES
+import { useConfirm } from 'primevue/useconfirm'
+
+const confirm = useConfirm()
+confirm.require({
+  message: 'Deseja excluir?',
+  header: 'Confirmacao',
+  acceptLabel: 'Sim',
+  rejectLabel: 'Nao',
+  accept: () => { /* ... */ }
+})
+
+// DEPOIS
+import { useConfirm } from '@trx/ui-common'
+
+const confirm = useConfirm()
+confirm.require({
+  message: 'Deseja excluir?',
+  header: 'Confirmacao',
+  accept: () => { /* ... */ }
+})
+// acceptLabel e rejectLabel ja tem defaults PT-BR (Sim/Nao)
 ```
 
 ---
@@ -264,7 +370,7 @@ const formatarTelefone = (phone: string) => {
 }
 
 // DEPOIS
-import { formatDate, formatPhone } from '@trx/ui-common/utils'
+import { formatDate, formatPhone } from '@trx/ui-common'
 
 formatDate('2026-01-08')      // "08/01/2026"
 formatPhone('11999998888')    // "(11) 99999-8888"
@@ -272,18 +378,44 @@ formatPhone('11999998888')    // "(11) 99999-8888"
 
 ---
 
+## Passo 7: Configurar vite.config.ts
+
+Adicione `resolve.dedupe` para evitar multiplas instancias do Vue e PrimeVue:
+
+```typescript
+// vite.config.ts
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+export default defineConfig({
+  plugins: [vue()],
+  resolve: {
+    dedupe: ['vue', 'primevue']
+  }
+})
+```
+
+{: .warning }
+Sem `resolve.dedupe`, ao usar npm link ou dependencias locais, o Vite pode resolver multiplas copias do Vue/PrimeVue, causando erros de inject/provide nos composables e componentes PrimeVue.
+
+---
+
 ## Checklist de Migracao
 
 - [ ] Adicionar @trx/ui-common como dependencia
 - [ ] Atualizar main.ts com `configurePrimeVue`
-- [ ] Substituir import de CSS por `@trx/ui-common/themes`
+- [ ] Substituir import de CSS por `@trx/ui-common/styles`
+- [ ] Remover `primeflex/primeflex.css`
 - [ ] Remover arquivos de tema duplicados
+- [ ] Adicionar `resolve.dedupe: ['vue', 'primevue']` no vite.config.ts
+- [ ] Substituir imports PrimeVue por wrappers Trx* (Button -> TrxButton, etc.)
 - [ ] Substituir AppLayout por TrxAppLayout
 - [ ] Substituir LoginView por TrxLoginPage
 - [ ] Substituir NotFound por TrxNotFound
 - [ ] Atualizar uso de useAuth
 - [ ] Atualizar uso de useTheme
-- [ ] Atualizar uso de useToast
+- [ ] Atualizar uso de useToast para useTrxToast
+- [ ] Atualizar uso de useConfirm para @trx/ui-common
 - [ ] Substituir funcoes de formatacao por utils
 - [ ] Testar tema Light e Dark
 - [ ] Testar autenticacao
@@ -296,7 +428,7 @@ formatPhone('11999998888')    // "(11) 99999-8888"
 ### Erro: Module not found
 
 ```
-Error: Cannot find module '@trx/ui-common/primevue'
+Error: Cannot find module '@trx/ui-common'
 ```
 
 **Solucao**: Certifique-se de que o `npm link` foi executado ou a dependencia esta correta no package.json.
@@ -304,6 +436,10 @@ Error: Cannot find module '@trx/ui-common/primevue'
 ### Estilos nao aplicados
 
 **Solucao**: Verifique a ordem de imports no main.ts. O tema deve vir antes de estilos locais.
+
+### Erro: inject() can only be used inside setup()
+
+**Solucao**: Adicione `resolve.dedupe: ['vue', 'primevue']` no `vite.config.ts`. Isso garante que apenas uma instancia do Vue e PrimeVue seja usada.
 
 ### TypeScript errors
 

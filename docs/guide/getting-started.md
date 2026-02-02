@@ -62,7 +62,17 @@ npm link @trx/ui-common
 }
 ```
 
-### Opcao 3: npm (quando publicado)
+### Opcao 3: Via GitHub
+
+```json
+{
+  "dependencies": {
+    "@trx/ui-common": "github:trxcommunications/trx-ui-common"
+  }
+}
+```
+
+### Opcao 4: npm (quando publicado)
 
 ```bash
 npm install @trx/ui-common
@@ -79,14 +89,13 @@ npm install @trx/ui-common
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { createRouter, createWebHistory } from 'vue-router'
-import { configurePrimeVue } from '@trx/ui-common/primevue'
+import { configurePrimeVue } from '@trx/ui-common'
 import App from './App.vue'
 import routes from './router'
 
-// Importar estilos
-import '@trx/ui-common/themes'
+// Importar estilos (inclui utilities + themes - substitui PrimeFlex)
 import 'primeicons/primeicons.css'
-import 'primeflex/primeflex.css'
+import '@trx/ui-common/styles'
 
 const app = createApp(App)
 
@@ -106,7 +115,28 @@ configurePrimeVue(app)
 app.mount('#app')
 ```
 
-### 2. Estrutura de Pastas Recomendada
+{: .warning }
+Nao importe `primeflex/primeflex.css`. O `@trx/ui-common` ja inclui todas as classes utilitarias necessarias em `utilities.css`, substituindo completamente o PrimeFlex.
+
+### 2. Configurar vite.config.ts
+
+```typescript
+// vite.config.ts
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+export default defineConfig({
+  plugins: [vue()],
+  resolve: {
+    dedupe: ['vue', 'primevue']
+  }
+})
+```
+
+{: .note }
+O `resolve.dedupe` e necessario para evitar multiplas instancias do Vue e PrimeVue quando usando npm link ou dependencias locais. Sem isso, podem ocorrer erros de inject/provide.
+
+### 3. Estrutura de Pastas Recomendada
 
 ```
 seu-app/frontend/
@@ -135,8 +165,11 @@ import {
   TrxAppLayout,
   TrxPageHeader,
   TrxStatusBadge,
-  TrxEmptyState
-} from '@trx/ui-common/components'
+  TrxEmptyState,
+  TrxButton,
+  TrxInputText,
+  TrxDialog
+} from '@trx/ui-common'
 </script>
 
 <template>
@@ -155,7 +188,7 @@ import {
 
 ```vue
 <script setup lang="ts">
-import { useAuth, useToast, useTheme } from '@trx/ui-common/composables'
+import { useAuth, useTrxToast, useTheme, useConfirm } from '@trx/ui-common'
 
 // Autenticacao
 const auth = useAuth({
@@ -164,11 +197,19 @@ const auth = useAuth({
 })
 
 // Toast
-const toast = useToast()
+const toast = useTrxToast()
 toast.success('Operacao realizada!')
 
 // Tema
 const { isDark, toggleTheme } = useTheme()
+
+// Confirm dialog
+const confirm = useConfirm()
+confirm.require({
+  message: 'Deseja continuar?',
+  header: 'Confirmacao',
+  accept: () => { /* ... */ }
+})
 </script>
 ```
 
@@ -180,7 +221,7 @@ import {
   formatCurrency,
   formatPhone,
   debounce
-} from '@trx/ui-common/utils'
+} from '@trx/ui-common'
 
 // Formatar data
 formatDate('2026-01-08')           // "08/01/2026"
