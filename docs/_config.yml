@@ -1,8 +1,8 @@
 # Site settings
 title: "@trx/ui-common"
 description: "Biblioteca de componentes Vue compartilhada para o ecossistema TRX Systems"
-baseurl: "/trx-ui-common"
-url: "https://trxcommunications.github.io"
+baseurl: ""
+url: "https://ui.trixsystems.io"
 
 # Theme
 remote_theme: just-the-docs/just-the-docs
@@ -13,7 +13,7 @@ logo: "/assets/images/logo.svg"
 # Aux links
 aux_links:
   "GitHub":
-    - "https://github.com/trxcommunications/trx-ui-common"
+    - "https://github.com/trixsystems/ui"
 
 aux_links_new_tab: true
 

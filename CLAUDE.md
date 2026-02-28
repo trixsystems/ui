@@ -5,7 +5,7 @@ Pacote compartilhado de UI para o ecossistema TRX. **Independente** - nao requer
 ## Estrutura
 
 ```
-trx-ui-common/
+ui/
 ├── src/
 │   ├── index.ts              # Main entry
 │   ├── primevue/             # PrimeVue configuration
@@ -13,7 +13,7 @@ trx-ui-common/
 │   ├── composables/          # Vue composables
 │   │   ├── index.ts
 │   │   ├── useTheme.ts       # Theme management
-│   │   ├── useToast.ts       # Toast notifications
+│   │   ├── useToast.ts       # Toast (useTrxToast + re-export useToast)
 │   │   ├── useApi.ts         # API client
 │   │   ├── useAuth.ts        # Unified auth
 │   │   ├── useConfirm.ts     # Confirm dialog (PT-BR defaults)
@@ -26,8 +26,8 @@ trx-ui-common/
 │   │   ├── form/index.ts     # 32 components + 4 aliases
 │   │   ├── button/index.ts   # 4 components
 │   │   ├── data/index.ts     # 12 components
-│   │   ├── panel/index.ts    # 23 components + 1 alias
-│   │   ├── overlay/index.ts  # 6 components + 2 aliases
+│   │   ├── panel/index.ts    # 23 components + 1 alias (TrxTabView)
+│   │   ├── overlay/index.ts  # 6 components + 2 aliases (TrxSidebar, TrxOverlayPanel)
 │   │   ├── menu/index.ts     # 10 components
 │   │   ├── message/index.ts  # 3 components
 │   │   ├── media/index.ts    # 4 components
@@ -35,9 +35,19 @@ trx-ui-common/
 │   │   ├── chart/index.ts    # 1 component
 │   │   └── misc/index.ts     # 14 components
 │   └── styles/               # CSS
-│       ├── utilities.css     # Classes utilitarias (substitui PrimeFlex)
+│       ├── utilities.css     # ~1.096 classes utilitarias (substitui PrimeFlex)
 │       ├── themes.css        # Unified theme (Light + Dracula Dark)
 │       └── index.css         # Entry point (imports utilities + themes)
+├── docs/                     # Documentacao Jekyll (ui.trixsystems.io)
+│   ├── _config.yml           # Jekyll config (url, baseurl, nav)
+│   ├── index.md              # Home
+│   ├── roadmap.md            # Roadmap do design system
+│   ├── jira-tasks.md         # Tasks para Jira (35 tasks, 8 epics)
+│   ├── guide/                # Guias de uso
+│   ├── components/           # Docs de componentes
+│   ├── composables/          # Docs de composables
+│   ├── theme/                # Docs do tema
+│   └── utils/                # Docs de utilitarios
 ├── package.json
 ├── vite.config.ts
 └── tsconfig.json
@@ -62,7 +72,7 @@ trx-ui-common/
 
 ## CSS Utilities
 
-O pacote inclui ~700 classes CSS utilitarias em `utilities.css`:
+O pacote inclui ~1.096 classes CSS utilitarias em `utilities.css`:
 
 - Display: `.flex`, `.grid`, `.hidden`, `.block`
 - Flexbox: `.flex-row`, `.justify-content-*`, `.align-items-*`
@@ -102,7 +112,7 @@ import {
   TrxDataTable, TrxStatus, TrxEmptyState
 } from '@trx/ui-common'
 
-// PrimeVue Wrappers (all ~100 components available)
+// PrimeVue Wrappers (110 components + 7 aliases)
 import {
   TrxButton, TrxInputText, TrxSelect, TrxDialog,
   TrxMenu, TrxToast, TrxAccordion, TrxTabs,
@@ -112,7 +122,7 @@ import {
 
 ## PrimeVue Wrappers
 
-Todos os ~86 componentes PrimeVue 4.5 possuem wrappers `Trx*` com:
+Todos os ~110 componentes PrimeVue 4.5 possuem wrappers `Trx*` com:
 - Pass-through de attrs e slots
 - Defaults PT-BR nos componentes Enhanced (DatePicker, Select, Password, Dialog, etc.)
 - Aliases legacy: `TrxDropdown`=Select, `TrxCalendar`=DatePicker, `TrxSidebar`=Drawer, `TrxTabView`=Tabs
@@ -162,11 +172,22 @@ await auth.logout()
 ## Comandos
 
 ```bash
-npm install    # Instalar deps
-npm run build  # Build para dist/
-npm run dev    # Watch mode
-npm link       # Link para uso local
+npm install           # Instalar deps
+npm run build         # Build para dist/
+npm run dev           # Watch mode
+npm run typecheck     # Type check sem build
+npm link              # Link para uso local
+npm run release       # Release patch (1.0.0 → 1.0.1) + tag Git + GitHub Release
+npm run release:minor # Release minor (1.0.0 → 1.1.0)
+npm run release:major # Release major (1.0.0 → 2.0.0)
 ```
+
+## Versionamento
+
+- Conventional Commits enforçado via commitlint + husky (hook em `.husky/commit-msg`)
+- release-it configurado em `.release-it.json` — gera CHANGELOG, tag Git e GitHub Release
+- Apps devem fixar versao via tag: `"github:trixsystems/ui#v1.0.0"`
+- Licenca: Apache-2.0 (arquivo `LICENSE` na raiz)
 
 ## Apps que usam
 
@@ -180,3 +201,29 @@ npm link       # Link para uso local
 - TRX Dialer (`trx-stack/dailer/frontend`) - Motor de Discagem
 
 > **Nota:** Call e Stack sao produtos independentes. Call tem autenticacao standalone; Stack usa trx-auth centralizado.
+
+## Roadmap / Gaps Conhecidos
+
+Analise de maturidade como design system realizada em 2026-02-28.
+Ver detalhes em `memory/design-system-gaps.md` e `docs/roadmap.md`.
+
+### Epics planejados (ver docs/jira-tasks.md para tasks completas)
+
+| Epic | Titulo | Prioridade |
+|------|--------|------------|
+| DS | Design Tokens estruturados (Style Dictionary) | CRITICA |
+| PL | Playground interativo (Histoire + VitePress) | CRITICA |
+| TS | Testes com Vitest (composables + componentes) | CRITICA |
+| FV | Formularios com validacao (Vee-Validate + Zod) | ALTA |
+| NC | Novos componentes base (TrxAlert, TrxKPICard, TrxUserAvatar...) | ALTA |
+| VR | Versionamento semantico e CHANGELOG | ALTA |
+| A11Y | Acessibilidade (ARIA, useFocusTrap, skip-to-content) | MEDIA |
+| TI | Sistema tipografico formal | MEDIA |
+| IC | Icones customizados de telefonia | BAIXA |
+| TH | Temas por app com CSS @layer | BAIXA |
+
+### Convencoes a adotar
+
+- Commits: Conventional Commits (`feat:`, `fix:`, `docs:`, `refactor:`, `test:`)
+- Versionamento: semver — incrementar ao fazer release para apps
+- Breaking changes: sempre com nota de migracao em CHANGELOG.md

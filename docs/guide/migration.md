@@ -44,7 +44,7 @@ npm link @trx/ui-common
 ```json
 {
   "dependencies": {
-    "@trx/ui-common": "file:../trx-ui-common"
+    "@trx/ui-common": "file:../ui"
   }
 }
 ```
@@ -54,7 +54,7 @@ Ou via GitHub:
 ```json
 {
   "dependencies": {
-    "@trx/ui-common": "github:trxcommunications/trx-ui-common"
+    "@trx/ui-common": "github:trixsystems/ui"
   }
 }
 ```
@@ -449,7 +449,7 @@ Error: Cannot find module '@trx/ui-common'
 {
   "compilerOptions": {
     "paths": {
-      "@trx/ui-common/*": ["../trx-ui-common/dist/*"]
+      "@trx/ui-common/*": ["../ui/dist/*"]
     }
   }
 }

@@ -32,8 +32,8 @@ Ideal para desenvolvimento quando o pacote ainda nao esta publicado no npm.
 
 ```bash
 # 1. Clone o repositorio
-git clone https://github.com/trxcommunications/trx-ui-common.git
-cd trx-ui-common
+git clone https://github.com/trixsystems/ui.git
+cd ui
 
 # 2. Instale as dependencias
 npm install
@@ -57,17 +57,29 @@ npm link @trx/ui-common
 ```json
 {
   "dependencies": {
-    "@trx/ui-common": "file:../trx-ui-common"
+    "@trx/ui-common": "file:../ui"
   }
 }
 ```
 
-### Opcao 3: Via GitHub
+### Opcao 3: Via GitHub (recomendado para producao)
+
+Fixe sempre uma tag de versao para evitar quebras com mudancas no `main`:
 
 ```json
 {
   "dependencies": {
-    "@trx/ui-common": "github:trxcommunications/trx-ui-common"
+    "@trx/ui-common": "github:trixsystems/ui#v1.0.0"
+  }
+}
+```
+
+Para usar sempre a versao mais recente do `main` (nao recomendado em producao):
+
+```json
+{
+  "dependencies": {
+    "@trx/ui-common": "github:trixsystems/ui"
   }
 }
 ```
@@ -240,7 +252,7 @@ const searchDebounced = debounce((q) => search(q), 300)
 
 ## Proximos Passos
 
-- [Componentes](/trx-ui-common/components/) - Lista completa de componentes
-- [Composables](/trx-ui-common/composables/) - Funcoes reativas
-- [Utilitarios](/trx-ui-common/utils/) - Funcoes helper
-- [Sistema de Temas](/trx-ui-common/theme/) - Customizacao visual
+- [Componentes](/components/) - Lista completa de componentes
+- [Composables](/composables/) - Funcoes reativas
+- [Utilitarios](/utils/) - Funcoes helper
+- [Sistema de Temas](/theme/) - Customizacao visual

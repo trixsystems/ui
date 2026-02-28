@@ -31,7 +31,7 @@ Dependencias recomendadas para apps que usam @trx/ui-common:
     "preview": "vite preview"
   },
   "dependencies": {
-    "@trx/ui-common": "file:../trx-ui-common",
+    "@trx/ui-common": "file:../ui",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
     "pinia": "^2.2.8",

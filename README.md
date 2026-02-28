@@ -38,7 +38,7 @@ O `@trx/ui-common` centraliza toda a infraestrutura de frontend compartilhada en
 
 ```bash
 # 1. Build do pacote
-cd /path/to/trx-ui-common
+cd /path/to/ui
 npm install
 npm run build
 npm link
@@ -53,17 +53,19 @@ npm link @trx/ui-common
 ```json
 {
   "dependencies": {
-    "@trx/ui-common": "file:../../trx-ui-common"
+    "@trx/ui-common": "file:../../ui"
   }
 }
 ```
 
-### Via GitHub
+### Via GitHub (recomendado para producao)
+
+Fixe sempre uma tag de versao — assim o app nao quebra com mudancas no `main`:
 
 ```json
 {
   "dependencies": {
-    "@trx/ui-common": "github:trxcommunications/trx-ui-common"
+    "@trx/ui-common": "github:trixsystems/ui#v1.0.0"
   }
 }
 ```
@@ -71,7 +73,7 @@ npm link @trx/ui-common
 ## Estrutura do Pacote
 
 ```
-trx-ui-common/
+ui/
 ├── src/
 │   ├── index.ts                    # Entry point principal
 │   ├── primevue/
@@ -776,10 +778,58 @@ Veja a secao [PrimeVue Wrappers](#primevue-wrappers-110-componentes) para detalh
 ### Scripts
 
 ```bash
-npm install      # Instalar dependencias
-npm run build    # Build para producao
-npm run dev      # Watch mode
-npm run typecheck # Type check
+npm install           # Instalar dependencias
+npm run build         # Build para producao
+npm run dev           # Watch mode
+npm run typecheck     # Type check
+npm run release       # Release patch (ex: 1.0.0 → 1.0.1)
+npm run release:minor # Release minor (ex: 1.0.0 → 1.1.0)
+npm run release:major # Release major (ex: 1.0.0 → 2.0.0)
+```
+
+### Release e Versionamento
+
+O projeto usa [release-it](https://github.com/release-it/release-it) com [Conventional Commits](https://www.conventionalcommits.org/pt-br/).
+
+**Fluxo de release:**
+
+```bash
+# 1. Certifique-se de estar na main com working tree limpa
+git checkout main && git pull
+
+# 2. Execute o release (escolha o incremento)
+npm run release         # patch — bug fixes
+npm run release:minor   # minor — novas features
+npm run release:major   # major — breaking changes
+
+# O release-it vai:
+# - Determinar a nova versao
+# - Atualizar CHANGELOG.md automaticamente
+# - Criar commit "chore: release vX.X.X"
+# - Criar tag Git "vX.X.X"
+# - Fazer push da tag para o GitHub
+# - Criar GitHub Release
+```
+
+**Nos apps consumidores**, fixe a versao pela tag:
+
+```json
+{
+  "dependencies": {
+    "@trx/ui-common": "github:trixsystems/ui#v1.0.1"
+  }
+}
+```
+
+**Convencao de commits:**
+
+```bash
+feat: adiciona novo componente TrxAlert        # minor bump
+fix: corrige comportamento do TrxDatePicker    # patch bump
+feat!: muda API do TrxAppLayout               # major bump (breaking)
+docs: atualiza documentacao
+refactor: reorganiza estrutura de tokens
+test: adiciona testes do useTheme
 ```
 
 ### Adicionar novo componente

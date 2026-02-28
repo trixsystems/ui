@@ -1,0 +1,38 @@
+{
+  "git": {
+    "commitMessage": "chore: release v${version}",
+    "tagName": "v${version}",
+    "tagAnnotation": "Release v${version}",
+    "requireCleanWorkingDir": true,
+    "requireUpstream": false,
+    "push": true
+  },
+  "github": {
+    "release": true,
+    "releaseName": "v${version}",
+    "tokenRef": "GITHUB_TOKEN"
+  },
+  "npm": {
+    "publish": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          { "type": "feat",     "section": "✨ Features" },
+          { "type": "fix",      "section": "🐛 Bug Fixes" },
+          { "type": "perf",     "section": "⚡ Performance" },
+          { "type": "refactor", "section": "♻️ Refactoring" },
+          { "type": "docs",     "section": "📝 Documentation" },
+          { "type": "test",     "section": "✅ Tests" },
+          { "type": "ci",       "section": "👷 CI/CD" },
+          { "type": "chore",    "hidden": true },
+          { "type": "style",    "hidden": true }
+        ]
+      },
+      "infile": "CHANGELOG.md",
+      "header": "# Changelog\n\nTodas as mudancas notaveis neste projeto.\nFormato: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) | [Semantic Versioning](https://semver.org/lang/pt-BR/)\n"
+    }
+  }
+}

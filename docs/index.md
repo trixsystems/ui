@@ -12,8 +12,8 @@ permalink: /
 Biblioteca de componentes, composables e utilitarios Vue 3 compartilhada para o ecossistema TRX Systems.
 {: .fs-6 .fw-300 }
 
-[Comecar agora](/trx-ui-common/guide/getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Ver no GitHub](https://github.com/trxcommunications/trx-ui-common){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Comecar agora](/guide/getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Ver no GitHub](https://github.com/trixsystems/ui){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -97,10 +97,10 @@ Tema unificado Light/Dark:
 
 ```bash
 # Clonar o repositorio
-git clone https://github.com/trxcommunications/trx-ui-common.git
+git clone https://github.com/trixsystems/ui.git
 
 # Instalar dependencias
-cd trx-ui-common
+cd ui
 npm install
 
 # Build
