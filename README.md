@@ -1,5 +1,9 @@
 # @trx/ui-common
 
+[![CI](https://github.com/trixsystems/ui/actions/workflows/ci.yml/badge.svg)](https://github.com/trixsystems/ui/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/github/v/tag/trixsystems/ui?label=version)](https://github.com/trixsystems/ui/releases)
+
 Pacote compartilhado de componentes, estilos e utilitarios para os produtos TRX Systems.
 
 ## Visao Geral
@@ -782,6 +786,9 @@ npm install           # Instalar dependencias
 npm run build         # Build para producao
 npm run dev           # Watch mode
 npm run typecheck     # Type check
+npm test              # Executar testes
+npm run test:watch    # Testes em modo watch
+npm run test:coverage # Cobertura de testes
 npm run release       # Release patch (ex: 1.0.0 → 1.0.1)
 npm run release:minor # Release minor (ex: 1.0.0 → 1.1.0)
 npm run release:major # Release major (ex: 1.0.0 → 2.0.0)
@@ -871,4 +878,4 @@ test: adiciona testes do useTheme
 
 ## Licenca
 
-Proprietario - TRX Systems
+[Apache License 2.0](LICENSE) — Copyright 2024-2026 TRIX Systems

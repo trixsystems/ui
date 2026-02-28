@@ -9,14 +9,23 @@ Versionamento segue [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ## [Unreleased]
 
+### Added
+- Suite de testes com Vitest 3 + @vue/test-utils + axe-core (Epic TS):
+  - 156 testes em 9 arquivos cobrindo composables, utils, componentes e acessibilidade
+  - Ambiente jsdom com globals, cobertura via v8
+  - Testes de acessibilidade com axe-core (violacoes critical/serious)
+  - `tsconfig.test.json` com regras relaxadas para arquivos de teste
+- Pipeline de release e versionamento (Epic VR):
+  - `release-it` com `@release-it/conventional-changelog` para CHANGELOG automatico
+  - `commitlint` + `husky` para validacao de commits (Conventional Commits enforced)
+  - GitHub Actions: `ci.yml` (typecheck + test + build em PRs) e `release.yml` (release manual via dispatch)
+  - Politica de breaking changes e guia de contribuicao em `docs/guide/contributing.md`
+
 ### Planejado
-- Design Tokens estruturados com Style Dictionary
-- Playground interativo com Histoire + VitePress
-- Suite de testes com Vitest
-- Formularios com validacao (Vee-Validate + Zod)
-- Novos componentes: TrxAlert, TrxUserAvatar, TrxKPICard, TrxSearchBar, TrxFilterBar
-- Versionamento semantico automatizado com release-it
-- CI/CD com GitHub Actions
+- Design Tokens estruturados com Style Dictionary (Epic DS)
+- Playground interativo com Histoire + VitePress (Epic PL)
+- Formularios com validacao (Vee-Validate + Zod) (Epic FV)
+- Novos componentes: TrxAlert, TrxUserAvatar, TrxKPICard, TrxSearchBar, TrxFilterBar (Epic NC)
 
 ---
 

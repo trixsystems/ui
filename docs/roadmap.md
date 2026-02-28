@@ -221,10 +221,10 @@ Versao travada em 1.0.0 sem processo de release. Apps nao sabem o que mudou.
 |:-----|:-------|:----------|
 | DS — Design Tokens | Nao iniciado | 0% |
 | PL — Playground | Nao iniciado | 0% |
-| TS — Testes | Nao iniciado | 0% |
+| TS — Testes | **Concluido** | 100% |
 | FV — Form Validation | Nao iniciado | 0% |
 | NC — Novos Componentes | Nao iniciado | 0% |
-| VR — Versionamento | Nao iniciado | 0% |
+| VR — Versionamento | **Concluido** | 100% |
 | A11Y — Acessibilidade | Nao iniciado | 0% |
 | TI — Tipografia & Icones | Nao iniciado | 0% |
 | TH — Temas por App | Nao iniciado | 0% |

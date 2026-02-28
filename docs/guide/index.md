@@ -23,3 +23,6 @@ Estrutura de pastas, vite.config.ts e tsconfig.json.
 
 ### [Migracao](./migration)
 Como migrar apps existentes para usar @trx/ui-common.
+
+### [Contribuindo](./contributing)
+Convencoes de commit, politica de breaking changes, deprecation e processo de release.
