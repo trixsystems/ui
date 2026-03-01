@@ -601,13 +601,7 @@ const ws = /* @__PURE__ */ g({
 }, Ia = { class: "trx-layout__nav" }, Va = { key: 0 }, Ba = ["onClick", "title"], Pa = { key: 0 }, Aa = {
   key: 0,
   class: "trx-layout__section-header"
-}, Ma = ["onClick", "title"], La = { key: 0 }, za = { class: "trx-layout__sidebar-footer" }, Da = {
-  key: 0,
-  href: "https://trixsystems.io",
-  target: "_blank",
-  rel: "noopener noreferrer",
-  class: "trx-layout__footer-link"
-}, Ea = { class: "trx-layout__topbar" }, Ra = { class: "trx-layout__topbar-left" }, Na = { class: "trx-layout__topbar-right" }, qa = { class: "trx-layout__controls" }, Fa = {
+}, Ma = ["onClick", "title"], La = { key: 0 }, za = { class: "trx-layout__sidebar-footer" }, Da = ["href"], Ea = { class: "trx-layout__topbar" }, Ra = { class: "trx-layout__topbar-left" }, Na = { class: "trx-layout__topbar-right" }, qa = { class: "trx-layout__controls" }, Fa = {
   key: 1,
   class: "trx-layout__divider"
 }, Oa = { class: "trx-layout__user" }, ja = { class: "trx-layout__user-name" }, Ha = {
@@ -627,7 +621,9 @@ const ws = /* @__PURE__ */ g({
     statusLabel: {},
     statusType: { default: "offline" },
     showStatus: { type: Boolean, default: !1 },
-    onLogout: {}
+    onLogout: {},
+    footerText: { default: "TRIX Systems" },
+    footerUrl: { default: "https://trixsystems.io" }
   },
   emits: ["logout", "navigate"],
   setup(t, { emit: a }) {
@@ -732,7 +728,13 @@ const ws = /* @__PURE__ */ g({
               class: w(["pi", c.value ? "pi-angle-right" : "pi-angle-left"])
             }, null, 2)
           ]),
-          c.value ? h("", !0) : (s(), o("a", Da, " TRIX Systems "))
+          !c.value && t.footerText ? (s(), o("a", {
+            key: 0,
+            href: t.footerUrl,
+            target: "_blank",
+            rel: "noopener noreferrer",
+            class: "trx-layout__footer-link"
+          }, v(t.footerText), 9, Da)) : h("", !0)
         ])
       ], 2),
       e("div", {
@@ -793,7 +795,7 @@ const ws = /* @__PURE__ */ g({
       ], 2)
     ], 2));
   }
-}), aT = /* @__PURE__ */ A(Ua, [["__scopeId", "data-v-72b9d92e"]]), Wa = { class: "trx-not-found" }, Ga = { class: "trx-not-found__content" }, Ka = { class: "trx-not-found__code" }, Ya = { class: "trx-not-found__title" }, Ja = { class: "trx-not-found__message" }, Xa = /* @__PURE__ */ g({
+}), aT = /* @__PURE__ */ A(Ua, [["__scopeId", "data-v-ef7c571b"]]), Wa = { class: "trx-not-found" }, Ga = { class: "trx-not-found__content" }, Ka = { class: "trx-not-found__code" }, Ya = { class: "trx-not-found__title" }, Ja = { class: "trx-not-found__message" }, Xa = /* @__PURE__ */ g({
   __name: "TrxNotFound",
   props: {
     code: { default: "404" },

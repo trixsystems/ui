@@ -29,11 +29,15 @@ const props = withDefaults(defineProps<{
   statusType?: 'online' | 'offline' | 'busy' | 'paused'
   showStatus?: boolean
   onLogout?: () => void | Promise<void>
+  footerText?: string
+  footerUrl?: string
 }>(), {
   brandPrefix: 'TRX',
   appIcon: 'pi pi-box',
   showStatus: false,
-  statusType: 'offline'
+  statusType: 'offline',
+  footerText: 'TRIX Systems',
+  footerUrl: 'https://trixsystems.io'
 })
 
 const emit = defineEmits<{
@@ -171,13 +175,13 @@ async function handleLogout() {
           <i :class="['pi', sidebarCollapsed ? 'pi-angle-right' : 'pi-angle-left']"></i>
         </button>
         <a
-          href="https://trixsystems.io"
+          :href="footerUrl"
           target="_blank"
           rel="noopener noreferrer"
           class="trx-layout__footer-link"
-          v-if="!sidebarCollapsed"
+          v-if="!sidebarCollapsed && footerText"
         >
-          TRIX Systems
+          {{ footerText }}
         </a>
       </div>
     </aside>

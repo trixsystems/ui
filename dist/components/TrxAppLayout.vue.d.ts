@@ -21,6 +21,8 @@ type __VLS_Props = {
     statusType?: 'online' | 'offline' | 'busy' | 'paused';
     showStatus?: boolean;
     onLogout?: () => void | Promise<void>;
+    footerText?: string;
+    footerUrl?: string;
 };
 declare function __VLS_template(): {
     attrs: Partial<{}>;
@@ -43,6 +45,8 @@ declare const __VLS_component: import('vue').DefineComponent<__VLS_Props, {}, {}
     appIcon: string;
     statusType: "online" | "offline" | "busy" | "paused";
     showStatus: boolean;
+    footerText: string;
+    footerUrl: string;
 }, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, HTMLDivElement>;
 declare const _default: __VLS_WithTemplateSlots<typeof __VLS_component, __VLS_TemplateResult["slots"]>;
 export default _default;
