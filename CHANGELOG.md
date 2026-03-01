@@ -4,6 +4,16 @@ Todas as mudancas notaveis neste projeto.
 Formato: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) | [Semantic Versioning](https://semver.org/lang/pt-BR/)
 
 
+## [1.2.0](https://github.com/trixsystems/ui/compare/v1.1.0...v1.2.0) (2026-03-01)
+
+### ✨ Features
+
+* add compiled dist for github package install ([098b364](https://github.com/trixsystems/ui/commit/098b364898d970d4b5c815dbc1bcddac9fb1f9ab))
+
+### 📝 Documentation
+
+* update readme, claude.md and docs homepage for v1.1.0 ([6e207ec](https://github.com/trixsystems/ui/commit/6e207eca5f9694c5b030c1895e20687d6f03f00d))
+
 ## 1.1.0 (2026-03-01)
 
 ### ✨ Features

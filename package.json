@@ -1,6 +1,6 @@
 {
   "name": "@trx/ui-common",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "TRX Systems - Shared UI Components and Utilities",
   "type": "module",
   "main": "./dist/index.js",
