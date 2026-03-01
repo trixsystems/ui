@@ -178,6 +178,92 @@ export default defineConfig({
             { text: 'TrxAvatar / TrxBadge / TrxTag / TrxChip / TrxSkeleton...', link: '/components/trx-misc' },
           ],
         },
+        {
+          text: 'Telecom',
+          collapsed: true,
+          items: [
+            { text: 'TrxCallCard', link: '/components/trx-call-card' },
+            { text: 'TrxCallTimer', link: '/components/trx-call-timer' },
+            { text: 'TrxCallQueue', link: '/components/trx-call-queue' },
+            { text: 'TrxPhoneDialer', link: '/components/trx-phone-dialer' },
+            { text: 'TrxSoftphone', link: '/components/trx-softphone' },
+            { text: 'TrxPhoneInput', link: '/components/trx-phone-input' },
+            { text: 'TrxWaveform', link: '/components/trx-waveform' },
+            { text: 'TrxTranscription', link: '/components/trx-transcription' },
+          ],
+        },
+        {
+          text: 'Dashboard',
+          collapsed: true,
+          items: [
+            { text: 'TrxDashboardGrid', link: '/components/trx-dashboard-grid' },
+            { text: 'TrxMetricCard', link: '/components/trx-metric-card' },
+            { text: 'TrxSparkline', link: '/components/trx-sparkline' },
+            { text: 'TrxGaugeChart', link: '/components/trx-gauge-chart' },
+            { text: 'TrxHeatmap', link: '/components/trx-heatmap' },
+          ],
+        },
+        {
+          text: 'Tabelas Avançadas',
+          collapsed: true,
+          items: [
+            { text: 'TrxTableToolbar', link: '/components/trx-table-toolbar' },
+            { text: 'TrxBulkActions', link: '/components/trx-bulk-actions' },
+            { text: 'TrxExportButton', link: '/components/trx-export-button' },
+            { text: 'TrxColumnConfig', link: '/components/trx-column-config' },
+          ],
+        },
+        {
+          text: 'Formulários Avançados',
+          collapsed: true,
+          items: [
+            { text: 'TrxDateRangePicker', link: '/components/trx-date-range-picker' },
+            { text: 'TrxDurationInput', link: '/components/trx-duration-input' },
+            { text: 'TrxTimePicker', link: '/components/trx-time-picker' },
+            { text: 'TrxFileDropzone', link: '/components/trx-file-dropzone' },
+            { text: 'TrxAddressForm', link: '/components/trx-address-form' },
+          ],
+        },
+        {
+          text: 'Navegação Avançada',
+          collapsed: true,
+          items: [
+            { text: 'TrxPageLayout', link: '/components/trx-page-layout' },
+            { text: 'TrxTabsRouter', link: '/components/trx-tabs-router' },
+            { text: 'TrxMobileNav', link: '/components/trx-mobile-nav' },
+          ],
+        },
+        {
+          text: 'Usuário & Permissões',
+          collapsed: true,
+          items: [
+            { text: 'TrxUserMenu', link: '/components/trx-user-menu' },
+            { text: 'TrxProfileCard', link: '/components/trx-profile-card' },
+            { text: 'TrxRoleBadge', link: '/components/trx-role-badge' },
+            { text: 'TrxPermissionGate', link: '/components/trx-permission-gate' },
+          ],
+        },
+        {
+          text: 'Feedback Avançado',
+          collapsed: true,
+          items: [
+            { text: 'TrxNotificationBell', link: '/components/trx-notification-bell' },
+            { text: 'TrxConnectionStatus', link: '/components/trx-connection-status' },
+            { text: 'TrxConfirmButton', link: '/components/trx-confirm-button' },
+            { text: 'TrxSaveIndicator', link: '/components/trx-save-indicator' },
+          ],
+        },
+        {
+          text: 'Omnichannel',
+          collapsed: true,
+          items: [
+            { text: 'TrxChatBubble', link: '/components/trx-chat-bubble' },
+            { text: 'TrxChatWindow', link: '/components/trx-chat-window' },
+            { text: 'TrxChannelBadge', link: '/components/trx-channel-badge' },
+            { text: 'TrxContactCard', link: '/components/trx-contact-card' },
+            { text: 'TrxTicketCard', link: '/components/trx-ticket-card' },
+          ],
+        },
       ],
 
       '/tokens/': [
