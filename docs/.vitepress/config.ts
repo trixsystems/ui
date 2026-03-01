@@ -104,6 +104,70 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Botões',
+          items: [
+            { text: 'TrxButton / TrxSplitButton / TrxSpeedDial', link: '/components/trx-button' },
+          ],
+        },
+        {
+          text: 'Formulários',
+          collapsed: false,
+          items: [
+            { text: 'TrxFormField', link: '/components/trx-form-field' },
+            { text: 'TrxInputText / TrxTextarea / TrxInputMask / TrxInputOtp', link: '/components/trx-input-text' },
+            { text: 'TrxInputNumber', link: '/components/trx-input-number' },
+            { text: 'TrxPassword', link: '/components/trx-password' },
+            { text: 'TrxSelect / TrxMultiSelect / TrxListbox', link: '/components/trx-select' },
+            { text: 'TrxDatePicker', link: '/components/trx-date-picker' },
+            { text: 'TrxAutoComplete', link: '/components/trx-auto-complete' },
+            { text: 'TrxCheckbox / TrxRadioButton / TrxToggleSwitch', link: '/components/trx-checkbox' },
+            { text: 'TrxInputChips / TrxSlider / TrxRating / TrxKnob...', link: '/components/trx-input-extras' },
+            { text: 'TrxFileUpload', link: '/components/trx-file-upload' },
+          ],
+        },
+        {
+          text: 'Painéis',
+          items: [
+            { text: 'TrxPanel / TrxFieldset / TrxDivider / TrxSplitter', link: '/components/trx-panel' },
+            { text: 'TrxAccordion', link: '/components/trx-accordion' },
+            { text: 'TrxTabs', link: '/components/trx-tabs' },
+            { text: 'TrxStepper', link: '/components/trx-stepper' },
+          ],
+        },
+        {
+          text: 'Overlays',
+          items: [
+            { text: 'TrxDialog / TrxConfirmDialog', link: '/components/trx-dialog' },
+            { text: 'TrxDrawer / TrxPopover', link: '/components/trx-drawer' },
+          ],
+        },
+        {
+          text: 'Navegação',
+          items: [
+            { text: 'TrxMenu / TrxMenubar / TrxBreadcrumb...', link: '/components/trx-menu' },
+          ],
+        },
+        {
+          text: 'Mensagens',
+          items: [
+            { text: 'TrxToast / TrxMessage / TrxInlineMessage', link: '/components/trx-toast' },
+          ],
+        },
+        {
+          text: 'Dados & Listas',
+          items: [
+            { text: 'TrxPaginator', link: '/components/trx-paginator' },
+            { text: 'TrxDataView / TrxTimeline / TrxTree...', link: '/components/trx-data-view' },
+          ],
+        },
+        {
+          text: 'Mídia',
+          items: [
+            { text: 'TrxImage / TrxCarousel / TrxGalleria / TrxImageCompare', link: '/components/trx-media' },
+            { text: 'TrxChart', link: '/components/trx-chart' },
+          ],
+        },
+        {
           text: 'Utilitários',
           items: [
             { text: 'TrxText', link: '/components/trx-text' },
@@ -111,12 +175,7 @@ export default defineConfig({
             { text: 'TrxCopyButton', link: '/components/trx-copy-button' },
             { text: 'TrxAudioPlayer', link: '/components/trx-audio-player' },
             { text: 'TrxThemeToggle', link: '/components/trx-theme-toggle' },
-          ],
-        },
-        {
-          text: 'Formulários',
-          items: [
-            { text: 'TrxFormField', link: '/components/trx-form-field' },
+            { text: 'TrxAvatar / TrxBadge / TrxTag / TrxChip / TrxSkeleton...', link: '/components/trx-misc' },
           ],
         },
       ],
