@@ -1,5 +1,6 @@
 type __VLS_Props = {
     appName: string;
+    brandPrefix?: string;
     appTagline?: string;
     loading?: boolean;
     error?: string | null;
@@ -34,6 +35,7 @@ declare const __VLS_component: import('vue').DefineComponent<__VLS_Props, {}, {}
     onForgotPassword?: (() => any) | undefined;
 }>, {
     loading: boolean;
+    brandPrefix: string;
     appTagline: string;
     showRememberMe: boolean;
     showForgotPassword: boolean;

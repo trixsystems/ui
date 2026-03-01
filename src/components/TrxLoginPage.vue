@@ -8,6 +8,7 @@ import Message from 'primevue/message'
 
 withDefaults(defineProps<{
   appName: string
+  brandPrefix?: string
   appTagline?: string
   loading?: boolean
   error?: string | null
@@ -16,6 +17,7 @@ withDefaults(defineProps<{
   showFontControls?: boolean
   showLanguageToggle?: boolean
 }>(), {
+  brandPrefix: 'TRX',
   appTagline: '',
   loading: false,
   showRememberMe: true,
@@ -195,7 +197,7 @@ onMounted(() => {
               </slot>
             </div>
             <h1 class="trx-login-page__brand">
-              <span class="trx-login-page__brand-trx">TRX</span> {{ appName }}
+              <span v-if="brandPrefix" class="trx-login-page__brand-trx">{{ brandPrefix }}</span>{{ brandPrefix ? ' ' : '' }}{{ appName }}
             </h1>
             <p v-if="appTagline" class="trx-login-page__tagline">{{ appTagline }}</p>
             <h2 class="trx-login-page__title">Acesse sua conta</h2>
