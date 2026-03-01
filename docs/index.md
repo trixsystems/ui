@@ -18,8 +18,8 @@ hero:
 
 features:
   - icon: 🧩
-    title: Componentes Base
-    details: 21 componentes Vue 3 custom (TrxAppLayout, TrxCard, TrxDataTable, TrxAlert, TrxSearchBar e mais) prontos para produção.
+    title: 140+ Componentes Custom
+    details: Telecom, omnichannel, charts, CRM, layout e sistema — TrxDTMFPad, TrxCallMonitor, TrxEmailComposer, TrxKanbanBoard e muito mais.
   - icon: 🎨
     title: PrimeVue Wrappers
     details: ~110 wrappers Trx* para todos os componentes PrimeVue 4.5, com defaults PT-BR e pass-through de attrs/slots.

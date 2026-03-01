@@ -20,9 +20,11 @@ ui/
 │   │   └── useDialog.ts      # Dynamic dialog
 │   ├── utils/                # Utility functions
 │   │   └── index.ts
+│   ├── tokens/               # Design tokens
+│   │   └── index.ts          # Tokens tipados (as const) + Style Dictionary
 │   ├── components/           # Vue components
 │   │   ├── index.ts          # Barrel (base + all PrimeVue wrappers)
-│   │   ├── Trx*.vue          # 14 base components (custom TRX)
+│   │   ├── Trx*.vue          # 140+ componentes custom TRX
 │   │   ├── form/index.ts     # 32 components + 4 aliases
 │   │   ├── button/index.ts   # 4 components
 │   │   ├── data/index.ts     # 12 components
@@ -38,13 +40,12 @@ ui/
 │       ├── utilities.css     # ~1.096 classes utilitarias (substitui PrimeFlex)
 │       ├── themes.css        # Unified theme (Light + Dracula Dark)
 │       └── index.css         # Entry point (imports utilities + themes)
-├── docs/                     # Documentacao Jekyll (ui.trixsystems.io)
-│   ├── _config.yml           # Jekyll config (url, baseurl, nav)
+├── docs/                     # Documentacao VitePress (ui.trixsystems.io)
+│   ├── .vitepress/config.ts  # VitePress config (sidebar, nav)
 │   ├── index.md              # Home
 │   ├── roadmap.md            # Roadmap do design system
-│   ├── jira-tasks.md         # Tasks para Jira (35 tasks, 8 epics)
 │   ├── guide/                # Guias de uso
-│   ├── components/           # Docs de componentes
+│   ├── components/           # Docs de componentes (150+ paginas)
 │   ├── composables/          # Docs de composables
 │   ├── theme/                # Docs do tema
 │   └── utils/                # Docs de utilitarios
@@ -118,6 +119,15 @@ import {
   TrxMenu, TrxToast, TrxAccordion, TrxTabs,
   TrxDatePicker, TrxPassword, TrxFileUpload
 } from '@trx/ui-common'
+
+// Custom TRX Components (140+)
+import {
+  TrxDTMFPad, TrxCallMonitor, TrxQueueMetrics,    // Telecom
+  TrxChatWindow, TrxEmailComposer, TrxBotBubble,  // Omnichannel
+  TrxRadarChart, TrxPieChart, TrxHeatmap,          // Charts
+  TrxSplitPane, TrxFloatingActionButton,           // Layout
+  TrxJsonViewer, TrxLogViewer, TrxPivotTable       // Data & Dev
+} from '@trx/ui-common'
 ```
 
 ## PrimeVue Wrappers
@@ -186,7 +196,7 @@ npm run release:major # Release major (1.0.0 → 2.0.0)
 
 - Conventional Commits enforçado via commitlint + husky (hook em `.husky/commit-msg`)
 - release-it configurado em `.release-it.json` — gera CHANGELOG, tag Git e GitHub Release
-- Apps devem fixar versao via tag: `"github:trixsystems/ui#v1.0.0"`
+- Apps devem fixar versao via tag: `"github:trixsystems/ui#v1.1.0"`
 - Licenca: Apache-2.0 (arquivo `LICENSE` na raiz)
 
 ## Apps que usam
@@ -202,28 +212,22 @@ npm run release:major # Release major (1.0.0 → 2.0.0)
 
 > **Nota:** Call e Stack sao produtos independentes. Call tem autenticacao standalone; Stack usa trx-auth centralizado.
 
-## Roadmap / Gaps Conhecidos
+## Status dos Epics (todos concluidos em 2026-02-28)
 
-Analise de maturidade como design system realizada em 2026-02-28.
-Ver detalhes em `memory/design-system-gaps.md` e `docs/roadmap.md`.
+| Epic | Titulo | Status |
+|------|--------|--------|
+| DS | Design Tokens estruturados (Style Dictionary) | ✅ Concluido |
+| PL | Docs VitePress (substitui Jekyll) | ✅ Concluido |
+| TS | Testes Vitest — 156 testes, 9 arquivos | ✅ Concluido |
+| FV | Formularios com Zod (useForm, TrxFormField) | ✅ Concluido |
+| NC | 140+ componentes custom TRX | ✅ Concluido |
+| VR | release-it, commitlint, husky, GitHub Actions | ✅ Concluido |
+| A11Y | useFocusTrap, useAriaLive, skip-to-content | ✅ Concluido |
+| TI | TrxText (13 variants), Inter font | ✅ Concluido |
+| TH | useAppTheme, resetAppTheme | ✅ Concluido |
 
-### Epics planejados (ver docs/jira-tasks.md para tasks completas)
-
-| Epic | Titulo | Prioridade |
-|------|--------|------------|
-| DS | Design Tokens estruturados (Style Dictionary) | CRITICA |
-| PL | Playground interativo (Histoire + VitePress) | CRITICA |
-| TS | Testes com Vitest (composables + componentes) | CRITICA |
-| FV | Formularios com validacao (Vee-Validate + Zod) | ALTA |
-| NC | Novos componentes base (TrxAlert, TrxKPICard, TrxUserAvatar...) | ALTA |
-| VR | Versionamento semantico e CHANGELOG | ALTA |
-| A11Y | Acessibilidade (ARIA, useFocusTrap, skip-to-content) | MEDIA |
-| TI | Sistema tipografico formal | MEDIA |
-| IC | Icones customizados de telefonia | BAIXA |
-| TH | Temas por app com CSS @layer | BAIXA |
-
-### Convencoes a adotar
+### Convencoes
 
 - Commits: Conventional Commits (`feat:`, `fix:`, `docs:`, `refactor:`, `test:`)
-- Versionamento: semver — incrementar ao fazer release para apps
+- Versionamento: semver via release-it — `npm run release:minor` para novas features
 - Breaking changes: sempre com nota de migracao em CHANGELOG.md

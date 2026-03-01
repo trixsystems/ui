@@ -69,7 +69,7 @@ Fixe sempre uma tag de versao — assim o app nao quebra com mudancas no `main`:
 ```json
 {
   "dependencies": {
-    "@trx/ui-common": "github:trixsystems/ui#v1.0.0"
+    "@trx/ui-common": "github:trixsystems/ui#v1.1.0"
   }
 }
 ```
@@ -92,9 +92,11 @@ ui/
 │   │   └── useDialog.ts            # Dynamic dialog (re-export PrimeVue)
 │   ├── utils/
 │   │   └── index.ts                # Funcoes utilitarias
+│   ├── tokens/
+│   │   └── index.ts                # Design tokens (as const + Style Dictionary)
 │   ├── components/
 │   │   ├── index.ts                # Barrel (base + todos os wrappers PrimeVue)
-│   │   ├── Trx*.vue                # 14 componentes base (custom TRX)
+│   │   ├── Trx*.vue                # 140+ componentes custom TRX
 │   │   ├── form/index.ts           # 32 componentes + 4 aliases legacy
 │   │   ├── button/index.ts         # 4 componentes
 │   │   ├── data/index.ts           # 12 componentes + re-export PvDataTable
@@ -110,6 +112,7 @@ ui/
 │       ├── utilities.css           # Classes utilitarias (substitui PrimeFlex)
 │       ├── themes.css              # Sistema de temas Light/Dark
 │       └── index.css               # Entry point CSS
+├── docs/                           # Documentacao VitePress (ui.trixsystems.io)
 ├── dist/                           # Build output
 ├── package.json
 ├── vite.config.ts
@@ -230,6 +233,8 @@ import {
 ## PrimeVue Wrappers (~110 componentes)
 
 Todos os componentes PrimeVue 4.5 possuem wrappers `Trx*` organizados por categoria. Os wrappers fazem pass-through completo de attrs e slots, garantindo compatibilidade total com a API do PrimeVue.
+
+> O pacote conta com **140+ componentes custom TRX** (telecom, omnichannel, charts, layout, data, sistema) mais os ~110 wrappers PrimeVue, totalizando ~250 componentes disponíveis.
 
 ### Categorias
 
@@ -738,24 +743,19 @@ Prefixos disponiveis: `sm:` (640px+), `md:` (768px+), `lg:` (1024px+), `xl:` (12
 
 ## Componentes Disponiveis
 
-### Componentes Base (custom TRX)
+### Componentes Base (custom TRX — 140+)
 
-| Componente | Descricao |
-|------------|-----------|
-| `TrxPageHeader` | Cabecalho de pagina com titulo, subtitulo e acoes |
-| `TrxCard` | Card com titulo e icone |
-| `TrxStatCard` | Card de estatistica com valor e icone |
-| `TrxDataTable` | Tabela de dados com filtro global |
-| `TrxStatus` | Badge de status (online/offline) |
-| `TrxStatusBadge` | Badge generico de status |
-| `TrxEmptyState` | Estado vazio com icone e mensagem |
-| `TrxLoadingOverlay` | Overlay de carregamento |
-| `TrxAppLayout` | Layout principal com sidebar |
-| `TrxLoginPage` | Pagina de login completa |
-| `TrxLoginForm` | Formulario de login |
-| `TrxNotFound` | Pagina 404 |
-| `TrxLogo` | Logo TRX |
-| `TrxThemeToggle` | Toggle de tema |
+| Categoria | Exemplos |
+|-----------|----------|
+| Layout | `TrxAppLayout`, `TrxPageLayout`, `TrxSplitPane`, `TrxResizableSidebar`, `TrxSidebarNav`, `TrxMobileNav` |
+| Paginas | `TrxLoginPage`, `TrxNotFound`, `TrxMaintenancePage`, `TrxErrorPage`, `TrxOnboarding` |
+| Cards & Data | `TrxCard`, `TrxStatCard`, `TrxKPICard`, `TrxMetricCard`, `TrxDataTable`, `TrxPivotTable`, `TrxKanbanBoard` |
+| Telecom | `TrxPhoneDialer`, `TrxSoftphone`, `TrxCallCard`, `TrxDTMFPad`, `TrxCallMonitor`, `TrxConferencePanel`, `TrxQueueMetrics`, `TrxAgentRanking` |
+| Omnichannel | `TrxChatWindow`, `TrxChatBubble`, `TrxTypingIndicator`, `TrxQuickReplies`, `TrxCannedResponses`, `TrxEmailComposer`, `TrxBotBubble` |
+| Charts | `TrxLineChart`, `TrxBarChart`, `TrxDonutChart`, `TrxPieChart`, `TrxRadarChart`, `TrxGaugeChart`, `TrxHeatmap`, `TrxSparkline` |
+| CRM | `TrxContactCard`, `TrxLeadCard`, `TrxTicketCard`, `TrxCRMTimeline`, `TrxConversationList` |
+| UX | `TrxAlert`, `TrxBanner`, `TrxFloatingActionButton`, `TrxBackToTop`, `TrxContextMenu`, `TrxCommandPalette` |
+| Sistema | `TrxEnvironmentBanner`, `TrxLogViewer`, `TrxOfflineIndicator`, `TrxUpdatePrompt`, `TrxFeatureFlag`, `TrxPermissionGate` |
 
 ### PrimeVue Wrappers (~110 componentes)
 
@@ -823,7 +823,7 @@ npm run release:major   # major — breaking changes
 ```json
 {
   "dependencies": {
-    "@trx/ui-common": "github:trixsystems/ui#v1.0.1"
+    "@trx/ui-common": "github:trixsystems/ui#v1.1.0"
   }
 }
 ```
