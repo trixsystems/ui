@@ -15,8 +15,6 @@ export default defineConfig({
     'theme/**',
     'jira-tasks.md',
     'guide/index.md',
-    'components/trx-login-page.md',
-    'components/trx-not-found.md',
   ],
 
   head: [
@@ -65,6 +63,7 @@ export default defineConfig({
             { text: 'TrxAppLayout', link: '/components/trx-app-layout' },
             { text: 'TrxPageHeader', link: '/components/trx-page-header' },
             { text: 'TrxBanner', link: '/components/trx-banner' },
+            { text: 'TrxLogo', link: '/components/trx-logo' },
           ],
         },
         {
@@ -75,6 +74,7 @@ export default defineConfig({
             { text: 'TrxDataTableActions', link: '/components/trx-data-table-actions' },
             { text: 'TrxFilterBar', link: '/components/trx-filter-bar' },
             { text: 'TrxKPICard', link: '/components/trx-kpi-card' },
+            { text: 'TrxStatCard', link: '/components/trx-stat-card' },
           ],
         },
         {
@@ -83,7 +83,9 @@ export default defineConfig({
             { text: 'TrxAlert', link: '/components/trx-alert' },
             { text: 'TrxEmptyState', link: '/components/trx-empty-state' },
             { text: 'TrxErrorPage', link: '/components/trx-error-page' },
+            { text: 'TrxStatus', link: '/components/trx-status' },
             { text: 'TrxStatusBadge', link: '/components/trx-status-badge' },
+            { text: 'TrxLoadingOverlay', link: '/components/trx-loading-overlay' },
           ],
         },
         {
@@ -94,12 +96,21 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Autenticação',
+          items: [
+            { text: 'TrxLoginPage', link: '/components/trx-login-page' },
+            { text: 'TrxLoginForm', link: '/components/trx-login-form' },
+            { text: 'TrxNotFound', link: '/components/trx-not-found' },
+          ],
+        },
+        {
           text: 'Utilitários',
           items: [
             { text: 'TrxText', link: '/components/trx-text' },
             { text: 'TrxSearchBar', link: '/components/trx-search-bar' },
             { text: 'TrxCopyButton', link: '/components/trx-copy-button' },
             { text: 'TrxAudioPlayer', link: '/components/trx-audio-player' },
+            { text: 'TrxThemeToggle', link: '/components/trx-theme-toggle' },
           ],
         },
         {
