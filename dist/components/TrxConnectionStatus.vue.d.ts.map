@@ -1,0 +1,1 @@
+{"version":3,"file":"TrxConnectionStatus.vue.d.ts","sourceRoot":"","sources":["../../src/components/TrxConnectionStatus.vue"],"names":[],"mappings":"AAmEA,KAAK,aAAa,GAAG,WAAW,GAAG,cAAc,GAAG,YAAY,GAAG,OAAO,CAAA;AAE1E,KAAK,WAAW,GAAG;IACjB,MAAM,EAAE,aAAa,CAAA;IACrB,KAAK,CAAC,EAAE,MAAM,CAAA;IACd,SAAS,CAAC,EAAE,OAAO,CAAA;CACpB,CAAC;;eADY,OAAO;;AAmFrB,wBAQG"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"useTheme.d.ts","sourceRoot":"","sources":["../../src/composables/useTheme.ts"],"names":[],"mappings":"AAGA,MAAM,MAAM,QAAQ,GAAG,OAAO,GAAG,MAAM,CAAA;AACvC,MAAM,MAAM,WAAW,GAAG,YAAY,GAAG,aAAa,GAAG,YAAY,GAAG,aAAa,CAAA;AACrF,MAAM,MAAM,SAAS,GAAG,OAAO,GAAG,IAAI,CAAA;AAuBtC;;GAEG;AACH,wBAAgB,QAAQ;;;;;;;yBAyEM,QAAQ;2BAON,WAAW;;;;2BAmCX,SAAS;;EAiCxC"}
