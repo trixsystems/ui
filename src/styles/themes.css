@@ -4,9 +4,24 @@
    Compatible with PrimeVue 4.x
    ============================================ */
 
+/* ---- Inter Font (via Google Fonts CDN) ---- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Fallback @font-face para ambientes sem acesso à internet */
+/* Descomente e aponte para os arquivos locais se necessário:
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('./fonts/inter-variable.woff2') format('woff2');
+}
+*/
+
 /* Base font size control */
 :root {
   --base-font-size: 14px;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 html {

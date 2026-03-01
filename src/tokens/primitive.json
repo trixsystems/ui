@@ -1,0 +1,98 @@
+{
+  "color": {
+    "emerald": {
+      "300": { "value": "#a7f3d0", "type": "color" },
+      "400": { "value": "#6ee7b7", "type": "color" },
+      "500": { "value": "#10b981", "type": "color" },
+      "600": { "value": "#5ddba8", "type": "color" }
+    },
+    "slate": {
+      "50":  { "value": "#f8fafc", "type": "color" },
+      "100": { "value": "#f1f5f9", "type": "color" },
+      "200": { "value": "#e2e8f0", "type": "color" },
+      "400": { "value": "#94a3b8", "type": "color" },
+      "500": { "value": "#64748b", "type": "color" },
+      "800": { "value": "#1e293b", "type": "color" },
+      "900": { "value": "#0f172a", "type": "color" }
+    },
+    "dracula": {
+      "bg":         { "value": "#282a36", "type": "color" },
+      "bgDark":     { "value": "#1e1f29", "type": "color" },
+      "current":    { "value": "#44475a", "type": "color" },
+      "card":       { "value": "#2d2f3d", "type": "color" },
+      "elevated":   { "value": "#363848", "type": "color" },
+      "foreground": { "value": "#f8f8f2", "type": "color" },
+      "comment":    { "value": "#8892b3", "type": "color" },
+      "text2":      { "value": "#cdd6f4", "type": "color" },
+      "purple":     { "value": "#bd93f9", "type": "color" },
+      "purpleLight":{ "value": "#caa9fc", "type": "color" },
+      "green":      { "value": "#50fa7b", "type": "color" },
+      "orange":     { "value": "#ffb86c", "type": "color" },
+      "red":        { "value": "#ff5555", "type": "color" },
+      "cyan":       { "value": "#8be9fd", "type": "color" },
+      "pink":       { "value": "#ff79c6", "type": "color" },
+      "yellow":     { "value": "#f1fa8c", "type": "color" }
+    },
+    "status": {
+      "warning":  { "value": "#f59e0b", "type": "color" },
+      "danger":   { "value": "#ef4444", "type": "color" },
+      "info":     { "value": "#06b6d4", "type": "color" },
+      "purple":   { "value": "#8b5cf6", "type": "color" }
+    }
+  },
+  "spacing": {
+    "0": { "value": "0",       "type": "dimension" },
+    "1": { "value": "0.25rem", "type": "dimension" },
+    "2": { "value": "0.5rem",  "type": "dimension" },
+    "3": { "value": "1rem",    "type": "dimension" },
+    "4": { "value": "1.5rem",  "type": "dimension" },
+    "5": { "value": "2rem",    "type": "dimension" },
+    "6": { "value": "3rem",    "type": "dimension" },
+    "7": { "value": "4rem",    "type": "dimension" },
+    "8": { "value": "5rem",    "type": "dimension" }
+  },
+  "fontSize": {
+    "xs":   { "value": "0.75rem",  "type": "dimension" },
+    "sm":   { "value": "0.875rem", "type": "dimension" },
+    "base": { "value": "1rem",     "type": "dimension" },
+    "lg":   { "value": "1.125rem", "type": "dimension" },
+    "xl":   { "value": "1.25rem",  "type": "dimension" },
+    "2xl":  { "value": "1.5rem",   "type": "dimension" },
+    "3xl":  { "value": "1.875rem", "type": "dimension" },
+    "4xl":  { "value": "2.25rem",  "type": "dimension" },
+    "5xl":  { "value": "3rem",     "type": "dimension" },
+    "6xl":  { "value": "3.75rem",  "type": "dimension" }
+  },
+  "borderRadius": {
+    "none": { "value": "0",      "type": "dimension" },
+    "sm":   { "value": "4px",    "type": "dimension" },
+    "base": { "value": "6px",    "type": "dimension" },
+    "md":   { "value": "8px",    "type": "dimension" },
+    "lg":   { "value": "12px",   "type": "dimension" },
+    "xl":   { "value": "16px",   "type": "dimension" },
+    "2xl":  { "value": "24px",   "type": "dimension" },
+    "3xl":  { "value": "32px",   "type": "dimension" },
+    "full": { "value": "9999px", "type": "dimension" }
+  },
+  "duration": {
+    "fast":   { "value": "100ms", "type": "duration" },
+    "base":   { "value": "200ms", "type": "duration" },
+    "slow":   { "value": "300ms", "type": "duration" },
+    "slower": { "value": "500ms", "type": "duration" }
+  },
+  "breakpoint": {
+    "sm":  { "value": "640px",  "type": "dimension" },
+    "md":  { "value": "768px",  "type": "dimension" },
+    "lg":  { "value": "1024px", "type": "dimension" },
+    "xl":  { "value": "1280px", "type": "dimension" },
+    "2xl": { "value": "1536px", "type": "dimension" }
+  },
+  "zIndex": {
+    "dropdown": { "value": "1000", "type": "other" },
+    "sticky":   { "value": "1020", "type": "other" },
+    "fixed":    { "value": "1030", "type": "other" },
+    "modal":    { "value": "1040", "type": "other" },
+    "popover":  { "value": "1050", "type": "other" },
+    "toast":    { "value": "1060", "type": "other" }
+  }
+}

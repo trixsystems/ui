@@ -18,6 +18,7 @@ export default defineConfig({
         'utils/index': resolve(__dirname, 'src/utils/index.ts'),
         'composables/index': resolve(__dirname, 'src/composables/index.ts'),
         'components/index': resolve(__dirname, 'src/components/index.ts'),
+        'tokens/index': resolve(__dirname, 'src/tokens/index.ts'),
       },
       formats: ['es'],
     },
@@ -31,6 +32,7 @@ export default defineConfig({
         /^@primevue\/.*/,
         'axios',
         'dayjs',
+        'zod',
       ],
       output: {
         globals: {

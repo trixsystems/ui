@@ -10,22 +10,55 @@ Versionamento segue [Semantic Versioning](https://semver.org/lang/pt-BR/).
 ## [Unreleased]
 
 ### Added
-- Suite de testes com Vitest 3 + @vue/test-utils + axe-core (Epic TS):
-  - 156 testes em 9 arquivos cobrindo composables, utils, componentes e acessibilidade
-  - Ambiente jsdom com globals, cobertura via v8
-  - Testes de acessibilidade com axe-core (violacoes critical/serious)
-  - `tsconfig.test.json` com regras relaxadas para arquivos de teste
-- Pipeline de release e versionamento (Epic VR):
-  - `release-it` com `@release-it/conventional-changelog` para CHANGELOG automatico
-  - `commitlint` + `husky` para validacao de commits (Conventional Commits enforced)
-  - GitHub Actions: `ci.yml` (typecheck + test + build em PRs) e `release.yml` (release manual via dispatch)
-  - Politica de breaking changes e guia de contribuicao em `docs/guide/contributing.md`
 
-### Planejado
-- Design Tokens estruturados com Style Dictionary (Epic DS)
-- Playground interativo com Histoire + VitePress (Epic PL)
-- Formularios com validacao (Vee-Validate + Zod) (Epic FV)
-- Novos componentes: TrxAlert, TrxUserAvatar, TrxKPICard, TrxSearchBar, TrxFilterBar (Epic NC)
+**Epic DS — Design Tokens**
+- `src/tokens/index.ts` — tokens tipados como `as const` (cores, espaçamento, tipografia, sombras, z-index, animações)
+- `src/tokens/primitive.json` — fonte JSON para Style Dictionary
+- `style-dictionary.config.mjs` — gera `dist/tokens/tokens.css` e `dist/tokens/primitive.js`
+- Export `@trx/ui-common/tokens` com sub-path `./tokens/css` para CSS gerado
+
+**Epic FV — Formulários com Validação**
+- `useForm` composable com Zod `safeParseAsync` (sem vee-validate no runtime)
+  - Estado: `values`, `errors`, `isDirty`, `isSubmitting`, `isValid`
+  - API: `handleSubmit`, `resetForm`, `setFieldError`, `validate`
+- `TrxFormField` — wrapper com label, mensagem de erro (`role="alert"`), hint e estado disabled
+
+**Epic NC — Novos Componentes** (7 componentes)
+- `TrxAlert` — alertas inline (info/success/warning/error) com dismiss opcional
+- `TrxUserAvatar` — avatar com iniciais automáticas, foto e status (online/offline/away/busy)
+- `TrxKPICard` — card de métrica com tendência e skeleton de loading
+- `TrxSearchBar` — modal de busca global com atalho Cmd+K
+- `TrxFilterBar` — chips de filtros ativos com remoção individual e limpar todos
+- `TrxDataTableActions` — ações inline/menu para linhas de tabela (auto-select por quantidade)
+- `TrxErrorPage` — páginas de erro completas (404/403/500/503)
+
+**Epic A11Y — Acessibilidade**
+- `useFocusTrap` — trap de foco para modais/drawers com `activate`/`deactivate`
+- `useAriaLive` — regiões aria-live singleton por politeness (`polite`/`assertive`)
+- `TrxAppLayout` — skip-to-content (`#trx-main-content`) e `tabindex="-1"` no main
+
+**Epic TI — Tipografia**
+- `TrxText` — componente polimórfico com 13 variantes (h1-h6, body, body-sm, body-lg, caption, label, overline, code)
+- `themes.css` — `@import` da fonte Inter via Google Fonts + `font-family` no `:root`
+
+**Epic TH — Temas por App**
+- `useAppTheme` — injeta `<style>` com CSS custom property overrides por app
+  - Suporte a `primaryColor`, `primaryColorDark`, `primaryColorGlow`, `cardRadius`, `customVars`
+  - `resetAppTheme()` para limpeza
+- `data-trx-app` attribute no `<html>` para identificação do app ativo
+
+**Epic PL — Playground & Docs (VitePress)**
+- VitePress substitui Jekyll: config com nav, sidebar por seção, busca local, editLink
+- Páginas de componentes: TrxAlert, TrxUserAvatar, TrxKPICard, TrxSearchBar, TrxFilterBar, TrxDataTableActions, TrxErrorPage, TrxText, TrxFormField
+- Páginas de tokens: cores, espaçamento, tipografia, sombras, animações, z-index
+- GitHub Actions `docs.yml` atualizado para VitePress (Node 20 + `npm run docs:build`)
+- Scripts: `npm run docs:dev`, `docs:build`, `docs:preview`, `tokens`
+
+**Suite de Testes (Epic TS)**
+- 156 testes em 9 arquivos (Vitest 3 + @vue/test-utils + axe-core)
+
+**Pipeline de Release (Epic VR)**
+- release-it + commitlint + husky + GitHub Actions CI/Release
 
 ---
 

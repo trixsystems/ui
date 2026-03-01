@@ -23,6 +23,34 @@ export { default as TrxLoginPage } from './TrxLoginPage.vue'
 // Types
 export type { MenuItem, MenuSection } from './TrxAppLayout.vue'
 
+// Feedback Components (Epic NC)
+export { default as TrxAlert } from './TrxAlert.vue'
+export type { TrxAlertType } from './TrxAlert.vue'
+
+// User Components (Epic NC)
+export { default as TrxUserAvatar } from './TrxUserAvatar.vue'
+export type { TrxAvatarStatus, TrxAvatarSize } from './TrxUserAvatar.vue'
+
+// Metrics Components (Epic NC)
+export { default as TrxKPICard } from './TrxKPICard.vue'
+
+// Search & Filter Components (Epic NC)
+export { default as TrxSearchBar } from './TrxSearchBar.vue'
+export { default as TrxFilterBar } from './TrxFilterBar.vue'
+export type { TrxFilter } from './TrxFilterBar.vue'
+
+// Table Action Components (Epic NC)
+export { default as TrxDataTableActions } from './TrxDataTableActions.vue'
+export type { TrxAction } from './TrxDataTableActions.vue'
+
+// Error Pages (Epic NC)
+export { default as TrxErrorPage } from './TrxErrorPage.vue'
+export type { TrxErrorCode } from './TrxErrorPage.vue'
+
+// Typography (Epic TI)
+export { default as TrxText } from './TrxText.vue'
+export type { TrxTextVariant } from './TrxText.vue'
+
 // PrimeVue Wrappers - Form
 export * from './form'
 

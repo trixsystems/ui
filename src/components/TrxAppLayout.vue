@@ -110,6 +110,9 @@ async function handleLogout() {
 
 <template>
   <div class="trx-layout" :class="{ dark: isDark }">
+    <!-- Skip to content (A11Y) -->
+    <a href="#trx-main-content" class="trx-layout__skip-link">Pular para o conteúdo</a>
+
     <!-- Sidebar -->
     <aside class="trx-layout__sidebar" :class="{ 'trx-layout__sidebar--collapsed': sidebarCollapsed }">
       <div class="trx-layout__sidebar-header">
@@ -235,7 +238,7 @@ async function handleLogout() {
       </header>
 
       <!-- Page Content -->
-      <main class="trx-layout__content">
+      <main id="trx-main-content" class="trx-layout__content" tabindex="-1">
         <slot />
       </main>
     </div>
@@ -243,6 +246,24 @@ async function handleLogout() {
 </template>
 
 <style scoped>
+/* Skip-to-content (A11Y) */
+.trx-layout__skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: var(--trx-accent-color);
+  color: var(--trx-bg-primary);
+  font-weight: 600;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.trx-layout__skip-link:focus {
+  top: 0;
+}
+
 .trx-layout {
   display: flex;
   min-height: 100vh;

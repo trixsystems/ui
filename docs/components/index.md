@@ -1,176 +1,55 @@
----
-layout: default
-title: Componentes
-nav_order: 3
-has_children: true
-permalink: /components/
----
-
 # Componentes
-{: .no_toc }
 
-Biblioteca de componentes Vue 3 reutilizaveis.
-{: .fs-6 .fw-300 }
+O `@trx/ui-common` fornece dois grupos de componentes:
 
----
+## Componentes Base TRX
 
-## Visao Geral
+21 componentes customizados com estilos próprios integrados ao sistema de tokens CSS.
 
-O @trx/ui-common fornece 14 componentes base custom e ~110 wrappers PrimeVue organizados por categoria.
-
-## Componentes Base (custom TRX)
-
-### Layout
-Componentes para estrutura de paginas.
-
-| Componente | Descricao |
+| Componente | Descrição |
 |:-----------|:----------|
-| [TrxAppLayout](./trx-app-layout) | Layout principal com sidebar e topbar |
-| [TrxPageHeader](./trx-page-header) | Cabecalho de pagina |
+| [TrxAppLayout](/components/trx-app-layout) | Layout completo com sidebar responsiva e header |
+| [TrxPageHeader](/components/trx-page-header) | Cabeçalho de página com título, subtítulo e ações |
+| [TrxCard](/components/trx-card) | Card base com suporte a header, content e footer |
+| [TrxDataTable](/components/trx-data-table) | Tabela com filtro global integrado |
+| [TrxEmptyState](/components/trx-empty-state) | Estado vazio com ícone, título e CTA |
+| [TrxStatusBadge](/components/trx-status-badge) | Badge de status colorido |
+| [TrxAlert](/components/trx-alert) | Alerta inline (info/success/warning/error) |
+| [TrxUserAvatar](/components/trx-user-avatar) | Avatar com iniciais e indicador de status |
+| [TrxKPICard](/components/trx-kpi-card) | Card de métrica com tendência |
+| [TrxSearchBar](/components/trx-search-bar) | Modal de busca global (Cmd+K) |
+| [TrxFilterBar](/components/trx-filter-bar) | Chips de filtros ativos |
+| [TrxDataTableActions](/components/trx-data-table-actions) | Ações inline/menu para linhas de tabela |
+| [TrxErrorPage](/components/trx-error-page) | Páginas de erro (404/403/500/503) |
+| [TrxText](/components/trx-text) | Componente tipográfico polimórfico |
 
-### Autenticacao
-Componentes para fluxos de login.
+## Formulários
 
-| Componente | Descricao |
+| Componente | Descrição |
 |:-----------|:----------|
-| [TrxLoginPage](./trx-login-page) | Pagina de login completa |
-| [TrxLoginForm](./trx-login-form) | Formulario de login |
+| [TrxFormField](/components/trx-form-field) | Wrapper de campo com label, erro e hint |
 
-### Feedback
-Componentes para feedback visual.
+## Importação
 
-| Componente | Descricao |
-|:-----------|:----------|
-| [TrxStatusBadge](./trx-status-badge) | Badge de status |
-| [TrxLoadingOverlay](./trx-loading-overlay) | Overlay de carregamento |
-| [TrxEmptyState](./trx-empty-state) | Estado vazio |
-| [TrxNotFound](./trx-not-found) | Pagina 404 |
-
-### UI Base
-Componentes basicos de interface.
-
-| Componente | Descricao |
-|:-----------|:----------|
-| [TrxLogo](./trx-logo) | Logo TRX |
-| [TrxThemeToggle](./trx-theme-toggle) | Toggle de tema |
-
----
+```typescript
+// Importação nomeada (recomendado — tree-shakeable)
+import { TrxCard, TrxAlert, TrxText } from '@trx/ui-common'
+```
 
 ## PrimeVue Wrappers
 
-Todos os componentes PrimeVue 4.5 possuem wrappers `Trx*` que fazem pass-through completo de attrs e slots. Alguns wrappers sao enhanced com defaults PT-BR.
-
-### Importacao
+Todos os ~86 componentes PrimeVue 4.5 têm wrappers `Trx*`:
 
 ```typescript
 import {
-  TrxButton,
-  TrxInputText,
-  TrxSelect,
-  TrxDialog,
-  TrxDataTable
+  TrxButton, TrxInputText, TrxSelect, TrxDialog,
+  TrxMenu, TrxToast, TrxAccordion, TrxTabs,
+  TrxDatePicker, TrxPassword, TrxFileUpload
 } from '@trx/ui-common'
 ```
 
-### Categorias
-
-| Categoria | Qtd | Componentes |
-|:----------|:----|:------------|
-| **Form** | 32 + 4 aliases | `TrxInputText`, `TrxSelect`, `TrxDatePicker`, `TrxPassword`, `TrxMultiSelect`, `TrxAutoComplete`, `TrxInputNumber`, `TrxCheckbox`, `TrxRadioButton`, `TrxTextarea`, `TrxToggleSwitch`, `TrxSlider`, `TrxInputMask`, `TrxInputOtp`, `TrxColorPicker`, `TrxKnob`, `TrxRating`, `TrxSelectButton`, `TrxToggleButton`, `TrxCascadeSelect`, `TrxTreeSelect`, `TrxListbox`, `TrxFloatLabel`, `TrxIftaLabel`, `TrxIconField`, `TrxInputIcon`, `TrxInputGroup`, `TrxInputGroupAddon`, `TrxInputChips`, `TrxCheckboxGroup`, `TrxRadioButtonGroup`, `TrxFluid` |
-| **Button** | 4 | `TrxButton`, `TrxButtonGroup`, `TrxSplitButton`, `TrxSpeedDial` |
-| **Data** | 12 | `TrxPaginator`, `TrxColumn`, `TrxColumnGroup`, `TrxRow`, `TrxDataView`, `TrxOrderList`, `TrxPickList`, `TrxOrganizationChart`, `TrxTimeline`, `TrxTree`, `TrxTreeTable`, `TrxVirtualScroller` |
-| **Panel** | 23 + 1 alias | `TrxAccordion`, `TrxAccordionPanel`, `TrxAccordionHeader`, `TrxAccordionContent`, `TrxTabs`, `TrxTab`, `TrxTabList`, `TrxTabPanel`, `TrxTabPanels`, `TrxPanel`, `TrxFieldset`, `TrxDivider`, `TrxToolbar`, `TrxScrollPanel`, `TrxSplitter`, `TrxSplitterPanel`, `TrxStepper`, `TrxStep`, `TrxStepItem`, `TrxStepList`, `TrxStepPanel`, `TrxStepPanels`, `TrxDeferredContent` |
-| **Overlay** | 6 + 2 aliases | `TrxDialog`, `TrxConfirmDialog`, `TrxConfirmPopup`, `TrxDrawer`, `TrxDynamicDialog`, `TrxPopover` |
-| **Menu** | 10 | `TrxMenu`, `TrxMenubar`, `TrxMegaMenu`, `TrxTieredMenu`, `TrxPanelMenu`, `TrxContextMenu`, `TrxBreadcrumb`, `TrxDock`, `TrxSteps`, `TrxTabMenu` |
-| **Message** | 3 | `TrxToast`, `TrxMessage`, `TrxInlineMessage` |
-| **Media** | 4 | `TrxImage`, `TrxImageCompare`, `TrxCarousel`, `TrxGalleria` |
-| **File** | 1 | `TrxFileUpload` |
-| **Chart** | 1 | `TrxChart` |
-| **Misc** | 14 | `TrxAvatar`, `TrxAvatarGroup`, `TrxBadge`, `TrxOverlayBadge`, `TrxChip`, `TrxTag`, `TrxProgressBar`, `TrxProgressSpinner`, `TrxSkeleton`, `TrxBlockUI`, `TrxInplace`, `TrxMeterGroup`, `TrxScrollTop`, `TrxTerminal` |
-
-### Componentes Enhanced (com defaults PT-BR)
-
-Estes wrappers adicionam valores padrao em portugues, que podem ser sobrescritos via props:
-
-| Componente | Defaults |
-|:-----------|:---------|
-| `TrxDatePicker` | `dateFormat="dd/mm/yy"`, `showIcon=true` |
-| `TrxInputNumber` | `locale="pt-BR"`, `minFractionDigits=2` |
-| `TrxPassword` | `weakLabel="Fraco"`, `mediumLabel="Medio"`, `strongLabel="Forte"` |
-| `TrxSelect` | `placeholder="Selecione..."`, `emptyMessage="Nenhum resultado"` |
-| `TrxMultiSelect` | `placeholder="Selecione..."`, `emptyMessage="Nenhum resultado"` |
-| `TrxAutoComplete` | `placeholder="Buscar..."` |
-| `TrxDialog` | `modal=true`, `closable=true`, `draggable=false` |
-| `TrxConfirmDialog` | `acceptLabel="Sim"`, `rejectLabel="Nao"` |
-| `TrxFileUpload` | `chooseLabel="Escolher"`, `uploadLabel="Enviar"`, `cancelLabel="Cancelar"` |
-| `TrxToast` | `position="top-right"` |
-| `TrxPaginator` | `rowsPerPageOptions=[10,25,50]` |
-
-### Aliases Legacy
-
-Para compatibilidade com nomes de versoes anteriores do PrimeVue:
-
-| Alias | Aponta para |
-|:------|:------------|
-| `TrxDropdown` | `TrxSelect` |
-| `TrxCalendar` | `TrxDatePicker` |
-| `TrxChips` | `TrxInputChips` |
-| `TrxInputSwitch` | `TrxToggleSwitch` |
-| `TrxSidebar` | `TrxDrawer` |
-| `TrxOverlayPanel` | `TrxPopover` |
-| `TrxTabView` | `TrxTabs` |
-
-### Re-exports PrimeVue (componentes raw)
-
-Para casos onde o componente base TRX (custom) tem API diferente do PrimeVue original:
-
-| Re-export | Origem | Motivo |
-|:----------|:-------|:-------|
-| `PvCard` | `primevue/card` | `TrxCard` e custom com API diferente |
-| `PvDataTable` | `primevue/datatable` | `TrxDataTable` e custom com filtro global embutido |
-| `PvTabView` | `primevue/tabview` | API legada diferente de `TrxTabs` (nova API PrimeVue 4) |
-
----
-
-## Importacao
+Re-exports raw PrimeVue (quando a API TRX difere):
 
 ```typescript
-import {
-  // Layout
-  TrxAppLayout,
-  TrxPageHeader,
-
-  // Auth
-  TrxLoginPage,
-  TrxLoginForm,
-
-  // Feedback
-  TrxStatusBadge,
-  TrxLoadingOverlay,
-  TrxEmptyState,
-  TrxNotFound,
-
-  // Base
-  TrxLogo,
-  TrxThemeToggle,
-
-  // PrimeVue Wrappers
-  TrxButton,
-  TrxInputText,
-  TrxSelect,
-  TrxDialog,
-  TrxMenu,
-  TrxToast,
-  TrxAccordion,
-  TrxTabs,
-
-  // Re-exports raw PrimeVue
-  PvCard,
-  PvDataTable,
-  PvTabView,
-
-  // Types
-  type MenuItem,
-  type MenuSection
-} from '@trx/ui-common'
+import { PvCard, PvDataTable, PvTabView } from '@trx/ui-common'
 ```
