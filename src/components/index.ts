@@ -23,6 +23,20 @@ export { default as TrxLoginPage } from './TrxLoginPage.vue'
 // Types
 export type { MenuItem, MenuSection } from './TrxAppLayout.vue'
 
+// Banner
+export { default as TrxBanner } from './TrxBanner.vue'
+export type { TrxBannerType } from './TrxBanner.vue'
+
+// Copy
+export { default as TrxCopyButton } from './TrxCopyButton.vue'
+
+// Agent Status
+export { default as TrxAgentStatus } from './TrxAgentStatus.vue'
+export type { TrxAgentStatusValue, TrxAgentStatusOption } from './TrxAgentStatus.vue'
+
+// Audio Player
+export { default as TrxAudioPlayer } from './TrxAudioPlayer.vue'
+
 // Feedback Components (Epic NC)
 export { default as TrxAlert } from './TrxAlert.vue'
 export type { TrxAlertType } from './TrxAlert.vue'

@@ -60,22 +60,46 @@ export default defineConfig({
 
       '/components/': [
         {
-          text: 'Componentes Base TRX',
+          text: 'Layout & Navegação',
+          items: [
+            { text: 'TrxAppLayout', link: '/components/trx-app-layout' },
+            { text: 'TrxPageHeader', link: '/components/trx-page-header' },
+            { text: 'TrxBanner', link: '/components/trx-banner' },
+          ],
+        },
+        {
+          text: 'Dados & Tabelas',
           items: [
             { text: 'TrxCard', link: '/components/trx-card' },
-            { text: 'TrxPageHeader', link: '/components/trx-page-header' },
-            { text: 'TrxEmptyState', link: '/components/trx-empty-state' },
-            { text: 'TrxAlert', link: '/components/trx-alert' },
-            { text: 'TrxStatusBadge', link: '/components/trx-status-badge' },
-            { text: 'TrxKPICard', link: '/components/trx-kpi-card' },
-            { text: 'TrxUserAvatar', link: '/components/trx-user-avatar' },
-            { text: 'TrxSearchBar', link: '/components/trx-search-bar' },
-            { text: 'TrxFilterBar', link: '/components/trx-filter-bar' },
-            { text: 'TrxDataTableActions', link: '/components/trx-data-table-actions' },
-            { text: 'TrxErrorPage', link: '/components/trx-error-page' },
-            { text: 'TrxText', link: '/components/trx-text' },
-            { text: 'TrxAppLayout', link: '/components/trx-app-layout' },
             { text: 'TrxDataTable', link: '/components/trx-data-table' },
+            { text: 'TrxDataTableActions', link: '/components/trx-data-table-actions' },
+            { text: 'TrxFilterBar', link: '/components/trx-filter-bar' },
+            { text: 'TrxKPICard', link: '/components/trx-kpi-card' },
+          ],
+        },
+        {
+          text: 'Feedback & Status',
+          items: [
+            { text: 'TrxAlert', link: '/components/trx-alert' },
+            { text: 'TrxEmptyState', link: '/components/trx-empty-state' },
+            { text: 'TrxErrorPage', link: '/components/trx-error-page' },
+            { text: 'TrxStatusBadge', link: '/components/trx-status-badge' },
+          ],
+        },
+        {
+          text: 'Usuário & Agente',
+          items: [
+            { text: 'TrxUserAvatar', link: '/components/trx-user-avatar' },
+            { text: 'TrxAgentStatus', link: '/components/trx-agent-status' },
+          ],
+        },
+        {
+          text: 'Utilitários',
+          items: [
+            { text: 'TrxText', link: '/components/trx-text' },
+            { text: 'TrxSearchBar', link: '/components/trx-search-bar' },
+            { text: 'TrxCopyButton', link: '/components/trx-copy-button' },
+            { text: 'TrxAudioPlayer', link: '/components/trx-audio-player' },
           ],
         },
         {
