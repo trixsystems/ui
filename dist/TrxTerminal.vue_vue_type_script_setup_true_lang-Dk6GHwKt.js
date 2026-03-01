@@ -795,7 +795,7 @@ const ws = /* @__PURE__ */ g({
       ], 2)
     ], 2));
   }
-}), aT = /* @__PURE__ */ A(Ua, [["__scopeId", "data-v-ef7c571b"]]), Wa = { class: "trx-not-found" }, Ga = { class: "trx-not-found__content" }, Ka = { class: "trx-not-found__code" }, Ya = { class: "trx-not-found__title" }, Ja = { class: "trx-not-found__message" }, Xa = /* @__PURE__ */ g({
+}), aT = /* @__PURE__ */ A(Ua, [["__scopeId", "data-v-90bad350"]]), Wa = { class: "trx-not-found" }, Ga = { class: "trx-not-found__content" }, Ka = { class: "trx-not-found__code" }, Ya = { class: "trx-not-found__title" }, Ja = { class: "trx-not-found__message" }, Xa = /* @__PURE__ */ g({
   __name: "TrxNotFound",
   props: {
     code: { default: "404" },

@@ -279,7 +279,7 @@ async function handleLogout() {
 /* Sidebar */
 .trx-layout__sidebar {
   width: 260px;
-  background: linear-gradient(180deg, #059669 0%, #047857 100%);
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
   display: flex;
   flex-direction: column;
   transition: width 0.3s ease;
@@ -382,7 +382,7 @@ async function handleLogout() {
   margin: 0.125rem 0.75rem;
   border-radius: 8px;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.65);
   transition: all 0.2s ease;
   white-space: nowrap;
   font-size: 0.9rem;
@@ -396,28 +396,41 @@ async function handleLogout() {
 
 .trx-layout__nav li:hover {
   background: rgba(255, 255, 255, 0.1);
-  color: white;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .trx-layout__nav li.active {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
   color: white;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .dark .trx-layout__nav li.active {
-  background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
-  box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(90deg, rgba(189, 147, 249, 0.25) 0%, rgba(189, 147, 249, 0.1) 100%);
+  border-left: 3px solid #bd93f9;
+  color: #f8f8f2;
+  box-shadow: 0 0 12px rgba(189, 147, 249, 0.2);
 }
 
 .dark .trx-layout__nav li:hover:not(.active) {
-  background: rgba(16, 185, 129, 0.15);
+  background: rgba(189, 147, 249, 0.1);
+  color: rgba(248, 248, 242, 0.9);
 }
 
 .trx-layout__nav li i {
   font-size: 1.125rem;
   width: 1.25rem;
   text-align: center;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.trx-layout__nav li.active i {
+  opacity: 1;
+}
+
+.dark .trx-layout__nav li.active i {
+  color: #bd93f9;
 }
 
 /* Sidebar Footer */
