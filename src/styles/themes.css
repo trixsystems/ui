@@ -132,6 +132,23 @@ html {
   --trx-card-border: 1px solid var(--trx-border-color);
   --trx-card-radius: 16px;
   --trx-card-shadow: var(--trx-shadow-md);
+
+  /* ── PrimeVue primary override: emerald → Dracula purple ── */
+  --p-primary-50:  #faf5ff;
+  --p-primary-100: #f0e6ff;
+  --p-primary-200: #dfc8ff;
+  --p-primary-300: #caa9fc;
+  --p-primary-400: #bd93f9;
+  --p-primary-500: #a87ef5;
+  --p-primary-600: #8b5cf6;
+  --p-primary-700: #7c3aed;
+  --p-primary-800: #6d28d9;
+  --p-primary-900: #5b21b6;
+  --p-primary-950: #4c1d95;
+  --p-primary-color:          #bd93f9;
+  --p-primary-contrast-color: #282a36;
+  --p-primary-hover-color:    #caa9fc;
+  --p-primary-active-color:   #a87ef5;
 }
 
 /* ================== GLOBAL STYLES ================== */
