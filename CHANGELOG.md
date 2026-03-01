@@ -1,5 +1,37 @@
 # Changelog
 
+Todas as mudancas notaveis neste projeto.
+Formato: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) | [Semantic Versioning](https://semver.org/lang/pt-BR/)
+
+
+## 1.1.0 (2026-03-01)
+
+### ✨ Features
+
+* add 36 new components across charts, forms, navigation, and crm ([1234ade](https://github.com/trixsystems/ui/commit/1234adea6df8748f4ebf0bf99802c0dbc9c2c3fd))
+* add 38 new components across telecom, dashboard, omnichannel and more ([394dc2e](https://github.com/trixsystems/ui/commit/394dc2e210c1eeb7f2316efe9ac7cdaca08db8e1))
+* add 40 new components across telecom, charts, omnichannel, and layout ([b1696fa](https://github.com/trixsystems/ui/commit/b1696faa3c4e931afd5e0b8b9d143b96b2c58135))
+* add banner, copy-button, agent-status and audio-player components ([78f4c30](https://github.com/trixsystems/ui/commit/78f4c30b8115f6f40566cc32bf5c03a9f3f66612))
+* add PrimeVue wrappers, composables, and update documentation ([a7227dd](https://github.com/trixsystems/ui/commit/a7227dd8eb13cb5defdb3f576faad6a848f0ae26))
+* **components:** add new TRX components and improve theming ([f152a68](https://github.com/trixsystems/ui/commit/f152a680b6db02c33c6a9e8fc7e69fd931de7fe5))
+* implement all design system epics (ds, fv, nc, a11y, ti, th, pl) ([afd0331](https://github.com/trixsystems/ui/commit/afd033142f95cee0687652e30d3cf7bc8b4a428a))
+
+### 🐛 Bug Fixes
+
+* resolve ci and vitepress build failures ([cbe24d3](https://github.com/trixsystems/ui/commit/cbe24d38cb19e2a5b57e31d4e07515ebea4c463f))
+
+### 📝 Documentation
+
+* add missing component docs and reorganize sidebar ([8bf42de](https://github.com/trixsystems/ui/commit/8bf42de575bbcb979a35c0ca54410deb394106a3))
+* add primevue wrapper component docs (23 pages) ([d591bf7](https://github.com/trixsystems/ui/commit/d591bf7fd2e46ac5eccf37a670b240b32a9d239e))
+* implement epic vr — release pipeline docs, badges, contributing guide ([7a463e7](https://github.com/trixsystems/ui/commit/7a463e78a8e3420248f58575312b9eda276a631d))
+
+### ✅ Tests
+
+* implement epic ts — vitest suite for composables, utils, components and a11y ([dd76821](https://github.com/trixsystems/ui/commit/dd7682130c81120b3a385102cd0ccd70f0fe7d7f))
+
+# Changelog
+
 Todas as mudancas notaveis neste projeto serao documentadas neste arquivo.
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
