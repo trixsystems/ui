@@ -1,12 +1,12 @@
-import c from "primevue/config";
-import d from "@primevue/themes/aura";
-import { default as y } from "@primevue/themes/aura";
-import { definePreset as i } from "@primevue/themes";
-import f from "primevue/toastservice";
-import l from "primevue/confirmationservice";
-import m from "primevue/dialogservice";
-import n from "primevue/tooltip";
-const r = i(d, {
+import d from "primevue/config";
+import m from "@primevue/themes/aura";
+import { default as L } from "@primevue/themes/aura";
+import { definePreset as n } from "@primevue/themes";
+import l from "primevue/toastservice";
+import i from "primevue/confirmationservice";
+import f from "primevue/dialogservice";
+import s from "primevue/tooltip";
+const c = n(m, {
   semantic: {
     primary: {
       50: "{emerald.50}",
@@ -73,23 +73,30 @@ const r = i(d, {
     }
   }
 });
-function g(e, o = {}) {
-  const { ripple: a = !0, prefix: t = "p" } = o;
-  e.use(c, {
+function u() {
+  if (typeof window > "u") return;
+  const e = localStorage.getItem("trx-theme"), o = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  (e ?? (o ? "dark" : "light")) === "dark" ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark");
+  const r = localStorage.getItem("trx-font-size") ?? "font-normal", a = localStorage.getItem("trx-font-size-num");
+  document.documentElement.classList.remove("font-small", "font-normal", "font-large", "font-xlarge"), document.documentElement.classList.add(r), a && (document.documentElement.style.fontSize = `${a}px`);
+}
+function x(e, o = {}) {
+  const { ripple: t = !0, prefix: r = "p" } = o;
+  u(), e.use(d, {
     theme: {
-      preset: r,
+      preset: c,
       options: {
-        prefix: t,
+        prefix: r,
         darkModeSelector: ".dark",
         cssLayer: !1
       }
     },
-    ripple: a
-  }), e.use(f), e.use(l), e.use(m), e.directive("tooltip", n);
+    ripple: t
+  }), e.use(l), e.use(i), e.use(f), e.directive("tooltip", s);
 }
-const h = {
+const B = {
   theme: {
-    preset: r,
+    preset: c,
     options: {
       prefix: "p",
       darkModeSelector: ".dark",
@@ -99,8 +106,9 @@ const h = {
   ripple: !0
 };
 export {
-  y as Aura,
-  r as TrxPreset,
-  g as configurePrimeVue,
-  h as primeVueConfig
+  L as Aura,
+  c as TrxPreset,
+  x as configurePrimeVue,
+  u as initTheme,
+  B as primeVueConfig
 };

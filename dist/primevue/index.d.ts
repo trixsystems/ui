@@ -6,6 +6,11 @@ export interface TrxPrimeVueOptions {
     prefix?: string;
 }
 /**
+ * Apply saved theme and font size from localStorage to <html>.
+ * Called automatically by configurePrimeVue — no need to call manually.
+ */
+export declare function initTheme(): void;
+/**
  * Configure PrimeVue with TRX defaults
  */
 export declare function configurePrimeVue(app: App, options?: TrxPrimeVueOptions): void;

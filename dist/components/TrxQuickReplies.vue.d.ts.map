@@ -1,0 +1,1 @@
+{"version":3,"file":"TrxQuickReplies.vue.d.ts","sourceRoot":"","sources":["../../src/components/TrxQuickReplies.vue"],"names":[],"mappings":"AA4CA,MAAM,WAAW,aAAa;IAC5B,EAAE,EAAE,MAAM,CAAA;IACV,KAAK,EAAE,MAAM,CAAA;IACb,KAAK,CAAC,EAAE,MAAM,CAAA;CACf;AAED,KAAK,WAAW,GAAG;IACjB,OAAO,CAAC,EAAE,aAAa,EAAE,CAAA;IACzB,QAAQ,CAAC,EAAE,OAAO,CAAA;CACnB,CAAC;;;;;;aAFU,aAAa,EAAE;;AAqE3B,wBASG"}

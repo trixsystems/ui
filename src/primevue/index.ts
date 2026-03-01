@@ -83,10 +83,37 @@ export interface TrxPrimeVueOptions {
 }
 
 /**
+ * Apply saved theme and font size from localStorage to <html>.
+ * Called automatically by configurePrimeVue — no need to call manually.
+ */
+export function initTheme(): void {
+  if (typeof window === 'undefined') return
+
+  const saved = localStorage.getItem('trx-theme')
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const theme = saved ?? (prefersDark ? 'dark' : 'light')
+
+  if (theme === 'dark') {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+
+  const fontSizeClass = localStorage.getItem('trx-font-size') ?? 'font-normal'
+  const fontSizeNum = localStorage.getItem('trx-font-size-num')
+  document.documentElement.classList.remove('font-small', 'font-normal', 'font-large', 'font-xlarge')
+  document.documentElement.classList.add(fontSizeClass)
+  if (fontSizeNum) document.documentElement.style.fontSize = `${fontSizeNum}px`
+}
+
+/**
  * Configure PrimeVue with TRX defaults
  */
 export function configurePrimeVue(app: App, options: TrxPrimeVueOptions = {}) {
   const { ripple = true, prefix = 'p' } = options
+
+  // Apply saved theme immediately — consumers don't need to call useTheme() manually
+  initTheme()
 
   // PrimeVue with TRX custom preset
   app.use(PrimeVue, {

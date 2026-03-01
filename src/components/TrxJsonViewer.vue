@@ -99,39 +99,3 @@ function onToggle(e: MouseEvent) {
 .trx-jv-count { font-size: 0.7rem; color: var(--trx-text-secondary); margin-left: 0.1rem; }
 .trx-jv-block { display: inline; }
 </style>
-', { class: 'trx-jv__row' }, [
-        h('span', { class: 'trx-jv__indent' }),
-        label,
-        h('span', { class: valClass }, display),
-      ])
-    }
-  },
-})
-
-export { TrxJsonViewerNode }
-</script>
-
-<style scoped>
-.trx-jv { background: var(--trx-bg-card); border: 1px solid var(--trx-border-color); border-radius: 10px; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 0.8rem; overflow: hidden; }
-.trx-jv__toolbar { display: flex; align-items: center; justify-content: space-between; padding: 0.4rem 0.75rem; border-bottom: 1px solid var(--trx-border-color); background: var(--trx-bg-secondary); }
-.trx-jv__badge { font-size: 0.7rem; font-weight: 600; background: var(--trx-accent-color); color: white; padding: 0.1rem 0.4rem; border-radius: 4px; }
-.trx-jv__copy { display: flex; align-items: center; gap: 0.25rem; font-size: 0.75rem; background: none; border: none; color: var(--trx-text-secondary); cursor: pointer; transition: color 0.15s; }
-.trx-jv__copy:hover { color: var(--trx-accent-color); }
-.trx-jv__body { padding: 0.75rem 1rem; overflow: auto; }
-.trx-jv__brace { color: var(--trx-text-secondary); }
-.trx-jv__count { color: var(--trx-text-secondary); font-style: italic; margin-left: 0.25rem; font-size: 0.72rem; }
-.trx-jv__ellipsis { color: var(--trx-text-secondary); cursor: pointer; }
-.trx-jv__ellipsis:hover { color: var(--trx-accent-color); }
-</style>
-
-<style>
-.trx-jv__row { display: flex; align-items: flex-start; line-height: 1.6; flex-wrap: wrap; }
-.trx-jv__toggle { background: none; border: none; cursor: pointer; color: var(--trx-text-secondary); font-size: 0.7rem; padding: 0 0.2rem; width: 14px; flex-shrink: 0; }
-.trx-jv__key { color: #e06c75; }
-.trx-jv__val--string { color: #98c379; }
-.trx-jv__val--number { color: #d19a66; }
-.trx-jv__val--boolean { color: #56b6c2; }
-.trx-jv__val--null { color: #abb2bf; font-style: italic; }
-.trx-jv__children { margin-left: 1.25rem; width: 100%; }
-.trx-jv__indent { width: 14px; flex-shrink: 0; }
-</style>

@@ -1,0 +1,1 @@
+{"version":3,"file":"TrxEnvironmentBanner.vue.d.ts","sourceRoot":"","sources":["../../src/components/TrxEnvironmentBanner.vue"],"names":[],"mappings":"AA2EA,KAAK,WAAW,GAAG;IACjB,GAAG,CAAC,EAAE,aAAa,GAAG,SAAS,GAAG,cAAc,GAAG,YAAY,CAAA;IAC/D,OAAO,CAAC,EAAE,MAAM,CAAA;IAChB,WAAW,CAAC,EAAE,OAAO,CAAA;CACtB,CAAC;;SAHM,aAAa,GAAG,SAAS,GAAG,cAAc,GAAG,YAAY;iBAEjD,OAAO;;AA0IvB,wBAQG"}
