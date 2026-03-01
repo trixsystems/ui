@@ -8,6 +8,17 @@ export default defineConfig({
   base: '/',
   cleanUrls: true,
 
+  // Exclui arquivos Jekyll legados que não foram migrados para VitePress
+  srcExclude: [
+    'composables/**',
+    'utils/**',
+    'theme/**',
+    'jira-tasks.md',
+    'guide/index.md',
+    'components/trx-login-page.md',
+    'components/trx-not-found.md',
+  ],
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],

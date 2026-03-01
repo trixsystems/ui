@@ -1,95 +1,67 @@
----
-layout: default
-title: TrxPageHeader
-nav_order: 3
-parent: Componentes
----
-
 # TrxPageHeader
-{: .no_toc }
 
-Cabecalho de pagina com titulo, subtitulo e acoes.
-{: .fs-6 .fw-300 }
+Cabeçalho de página com título, subtítulo e slot de ações.
 
----
-
-## Uso Basico
+## Uso
 
 ```vue
 <script setup lang="ts">
-import { TrxPageHeader } from '@trx/ui-common/components'
-import Button from 'primevue/button'
+import { TrxPageHeader, TrxButton } from '@trx/ui-common'
 </script>
 
 <template>
   <TrxPageHeader
-    title="Usuarios"
-    subtitle="Gerenciamento de usuarios do sistema"
+    title="Usuários"
+    subtitle="Gerenciamento de usuários do sistema"
     icon="pi pi-users"
   >
     <template #actions>
-      <Button label="Novo Usuario" icon="pi pi-plus" />
+      <TrxButton label="Novo Usuário" icon="pi pi-plus" />
     </template>
   </TrxPageHeader>
 </template>
 ```
 
----
-
 ## Props
 
-| Prop | Tipo | Default | Descricao |
-|:-----|:-----|:--------|:----------|
-| `title` | `string` | - | Titulo da pagina |
-| `subtitle` | `string` | - | Subtitulo/descricao |
-| `icon` | `string` | - | Classe do icone |
-
----
+| Prop | Tipo | Padrão | Descrição |
+|:-----|:-----|:-------|:----------|
+| `title` | `string` | **required** | Título da página |
+| `subtitle` | `string` | — | Subtítulo/descrição |
+| `icon` | `string` | — | Classe do ícone (ex: `pi pi-users`) |
 
 ## Slots
 
-| Slot | Descricao |
+| Slot | Descrição |
 |:-----|:----------|
-| `actions` | Botoes de acao no lado direito |
-| `breadcrumb` | Breadcrumb acima do titulo |
-
----
+| `actions` | Botões de ação no lado direito |
+| `breadcrumb` | Breadcrumb acima do título |
 
 ## Exemplos
 
-### Simples
-
 ```vue
+<!-- Simples -->
 <TrxPageHeader title="Dashboard" />
-```
 
-### Com Subtitulo
-
-```vue
+<!-- Com subtítulo e ícone -->
 <TrxPageHeader
-  title="Relatorios"
-  subtitle="Visualize os relatorios do sistema"
+  title="Relatórios"
+  subtitle="Visualize os relatórios do sistema"
   icon="pi pi-chart-bar"
 />
-```
 
-### Com Acoes
-
-```vue
+<!-- Com ações -->
 <TrxPageHeader title="Campanhas" icon="pi pi-megaphone">
   <template #actions>
-    <Button label="Exportar" icon="pi pi-download" severity="secondary" />
-    <Button label="Nova Campanha" icon="pi pi-plus" />
+    <TrxButton label="Exportar" icon="pi pi-download" severity="secondary" />
+    <TrxButton label="Nova Campanha" icon="pi pi-plus" />
   </template>
 </TrxPageHeader>
-```
 
-### Com Breadcrumb
-
-```vue
-<TrxPageHeader title="Detalhes do Usuario">
+<!-- Com breadcrumb -->
+<TrxPageHeader title="Detalhes do Usuário">
   <template #breadcrumb>
-    <router-link to="/users">Usuarios</router-link>
+    <router-link to="/users">Usuários</router-link>
     <span> / </span>
     <span>Detalhes</span>
   </template>

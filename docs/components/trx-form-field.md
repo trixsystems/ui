@@ -85,4 +85,4 @@ const { values, errors, isSubmitting, handleSubmit } = useForm({
 })
 ```
 
-Ver [useForm](/composables/use-form) para documentação completa.
+O composable `useForm` aceita `schema` (Zod) e `initialValues`, retornando estado e helpers para submissão.

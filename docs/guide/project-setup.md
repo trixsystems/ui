@@ -1,43 +1,19 @@
----
-layout: default
-title: Configuracao do Projeto
-nav_order: 3
-parent: Guia
----
-
-# Configuracao do Projeto
-{: .no_toc }
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
+# Configuração do Projeto
 
 ## package.json
 
-Dependencias recomendadas para apps que usam @trx/ui-common:
+Dependências recomendadas para apps que usam `@trx/ui-common`:
 
 ```json
 {
-  "name": "meu-app",
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
-  },
   "dependencies": {
-    "@trx/ui-common": "file:../ui",
+    "@trx/ui-common": "github:trixsystems/ui#v1.0.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
     "pinia": "^2.2.8",
     "primevue": "^4.5.0",
+    "@primevue/themes": "^4.5.0",
     "primeicons": "^7.0.0",
-    "primeflex": "^4.0.0",
     "axios": "^1.7.9",
     "dayjs": "^1.11.13"
   },
@@ -50,8 +26,6 @@ Dependencias recomendadas para apps que usam @trx/ui-common:
 }
 ```
 
----
-
 ## vite.config.ts
 
 ```typescript
@@ -62,23 +36,17 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [vue()],
   resolve: {
-    alias: {
-      '@': resolve(__dirname, 'src')
-    }
+    alias: { '@': resolve(__dirname, 'src') },
+    dedupe: ['vue', 'primevue'],  // obrigatório com npm link
   },
   server: {
     port: 3000,
     proxy: {
-      '/api': {
-        target: 'http://localhost:8080',
-        changeOrigin: true
-      }
+      '/api': { target: 'http://localhost:8080', changeOrigin: true }
     }
   }
 })
 ```
-
----
 
 ## tsconfig.json
 
@@ -97,90 +65,63 @@ export default defineConfig({
     "noEmit": true,
     "jsx": "preserve",
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "paths": { "@/*": ["./src/*"] }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
 ```
-
----
 
 ## Estrutura de Pastas
 
 ```
-meu-app/
-├── frontend/
-│   ├── src/
-│   │   ├── main.ts                 # Entry point
-│   │   ├── App.vue                 # Root component
-│   │   ├── router/
-│   │   │   └── index.ts            # Definicao de rotas
-│   │   ├── stores/
-│   │   │   ├── auth.ts             # Store de autenticacao
-│   │   │   └── app.ts              # Store do app
-│   │   ├── views/
-│   │   │   ├── LoginView.vue
-│   │   │   ├── DashboardView.vue
-│   │   │   └── ...
-│   │   ├── components/             # Componentes locais
-│   │   └── services/
-│   │       └── api.ts              # Configuracao de APIs locais
-│   ├── public/
-│   ├── index.html
-│   ├── package.json
-│   ├── vite.config.ts
-│   └── tsconfig.json
-└── backend/
-    └── ...
+meu-app/frontend/
+├── src/
+│   ├── main.ts           # Entry point
+│   ├── App.vue
+│   ├── router/index.ts   # Rotas
+│   ├── stores/
+│   │   ├── auth.ts
+│   │   └── app.ts
+│   ├── views/
+│   ├── components/       # Componentes locais
+│   └── services/api.ts
+├── package.json
+├── vite.config.ts
+└── tsconfig.json
 ```
 
----
-
-## Configuracao de Rotas
+## Configuração de Rotas
 
 ```typescript
 // src/router/index.ts
 import { createRouter, createWebHistory } from 'vue-router'
-
-const routes = [
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import('@/views/LoginView.vue'),
-    meta: { public: true }
-  },
-  {
-    path: '/',
-    name: 'dashboard',
-    component: () => import('@/views/DashboardView.vue'),
-    meta: { requiresAuth: true }
-  },
-  {
-    path: '/:pathMatch(.*)*',
-    name: 'not-found',
-    component: () => import('@/views/NotFoundView.vue')
-  }
-]
+import { TrxErrorPage } from '@trx/ui-common'
+import { h } from 'vue'
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes: [
+    {
+      path: '/login',
+      component: () => import('@/views/LoginView.vue'),
+      meta: { public: true }
+    },
+    {
+      path: '/',
+      component: () => import('@/views/DashboardView.vue'),
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      component: () => h(TrxErrorPage, { code: 404 }),
+    },
+  ]
 })
 
-// Guard de autenticacao
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _from, next) => {
   const token = localStorage.getItem('access_token')
-
   if (to.meta.requiresAuth && !token) {
-    next({ name: 'login', query: { redirect: to.fullPath } })
-  } else if (to.name === 'login' && token) {
-    next({ name: 'dashboard' })
+    next({ path: '/login', query: { redirect: to.fullPath } })
   } else {
     next()
   }
@@ -188,31 +129,3 @@ router.beforeEach((to, from, next) => {
 
 export default router
 ```
-
----
-
-## Store de Autenticacao
-
-```typescript
-// src/stores/auth.ts
-import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
-import { useAuth } from '@trx/ui-common/composables'
-
-export const useAuthStore = defineStore('auth', () => {
-  const auth = useAuth({
-    appName: 'meu-app',
-    authUrl: '/api/v1'
-  })
-
-  return {
-    ...auth
-  }
-})
-```
-
----
-
-## Proximo Passo
-
-Veja como [migrar apps existentes](./migration) para usar o @trx/ui-common.
