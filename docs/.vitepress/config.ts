@@ -193,6 +193,17 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Telecom Avançado',
+          collapsed: true,
+          items: [
+            { text: 'TrxCallHistory', link: '/components/trx-call-history' },
+            { text: 'TrxCallScript', link: '/components/trx-call-script' },
+            { text: 'TrxDispositionPicker', link: '/components/trx-disposition-picker' },
+            { text: 'TrxDialerList', link: '/components/trx-dialer-list' },
+            { text: 'TrxIVRBuilder', link: '/components/trx-ivr-builder' },
+          ],
+        },
+        {
           text: 'Dashboard',
           collapsed: true,
           items: [
@@ -201,6 +212,18 @@ export default defineConfig({
             { text: 'TrxSparkline', link: '/components/trx-sparkline' },
             { text: 'TrxGaugeChart', link: '/components/trx-gauge-chart' },
             { text: 'TrxHeatmap', link: '/components/trx-heatmap' },
+          ],
+        },
+        {
+          text: 'Gráficos',
+          collapsed: true,
+          items: [
+            { text: 'TrxProgressRing', link: '/components/trx-progress-ring' },
+            { text: 'TrxRealTimeTicker', link: '/components/trx-real-time-ticker' },
+            { text: 'TrxFunnelChart', link: '/components/trx-funnel-chart' },
+            { text: 'TrxLineChart', link: '/components/trx-line-chart' },
+            { text: 'TrxBarChart', link: '/components/trx-bar-chart' },
+            { text: 'TrxDonutChart', link: '/components/trx-donut-chart' },
           ],
         },
         {
@@ -222,6 +245,13 @@ export default defineConfig({
             { text: 'TrxTimePicker', link: '/components/trx-time-picker' },
             { text: 'TrxFileDropzone', link: '/components/trx-file-dropzone' },
             { text: 'TrxAddressForm', link: '/components/trx-address-form' },
+            { text: 'TrxCurrencyInput', link: '/components/trx-currency-input' },
+            { text: 'TrxColorPicker', link: '/components/trx-color-picker' },
+            { text: 'TrxTagInput', link: '/components/trx-tag-input' },
+            { text: 'TrxOTPInput', link: '/components/trx-otp-input' },
+            { text: 'TrxSignaturePad', link: '/components/trx-signature-pad' },
+            { text: 'TrxMarkdownEditor', link: '/components/trx-markdown-editor' },
+            { text: 'TrxJsonEditor', link: '/components/trx-json-editor' },
           ],
         },
         {
@@ -231,6 +261,10 @@ export default defineConfig({
             { text: 'TrxPageLayout', link: '/components/trx-page-layout' },
             { text: 'TrxTabsRouter', link: '/components/trx-tabs-router' },
             { text: 'TrxMobileNav', link: '/components/trx-mobile-nav' },
+            { text: 'TrxSidebarNav', link: '/components/trx-sidebar-nav' },
+            { text: 'TrxCommandPalette', link: '/components/trx-command-palette' },
+            { text: 'TrxWizard', link: '/components/trx-wizard' },
+            { text: 'TrxOnboarding', link: '/components/trx-onboarding' },
           ],
         },
         {
@@ -254,6 +288,18 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Dados & Exibição',
+          collapsed: true,
+          items: [
+            { text: 'TrxKanbanBoard', link: '/components/trx-kanban-board' },
+            { text: 'TrxCalendarView', link: '/components/trx-calendar-view' },
+            { text: 'TrxVirtualList', link: '/components/trx-virtual-list' },
+            { text: 'TrxCodeBlock', link: '/components/trx-code-block' },
+            { text: 'TrxMarkdownRenderer', link: '/components/trx-markdown-renderer' },
+            { text: 'TrxTruncateText', link: '/components/trx-truncate-text' },
+          ],
+        },
+        {
           text: 'Omnichannel',
           collapsed: true,
           items: [
@@ -262,6 +308,26 @@ export default defineConfig({
             { text: 'TrxChannelBadge', link: '/components/trx-channel-badge' },
             { text: 'TrxContactCard', link: '/components/trx-contact-card' },
             { text: 'TrxTicketCard', link: '/components/trx-ticket-card' },
+            { text: 'TrxConversationList', link: '/components/trx-conversation-list' },
+          ],
+        },
+        {
+          text: 'CRM',
+          collapsed: true,
+          items: [
+            { text: 'TrxLeadCard', link: '/components/trx-lead-card' },
+            { text: 'TrxSLAIndicator', link: '/components/trx-sla-indicator' },
+            { text: 'TrxCRMTimeline', link: '/components/trx-crm-timeline' },
+          ],
+        },
+        {
+          text: 'Sistema & UX',
+          collapsed: true,
+          items: [
+            { text: 'TrxMaintenancePage', link: '/components/trx-maintenance-page' },
+            { text: 'TrxSessionTimeout', link: '/components/trx-session-timeout' },
+            { text: 'TrxShortcutHelper', link: '/components/trx-shortcut-helper' },
+            { text: 'TrxFeatureFlag', link: '/components/trx-feature-flag' },
           ],
         },
       ],

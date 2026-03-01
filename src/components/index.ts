@@ -135,6 +135,74 @@ export { default as TrxContactCard } from './TrxContactCard.vue'
 export { default as TrxTicketCard } from './TrxTicketCard.vue'
 export type { TrxTicketStatus, TrxTicketPriority } from './TrxTicketCard.vue'
 
+// Telecom Extended Components
+export { default as TrxCallHistory } from './TrxCallHistory.vue'
+export type { TrxCallRecord } from './TrxCallHistory.vue'
+export { default as TrxCallScript } from './TrxCallScript.vue'
+export type { TrxScriptStep } from './TrxCallScript.vue'
+export { default as TrxDispositionPicker } from './TrxDispositionPicker.vue'
+export type { TrxDisposition } from './TrxDispositionPicker.vue'
+export { default as TrxDialerList } from './TrxDialerList.vue'
+export type { TrxDialerContact, TrxDialerStatus } from './TrxDialerList.vue'
+export { default as TrxIVRBuilder } from './TrxIVRBuilder.vue'
+export type { TrxIVRNode, TrxIVRNodeType } from './TrxIVRBuilder.vue'
+
+// Dashboard Charts
+export { default as TrxProgressRing } from './TrxProgressRing.vue'
+export { default as TrxRealTimeTicker } from './TrxRealTimeTicker.vue'
+export { default as TrxFunnelChart } from './TrxFunnelChart.vue'
+export type { TrxFunnelStep } from './TrxFunnelChart.vue'
+export { default as TrxLineChart } from './TrxLineChart.vue'
+export type { TrxLineDataset } from './TrxLineChart.vue'
+export { default as TrxBarChart } from './TrxBarChart.vue'
+export type { TrxBarDataset } from './TrxBarChart.vue'
+export { default as TrxDonutChart } from './TrxDonutChart.vue'
+export type { TrxDonutSlice } from './TrxDonutChart.vue'
+
+// Advanced Form Components
+export { default as TrxCurrencyInput } from './TrxCurrencyInput.vue'
+export { default as TrxColorPicker } from './TrxColorPicker.vue'
+export { default as TrxTagInput } from './TrxTagInput.vue'
+export { default as TrxOTPInput } from './TrxOTPInput.vue'
+export { default as TrxSignaturePad } from './TrxSignaturePad.vue'
+export { default as TrxMarkdownEditor } from './TrxMarkdownEditor.vue'
+export { default as TrxJsonEditor } from './TrxJsonEditor.vue'
+
+// Advanced Navigation
+export { default as TrxSidebarNav } from './TrxSidebarNav.vue'
+export type { TrxSidebarNavItem } from './TrxSidebarNav.vue'
+export { default as TrxCommandPalette } from './TrxCommandPalette.vue'
+export type { TrxCommand } from './TrxCommandPalette.vue'
+export { default as TrxWizard } from './TrxWizard.vue'
+export type { TrxWizardStep } from './TrxWizard.vue'
+export { default as TrxOnboarding } from './TrxOnboarding.vue'
+export type { TrxOnboardingStep } from './TrxOnboarding.vue'
+
+// Data Display
+export { default as TrxKanbanBoard } from './TrxKanbanBoard.vue'
+export type { TrxKanbanColumn, TrxKanbanCard } from './TrxKanbanBoard.vue'
+export { default as TrxCalendarView } from './TrxCalendarView.vue'
+export type { TrxCalendarEvent } from './TrxCalendarView.vue'
+export { default as TrxVirtualList } from './TrxVirtualList.vue'
+export { default as TrxCodeBlock } from './TrxCodeBlock.vue'
+export { default as TrxMarkdownRenderer } from './TrxMarkdownRenderer.vue'
+export { default as TrxTruncateText } from './TrxTruncateText.vue'
+
+// Omnichannel / CRM Extended
+export { default as TrxConversationList } from './TrxConversationList.vue'
+export type { TrxConversation } from './TrxConversationList.vue'
+export { default as TrxLeadCard } from './TrxLeadCard.vue'
+export { default as TrxSLAIndicator } from './TrxSLAIndicator.vue'
+export { default as TrxCRMTimeline } from './TrxCRMTimeline.vue'
+export type { TrxCRMEvent, TrxCRMEventType } from './TrxCRMTimeline.vue'
+
+// System / UX
+export { default as TrxMaintenancePage } from './TrxMaintenancePage.vue'
+export { default as TrxSessionTimeout } from './TrxSessionTimeout.vue'
+export { default as TrxShortcutHelper } from './TrxShortcutHelper.vue'
+export type { TrxShortcut } from './TrxShortcutHelper.vue'
+export { default as TrxFeatureFlag } from './TrxFeatureFlag.vue'
+
 // PrimeVue Wrappers - Form
 export * from './form'
 
