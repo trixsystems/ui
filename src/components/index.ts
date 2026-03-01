@@ -203,6 +203,81 @@ export { default as TrxShortcutHelper } from './TrxShortcutHelper.vue'
 export type { TrxShortcut } from './TrxShortcutHelper.vue'
 export { default as TrxFeatureFlag } from './TrxFeatureFlag.vue'
 
+// Telecom Extended (Batch 3)
+export { default as TrxDTMFPad } from './TrxDTMFPad.vue'
+export { default as TrxTransferDialog } from './TrxTransferDialog.vue'
+export type { TrxTransferTarget } from './TrxTransferDialog.vue'
+export { default as TrxCallMonitor } from './TrxCallMonitor.vue'
+export type { TrxMonitorCall, TrxMonitorMode } from './TrxCallMonitor.vue'
+export { default as TrxBreakSelector } from './TrxBreakSelector.vue'
+export type { TrxBreakReason } from './TrxBreakSelector.vue'
+export { default as TrxQueueMetrics } from './TrxQueueMetrics.vue'
+export type { TrxQueueData } from './TrxQueueMetrics.vue'
+export { default as TrxAgentRanking } from './TrxAgentRanking.vue'
+export type { TrxAgentRankEntry } from './TrxAgentRanking.vue'
+export { default as TrxCallRecorder } from './TrxCallRecorder.vue'
+export type { TrxRecordingState } from './TrxCallRecorder.vue'
+export { default as TrxExtensionPicker } from './TrxExtensionPicker.vue'
+export type { TrxExtension } from './TrxExtensionPicker.vue'
+export { default as TrxAHTIndicator } from './TrxAHTIndicator.vue'
+export { default as TrxConferencePanel } from './TrxConferencePanel.vue'
+export type { TrxConferenceParticipant } from './TrxConferencePanel.vue'
+
+// Extra Charts (Batch 3)
+export { default as TrxRadarChart } from './TrxRadarChart.vue'
+export type { TrxRadarDataset } from './TrxRadarChart.vue'
+export { default as TrxBulletChart } from './TrxBulletChart.vue'
+export { default as TrxWaterfallChart } from './TrxWaterfallChart.vue'
+export type { TrxWaterfallItem } from './TrxWaterfallChart.vue'
+export { default as TrxHorizontalBar } from './TrxHorizontalBar.vue'
+export type { TrxHBarItem } from './TrxHorizontalBar.vue'
+export { default as TrxScatterChart } from './TrxScatterChart.vue'
+export type { TrxScatterPoint, TrxScatterDataset } from './TrxScatterChart.vue'
+export { default as TrxPieChart } from './TrxPieChart.vue'
+export type { TrxPieSlice } from './TrxPieChart.vue'
+
+// Omnichannel / Chat (Batch 3)
+export { default as TrxTypingIndicator } from './TrxTypingIndicator.vue'
+export { default as TrxQuickReplies } from './TrxQuickReplies.vue'
+export type { TrxQuickReply } from './TrxQuickReplies.vue'
+export { default as TrxCannedResponses } from './TrxCannedResponses.vue'
+export type { TrxCannedResponse } from './TrxCannedResponses.vue'
+export { default as TrxEmailComposer } from './TrxEmailComposer.vue'
+export { default as TrxTemplateSelector } from './TrxTemplateSelector.vue'
+export type { TrxMessageTemplate } from './TrxTemplateSelector.vue'
+export { default as TrxSentimentIndicator } from './TrxSentimentIndicator.vue'
+export type { TrxSentiment } from './TrxSentimentIndicator.vue'
+export { default as TrxBotBubble } from './TrxBotBubble.vue'
+// TrxBotBubble uses string[] for options (no separate type)
+export { default as TrxContactTimezone } from './TrxContactTimezone.vue'
+
+// Layout & UX (Batch 3)
+export { default as TrxSplitPane } from './TrxSplitPane.vue'
+export { default as TrxFloatingActionButton } from './TrxFloatingActionButton.vue'
+export type { TrxFABAction } from './TrxFloatingActionButton.vue'
+export { default as TrxContextMenu } from './TrxContextMenu.vue'
+export type { TrxContextMenuItem } from './TrxContextMenu.vue'
+export { default as TrxDraggableList } from './TrxDraggableList.vue'
+export { default as TrxBackToTop } from './TrxBackToTop.vue'
+export { default as TrxResizableSidebar } from './TrxResizableSidebar.vue'
+
+// Data & Tables (Batch 3)
+export { default as TrxJsonViewer } from './TrxJsonViewer.vue'
+export { default as TrxDiffViewer } from './TrxDiffViewer.vue'
+export { default as TrxInfiniteScroll } from './TrxInfiniteScroll.vue'
+export { default as TrxPivotTable } from './TrxPivotTable.vue'
+export type { TrxPivotRow } from './TrxPivotTable.vue'
+
+// System & Dev (Batch 3)
+export { default as TrxEnvironmentBanner } from './TrxEnvironmentBanner.vue'
+export { default as TrxLogViewer } from './TrxLogViewer.vue'
+export type { TrxLogEntry, TrxLogLevel } from './TrxLogViewer.vue'
+export { default as TrxOfflineIndicator } from './TrxOfflineIndicator.vue'
+export { default as TrxUpdatePrompt } from './TrxUpdatePrompt.vue'
+export { default as TrxFilePreview } from './TrxFilePreview.vue'
+export { default as TrxAnnouncementBar } from './TrxAnnouncementBar.vue'
+export type { TrxAnnouncement } from './TrxAnnouncementBar.vue'
+
 // PrimeVue Wrappers - Form
 export * from './form'
 
