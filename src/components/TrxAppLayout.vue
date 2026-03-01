@@ -19,6 +19,7 @@ export interface MenuSection {
 
 const props = withDefaults(defineProps<{
   appName: string
+  brandPrefix?: string
   appIcon?: string
   menuItems?: MenuItem[]
   menuSections?: MenuSection[]
@@ -29,6 +30,7 @@ const props = withDefaults(defineProps<{
   showStatus?: boolean
   onLogout?: () => void | Promise<void>
 }>(), {
+  brandPrefix: 'TRX',
   appIcon: 'pi pi-box',
   showStatus: false,
   statusType: 'offline'
@@ -119,7 +121,7 @@ async function handleLogout() {
         <div class="trx-layout__logo" v-if="!sidebarCollapsed" @click="navigateTo('/')" style="cursor: pointer;">
           <i :class="appIcon"></i>
           <span class="trx-layout__logo-text">
-            <span class="trx-layout__logo-trx">TRX</span> {{ appName }}
+            <span v-if="brandPrefix" class="trx-layout__logo-trx">{{ brandPrefix }}</span>{{ brandPrefix ? ' ' : '' }}{{ appName }}
           </span>
         </div>
         <div class="trx-layout__logo-mini" v-else @click="navigateTo('/')" style="cursor: pointer;">

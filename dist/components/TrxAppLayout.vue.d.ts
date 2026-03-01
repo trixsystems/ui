@@ -11,6 +11,7 @@ export interface MenuSection {
 }
 type __VLS_Props = {
     appName: string;
+    brandPrefix?: string;
     appIcon?: string;
     menuItems?: MenuItem[];
     menuSections?: MenuSection[];
@@ -38,6 +39,7 @@ declare const __VLS_component: import('vue').DefineComponent<__VLS_Props, {}, {}
     onLogout?: (() => any) | undefined;
     onNavigate?: ((path: string) => any) | undefined;
 }>, {
+    brandPrefix: string;
     appIcon: string;
     statusType: "online" | "offline" | "busy" | "paused";
     showStatus: boolean;
