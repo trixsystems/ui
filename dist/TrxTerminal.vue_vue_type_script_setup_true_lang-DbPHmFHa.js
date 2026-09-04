@@ -1,4 +1,4 @@
-import { defineComponent as g, createElementBlock as o, openBlock as s, normalizeClass as w, createElementVNode as e, resolveDirective as yt, withDirectives as Y, createBlock as L, unref as P, createCommentVNode as h, toDisplayString as v, renderSlot as I, Transition as j, withCtx as B, createVNode as O, ref as D, computed as S, createTextVNode as N, withModifiers as H, normalizeStyle as R, onMounted as W, Fragment as V, renderList as b, resolveComponent as kt, reactive as wt, withKeys as at, watch as Z, onBeforeUnmount as G, onUnmounted as ft, nextTick as nt, resolveDynamicComponent as Tt, useTemplateRef as ot, mergeProps as Ct, vModelText as J, useCssVars as St, Teleport as et, useAttrs as tt, normalizeProps as y, guardReactiveProps as k, createSlots as z } from "vue";
+import { defineComponent as g, createElementBlock as o, openBlock as s, normalizeClass as y, createElementVNode as e, resolveDirective as yt, withDirectives as Y, createBlock as L, unref as P, createCommentVNode as h, toDisplayString as v, renderSlot as I, Transition as j, withCtx as B, createVNode as O, ref as z, computed as S, createTextVNode as N, withModifiers as H, normalizeStyle as R, onMounted as W, Fragment as V, renderList as b, resolveComponent as kt, reactive as wt, withKeys as at, watch as Z, onBeforeUnmount as G, onUnmounted as ft, nextTick as nt, resolveDynamicComponent as Tt, useTemplateRef as ot, mergeProps as Ct, vModelText as J, useCssVars as St, Teleport as et, useAttrs as tt, normalizeProps as w, guardReactiveProps as T, createSlots as D } from "vue";
 import { u as It } from "./useTheme-nUyNyP_j.js";
 import st from "primevue/button";
 import xt from "primevue/tag";
@@ -10,8 +10,8 @@ import Vt from "primevue/datatable";
 import { useRouter as Bt, useRoute as Pt } from "vue-router";
 import $t from "primevue/avatar";
 import gt from "primevue/checkbox";
-import At from "primevue/autocomplete";
-import Mt from "primevue/datepicker";
+import Mt from "primevue/autocomplete";
+import At from "primevue/datepicker";
 import Lt from "primevue/inputnumber";
 import zt from "primevue/select";
 import Dt from "primevue/multiselect";
@@ -42,75 +42,72 @@ import oe from "primevue/buttongroup";
 import re from "primevue/speeddial";
 import ie from "primevue/splitbutton";
 import ce from "primevue/paginator";
-import ue from "primevue/column";
-import de from "primevue/columngroup";
-import _e from "primevue/dataview";
-import pe from "primevue/orderlist";
-import ve from "primevue/organizationchart";
-import me from "primevue/picklist";
-import fe from "primevue/row";
-import xe from "primevue/timeline";
-import he from "primevue/tree";
-import $e from "primevue/treetable";
-import ge from "primevue/virtualscroller";
-import be from "primevue/accordion";
-import ye from "primevue/accordioncontent";
-import ke from "primevue/accordionheader";
-import we from "primevue/accordionpanel";
-import Te from "primevue/deferredcontent";
-import Ce from "primevue/divider";
-import Se from "primevue/fieldset";
-import Ie from "primevue/panel";
-import Ve from "primevue/scrollpanel";
-import Be from "primevue/splitter";
-import Pe from "primevue/splitterpanel";
-import Ae from "primevue/stepper";
-import Me from "primevue/step";
-import Le from "primevue/stepitem";
-import ze from "primevue/steplist";
-import De from "primevue/steppanel";
-import Ee from "primevue/steppanels";
-import Re from "primevue/tabs";
-import Ne from "primevue/tab";
-import qe from "primevue/tablist";
-import Fe from "primevue/tabpanel";
-import Oe from "primevue/tabpanels";
-import je from "primevue/toolbar";
-import He from "primevue/dialog";
-import Ue from "primevue/confirmdialog";
-import We from "primevue/confirmpopup";
-import Ge from "primevue/drawer";
-import Ke from "primevue/dynamicdialog";
-import Ye from "primevue/popover";
-import Je from "primevue/breadcrumb";
-import Xe from "primevue/dock";
-import Qe from "primevue/megamenu";
-import Ze from "primevue/menu";
-import ts from "primevue/menubar";
-import es from "primevue/panelmenu";
-import ss from "primevue/steps";
-import as from "primevue/tabmenu";
-import ls from "primevue/tieredmenu";
-import ns from "primevue/toast";
-import os from "primevue/inlinemessage";
-import rs from "primevue/carousel";
-import is from "primevue/galleria";
-import cs from "primevue/image";
-import us from "primevue/imagecompare";
-import ds from "primevue/fileupload";
-import _s from "primevue/chart";
-import ps from "primevue/avatargroup";
-import vs from "primevue/badge";
-import ms from "primevue/blockui";
-import fs from "primevue/chip";
-import xs from "primevue/inplace";
-import hs from "primevue/metergroup";
-import $s from "primevue/overlaybadge";
-import gs from "primevue/progressbar";
-import bs from "primevue/scrolltop";
-import ys from "primevue/skeleton";
-import ks from "primevue/terminal";
-const ws = /* @__PURE__ */ g({
+import ue from "primevue/dataview";
+import de from "primevue/orderlist";
+import _e from "primevue/organizationchart";
+import pe from "primevue/picklist";
+import ve from "primevue/timeline";
+import me from "primevue/tree";
+import fe from "primevue/treetable";
+import xe from "primevue/virtualscroller";
+import he from "primevue/accordion";
+import $e from "primevue/accordioncontent";
+import ge from "primevue/accordionheader";
+import be from "primevue/accordionpanel";
+import ye from "primevue/deferredcontent";
+import ke from "primevue/divider";
+import we from "primevue/fieldset";
+import Te from "primevue/panel";
+import Ce from "primevue/scrollpanel";
+import Se from "primevue/splitter";
+import Ie from "primevue/splitterpanel";
+import Ve from "primevue/stepper";
+import Be from "primevue/step";
+import Pe from "primevue/stepitem";
+import Me from "primevue/steplist";
+import Ae from "primevue/steppanel";
+import Le from "primevue/steppanels";
+import ze from "primevue/tabs";
+import De from "primevue/tab";
+import Ee from "primevue/tablist";
+import Re from "primevue/tabpanel";
+import Ne from "primevue/tabpanels";
+import qe from "primevue/toolbar";
+import Fe from "primevue/dialog";
+import Oe from "primevue/confirmdialog";
+import je from "primevue/confirmpopup";
+import He from "primevue/drawer";
+import Ue from "primevue/dynamicdialog";
+import We from "primevue/popover";
+import Ge from "primevue/breadcrumb";
+import Ke from "primevue/dock";
+import Ye from "primevue/megamenu";
+import Je from "primevue/menu";
+import Xe from "primevue/menubar";
+import Qe from "primevue/panelmenu";
+import Ze from "primevue/steps";
+import ts from "primevue/tabmenu";
+import es from "primevue/tieredmenu";
+import ss from "primevue/toast";
+import as from "primevue/inlinemessage";
+import ls from "primevue/carousel";
+import ns from "primevue/galleria";
+import os from "primevue/image";
+import rs from "primevue/imagecompare";
+import is from "primevue/fileupload";
+import cs from "primevue/chart";
+import us from "primevue/avatargroup";
+import ds from "primevue/badge";
+import _s from "primevue/blockui";
+import ps from "primevue/chip";
+import vs from "primevue/inplace";
+import ms from "primevue/metergroup";
+import fs from "primevue/overlaybadge";
+import xs from "primevue/progressbar";
+import hs from "primevue/scrolltop";
+import $s from "primevue/skeleton";
+import gs from "primevue/terminal";
+const bs = /* @__PURE__ */ g({
   __name: "TrxLogo",
   props: {
     size: {},
@@ -118,7 +115,7 @@ const ws = /* @__PURE__ */ g({
   },
   setup(t) {
     return (a, r) => (s(), o("div", {
-      class: w(["trx-logo", [
+      class: y(["trx-logo", [
         `trx-logo--${t.size || "md"}`,
         `trx-logo--${t.variant || "full"}`
       ]])
@@ -137,12 +134,12 @@ const ws = /* @__PURE__ */ g({
       ], -1)
     ])], 2));
   }
-}), A = (t, a) => {
+}), M = (t, a) => {
   const r = t.__vccOpts || t;
   for (const [i, l] of a)
     r[i] = l;
   return r;
-}, Ww = /* @__PURE__ */ A(ws, [["__scopeId", "data-v-d5448055"]]), Ts = /* @__PURE__ */ g({
+}, Ew = /* @__PURE__ */ M(bs, [["__scopeId", "data-v-d5448055"]]), ys = /* @__PURE__ */ g({
   __name: "TrxThemeToggle",
   setup(t) {
     const { isDark: a, toggleTheme: r } = It();
@@ -165,10 +162,10 @@ const ws = /* @__PURE__ */ g({
       ]);
     };
   }
-}), Gw = /* @__PURE__ */ A(Ts, [["__scopeId", "data-v-f12c0272"]]), Cs = { class: "trx-page-header" }, Ss = { class: "trx-page-header__content" }, Is = { class: "trx-page-header__title" }, Vs = {
+}), Rw = /* @__PURE__ */ M(ys, [["__scopeId", "data-v-f12c0272"]]), ks = { class: "trx-page-header" }, ws = { class: "trx-page-header__content" }, Ts = { class: "trx-page-header__title" }, Cs = {
   key: 0,
   class: "trx-page-header__subtitle"
-}, Bs = { class: "trx-page-header__actions" }, Ps = /* @__PURE__ */ g({
+}, Ss = { class: "trx-page-header__actions" }, Is = /* @__PURE__ */ g({
   __name: "TrxPageHeader",
   props: {
     title: {},
@@ -176,23 +173,23 @@ const ws = /* @__PURE__ */ g({
     icon: {}
   },
   setup(t) {
-    return (a, r) => (s(), o("div", Cs, [
-      e("div", Ss, [
+    return (a, r) => (s(), o("div", ks, [
+      e("div", ws, [
         t.icon ? (s(), o("i", {
           key: 0,
-          class: w([t.icon, "trx-page-header__icon"])
+          class: y([t.icon, "trx-page-header__icon"])
         }, null, 2)) : h("", !0),
         e("div", null, [
-          e("h1", Is, v(t.title), 1),
-          t.subtitle ? (s(), o("p", Vs, v(t.subtitle), 1)) : h("", !0)
+          e("h1", Ts, v(t.title), 1),
+          t.subtitle ? (s(), o("p", Cs, v(t.subtitle), 1)) : h("", !0)
         ])
       ]),
-      e("div", Bs, [
+      e("div", Ss, [
         I(a.$slots, "actions", {}, void 0, !0)
       ])
     ]));
   }
-}), Kw = /* @__PURE__ */ A(Ps, [["__scopeId", "data-v-def36de6"]]), As = /* @__PURE__ */ g({
+}), Nw = /* @__PURE__ */ M(Is, [["__scopeId", "data-v-def36de6"]]), Vs = /* @__PURE__ */ g({
   __name: "TrxStatusBadge",
   props: {
     status: {},
@@ -240,13 +237,13 @@ const ws = /* @__PURE__ */ g({
       class: "trx-status-badge"
     }, null, 8, ["value", "severity"]));
   }
-}), Yw = /* @__PURE__ */ A(As, [["__scopeId", "data-v-c36955e9"]]), Ms = {
+}), qw = /* @__PURE__ */ M(Vs, [["__scopeId", "data-v-c36955e9"]]), Bs = {
   key: 0,
   class: "trx-loading-overlay"
-}, Ls = { class: "trx-loading-overlay__content" }, zs = {
+}, Ps = { class: "trx-loading-overlay__content" }, Ms = {
   key: 0,
   class: "trx-loading-overlay__message"
-}, Ds = /* @__PURE__ */ g({
+}, As = /* @__PURE__ */ g({
   __name: "TrxLoadingOverlay",
   props: {
     visible: { type: Boolean },
@@ -255,23 +252,23 @@ const ws = /* @__PURE__ */ g({
   setup(t) {
     return (a, r) => (s(), L(j, { name: "fade" }, {
       default: B(() => [
-        t.visible ? (s(), o("div", Ms, [
-          e("div", Ls, [
+        t.visible ? (s(), o("div", Bs, [
+          e("div", Ps, [
             O(P(ht), {
               style: { width: "50px", height: "50px" },
               strokeWidth: "4"
             }),
-            t.message ? (s(), o("p", zs, v(t.message), 1)) : h("", !0)
+            t.message ? (s(), o("p", Ms, v(t.message), 1)) : h("", !0)
           ])
         ])) : h("", !0)
       ]),
       _: 1
     }));
   }
-}), Jw = /* @__PURE__ */ A(Ds, [["__scopeId", "data-v-4eb5da13"]]), Es = { class: "trx-empty-state" }, Rs = { class: "trx-empty-state__title" }, Ns = {
+}), Fw = /* @__PURE__ */ M(As, [["__scopeId", "data-v-4eb5da13"]]), Ls = { class: "trx-empty-state" }, zs = { class: "trx-empty-state__title" }, Ds = {
   key: 0,
   class: "trx-empty-state__description"
-}, qs = { class: "trx-empty-state__actions" }, Fs = /* @__PURE__ */ g({
+}, Es = { class: "trx-empty-state__actions" }, Rs = /* @__PURE__ */ g({
   __name: "TrxEmptyState",
   props: {
     icon: {},
@@ -279,24 +276,24 @@ const ws = /* @__PURE__ */ g({
     description: {}
   },
   setup(t) {
-    return (a, r) => (s(), o("div", Es, [
+    return (a, r) => (s(), o("div", Ls, [
       e("i", {
-        class: w([t.icon || "pi pi-inbox", "trx-empty-state__icon"])
+        class: y([t.icon || "pi pi-inbox", "trx-empty-state__icon"])
       }, null, 2),
-      e("h3", Rs, v(t.title), 1),
-      t.description ? (s(), o("p", Ns, v(t.description), 1)) : h("", !0),
-      e("div", qs, [
+      e("h3", zs, v(t.title), 1),
+      t.description ? (s(), o("p", Ds, v(t.description), 1)) : h("", !0),
+      e("div", Es, [
         I(a.$slots, "actions", {}, void 0, !0)
       ])
     ]));
   }
-}), Xw = /* @__PURE__ */ A(Fs, [["__scopeId", "data-v-49c3d947"]]), Os = { class: "trx-login" }, js = { class: "trx-login__container" }, Hs = { class: "trx-login__header" }, Us = { class: "trx-login__logo" }, Ws = {
+}), Ow = /* @__PURE__ */ M(Rs, [["__scopeId", "data-v-49c3d947"]]), Ns = { class: "trx-login" }, qs = { class: "trx-login__container" }, Fs = { class: "trx-login__header" }, Os = { class: "trx-login__logo" }, js = {
   key: 0,
   class: "trx-login__logo-app"
-}, Gs = { class: "trx-login__title" }, Ks = { class: "trx-login__subtitle" }, Ys = { class: "trx-login__field" }, Js = { class: "trx-login__field" }, Xs = { class: "trx-login__forgot" }, Qs = {
+}, Hs = { class: "trx-login__title" }, Us = { class: "trx-login__subtitle" }, Ws = { class: "trx-login__field" }, Gs = { class: "trx-login__field" }, Ks = { class: "trx-login__forgot" }, Ys = {
   key: 1,
   class: "trx-login__actions"
-}, Zs = { class: "trx-login__footer" }, ta = { class: "trx-login__copyright" }, ea = /* @__PURE__ */ g({
+}, Js = { class: "trx-login__footer" }, Xs = { class: "trx-login__copyright" }, Qs = /* @__PURE__ */ g({
   __name: "TrxLoginForm",
   props: {
     appName: {},
@@ -306,21 +303,21 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["submit"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(""), n = D(""), c = S(() => l.value.trim() !== "" && n.value.trim() !== ""), u = () => {
+    const r = t, i = a, l = z(""), n = z(""), c = S(() => l.value.trim() !== "" && n.value.trim() !== ""), u = () => {
       c.value && !r.loading && i("submit", {
         email: l.value.trim(),
         password: n.value
       });
     };
-    return (_, d) => (s(), o("div", Os, [
-      e("div", js, [
-        e("div", Hs, [
-          e("div", Us, [
+    return (_, d) => (s(), o("div", Ns, [
+      e("div", qs, [
+        e("div", Fs, [
+          e("div", Os, [
             d[2] || (d[2] = e("span", { class: "trx-login__logo-text" }, "TRX", -1)),
-            t.appName ? (s(), o("span", Ws, v(t.appName), 1)) : h("", !0)
+            t.appName ? (s(), o("span", js, v(t.appName), 1)) : h("", !0)
           ]),
-          e("h1", Gs, v(t.appTitle || "Entrar"), 1),
-          e("p", Ks, [
+          e("h1", Hs, v(t.appTitle || "Entrar"), 1),
+          e("p", Us, [
             I(_.$slots, "subtitle", {}, () => [
               d[3] || (d[3] = N(" Entre com suas credenciais para acessar o sistema ", -1))
             ], !0)
@@ -341,7 +338,7 @@ const ws = /* @__PURE__ */ g({
             ]),
             _: 1
           })) : h("", !0),
-          e("div", Ys, [
+          e("div", Ws, [
             d[4] || (d[4] = e("label", {
               for: "email",
               class: "trx-login__label"
@@ -357,7 +354,7 @@ const ws = /* @__PURE__ */ g({
               autocomplete: "email"
             }, null, 8, ["modelValue", "disabled"])
           ]),
-          e("div", Js, [
+          e("div", Gs, [
             d[5] || (d[5] = e("label", {
               for: "password",
               class: "trx-login__label"
@@ -374,7 +371,7 @@ const ws = /* @__PURE__ */ g({
               autocomplete: "current-password"
             }, null, 8, ["modelValue", "disabled"])
           ]),
-          e("div", Xs, [
+          e("div", Ks, [
             I(_.$slots, "forgot-password", {}, () => [
               d[6] || (d[6] = e("a", {
                 href: "#",
@@ -390,40 +387,40 @@ const ws = /* @__PURE__ */ g({
             class: "trx-login__submit",
             icon: "pi pi-sign-in"
           }, null, 8, ["label", "loading", "disabled"]),
-          _.$slots.actions ? (s(), o("div", Qs, [
+          _.$slots.actions ? (s(), o("div", Ys, [
             I(_.$slots, "actions", {}, void 0, !0)
           ])) : h("", !0)
         ], 32),
-        e("div", Zs, [
+        e("div", Js, [
           I(_.$slots, "footer", {}, () => [
-            e("p", ta, " © " + v((/* @__PURE__ */ new Date()).getFullYear()) + " TRX Systems ", 1)
+            e("p", Xs, " © " + v((/* @__PURE__ */ new Date()).getFullYear()) + " TRX Systems ", 1)
           ], !0)
         ])
       ])
     ]));
   }
-}), Qw = /* @__PURE__ */ A(ea, [["__scopeId", "data-v-2ec7ed88"]]), sa = {
+}), jw = /* @__PURE__ */ M(Qs, [["__scopeId", "data-v-2ec7ed88"]]), Zs = {
   key: 0,
   class: "trx-card-header"
-}, aa = { class: "header-content" }, la = {
+}, ta = { class: "header-content" }, ea = {
   key: 0,
   class: "card-icon"
-}, na = {
+}, sa = {
   key: 1,
   class: "header-text"
-}, oa = {
+}, aa = {
   key: 0,
   class: "card-title"
-}, ra = {
+}, la = {
   key: 1,
   class: "card-subtitle"
-}, ia = { class: "trx-card-content" }, ca = {
+}, na = { class: "trx-card-content" }, oa = {
   key: 0,
   class: "loading-overlay"
-}, ua = {
+}, ra = {
   key: 1,
   class: "trx-card-footer"
-}, da = /* @__PURE__ */ g({
+}, ia = /* @__PURE__ */ g({
   __name: "TrxCard",
   props: {
     title: {},
@@ -434,37 +431,37 @@ const ws = /* @__PURE__ */ g({
   },
   setup(t) {
     return (a, r) => (s(), o("div", {
-      class: w(["trx-card", { hoverable: t.hoverable, loading: t.loading }])
+      class: y(["trx-card", { hoverable: t.hoverable, loading: t.loading }])
     }, [
-      t.title || t.icon || a.$slots.header ? (s(), o("div", sa, [
-        e("div", aa, [
-          t.icon ? (s(), o("div", la, [
+      t.title || t.icon || a.$slots.header ? (s(), o("div", Zs, [
+        e("div", ta, [
+          t.icon ? (s(), o("div", ea, [
             e("i", {
-              class: w(t.icon)
+              class: y(t.icon)
             }, null, 2)
           ])) : h("", !0),
-          t.title || t.subtitle ? (s(), o("div", na, [
-            t.title ? (s(), o("h3", oa, v(t.title), 1)) : h("", !0),
-            t.subtitle ? (s(), o("p", ra, v(t.subtitle), 1)) : h("", !0)
+          t.title || t.subtitle ? (s(), o("div", sa, [
+            t.title ? (s(), o("h3", aa, v(t.title), 1)) : h("", !0),
+            t.subtitle ? (s(), o("p", la, v(t.subtitle), 1)) : h("", !0)
           ])) : h("", !0)
         ]),
         I(a.$slots, "header-actions", {}, void 0, !0)
       ])) : h("", !0),
-      e("div", ia, [
-        t.loading ? (s(), o("div", ca, [...r[0] || (r[0] = [
+      e("div", na, [
+        t.loading ? (s(), o("div", oa, [...r[0] || (r[0] = [
           e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
         ])])) : h("", !0),
         I(a.$slots, "default", {}, void 0, !0)
       ]),
-      a.$slots.footer ? (s(), o("div", ua, [
+      a.$slots.footer ? (s(), o("div", ra, [
         I(a.$slots, "footer", {}, void 0, !0)
       ])) : h("", !0)
     ], 2));
   }
-}), Zw = /* @__PURE__ */ A(da, [["__scopeId", "data-v-49b3499e"]]), _a = {
+}), Hw = /* @__PURE__ */ M(ia, [["__scopeId", "data-v-49b3499e"]]), ca = {
   key: 0,
   class: "stat-icon"
-}, pa = { class: "stat-content" }, va = { class: "stat-value" }, ma = { class: "stat-title" }, fa = /* @__PURE__ */ g({
+}, ua = { class: "stat-content" }, da = { class: "stat-value" }, _a = { class: "stat-title" }, pa = /* @__PURE__ */ g({
   __name: "TrxStatCard",
   props: {
     title: {},
@@ -476,32 +473,32 @@ const ws = /* @__PURE__ */ g({
   },
   setup(t) {
     return (a, r) => (s(), o("div", {
-      class: w(["trx-stat-card", `color-${t.color || "primary"}`])
+      class: y(["trx-stat-card", `color-${t.color || "primary"}`])
     }, [
-      t.icon ? (s(), o("div", _a, [
+      t.icon ? (s(), o("div", ca, [
         e("i", {
-          class: w(t.icon)
+          class: y(t.icon)
         }, null, 2)
       ])) : h("", !0),
-      e("div", pa, [
-        e("div", va, v(t.value), 1),
-        e("div", ma, v(t.title), 1),
+      e("div", ua, [
+        e("div", da, v(t.value), 1),
+        e("div", _a, v(t.title), 1),
         t.trend && t.trendValue ? (s(), o("div", {
           key: 0,
-          class: w(["stat-trend", `trend-${t.trend}`])
+          class: y(["stat-trend", `trend-${t.trend}`])
         }, [
           e("i", {
-            class: w(t.trend === "up" ? "pi pi-arrow-up" : t.trend === "down" ? "pi pi-arrow-down" : "pi pi-minus")
+            class: y(t.trend === "up" ? "pi pi-arrow-up" : t.trend === "down" ? "pi pi-arrow-down" : "pi pi-minus")
           }, null, 2),
           e("span", null, v(t.trendValue), 1)
         ], 2)) : h("", !0)
       ])
     ], 2));
   }
-}), tT = /* @__PURE__ */ A(fa, [["__scopeId", "data-v-5f985ae8"]]), xa = { class: "trx-datatable" }, ha = {
+}), Uw = /* @__PURE__ */ M(pa, [["__scopeId", "data-v-5f985ae8"]]), va = { class: "trx-datatable" }, ma = {
   key: 0,
   class: "table-header"
-}, $a = { class: "p-input-icon-left" }, ga = { class: "empty-state" }, ba = /* @__PURE__ */ g({
+}, fa = { class: "p-input-icon-left" }, xa = { class: "empty-state" }, ha = /* @__PURE__ */ g({
   __name: "TrxDataTable",
   props: {
     value: {},
@@ -517,12 +514,12 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["page", "sort", "filter"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D({
+    const r = t, i = a, l = z({
       global: { value: null, matchMode: "contains" }
     }), n = S(() => r.rows || 10);
-    return (c, u) => (s(), o("div", xa, [
-      t.globalFilter ? (s(), o("div", ha, [
-        e("span", $a, [
+    return (c, u) => (s(), o("div", va, [
+      t.globalFilter ? (s(), o("div", ma, [
+        e("span", fa, [
           u[4] || (u[4] = e("i", { class: "pi pi-search" }, null, -1)),
           O(P(rt), {
             modelValue: l.value.global.value,
@@ -551,7 +548,7 @@ const ws = /* @__PURE__ */ g({
         class: "trx-table"
       }, {
         empty: B(() => [
-          e("div", ga, [
+          e("div", xa, [
             u[5] || (u[5] = e("i", { class: "pi pi-inbox" }, null, -1)),
             e("p", null, v(t.emptyMessage || "Nenhum registro encontrado"), 1)
           ])
@@ -569,10 +566,10 @@ const ws = /* @__PURE__ */ g({
       }, 8, ["value", "loading", "paginator", "rows", "totalRecords", "lazy", "filters", "globalFilterFields", "stripedRows", "rowHover"])
     ]));
   }
-}), eT = /* @__PURE__ */ A(ba, [["__scopeId", "data-v-f9d94f79"]]), ya = { class: "trx-status" }, ka = {
+}), Ww = /* @__PURE__ */ M(ha, [["__scopeId", "data-v-f9d94f79"]]), $a = { class: "trx-status" }, ga = {
   key: 0,
   class: "status-label"
-}, wa = /* @__PURE__ */ g({
+}, ba = /* @__PURE__ */ g({
   __name: "TrxStatus",
   props: {
     status: {},
@@ -587,28 +584,28 @@ const ws = /* @__PURE__ */ g({
       away: { color: "var(--trx-info-color, var(--info-color))", label: "Ausente" },
       connecting: { color: "var(--trx-text-secondary, var(--text-secondary))", label: "Conectando..." }
     };
-    return (r, i) => (s(), o("div", ya, [
+    return (r, i) => (s(), o("div", $a, [
       e("span", {
-        class: w(["status-dot", { pulse: t.status === "connecting" }]),
+        class: y(["status-dot", { pulse: t.status === "connecting" }]),
         style: R({ backgroundColor: a[t.status].color })
       }, null, 6),
-      t.showLabel !== !1 ? (s(), o("span", ka, v(t.label || a[t.status].label), 1)) : h("", !0)
+      t.showLabel !== !1 ? (s(), o("span", ga, v(t.label || a[t.status].label), 1)) : h("", !0)
     ]));
   }
-}), sT = /* @__PURE__ */ A(wa, [["__scopeId", "data-v-0d5250d8"]]), Ta = { class: "trx-layout__sidebar-header" }, Ca = { class: "trx-layout__logo-text" }, Sa = {
+}), Gw = /* @__PURE__ */ M(ba, [["__scopeId", "data-v-0d5250d8"]]), ya = { class: "trx-layout__sidebar-header" }, ka = { class: "trx-layout__logo-text" }, wa = {
   key: 0,
   class: "trx-layout__logo-trx"
-}, Ia = { class: "trx-layout__nav" }, Va = { key: 0 }, Ba = ["onClick", "title"], Pa = { key: 0 }, Aa = {
+}, Ta = { class: "trx-layout__nav" }, Ca = { key: 0 }, Sa = ["onClick", "title"], Ia = { key: 0 }, Va = {
   key: 0,
   class: "trx-layout__section-header"
-}, Ma = ["onClick", "title"], La = { key: 0 }, za = { class: "trx-layout__sidebar-footer" }, Da = ["href"], Ea = { class: "trx-layout__topbar" }, Ra = { class: "trx-layout__topbar-left" }, Na = { class: "trx-layout__topbar-right" }, qa = { class: "trx-layout__controls" }, Fa = {
+}, Ba = ["onClick", "title"], Pa = { key: 0 }, Ma = { class: "trx-layout__sidebar-footer" }, Aa = ["href"], La = { class: "trx-layout__topbar" }, za = { class: "trx-layout__topbar-left" }, Da = { class: "trx-layout__topbar-right" }, Ea = { class: "trx-layout__controls" }, Ra = {
   key: 1,
   class: "trx-layout__divider"
-}, Oa = { class: "trx-layout__user" }, ja = { class: "trx-layout__user-name" }, Ha = {
+}, Na = { class: "trx-layout__user" }, qa = { class: "trx-layout__user-name" }, Fa = {
   id: "trx-main-content",
   class: "trx-layout__content",
   tabindex: "-1"
-}, Ua = /* @__PURE__ */ g({
+}, Oa = /* @__PURE__ */ g({
   __name: "TrxAppLayout",
   props: {
     appName: {},
@@ -627,7 +624,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["logout", "navigate"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = Bt(), n = Pt(), c = D(!1), u = D(!1), _ = S(() => r.userName ? r.userName.split(" ").map(($) => $[0]).join("").toUpperCase().slice(0, 2) : "U"), d = S(() => ({
+    const r = t, i = a, l = Bt(), n = Pt(), c = z(!1), u = z(!1), _ = S(() => r.userName ? r.userName.split(" ").map(($) => $[0]).join("").toUpperCase().slice(0, 2) : "U"), d = S(() => ({
       online: "trx-layout__status--online",
       offline: "trx-layout__status--offline",
       busy: "trx-layout__status--busy",
@@ -647,85 +644,85 @@ const ws = /* @__PURE__ */ g({
     }, f = ($) => {
       i("navigate", $), l.push($);
     };
-    async function T() {
+    async function k() {
       r.onLogout && await r.onLogout(), i("logout");
     }
     return ($, C) => (s(), o("div", {
-      class: w(["trx-layout", { dark: u.value }])
+      class: y(["trx-layout", { dark: u.value }])
     }, [
       C[4] || (C[4] = e("a", {
         href: "#trx-main-content",
         class: "trx-layout__skip-link"
       }, "Pular para o conteúdo", -1)),
       e("aside", {
-        class: w(["trx-layout__sidebar", { "trx-layout__sidebar--collapsed": c.value }])
+        class: y(["trx-layout__sidebar", { "trx-layout__sidebar--collapsed": c.value }])
       }, [
-        e("div", Ta, [
+        e("div", ya, [
           c.value ? (s(), o("div", {
             key: 1,
             class: "trx-layout__logo-mini",
-            onClick: C[1] || (C[1] = (M) => f("/")),
+            onClick: C[1] || (C[1] = (A) => f("/")),
             style: { cursor: "pointer" }
           }, [
             e("i", {
-              class: w(t.appIcon)
+              class: y(t.appIcon)
             }, null, 2)
           ])) : (s(), o("div", {
             key: 0,
             class: "trx-layout__logo",
-            onClick: C[0] || (C[0] = (M) => f("/")),
+            onClick: C[0] || (C[0] = (A) => f("/")),
             style: { cursor: "pointer" }
           }, [
             e("i", {
-              class: w(t.appIcon)
+              class: y(t.appIcon)
             }, null, 2),
-            e("span", Ca, [
-              t.brandPrefix ? (s(), o("span", Sa, v(t.brandPrefix), 1)) : h("", !0),
+            e("span", ka, [
+              t.brandPrefix ? (s(), o("span", wa, v(t.brandPrefix), 1)) : h("", !0),
               N(v(t.brandPrefix ? " " : "") + v(t.appName), 1)
             ])
           ]))
         ]),
-        e("nav", Ia, [
-          t.menuItems && t.menuItems.length ? (s(), o("ul", Va, [
-            (s(!0), o(V, null, b(t.menuItems, (M) => (s(), o("li", {
-              key: M.path,
-              class: w({ active: p(M.path) }),
-              onClick: (E) => f(M.path),
-              title: c.value ? M.label : ""
+        e("nav", Ta, [
+          t.menuItems && t.menuItems.length ? (s(), o("ul", Ca, [
+            (s(!0), o(V, null, b(t.menuItems, (A) => (s(), o("li", {
+              key: A.path,
+              class: y({ active: p(A.path) }),
+              onClick: (E) => f(A.path),
+              title: c.value ? A.label : ""
             }, [
               e("i", {
-                class: w(M.icon)
+                class: y(A.icon)
               }, null, 2),
-              c.value ? h("", !0) : (s(), o("span", Pa, v(M.label), 1))
-            ], 10, Ba))), 128))
+              c.value ? h("", !0) : (s(), o("span", Ia, v(A.label), 1))
+            ], 10, Sa))), 128))
           ])) : h("", !0),
-          t.menuSections && t.menuSections.length ? (s(!0), o(V, { key: 1 }, b(t.menuSections, (M) => (s(), o("div", {
-            key: M.key,
+          t.menuSections && t.menuSections.length ? (s(!0), o(V, { key: 1 }, b(t.menuSections, (A) => (s(), o("div", {
+            key: A.key,
             class: "trx-layout__nav-section"
           }, [
-            !c.value && M.items.length > 0 ? (s(), o("div", Aa, v(M.label), 1)) : h("", !0),
+            !c.value && A.items.length > 0 ? (s(), o("div", Va, v(A.label), 1)) : h("", !0),
             e("ul", null, [
-              (s(!0), o(V, null, b(M.items, (E) => (s(), o("li", {
+              (s(!0), o(V, null, b(A.items, (E) => (s(), o("li", {
                 key: E.path,
-                class: w({ active: p(E.path) }),
+                class: y({ active: p(E.path) }),
                 onClick: (F) => f(E.path),
                 title: c.value ? E.label : ""
               }, [
                 e("i", {
-                  class: w(E.icon)
+                  class: y(E.icon)
                 }, null, 2),
-                c.value ? h("", !0) : (s(), o("span", La, v(E.label), 1))
-              ], 10, Ma))), 128))
+                c.value ? h("", !0) : (s(), o("span", Pa, v(E.label), 1))
+              ], 10, Ba))), 128))
             ])
           ]))), 128)) : h("", !0)
         ]),
-        e("div", za, [
+        e("div", Ma, [
           e("button", {
             class: "trx-layout__toggle-btn",
             onClick: x
           }, [
             e("i", {
-              class: w(["pi", c.value ? "pi-angle-right" : "pi-angle-left"])
+              class: y(["pi", c.value ? "pi-angle-right" : "pi-angle-left"])
             }, null, 2)
           ]),
           !c.value && t.footerText ? (s(), o("a", {
@@ -734,14 +731,14 @@ const ws = /* @__PURE__ */ g({
             target: "_blank",
             rel: "noopener noreferrer",
             class: "trx-layout__footer-link"
-          }, v(t.footerText), 9, Da)) : h("", !0)
+          }, v(t.footerText), 9, Aa)) : h("", !0)
         ])
       ], 2),
       e("div", {
-        class: w(["trx-layout__main", { "trx-layout__main--collapsed": c.value }])
+        class: y(["trx-layout__main", { "trx-layout__main--collapsed": c.value }])
       }, [
-        e("header", Ea, [
-          e("div", Ra, [
+        e("header", La, [
+          e("div", za, [
             O(P(st), {
               icon: "pi pi-bars",
               text: "",
@@ -751,16 +748,16 @@ const ws = /* @__PURE__ */ g({
             }),
             I($.$slots, "topbar-left", {}, void 0, !0)
           ]),
-          e("div", Na, [
-            e("div", qa, [
+          e("div", Da, [
+            e("div", Ea, [
               t.showStatus ? (s(), o("div", {
                 key: 0,
-                class: w(["trx-layout__status", d.value])
+                class: y(["trx-layout__status", d.value])
               }, [
                 C[2] || (C[2] = e("span", { class: "trx-layout__status-dot" }, null, -1)),
                 N(" " + v(t.statusLabel), 1)
               ], 2)) : h("", !0),
-              t.showStatus ? (s(), o("span", Fa)) : h("", !0),
+              t.showStatus ? (s(), o("span", Ra)) : h("", !0),
               O(P(st), {
                 icon: u.value ? "pi pi-sun" : "pi pi-moon",
                 onClick: m,
@@ -770,32 +767,32 @@ const ws = /* @__PURE__ */ g({
                 title: u.value ? "Modo Claro" : "Modo Escuro"
               }, null, 8, ["icon", "title"]),
               C[3] || (C[3] = e("span", { class: "trx-layout__divider" }, null, -1)),
-              e("div", Oa, [
+              e("div", Na, [
                 O(P($t), {
                   label: _.value,
                   size: "small",
                   shape: "circle"
                 }, null, 8, ["label"]),
-                e("span", ja, v(t.userName || "Usuario"), 1)
+                e("span", qa, v(t.userName || "Usuario"), 1)
               ]),
               O(P(st), {
                 icon: "pi pi-sign-out",
                 rounded: "",
                 text: "",
                 size: "small",
-                onClick: T,
+                onClick: k,
                 title: "Sair"
               })
             ])
           ])
         ]),
-        e("main", Ha, [
+        e("main", Fa, [
           I($.$slots, "default", {}, void 0, !0)
         ])
       ], 2)
     ], 2));
   }
-}), aT = /* @__PURE__ */ A(Ua, [["__scopeId", "data-v-90bad350"]]), Wa = { class: "trx-not-found" }, Ga = { class: "trx-not-found__content" }, Ka = { class: "trx-not-found__code" }, Ya = { class: "trx-not-found__title" }, Ja = { class: "trx-not-found__message" }, Xa = /* @__PURE__ */ g({
+}), Kw = /* @__PURE__ */ M(Oa, [["__scopeId", "data-v-90bad350"]]), ja = { class: "trx-not-found" }, Ha = { class: "trx-not-found__content" }, Ua = { class: "trx-not-found__code" }, Wa = { class: "trx-not-found__title" }, Ga = { class: "trx-not-found__message" }, Ka = /* @__PURE__ */ g({
   __name: "TrxNotFound",
   props: {
     code: { default: "404" },
@@ -807,11 +804,11 @@ const ws = /* @__PURE__ */ g({
   setup(t) {
     return (a, r) => {
       const i = kt("router-link");
-      return s(), o("div", Wa, [
-        e("div", Ga, [
-          e("div", Ka, v(t.code), 1),
-          e("h1", Ya, v(t.title), 1),
-          e("p", Ja, v(t.message), 1),
+      return s(), o("div", ja, [
+        e("div", Ha, [
+          e("div", Ua, v(t.code), 1),
+          e("h1", Wa, v(t.title), 1),
+          e("p", Ga, v(t.message), 1),
           O(i, { to: t.redirectTo }, {
             default: B(() => [
               O(P(st), {
@@ -826,34 +823,34 @@ const ws = /* @__PURE__ */ g({
       ]);
     };
   }
-}), lT = /* @__PURE__ */ A(Xa, [["__scopeId", "data-v-603fc352"]]), Qa = { class: "trx-login-page" }, Za = { class: "trx-login-page__settings" }, tl = ["disabled"], el = ["disabled"], sl = ["title"], al = { class: "trx-login-page__lang-label" }, ll = { class: "trx-login-page__container" }, nl = { class: "trx-login-page__panel" }, ol = { class: "trx-login-page__card" }, rl = { class: "trx-login-page__header" }, il = { class: "trx-login-page__icon" }, cl = { class: "trx-login-page__brand" }, ul = {
+}), Yw = /* @__PURE__ */ M(Ka, [["__scopeId", "data-v-603fc352"]]), Ya = { class: "trx-login-page" }, Ja = { class: "trx-login-page__settings" }, Xa = ["disabled"], Qa = ["disabled"], Za = ["title"], tl = { class: "trx-login-page__lang-label" }, el = { class: "trx-login-page__container" }, sl = { class: "trx-login-page__panel" }, al = { class: "trx-login-page__card" }, ll = { class: "trx-login-page__header" }, nl = { class: "trx-login-page__icon" }, ol = { class: "trx-login-page__brand" }, rl = {
   key: 0,
   class: "trx-login-page__brand-trx"
-}, dl = {
+}, il = {
   key: 0,
   class: "trx-login-page__tagline"
+}, cl = { class: "trx-login-page__field" }, ul = {
+  key: 0,
+  class: "p-error"
+}, dl = {
+  key: 1,
+  class: "p-error"
 }, _l = { class: "trx-login-page__field" }, pl = {
   key: 0,
   class: "p-error"
 }, vl = {
-  key: 1,
-  class: "p-error"
-}, ml = { class: "trx-login-page__field" }, fl = {
-  key: 0,
-  class: "p-error"
-}, xl = {
   key: 0,
   class: "trx-login-page__options"
-}, hl = {
+}, ml = {
   key: 0,
   class: "trx-login-page__remember"
-}, $l = {
+}, fl = {
   key: 0,
   class: "pi pi-sign-in"
-}, gl = {
+}, xl = {
   key: 1,
   class: "trx-login-page__error"
-}, bl = { class: "trx-login-page__footer" }, yl = /* @__PURE__ */ g({
+}, hl = { class: "trx-login-page__footer" }, $l = /* @__PURE__ */ g({
   __name: "TrxLoginPage",
   props: {
     appName: {},
@@ -871,16 +868,16 @@ const ws = /* @__PURE__ */ g({
     const r = a, i = wt({
       email: "",
       password: ""
-    }), l = D(!1), n = D(!1), c = D(!1), u = D(localStorage.getItem("locale") || "pt-BR"), _ = S(() => u.value === "pt-BR" ? "PT" : "EN"), d = D(16), p = S(() => /.+@.+\..+/.test(i.email)), m = S(() => n.value && (!i.email || !p.value)), x = S(() => n.value && !i.password), f = () => {
+    }), l = z(!1), n = z(!1), c = z(!1), u = z(localStorage.getItem("locale") || "pt-BR"), _ = S(() => u.value === "pt-BR" ? "PT" : "EN"), d = z(16), p = S(() => /.+@.+\..+/.test(i.email)), m = S(() => n.value && (!i.email || !p.value)), x = S(() => n.value && !i.password), f = () => {
       c.value = !c.value, c.value ? (document.documentElement.classList.add("dark"), localStorage.setItem("theme", "dark")) : (document.documentElement.classList.remove("dark"), localStorage.setItem("theme", "light"));
-    }, T = () => {
+    }, k = () => {
       const F = u.value === "pt-BR" ? "en" : "pt-BR";
       u.value = F, localStorage.setItem("locale", F);
     }, $ = () => {
       d.value < 20 && (d.value += 1, document.documentElement.style.fontSize = `${d.value}px`, localStorage.setItem("fontSize", d.value.toString()));
     }, C = () => {
       d.value > 12 && (d.value -= 1, document.documentElement.style.fontSize = `${d.value}px`, localStorage.setItem("fontSize", d.value.toString()));
-    }, M = () => {
+    }, A = () => {
       n.value = !0, !(!i.email || !i.password || !p.value) && r("submit", {
         email: i.email,
         password: i.password,
@@ -893,8 +890,8 @@ const ws = /* @__PURE__ */ g({
       localStorage.getItem("theme") === "dark" && (document.documentElement.classList.add("dark"), c.value = !0);
       const q = localStorage.getItem("fontSize");
       q && (d.value = parseInt(q), document.documentElement.style.fontSize = `${d.value}px`);
-    }), (F, q) => (s(), o("div", Qa, [
-      e("div", Za, [
+    }), (F, q) => (s(), o("div", Ya, [
+      e("div", Ja, [
         t.showFontControls ? (s(), o(V, { key: 0 }, [
           e("button", {
             onClick: C,
@@ -903,7 +900,7 @@ const ws = /* @__PURE__ */ g({
             disabled: d.value <= 12
           }, [...q[3] || (q[3] = [
             e("i", { class: "pi pi-minus" }, null, -1)
-          ])], 8, tl),
+          ])], 8, Xa),
           e("button", {
             onClick: $,
             title: "Aumentar fonte",
@@ -911,7 +908,7 @@ const ws = /* @__PURE__ */ g({
             disabled: d.value >= 20
           }, [...q[4] || (q[4] = [
             e("i", { class: "pi pi-plus" }, null, -1)
-          ])], 8, el),
+          ])], 8, Qa),
           q[5] || (q[5] = e("div", { class: "trx-login-page__settings-divider" }, null, -1))
         ], 64)) : h("", !0),
         e("button", {
@@ -920,18 +917,18 @@ const ws = /* @__PURE__ */ g({
           class: "trx-login-page__settings-btn"
         }, [
           e("i", {
-            class: w(c.value ? "pi pi-sun" : "pi pi-moon")
+            class: y(c.value ? "pi pi-sun" : "pi pi-moon")
           }, null, 2)
-        ], 8, sl),
+        ], 8, Za),
         t.showLanguageToggle ? (s(), o(V, { key: 1 }, [
           q[7] || (q[7] = e("div", { class: "trx-login-page__settings-divider" }, null, -1)),
           e("button", {
-            onClick: T,
+            onClick: k,
             title: "Idioma",
             class: "trx-login-page__settings-btn trx-login-page__settings-btn--lang"
           }, [
             q[6] || (q[6] = e("i", { class: "pi pi-globe" }, null, -1)),
-            e("span", al, v(_.value), 1)
+            e("span", tl, v(_.value), 1)
           ])
         ], 64)) : h("", !0)
       ]),
@@ -940,11 +937,11 @@ const ws = /* @__PURE__ */ g({
         e("div", { class: "trx-login-page__orb trx-login-page__orb--2" }),
         e("div", { class: "trx-login-page__orb trx-login-page__orb--3" })
       ], -1)),
-      e("div", ll, [
-        e("div", nl, [
-          e("div", ol, [
-            e("div", rl, [
-              e("div", il, [
+      e("div", el, [
+        e("div", sl, [
+          e("div", al, [
+            e("div", ll, [
+              e("div", nl, [
                 I(F.$slots, "icon", {}, () => [
                   q[8] || (q[8] = e("i", {
                     class: "pi pi-box",
@@ -952,19 +949,19 @@ const ws = /* @__PURE__ */ g({
                   }, null, -1))
                 ], !0)
               ]),
-              e("h1", cl, [
-                t.brandPrefix ? (s(), o("span", ul, v(t.brandPrefix), 1)) : h("", !0),
+              e("h1", ol, [
+                t.brandPrefix ? (s(), o("span", rl, v(t.brandPrefix), 1)) : h("", !0),
                 N(v(t.brandPrefix ? " " : "") + v(t.appName), 1)
               ]),
-              t.appTagline ? (s(), o("p", dl, v(t.appTagline), 1)) : h("", !0),
+              t.appTagline ? (s(), o("p", il, v(t.appTagline), 1)) : h("", !0),
               q[9] || (q[9] = e("h2", { class: "trx-login-page__title" }, "Acesse sua conta", -1)),
               q[10] || (q[10] = e("p", { class: "trx-login-page__subtitle" }, "Preencha seus dados para acessar", -1))
             ]),
             e("form", {
               class: "trx-login-page__form",
-              onSubmit: H(M, ["prevent"])
+              onSubmit: H(A, ["prevent"])
             }, [
-              e("div", _l, [
+              e("div", cl, [
                 q[11] || (q[11] = e("label", {
                   for: "email",
                   class: "trx-login-page__label"
@@ -978,11 +975,11 @@ const ws = /* @__PURE__ */ g({
                   "onUpdate:modelValue": q[0] || (q[0] = (K) => i.email = K),
                   type: "email",
                   placeholder: "seu@email.com",
-                  class: w(["trx-login-page__input", { "p-invalid": m.value }])
+                  class: y(["trx-login-page__input", { "p-invalid": m.value }])
                 }, null, 8, ["modelValue", "class"]),
-                n.value && !i.email ? (s(), o("small", pl, " Campo obrigatorio ")) : n.value && i.email && !p.value ? (s(), o("small", vl, " Email invalido ")) : h("", !0)
+                n.value && !i.email ? (s(), o("small", ul, " Campo obrigatorio ")) : n.value && i.email && !p.value ? (s(), o("small", dl, " Email invalido ")) : h("", !0)
               ]),
-              e("div", ml, [
+              e("div", _l, [
                 q[12] || (q[12] = e("label", {
                   for: "password",
                   class: "trx-login-page__label"
@@ -997,13 +994,13 @@ const ws = /* @__PURE__ */ g({
                   feedback: !1,
                   toggleMask: "",
                   placeholder: "Digite sua senha",
-                  class: w(["trx-login-page__input", { "p-invalid": x.value }]),
+                  class: y(["trx-login-page__input", { "p-invalid": x.value }]),
                   inputClass: "w-full"
                 }, null, 8, ["modelValue", "class"]),
-                x.value ? (s(), o("small", fl, " Campo obrigatorio ")) : h("", !0)
+                x.value ? (s(), o("small", pl, " Campo obrigatorio ")) : h("", !0)
               ]),
-              t.showRememberMe || t.showForgotPassword ? (s(), o("div", xl, [
-                t.showRememberMe ? (s(), o("div", hl, [
+              t.showRememberMe || t.showForgotPassword ? (s(), o("div", vl, [
+                t.showRememberMe ? (s(), o("div", ml, [
                   O(P(gt), {
                     id: "remember-me",
                     modelValue: l.value,
@@ -1029,12 +1026,12 @@ const ws = /* @__PURE__ */ g({
                 disabled: t.loading
               }, {
                 default: B(() => [
-                  t.loading ? h("", !0) : (s(), o("i", $l)),
+                  t.loading ? h("", !0) : (s(), o("i", fl)),
                   e("span", null, v(t.loading ? "Entrando..." : "Entrar"), 1)
                 ]),
                 _: 1
               }, 8, ["loading", "disabled"]),
-              t.error ? (s(), o("div", gl, [
+              t.error ? (s(), o("div", xl, [
                 O(P(ct), {
                   severity: "error",
                   closable: !1
@@ -1046,7 +1043,7 @@ const ws = /* @__PURE__ */ g({
                 })
               ])) : h("", !0)
             ], 32),
-            e("div", bl, [
+            e("div", hl, [
               I(F.$slots, "footer", {}, () => [
                 q[14] || (q[14] = e("p", { class: "trx-login-page__copyright" }, [
                   N(" Powered by "),
@@ -1064,13 +1061,13 @@ const ws = /* @__PURE__ */ g({
       ])
     ]));
   }
-}), nT = /* @__PURE__ */ A(yl, [["__scopeId", "data-v-b5b9c53f"]]), kl = ["aria-label"], wl = { class: "trx-banner__content" }, Tl = { class: "trx-banner__body" }, Cl = {
+}), Jw = /* @__PURE__ */ M($l, [["__scopeId", "data-v-b5b9c53f"]]), gl = ["aria-label"], bl = { class: "trx-banner__content" }, yl = { class: "trx-banner__body" }, kl = {
   key: 0,
   class: "trx-banner__title"
-}, Sl = {
+}, wl = {
   key: 1,
   class: "trx-banner__message"
-}, Il = /* @__PURE__ */ g({
+}, Tl = /* @__PURE__ */ g({
   __name: "TrxBanner",
   props: {
     type: { default: "info" },
@@ -1089,7 +1086,7 @@ const ws = /* @__PURE__ */ g({
       neutral: "pi pi-bell"
     }, n = r.icon ?? l[r.type];
     return (c, u) => (s(), o("div", {
-      class: w([
+      class: y([
         "trx-banner",
         `trx-banner--${t.type}`,
         { "trx-banner--sticky": t.sticky }
@@ -1097,14 +1094,14 @@ const ws = /* @__PURE__ */ g({
       role: "banner",
       "aria-label": t.title
     }, [
-      e("div", wl, [
+      e("div", bl, [
         e("i", {
-          class: w(["trx-banner__icon", P(n)]),
+          class: y(["trx-banner__icon", P(n)]),
           "aria-hidden": "true"
         }, null, 2),
-        e("div", Tl, [
-          t.title ? (s(), o("strong", Cl, v(t.title), 1)) : h("", !0),
-          c.$slots.default ? (s(), o("span", Sl, [
+        e("div", yl, [
+          t.title ? (s(), o("strong", kl, v(t.title), 1)) : h("", !0),
+          c.$slots.default ? (s(), o("span", wl, [
             I(c.$slots, "default", {}, void 0, !0)
           ])) : h("", !0)
         ])
@@ -1121,12 +1118,12 @@ const ws = /* @__PURE__ */ g({
           "aria-hidden": "true"
         }, null, -1)
       ])])) : h("", !0)
-    ], 10, kl));
+    ], 10, gl));
   }
-}), oT = /* @__PURE__ */ A(Il, [["__scopeId", "data-v-3e631643"]]), Vl = {
+}), Xw = /* @__PURE__ */ M(Tl, [["__scopeId", "data-v-3e631643"]]), Cl = {
   key: 0,
   class: "trx-copy__value"
-}, Bl = ["aria-label", "title"], Pl = { key: 0 }, Al = { key: 1 }, Ml = /* @__PURE__ */ g({
+}, Sl = ["aria-label", "title"], Il = { key: 0 }, Vl = { key: 1 }, Bl = /* @__PURE__ */ g({
   __name: "TrxCopyButton",
   props: {
     value: {},
@@ -1137,7 +1134,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["copy"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(!1);
+    const r = t, i = a, l = z(!1);
     async function n() {
       try {
         await navigator.clipboard.writeText(r.value), l.value = !0, i("copy", r.value), setTimeout(() => {
@@ -1151,33 +1148,33 @@ const ws = /* @__PURE__ */ g({
       }
     }
     return (c, u) => (s(), o("div", {
-      class: w(["trx-copy", `trx-copy--${t.size}`])
+      class: y(["trx-copy", `trx-copy--${t.size}`])
     }, [
-      t.showValue ? (s(), o("span", Vl, v(t.value), 1)) : h("", !0),
+      t.showValue ? (s(), o("span", Cl, v(t.value), 1)) : h("", !0),
       e("button", {
         type: "button",
-        class: w(["trx-copy__btn", { "trx-copy__btn--copied": l.value }]),
+        class: y(["trx-copy__btn", { "trx-copy__btn--copied": l.value }]),
         "aria-label": l.value ? "Copiado!" : `Copiar ${t.label ?? t.value}`,
         title: l.value ? "Copiado!" : "Copiar",
         onClick: n
       }, [
         e("i", {
-          class: w(l.value ? "pi pi-check" : "pi pi-copy"),
+          class: y(l.value ? "pi pi-check" : "pi pi-copy"),
           "aria-hidden": "true"
         }, null, 2),
-        t.label && !t.showValue ? (s(), o("span", Pl, v(l.value ? "Copiado!" : t.label), 1)) : !t.label && !t.showValue ? (s(), o("span", Al, v(l.value ? "Copiado!" : "Copiar"), 1)) : h("", !0)
-      ], 10, Bl)
+        t.label && !t.showValue ? (s(), o("span", Il, v(l.value ? "Copiado!" : t.label), 1)) : !t.label && !t.showValue ? (s(), o("span", Vl, v(l.value ? "Copiado!" : "Copiar"), 1)) : h("", !0)
+      ], 10, Sl)
     ], 2));
   }
-}), rT = /* @__PURE__ */ A(Ml, [["__scopeId", "data-v-e4ae9d59"]]), Ll = {
+}), Qw = /* @__PURE__ */ M(Bl, [["__scopeId", "data-v-e4ae9d59"]]), Pl = {
   key: 0,
   class: "trx-agent-badge"
-}, zl = { class: "trx-agent-label" }, Dl = ["aria-expanded", "aria-label"], El = { class: "trx-agent-label" }, Rl = {
+}, Ml = { class: "trx-agent-label" }, Al = ["aria-expanded", "aria-label"], Ll = { class: "trx-agent-label" }, zl = {
   key: 0,
   class: "trx-agent-menu",
   role: "listbox",
   "aria-label": "Selecionar status"
-}, Nl = ["aria-selected", "onClick"], ql = /* @__PURE__ */ g({
+}, Dl = ["aria-selected", "onClick"], El = /* @__PURE__ */ g({
   __name: "TrxAgentStatus",
   props: {
     modelValue: { default: "offline" },
@@ -1192,16 +1189,16 @@ const ws = /* @__PURE__ */ g({
       { value: "busy", label: "Ocupado", color: "#ef4444", icon: "pi pi-phone" },
       { value: "paused", label: "Pausa", color: "#f59e0b", icon: "pi pi-pause-circle" },
       { value: "offline", label: "Offline", color: "#94a3b8", icon: "pi pi-circle" }
-    ], i = t, l = a, n = D(!1), c = S(() => i.options ?? r), u = S(() => c.value.find((d) => d.value === i.modelValue) ?? r[3]);
+    ], i = t, l = a, n = z(!1), c = S(() => i.options ?? r), u = S(() => c.value.find((d) => d.value === i.modelValue) ?? r[3]);
     function _(d) {
       n.value = !1, l("update:modelValue", d.value), l("change", d.value);
     }
-    return (d, p) => t.readonly || t.compact ? (s(), o("div", Ll, [
+    return (d, p) => t.readonly || t.compact ? (s(), o("div", Pl, [
       e("span", {
         class: "trx-agent-dot",
         style: R({ background: u.value.color })
       }, null, 4),
-      e("span", zl, v(u.value.label), 1)
+      e("span", Ml, v(u.value.label), 1)
     ])) : (s(), o("div", {
       key: 1,
       class: "trx-agent-wrap",
@@ -1219,20 +1216,20 @@ const ws = /* @__PURE__ */ g({
           class: "trx-agent-dot",
           style: R({ background: u.value.color })
         }, null, 4),
-        e("span", El, v(u.value.label), 1),
+        e("span", Ll, v(u.value.label), 1),
         e("i", {
-          class: w(["pi pi-chevron-down trx-agent-chevron", { "trx-agent-chevron--open": n.value }]),
+          class: y(["pi pi-chevron-down trx-agent-chevron", { "trx-agent-chevron--open": n.value }]),
           "aria-hidden": "true"
         }, null, 2)
-      ], 8, Dl),
+      ], 8, Al),
       O(j, { name: "trx-agent" }, {
         default: B(() => [
-          n.value ? (s(), o("ul", Rl, [
+          n.value ? (s(), o("ul", zl, [
             (s(!0), o(V, null, b(c.value, (m) => (s(), o("li", {
               key: m.value,
               role: "option",
               "aria-selected": m.value === t.modelValue,
-              class: w(["trx-agent-option", { "trx-agent-option--active": m.value === t.modelValue }]),
+              class: y(["trx-agent-option", { "trx-agent-option--active": m.value === t.modelValue }]),
               onClick: (x) => _(m)
             }, [
               e("span", {
@@ -1240,12 +1237,12 @@ const ws = /* @__PURE__ */ g({
                 style: R({ background: m.color })
               }, null, 4),
               e("i", {
-                class: w(m.icon),
+                class: y(m.icon),
                 style: R({ color: m.color }),
                 "aria-hidden": "true"
               }, null, 6),
               e("span", null, v(m.label), 1)
-            ], 10, Nl))), 128))
+            ], 10, Dl))), 128))
           ])) : h("", !0)
         ]),
         _: 1
@@ -1257,18 +1254,18 @@ const ws = /* @__PURE__ */ g({
       })) : h("", !0)
     ], 32));
   }
-}), iT = /* @__PURE__ */ A(ql, [["__scopeId", "data-v-9a90548c"]]), Fl = {
+}), Zw = /* @__PURE__ */ M(El, [["__scopeId", "data-v-9a90548c"]]), Rl = {
   class: "trx-player",
   role: "region",
   "aria-label": "Player de áudio"
-}, Ol = ["src"], jl = {
+}, Nl = ["src"], ql = {
   key: 0,
   class: "trx-player__error"
-}, Hl = ["aria-label", "disabled"], Ul = { class: "trx-player__timeline" }, Wl = { class: "trx-player__time" }, Gl = ["aria-valuemax", "aria-valuenow", "aria-label"], Kl = { class: "trx-player__track" }, Yl = { class: "trx-player__time trx-player__time--total" }, Jl = { class: "trx-player__speed-wrap" }, Xl = ["aria-label"], Ql = {
+}, Fl = ["aria-label", "disabled"], Ol = { class: "trx-player__timeline" }, jl = { class: "trx-player__time" }, Hl = ["aria-valuemax", "aria-valuenow", "aria-label"], Ul = { class: "trx-player__track" }, Wl = { class: "trx-player__time trx-player__time--total" }, Gl = { class: "trx-player__speed-wrap" }, Kl = ["aria-label"], Yl = {
   key: 0,
   class: "trx-player__speed-menu",
   role: "listbox"
-}, Zl = ["aria-selected", "onClick"], tn = /* @__PURE__ */ g({
+}, Jl = ["aria-selected", "onClick"], Xl = /* @__PURE__ */ g({
   __name: "TrxAudioPlayer",
   props: {
     src: {},
@@ -1278,7 +1275,7 @@ const ws = /* @__PURE__ */ g({
     speeds: { default: () => [0.5, 0.75, 1, 1.25, 1.5, 2] }
   },
   setup(t) {
-    const a = t, r = D(null), i = D(!1), l = D(0), n = D(a.duration ?? 0), c = D(1), u = D(!1), _ = D(!1), d = D(!1), p = S(
+    const a = t, r = z(null), i = z(!1), l = z(0), n = z(a.duration ?? 0), c = z(1), u = z(!1), _ = z(!1), d = z(!1), p = S(
       () => n.value > 0 ? l.value / n.value * 100 : 0
     );
     function m(U) {
@@ -1293,7 +1290,7 @@ const ws = /* @__PURE__ */ g({
       const Q = U.currentTarget.getBoundingClientRect(), lt = Math.max(0, Math.min(1, (U.clientX - Q.left) / Q.width));
       r.value.currentTime = lt * n.value;
     }
-    function T(U) {
+    function k(U) {
       c.value = U, d.value = !1, r.value && (r.value.playbackRate = U);
     }
     function $() {
@@ -1302,7 +1299,7 @@ const ws = /* @__PURE__ */ g({
     function C() {
       i.value = !1;
     }
-    function M() {
+    function A() {
       i.value = !1, l.value = 0;
     }
     function E() {
@@ -1331,7 +1328,7 @@ const ws = /* @__PURE__ */ g({
     }), G(() => {
       var U;
       (U = r.value) == null || U.pause();
-    }), (U, X) => (s(), o("div", Fl, [
+    }), (U, X) => (s(), o("div", Rl, [
       e("audio", {
         ref_key: "audioRef",
         ref: r,
@@ -1339,14 +1336,14 @@ const ws = /* @__PURE__ */ g({
         preload: "metadata",
         onPlay: $,
         onPause: C,
-        onEnded: M,
+        onEnded: A,
         onTimeupdate: E,
         onLoadedmetadata: F,
         onError: q,
         onWaiting: K,
         onCanplay: dt
-      }, null, 40, Ol),
-      _.value ? (s(), o("div", jl, [...X[2] || (X[2] = [
+      }, null, 40, Nl),
+      _.value ? (s(), o("div", ql, [...X[2] || (X[2] = [
         e("i", {
           class: "pi pi-exclamation-triangle",
           "aria-hidden": "true"
@@ -1361,12 +1358,12 @@ const ws = /* @__PURE__ */ g({
           onClick: x
         }, [
           e("i", {
-            class: w(u.value ? "pi pi-spin pi-spinner" : i.value ? "pi pi-pause" : "pi pi-play"),
+            class: y(u.value ? "pi pi-spin pi-spinner" : i.value ? "pi pi-pause" : "pi pi-play"),
             "aria-hidden": "true"
           }, null, 2)
-        ], 8, Hl),
-        e("div", Ul, [
-          e("span", Wl, v(m(l.value)), 1),
+        ], 8, Fl),
+        e("div", Ol, [
+          e("span", jl, v(m(l.value)), 1),
           e("div", {
             class: "trx-player__bar",
             role: "slider",
@@ -1377,7 +1374,7 @@ const ws = /* @__PURE__ */ g({
             tabindex: "0",
             onClick: f
           }, [
-            e("div", Kl, [
+            e("div", Ul, [
               e("div", {
                 class: "trx-player__fill",
                 style: R({ width: `${p.value}%` })
@@ -1387,24 +1384,24 @@ const ws = /* @__PURE__ */ g({
                 style: R({ left: `${p.value}%` })
               }, null, 4)
             ])
-          ], 8, Gl),
-          e("span", Yl, v(m(n.value)), 1)
+          ], 8, Hl),
+          e("span", Wl, v(m(n.value)), 1)
         ]),
-        e("div", Jl, [
+        e("div", Gl, [
           e("button", {
             type: "button",
             class: "trx-player__speed-btn",
             "aria-label": `Velocidade: ${c.value}x`,
             onClick: X[0] || (X[0] = (Q) => d.value = !d.value)
-          }, v(c.value) + "x ", 9, Xl),
-          d.value ? (s(), o("ul", Ql, [
+          }, v(c.value) + "x ", 9, Kl),
+          d.value ? (s(), o("ul", Yl, [
             (s(!0), o(V, null, b(t.speeds, (Q) => (s(), o("li", {
               key: Q,
-              class: w(["trx-player__speed-opt", { "trx-player__speed-opt--active": Q === c.value }]),
+              class: y(["trx-player__speed-opt", { "trx-player__speed-opt--active": Q === c.value }]),
               role: "option",
               "aria-selected": Q === c.value,
-              onClick: (lt) => T(Q)
-            }, v(Q) + "x ", 11, Zl))), 128))
+              onClick: (lt) => k(Q)
+            }, v(Q) + "x ", 11, Jl))), 128))
           ])) : h("", !0),
           d.value ? (s(), o("div", {
             key: 1,
@@ -1428,10 +1425,10 @@ const ws = /* @__PURE__ */ g({
       ], 64))
     ]));
   }
-}), cT = /* @__PURE__ */ A(tn, [["__scopeId", "data-v-2ae62dee"]]), en = { class: "trx-alert__body" }, sn = {
+}), tT = /* @__PURE__ */ M(Xl, [["__scopeId", "data-v-2ae62dee"]]), Ql = { class: "trx-alert__body" }, Zl = {
   key: 0,
   class: "trx-alert__title"
-}, an = { class: "trx-alert__content" }, ln = /* @__PURE__ */ g({
+}, tn = { class: "trx-alert__content" }, en = /* @__PURE__ */ g({
   __name: "TrxAlert",
   props: {
     type: { default: "info" },
@@ -1448,16 +1445,16 @@ const ws = /* @__PURE__ */ g({
       error: "pi pi-times-circle"
     }, n = r.icon ?? l[r.type];
     return (c, u) => (s(), o("div", {
-      class: w(["trx-alert", `trx-alert--${t.type}`]),
+      class: y(["trx-alert", `trx-alert--${t.type}`]),
       role: "alert"
     }, [
       e("i", {
-        class: w(["trx-alert__icon", P(n)]),
+        class: y(["trx-alert__icon", P(n)]),
         "aria-hidden": "true"
       }, null, 2),
-      e("div", en, [
-        t.title ? (s(), o("p", sn, v(t.title), 1)) : h("", !0),
-        e("div", an, [
+      e("div", Ql, [
+        t.title ? (s(), o("p", Zl, v(t.title), 1)) : h("", !0),
+        e("div", tn, [
           I(c.$slots, "default", {}, void 0, !0)
         ])
       ]),
@@ -1475,10 +1472,10 @@ const ws = /* @__PURE__ */ g({
       ])])) : h("", !0)
     ], 2));
   }
-}), uT = /* @__PURE__ */ A(ln, [["__scopeId", "data-v-01863497"]]), nn = ["title", "aria-label"], on = ["src", "alt"], rn = {
+}), eT = /* @__PURE__ */ M(en, [["__scopeId", "data-v-01863497"]]), sn = ["title", "aria-label"], an = ["src", "alt"], ln = {
   key: 1,
   class: "trx-avatar__initials"
-}, cn = ["aria-label"], un = /* @__PURE__ */ g({
+}, nn = ["aria-label"], on = /* @__PURE__ */ g({
   __name: "TrxUserAvatar",
   props: {
     name: {},
@@ -1500,7 +1497,7 @@ const ws = /* @__PURE__ */ g({
       xl: "1.375rem"
     };
     return (n, c) => (s(), o("div", {
-      class: w(["trx-avatar", `trx-avatar--${t.size}`]),
+      class: y(["trx-avatar", `trx-avatar--${t.size}`]),
       style: R({
         width: i[t.size],
         height: i[t.size],
@@ -1516,18 +1513,18 @@ const ws = /* @__PURE__ */ g({
         src: t.src,
         alt: t.name ?? "Avatar",
         class: "trx-avatar__img"
-      }, null, 8, on)) : (s(), o("span", rn, v(r.value), 1)),
+      }, null, 8, an)) : (s(), o("span", ln, v(r.value), 1)),
       t.status ? (s(), o("span", {
         key: 2,
-        class: w(["trx-avatar__status", `trx-avatar__status--${t.status}`]),
+        class: y(["trx-avatar__status", `trx-avatar__status--${t.status}`]),
         "aria-label": t.status
-      }, null, 10, cn)) : h("", !0)
-    ], 14, nn));
+      }, null, 10, nn)) : h("", !0)
+    ], 14, sn));
   }
-}), dT = /* @__PURE__ */ A(un, [["__scopeId", "data-v-ad53c350"]]), dn = { class: "trx-kpi" }, _n = { class: "trx-kpi__header" }, pn = { class: "trx-kpi__title" }, vn = {
+}), sT = /* @__PURE__ */ M(on, [["__scopeId", "data-v-ad53c350"]]), rn = { class: "trx-kpi" }, cn = { class: "trx-kpi__header" }, un = { class: "trx-kpi__title" }, dn = {
   key: 0,
   class: "trx-kpi__skeleton"
-}, mn = { class: "trx-kpi__value" }, fn = /* @__PURE__ */ g({
+}, _n = { class: "trx-kpi__value" }, pn = /* @__PURE__ */ g({
   __name: "TrxKPICard",
   props: {
     title: {},
@@ -1540,30 +1537,30 @@ const ws = /* @__PURE__ */ g({
   },
   setup(t) {
     const a = t, r = S(() => a.trendType === "up" ? "pi pi-arrow-up" : a.trendType === "down" ? "pi pi-arrow-down" : "pi pi-minus"), i = S(() => a.trendType === "up" ? "trx-kpi__trend--up" : a.trendType === "down" ? "trx-kpi__trend--down" : "trx-kpi__trend--neutral");
-    return (l, n) => (s(), o("div", dn, [
-      e("div", _n, [
-        e("span", pn, v(t.title), 1),
+    return (l, n) => (s(), o("div", rn, [
+      e("div", cn, [
+        e("span", un, v(t.title), 1),
         t.icon ? (s(), o("div", {
           key: 0,
-          class: w(["trx-kpi__icon", `trx-kpi__icon--${t.color}`])
+          class: y(["trx-kpi__icon", `trx-kpi__icon--${t.color}`])
         }, [
           e("i", {
-            class: w(t.icon),
+            class: y(t.icon),
             "aria-hidden": "true"
           }, null, 2)
         ], 2)) : h("", !0)
       ]),
-      t.loading ? (s(), o("div", vn, [...n[0] || (n[0] = [
+      t.loading ? (s(), o("div", dn, [...n[0] || (n[0] = [
         e("div", { class: "trx-kpi__skeleton-value" }, null, -1),
         e("div", { class: "trx-kpi__skeleton-trend" }, null, -1)
       ])])) : (s(), o(V, { key: 1 }, [
-        e("div", mn, v(t.value ?? "—"), 1),
+        e("div", _n, v(t.value ?? "—"), 1),
         t.trend ? (s(), o("div", {
           key: 0,
-          class: w(["trx-kpi__trend", i.value])
+          class: y(["trx-kpi__trend", i.value])
         }, [
           e("i", {
-            class: w(r.value),
+            class: y(r.value),
             "aria-hidden": "true"
           }, null, 2),
           e("span", null, v(t.trend), 1)
@@ -1572,10 +1569,10 @@ const ws = /* @__PURE__ */ g({
       I(l.$slots, "default", {}, void 0, !0)
     ]));
   }
-}), _T = /* @__PURE__ */ A(fn, [["__scopeId", "data-v-a42946dc"]]), xn = { class: "trx-search" }, hn = ["aria-label"], $n = { class: "trx-search__trigger-text" }, gn = { class: "trx-search__modal" }, bn = { class: "trx-search__input-wrap" }, yn = ["placeholder", "value"], kn = { class: "trx-search__results" }, wn = {
+}), aT = /* @__PURE__ */ M(pn, [["__scopeId", "data-v-a42946dc"]]), vn = { class: "trx-search" }, mn = ["aria-label"], fn = { class: "trx-search__trigger-text" }, xn = { class: "trx-search__modal" }, hn = { class: "trx-search__input-wrap" }, $n = ["placeholder", "value"], gn = { class: "trx-search__results" }, bn = {
   key: 0,
   class: "trx-search__hint"
-}, Tn = /* @__PURE__ */ g({
+}, yn = /* @__PURE__ */ g({
   __name: "TrxSearchBar",
   props: {
     placeholder: {},
@@ -1583,7 +1580,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["search", "open", "close"],
   setup(t, { expose: a, emit: r }) {
-    const i = r, l = D(!1), n = D(""), c = D(null), u = async () => {
+    const i = r, l = z(!1), n = z(""), c = z(null), u = async () => {
       var x;
       l.value = !0, i("open"), await nt(), (x = c.value) == null || x.focus();
     }, _ = () => {
@@ -1599,7 +1596,7 @@ const ws = /* @__PURE__ */ g({
       window.addEventListener("keydown", m);
     }), ft(() => {
       window.removeEventListener("keydown", m);
-    }), a({ open: u, close: _ }), (x, f) => (s(), o("div", xn, [
+    }), a({ open: u, close: _ }), (x, f) => (s(), o("div", vn, [
       e("button", {
         type: "button",
         class: "trx-search__trigger",
@@ -1611,9 +1608,9 @@ const ws = /* @__PURE__ */ g({
           class: "pi pi-search",
           "aria-hidden": "true"
         }, null, -1)),
-        e("span", $n, v(t.placeholder ?? "Buscar..."), 1),
+        e("span", fn, v(t.placeholder ?? "Buscar..."), 1),
         f[2] || (f[2] = e("kbd", { class: "trx-search__kbd" }, "⌘K", -1))
-      ], 8, hn),
+      ], 8, mn),
       O(j, { name: "trx-search" }, {
         default: B(() => [
           l.value ? (s(), o("div", {
@@ -1624,8 +1621,8 @@ const ws = /* @__PURE__ */ g({
             "aria-label": "Busca",
             onClick: H(_, ["self"])
           }, [
-            e("div", gn, [
-              e("div", bn, [
+            e("div", xn, [
+              e("div", hn, [
                 f[4] || (f[4] = e("i", {
                   class: "pi pi-search trx-search__input-icon",
                   "aria-hidden": "true"
@@ -1640,13 +1637,13 @@ const ws = /* @__PURE__ */ g({
                   onInput: d,
                   onKeydown: p,
                   autocomplete: "off"
-                }, null, 40, yn),
+                }, null, 40, $n),
                 n.value ? (s(), o("button", {
                   key: 0,
                   type: "button",
                   class: "trx-search__clear",
                   "aria-label": "Limpar",
-                  onClick: f[0] || (f[0] = (T) => {
+                  onClick: f[0] || (f[0] = (k) => {
                     n.value = "", i("search", "");
                   })
                 }, [...f[3] || (f[3] = [
@@ -1660,9 +1657,9 @@ const ws = /* @__PURE__ */ g({
                   onClick: _
                 }, "Esc")
               ]),
-              e("div", kn, [
+              e("div", gn, [
                 I(x.$slots, "default", { query: n.value }, () => [
-                  n.value ? h("", !0) : (s(), o("p", wn, [...f[5] || (f[5] = [
+                  n.value ? h("", !0) : (s(), o("p", bn, [...f[5] || (f[5] = [
                     e("i", {
                       class: "pi pi-info-circle",
                       "aria-hidden": "true"
@@ -1678,18 +1675,18 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), pT = /* @__PURE__ */ A(Tn, [["__scopeId", "data-v-4e83a1ba"]]), Cn = {
+}), lT = /* @__PURE__ */ M(yn, [["__scopeId", "data-v-4e83a1ba"]]), kn = {
   key: 0,
   class: "trx-filter-bar"
-}, Sn = {
+}, wn = {
   key: 0,
   class: "trx-filter-bar__inputs"
-}, In = {
+}, Tn = {
   key: 1,
   class: "trx-filter-bar__chips",
   role: "list",
   "aria-label": "Filtros ativos"
-}, Vn = { class: "trx-filter-bar__chip-label" }, Bn = { class: "trx-filter-bar__chip-value" }, Pn = ["aria-label", "onClick"], An = /* @__PURE__ */ g({
+}, Cn = { class: "trx-filter-bar__chip-label" }, Sn = { class: "trx-filter-bar__chip-value" }, In = ["aria-label", "onClick"], Vn = /* @__PURE__ */ g({
   __name: "TrxFilterBar",
   props: {
     filters: {},
@@ -1698,19 +1695,19 @@ const ws = /* @__PURE__ */ g({
   emits: ["remove", "clear"],
   setup(t, { emit: a }) {
     const r = t, i = a, l = S(() => (r.filters ?? []).length > 0), n = (c) => c.displayValue ?? String(c.value);
-    return (c, u) => l.value || c.$slots.default ? (s(), o("div", Cn, [
-      c.$slots.default ? (s(), o("div", Sn, [
+    return (c, u) => l.value || c.$slots.default ? (s(), o("div", kn, [
+      c.$slots.default ? (s(), o("div", wn, [
         I(c.$slots, "default", {}, void 0, !0)
       ])) : h("", !0),
-      l.value ? (s(), o("div", In, [
+      l.value ? (s(), o("div", Tn, [
         u[3] || (u[3] = e("span", { class: "trx-filter-bar__label" }, "Filtros:", -1)),
         (s(!0), o(V, null, b(t.filters, (_) => (s(), o("span", {
           key: _.key,
           class: "trx-filter-bar__chip",
           role: "listitem"
         }, [
-          e("span", Vn, v(_.label) + ":", 1),
-          e("span", Bn, v(n(_)), 1),
+          e("span", Cn, v(_.label) + ":", 1),
+          e("span", Sn, v(n(_)), 1),
           e("button", {
             type: "button",
             class: "trx-filter-bar__chip-remove",
@@ -1721,7 +1718,7 @@ const ws = /* @__PURE__ */ g({
               class: "pi pi-times",
               "aria-hidden": "true"
             }, null, -1)
-          ])], 8, Pn)
+          ])], 8, In)
         ]))), 128)),
         e("button", {
           type: "button",
@@ -1737,17 +1734,17 @@ const ws = /* @__PURE__ */ g({
       ])) : h("", !0)
     ])) : h("", !0);
   }
-}), vT = /* @__PURE__ */ A(An, [["__scopeId", "data-v-227ccd1b"]]), Mn = {
+}), nT = /* @__PURE__ */ M(Vn, [["__scopeId", "data-v-227ccd1b"]]), Bn = {
   key: 0,
   class: "trx-dta__inline"
-}, Ln = ["disabled", "aria-label", "title", "onClick"], zn = ["aria-expanded"], Dn = {
+}, Pn = ["disabled", "aria-label", "title", "onClick"], Mn = ["aria-expanded"], An = {
   key: 0,
   class: "trx-dta__dropdown",
   role: "menu"
-}, En = {
+}, Ln = {
   key: 0,
   class: "trx-dta__separator"
-}, Rn = ["disabled", "onClick"], Nn = /* @__PURE__ */ g({
+}, zn = ["disabled", "onClick"], Dn = /* @__PURE__ */ g({
   __name: "TrxDataTableActions",
   props: {
     row: {},
@@ -1755,14 +1752,14 @@ const ws = /* @__PURE__ */ g({
     variant: {}
   },
   setup(t) {
-    const a = t, r = D(!1), i = D(null), l = S(
+    const a = t, r = z(!1), i = z(null), l = S(
       () => a.actions.filter((m) => !m.visible || m.visible(a.row))
     ), n = S(
       () => a.variant ?? (l.value.length > 2 ? "menu" : "inline")
     ), c = (m) => {
       var x;
       (x = m.disabled) != null && x.call(m, a.row) || (m.action(a.row), r.value = !1);
-    }, u = D(null), _ = () => {
+    }, u = z(null), _ = () => {
       r.value = !r.value;
     }, d = () => {
       r.value = !1;
@@ -1773,25 +1770,25 @@ const ws = /* @__PURE__ */ g({
       class: "trx-dta",
       onKeydown: at(d, ["escape"])
     }, [
-      n.value === "inline" ? (s(), o("div", Mn, [
+      n.value === "inline" ? (s(), o("div", Bn, [
         (s(!0), o(V, null, b(l.value, (f) => {
-          var T;
+          var k;
           return s(), o("button", {
             key: f.label,
             type: "button",
-            class: w(["trx-dta__btn", `trx-dta__btn--${f.severity ?? "secondary"}`]),
-            disabled: (T = f.disabled) == null ? void 0 : T.call(f, t.row),
+            class: y(["trx-dta__btn", `trx-dta__btn--${f.severity ?? "secondary"}`]),
+            disabled: (k = f.disabled) == null ? void 0 : k.call(f, t.row),
             "aria-label": f.label,
             title: f.label,
             onClick: ($) => c(f)
           }, [
             f.icon ? (s(), o("i", {
               key: 0,
-              class: w(f.icon),
+              class: y(f.icon),
               "aria-hidden": "true"
             }, null, 2)) : h("", !0),
             e("span", null, v(f.label), 1)
-          ], 10, Ln);
+          ], 10, Pn);
         }), 128))
       ])) : (s(), o("div", {
         key: 1,
@@ -1813,22 +1810,22 @@ const ws = /* @__PURE__ */ g({
             class: "pi pi-ellipsis-v",
             "aria-hidden": "true"
           }, null, -1)
-        ])], 8, zn),
+        ])], 8, Mn),
         O(j, { name: "trx-dta" }, {
           default: B(() => [
-            r.value ? (s(), o("div", Dn, [
+            r.value ? (s(), o("div", An, [
               (s(!0), o(V, null, b(l.value, (f) => {
-                var T, $;
+                var k, $;
                 return s(), o(V, {
                   key: f.label
                 }, [
-                  f.separator ? (s(), o("hr", En)) : h("", !0),
+                  f.separator ? (s(), o("hr", Ln)) : h("", !0),
                   e("button", {
                     type: "button",
-                    class: w([
+                    class: y([
                       "trx-dta__item",
                       `trx-dta__item--${f.severity ?? "secondary"}`,
-                      { "trx-dta__item--disabled": (T = f.disabled) == null ? void 0 : T.call(f, t.row) }
+                      { "trx-dta__item--disabled": (k = f.disabled) == null ? void 0 : k.call(f, t.row) }
                     ]),
                     disabled: ($ = f.disabled) == null ? void 0 : $.call(f, t.row),
                     role: "menuitem",
@@ -1836,11 +1833,11 @@ const ws = /* @__PURE__ */ g({
                   }, [
                     f.icon ? (s(), o("i", {
                       key: 0,
-                      class: w(f.icon),
+                      class: y(f.icon),
                       "aria-hidden": "true"
                     }, null, 2)) : h("", !0),
                     N(" " + v(f.label), 1)
-                  ], 10, Rn)
+                  ], 10, zn)
                 ], 64);
               }), 128))
             ])) : h("", !0)
@@ -1850,13 +1847,13 @@ const ws = /* @__PURE__ */ g({
       ], 512))
     ], 32));
   }
-}), mT = /* @__PURE__ */ A(Nn, [["__scopeId", "data-v-fe60232d"]]), qn = {
+}), oT = /* @__PURE__ */ M(Dn, [["__scopeId", "data-v-fe60232d"]]), En = {
   class: "trx-error",
   role: "main"
-}, Fn = { class: "trx-error__inner" }, On = { class: "trx-error__icon-wrap" }, jn = { class: "trx-error__code" }, Hn = { class: "trx-error__title" }, Un = { class: "trx-error__desc" }, Wn = {
+}, Rn = { class: "trx-error__inner" }, Nn = { class: "trx-error__icon-wrap" }, qn = { class: "trx-error__code" }, Fn = { class: "trx-error__title" }, On = { class: "trx-error__desc" }, jn = {
   key: 0,
   class: "trx-error__content"
-}, Gn = { class: "trx-error__actions" }, Kn = /* @__PURE__ */ g({
+}, Hn = { class: "trx-error__actions" }, Un = /* @__PURE__ */ g({
   __name: "TrxErrorPage",
   props: {
     code: { default: 500 },
@@ -1889,21 +1886,21 @@ const ws = /* @__PURE__ */ g({
         description: "A página que você está procurando não existe ou foi movida."
       }
     })[r.code]);
-    return (n, c) => (s(), o("div", qn, [
-      e("div", Fn, [
-        e("div", On, [
+    return (n, c) => (s(), o("div", En, [
+      e("div", Rn, [
+        e("div", Nn, [
           e("i", {
-            class: w(["trx-error__icon", l.value.icon]),
+            class: y(["trx-error__icon", l.value.icon]),
             "aria-hidden": "true"
           }, null, 2),
-          e("span", jn, v(t.code), 1)
+          e("span", qn, v(t.code), 1)
         ]),
-        e("h1", Hn, v(t.title ?? l.value.title), 1),
-        e("p", Un, v(t.description ?? l.value.description), 1),
-        n.$slots.default ? (s(), o("div", Wn, [
+        e("h1", Fn, v(t.title ?? l.value.title), 1),
+        e("p", On, v(t.description ?? l.value.description), 1),
+        n.$slots.default ? (s(), o("div", jn, [
           I(n.$slots, "default", {}, void 0, !0)
         ])) : h("", !0),
-        e("div", Gn, [
+        e("div", Hn, [
           t.showBack ? (s(), o("button", {
             key: 0,
             type: "button",
@@ -1932,7 +1929,7 @@ const ws = /* @__PURE__ */ g({
       ])
     ]));
   }
-}), fT = /* @__PURE__ */ A(Kn, [["__scopeId", "data-v-342a5b45"]]), Yn = /* @__PURE__ */ g({
+}), rT = /* @__PURE__ */ M(Un, [["__scopeId", "data-v-342a5b45"]]), Wn = /* @__PURE__ */ g({
   __name: "TrxText",
   props: {
     variant: { default: "body" },
@@ -1959,7 +1956,7 @@ const ws = /* @__PURE__ */ g({
       code: "code"
     }, r = t, i = r.as ?? a[r.variant];
     return (l, n) => (s(), L(Tt(P(i)), {
-      class: w([
+      class: y([
         "trx-text",
         `trx-text--${t.variant}`,
         {
@@ -1976,19 +1973,19 @@ const ws = /* @__PURE__ */ g({
       _: 3
     }, 8, ["class"]));
   }
-}), xT = /* @__PURE__ */ A(Yn, [["__scopeId", "data-v-9bfe5d38"]]), Jn = { class: "trx-call-card__left" }, Xn = { class: "trx-call-card__info" }, Qn = { class: "trx-call-card__caller" }, Zn = { class: "trx-call-card__name" }, to = {
+}), iT = /* @__PURE__ */ M(Wn, [["__scopeId", "data-v-9bfe5d38"]]), Gn = { class: "trx-call-card__left" }, Kn = { class: "trx-call-card__info" }, Yn = { class: "trx-call-card__caller" }, Jn = { class: "trx-call-card__name" }, Xn = {
   key: 0,
   class: "trx-call-card__number"
-}, eo = { class: "trx-call-card__meta" }, so = {
+}, Qn = { class: "trx-call-card__meta" }, Zn = {
   key: 0,
   class: "trx-call-card__duration"
-}, ao = {
+}, to = {
   key: 1,
   class: "trx-call-card__queue"
-}, lo = {
+}, eo = {
   key: 0,
   class: "trx-call-card__agent"
-}, no = { class: "trx-call-card__actions" }, oo = /* @__PURE__ */ g({
+}, so = { class: "trx-call-card__actions" }, ao = /* @__PURE__ */ g({
   __name: "TrxCallCard",
   props: {
     callerId: {},
@@ -2014,40 +2011,40 @@ const ws = /* @__PURE__ */ g({
       return `${_}:${d}`;
     }
     return (u, _) => (s(), o("div", {
-      class: w(["trx-call-card", `trx-call-card--${t.status}`])
+      class: y(["trx-call-card", `trx-call-card--${t.status}`])
     }, [
-      e("div", Jn, [
+      e("div", Gn, [
         e("div", {
           class: "trx-call-card__icon",
           style: R({ color: n.value.color })
         }, [
           e("i", {
-            class: w(n.value.icon)
+            class: y(n.value.icon)
           }, null, 2),
           e("i", {
-            class: w(["trx-call-card__direction", t.direction === "inbound" ? "pi pi-arrow-down-left" : "pi pi-arrow-up-right"])
+            class: y(["trx-call-card__direction", t.direction === "inbound" ? "pi pi-arrow-down-left" : "pi pi-arrow-up-right"])
           }, null, 2)
         ], 4)
       ]),
-      e("div", Xn, [
-        e("div", Qn, [
-          e("span", Zn, v(t.callerName || t.callerId), 1),
-          t.callerName ? (s(), o("span", to, v(t.callerId), 1)) : h("", !0)
+      e("div", Kn, [
+        e("div", Yn, [
+          e("span", Jn, v(t.callerName || t.callerId), 1),
+          t.callerName ? (s(), o("span", Xn, v(t.callerId), 1)) : h("", !0)
         ]),
-        e("div", eo, [
+        e("div", Qn, [
           e("span", {
             class: "trx-call-card__status",
             style: R({ color: n.value.color })
           }, v(n.value.label), 5),
-          t.duration !== void 0 ? (s(), o("span", so, v(c(t.duration)), 1)) : h("", !0),
-          t.queue ? (s(), o("span", ao, v(t.queue), 1)) : h("", !0)
+          t.duration !== void 0 ? (s(), o("span", Zn, v(c(t.duration)), 1)) : h("", !0),
+          t.queue ? (s(), o("span", to, v(t.queue), 1)) : h("", !0)
         ]),
-        t.agent ? (s(), o("div", lo, [
+        t.agent ? (s(), o("div", eo, [
           _[4] || (_[4] = e("i", { class: "pi pi-user" }, null, -1)),
           N(" " + v(t.agent), 1)
         ])) : h("", !0)
       ]),
-      e("div", no, [
+      e("div", so, [
         I(u.$slots, "actions", {}, () => [
           t.status === "ringing" ? (s(), o("button", {
             key: 0,
@@ -2085,7 +2082,7 @@ const ws = /* @__PURE__ */ g({
       ])
     ], 2));
   }
-}), hT = /* @__PURE__ */ A(oo, [["__scopeId", "data-v-98fdc3c5"]]), ro = /* @__PURE__ */ g({
+}), cT = /* @__PURE__ */ M(ao, [["__scopeId", "data-v-98fdc3c5"]]), lo = /* @__PURE__ */ g({
   __name: "TrxCallTimer",
   props: {
     running: { type: Boolean, default: !1 },
@@ -2095,7 +2092,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["tick"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(r.startAt);
+    const r = t, i = a, l = z(r.startAt);
     let n = null;
     const c = S(() => r.color !== "default" ? r.color : l.value >= 300 ? "danger" : l.value >= 180 ? "warning" : "success"), u = S(() => ({
       success: "var(--trx-success-color)",
@@ -2103,8 +2100,8 @@ const ws = /* @__PURE__ */ g({
       danger: "var(--trx-danger-color)",
       default: "var(--trx-text-primary)"
     })[c.value]), _ = S(() => {
-      const m = Math.floor(l.value / 3600), x = Math.floor(l.value % 3600 / 60), f = l.value % 60, T = x.toString().padStart(2, "0"), $ = f.toString().padStart(2, "0");
-      return r.format === "hh:mm:ss" ? `${m.toString().padStart(2, "0")}:${T}:${$}` : `${(m * 60 + x).toString().padStart(2, "0")}:${$}`;
+      const m = Math.floor(l.value / 3600), x = Math.floor(l.value % 3600 / 60), f = l.value % 60, k = x.toString().padStart(2, "0"), $ = f.toString().padStart(2, "0");
+      return r.format === "hh:mm:ss" ? `${m.toString().padStart(2, "0")}:${k}:${$}` : `${(m * 60 + x).toString().padStart(2, "0")}:${$}`;
     });
     function d() {
       n || (n = setInterval(() => {
@@ -2126,16 +2123,16 @@ const ws = /* @__PURE__ */ g({
       N(" " + v(_.value), 1)
     ], 4));
   }
-}), io = /* @__PURE__ */ A(ro, [["__scopeId", "data-v-35e4aaaf"]]), co = { class: "trx-call-queue" }, uo = { class: "trx-call-queue__header" }, _o = { class: "trx-call-queue__name" }, po = { class: "trx-call-queue__count" }, vo = {
+}), no = /* @__PURE__ */ M(lo, [["__scopeId", "data-v-35e4aaaf"]]), oo = { class: "trx-call-queue" }, ro = { class: "trx-call-queue__header" }, io = { class: "trx-call-queue__name" }, co = { class: "trx-call-queue__count" }, uo = {
   key: 0,
   class: "trx-call-queue__empty"
-}, mo = {
+}, _o = {
   key: 1,
   class: "trx-call-queue__list"
-}, fo = { class: "trx-call-queue__item-info" }, xo = { class: "trx-call-queue__item-caller" }, ho = {
+}, po = { class: "trx-call-queue__item-info" }, vo = { class: "trx-call-queue__item-caller" }, mo = {
   key: 0,
   class: "trx-call-queue__item-number"
-}, $o = { class: "trx-call-queue__item-meta" }, go = { class: "trx-call-queue__item-actions" }, bo = ["onClick"], yo = ["onClick"], ko = /* @__PURE__ */ g({
+}, fo = { class: "trx-call-queue__item-meta" }, xo = { class: "trx-call-queue__item-actions" }, ho = ["onClick"], $o = ["onClick"], go = /* @__PURE__ */ g({
   __name: "TrxCallQueue",
   props: {
     calls: {},
@@ -2158,27 +2155,27 @@ const ws = /* @__PURE__ */ g({
       normal: { label: "Normal", color: "var(--trx-info-color)" },
       low: { label: "Baixa", color: "var(--trx-text-secondary)" }
     };
-    return (u, _) => (s(), o("div", co, [
-      e("div", uo, [
-        e("span", _o, v(t.queueName || "Fila de Chamadas"), 1),
-        e("span", po, v(t.calls.length), 1)
+    return (u, _) => (s(), o("div", oo, [
+      e("div", ro, [
+        e("span", io, v(t.queueName || "Fila de Chamadas"), 1),
+        e("span", co, v(t.calls.length), 1)
       ]),
-      t.calls.length === 0 ? (s(), o("div", vo, [..._[0] || (_[0] = [
+      t.calls.length === 0 ? (s(), o("div", uo, [..._[0] || (_[0] = [
         e("i", { class: "pi pi-inbox" }, null, -1),
         e("span", null, "Nenhuma chamada na fila", -1)
-      ])])) : (s(), o("ul", mo, [
+      ])])) : (s(), o("ul", _o, [
         (s(!0), o(V, null, b(l.value, (d) => (s(), o("li", {
           key: d.id,
-          class: w(["trx-call-queue__item", { "trx-call-queue__item--warning": d.waitTime > t.maxWaitWarning }])
+          class: y(["trx-call-queue__item", { "trx-call-queue__item--warning": d.waitTime > t.maxWaitWarning }])
         }, [
-          e("div", fo, [
-            e("div", xo, [
+          e("div", po, [
+            e("div", vo, [
               e("span", null, v(d.callerName || d.callerId), 1),
-              d.callerName ? (s(), o("span", ho, v(d.callerId), 1)) : h("", !0)
+              d.callerName ? (s(), o("span", mo, v(d.callerId), 1)) : h("", !0)
             ]),
-            e("div", $o, [
+            e("div", fo, [
               e("span", {
-                class: w(["trx-call-queue__wait", { "trx-call-queue__wait--over": d.waitTime > t.maxWaitWarning }])
+                class: y(["trx-call-queue__wait", { "trx-call-queue__wait--over": d.waitTime > t.maxWaitWarning }])
               }, [
                 _[1] || (_[1] = e("i", { class: "pi pi-clock" }, null, -1)),
                 N(" " + v(n(d.waitTime)), 1)
@@ -2190,33 +2187,33 @@ const ws = /* @__PURE__ */ g({
               }, v(c[d.priority].label), 5)) : h("", !0)
             ])
           ]),
-          e("div", go, [
+          e("div", xo, [
             e("button", {
               class: "trx-call-queue__btn trx-call-queue__btn--answer",
               onClick: (p) => i("answer", d.id),
               title: "Atender"
             }, [..._[2] || (_[2] = [
               e("i", { class: "pi pi-phone" }, null, -1)
-            ])], 8, bo),
+            ])], 8, ho),
             e("button", {
               class: "trx-call-queue__btn",
               onClick: (p) => i("transfer", d.id),
               title: "Transferir"
             }, [..._[3] || (_[3] = [
               e("i", { class: "pi pi-share-alt" }, null, -1)
-            ])], 8, yo)
+            ])], 8, $o)
           ])
         ], 2))), 128))
       ]))
     ]));
   }
-}), $T = /* @__PURE__ */ A(ko, [["__scopeId", "data-v-48b24471"]]), wo = {
+}), uT = /* @__PURE__ */ M(go, [["__scopeId", "data-v-48b24471"]]), bo = {
   key: 0,
   class: "trx-dialer__display"
-}, To = { class: "trx-dialer__number" }, Co = { class: "trx-dialer__grid" }, So = ["disabled", "onClick"], Io = { class: "trx-dialer__key-main" }, Vo = {
+}, yo = { class: "trx-dialer__number" }, ko = { class: "trx-dialer__grid" }, wo = ["disabled", "onClick"], To = { class: "trx-dialer__key-main" }, Co = {
   key: 0,
   class: "trx-dialer__key-sub"
-}, Bo = { class: "trx-dialer__actions" }, Po = ["disabled"], Ao = ["disabled"], Mo = /* @__PURE__ */ g({
+}, So = { class: "trx-dialer__actions" }, Io = ["disabled"], Vo = ["disabled"], Bo = /* @__PURE__ */ g({
   __name: "TrxPhoneDialer",
   props: {
     modelValue: { default: "" },
@@ -2254,10 +2251,10 @@ const ws = /* @__PURE__ */ g({
       c.value && i("call", c.value);
     }
     return (m, x) => (s(), o("div", {
-      class: w(["trx-dialer", { "trx-dialer--disabled": t.disabled }])
+      class: y(["trx-dialer", { "trx-dialer--disabled": t.disabled }])
     }, [
-      t.showDisplay ? (s(), o("div", wo, [
-        e("span", To, v(c.value || " "), 1),
+      t.showDisplay ? (s(), o("div", bo, [
+        e("span", yo, v(c.value || " "), 1),
         c.value ? (s(), o("button", {
           key: 0,
           class: "trx-dialer__backspace",
@@ -2267,18 +2264,18 @@ const ws = /* @__PURE__ */ g({
           e("i", { class: "pi pi-delete-left" }, null, -1)
         ])])) : h("", !0)
       ])) : h("", !0),
-      e("div", Co, [
+      e("div", ko, [
         (s(), o(V, null, b(l, (f) => e("button", {
           key: f,
           class: "trx-dialer__key",
           disabled: t.disabled,
-          onClick: (T) => u(f)
+          onClick: (k) => u(f)
         }, [
-          e("span", Io, v(f), 1),
-          n[f] ? (s(), o("span", Vo, v(n[f]), 1)) : h("", !0)
-        ], 8, So)), 64))
+          e("span", To, v(f), 1),
+          n[f] ? (s(), o("span", Co, v(n[f]), 1)) : h("", !0)
+        ], 8, wo)), 64))
       ]),
-      e("div", Bo, [
+      e("div", So, [
         e("button", {
           class: "trx-dialer__clear",
           disabled: t.disabled || !c.value,
@@ -2286,7 +2283,7 @@ const ws = /* @__PURE__ */ g({
           title: "Limpar"
         }, [...x[1] || (x[1] = [
           e("i", { class: "pi pi-times" }, null, -1)
-        ])], 8, Po),
+        ])], 8, Io),
         e("button", {
           class: "trx-dialer__call",
           disabled: t.disabled || !c.value,
@@ -2294,17 +2291,17 @@ const ws = /* @__PURE__ */ g({
           title: "Ligar"
         }, [...x[2] || (x[2] = [
           e("i", { class: "pi pi-phone" }, null, -1)
-        ])], 8, Ao)
+        ])], 8, Vo)
       ])
     ], 2));
   }
-}), gT = /* @__PURE__ */ A(Mo, [["__scopeId", "data-v-a4cd158b"]]), Lo = { class: "trx-softphone__info" }, zo = { class: "trx-softphone__details" }, Do = { class: "trx-softphone__label" }, Eo = {
+}), dT = /* @__PURE__ */ M(Bo, [["__scopeId", "data-v-a4cd158b"]]), Po = { class: "trx-softphone__info" }, Mo = { class: "trx-softphone__details" }, Ao = { class: "trx-softphone__label" }, Lo = {
   key: 0,
   class: "trx-softphone__caller"
-}, Ro = {
+}, zo = {
   key: 0,
   class: "trx-softphone__controls"
-}, No = ["title"], qo = ["title"], Fo = /* @__PURE__ */ g({
+}, Do = ["title"], Eo = ["title"], Ro = /* @__PURE__ */ g({
   __name: "TrxSoftphone",
   props: {
     status: {},
@@ -2324,22 +2321,22 @@ const ws = /* @__PURE__ */ g({
     return (c, u) => {
       var _;
       return s(), o("div", {
-        class: w(["trx-softphone", `trx-softphone--${t.status}`])
+        class: y(["trx-softphone", `trx-softphone--${t.status}`])
       }, [
-        e("div", Lo, [
+        e("div", Po, [
           u[5] || (u[5] = e("div", { class: "trx-softphone__status-dot" }, null, -1)),
-          e("div", zo, [
-            e("span", Do, v(l.value), 1),
-            t.callInfo ? (s(), o("span", Eo, v(t.callInfo.name || t.callInfo.number), 1)) : h("", !0)
+          e("div", Mo, [
+            e("span", Ao, v(l.value), 1),
+            t.callInfo ? (s(), o("span", Lo, v(t.callInfo.name || t.callInfo.number), 1)) : h("", !0)
           ]),
-          n.value && ((_ = t.callInfo) == null ? void 0 : _.duration) !== void 0 ? (s(), L(io, {
+          n.value && ((_ = t.callInfo) == null ? void 0 : _.duration) !== void 0 ? (s(), L(no, {
             key: 0,
             running: n.value,
             "start-at": t.callInfo.duration,
             class: "trx-softphone__timer"
           }, null, 8, ["running", "start-at"])) : h("", !0)
         ]),
-        t.status !== "idle" ? (s(), o("div", Ro, [
+        t.status !== "idle" ? (s(), o("div", zo, [
           t.status === "ringing" ? (s(), o("button", {
             key: 0,
             class: "trx-softphone__btn trx-softphone__btn--answer",
@@ -2350,24 +2347,24 @@ const ws = /* @__PURE__ */ g({
           n.value || t.status === "hold" ? (s(), o(V, { key: 1 }, [
             t.canHold ? (s(), o("button", {
               key: 0,
-              class: w(["trx-softphone__btn", t.status === "hold" ? "trx-softphone__btn--active" : ""]),
+              class: y(["trx-softphone__btn", t.status === "hold" ? "trx-softphone__btn--active" : ""]),
               onClick: u[1] || (u[1] = (d) => t.status === "hold" ? i("resume") : i("hold")),
               title: t.status === "hold" ? "Retomar" : "Espera"
             }, [
               e("i", {
-                class: w(t.status === "hold" ? "pi pi-play" : "pi pi-pause")
+                class: y(t.status === "hold" ? "pi pi-play" : "pi pi-pause")
               }, null, 2)
-            ], 10, No)) : h("", !0),
+            ], 10, Do)) : h("", !0),
             n.value ? (s(), o("button", {
               key: 1,
-              class: w(["trx-softphone__btn", t.status === "muted" ? "trx-softphone__btn--active" : ""]),
+              class: y(["trx-softphone__btn", t.status === "muted" ? "trx-softphone__btn--active" : ""]),
               onClick: u[2] || (u[2] = (d) => t.status === "muted" ? i("unmute") : i("mute")),
               title: t.status === "muted" ? "Ativar mic" : "Mudo"
             }, [
               e("i", {
-                class: w(t.status === "muted" ? "pi pi-microphone-slash" : "pi pi-microphone")
+                class: y(t.status === "muted" ? "pi pi-microphone-slash" : "pi pi-microphone")
               }, null, 2)
-            ], 10, qo)) : h("", !0),
+            ], 10, Eo)) : h("", !0),
             t.canTransfer ? (s(), o("button", {
               key: 2,
               class: "trx-softphone__btn",
@@ -2388,10 +2385,10 @@ const ws = /* @__PURE__ */ g({
       ], 2);
     };
   }
-}), bT = /* @__PURE__ */ A(Fo, [["__scopeId", "data-v-80ab0580"]]), Oo = {
+}), _T = /* @__PURE__ */ M(Ro, [["__scopeId", "data-v-80ab0580"]]), No = {
   key: 0,
   class: "trx-phone-input__ddi"
-}, jo = ["value", "placeholder", "disabled"], Ho = /* @__PURE__ */ g({
+}, qo = ["value", "placeholder", "disabled"], Fo = /* @__PURE__ */ g({
   __name: "TrxPhoneInput",
   props: {
     modelValue: { default: "" },
@@ -2412,9 +2409,9 @@ const ws = /* @__PURE__ */ g({
       return n.length <= 2 ? n.length ? `(${n}` : "" : n.length <= 6 ? `(${n.slice(0, 2)}) ${n.slice(2)}` : n.length <= 10 ? `(${n.slice(0, 2)}) ${n.slice(2, 6)}-${n.slice(6)}` : `(${n.slice(0, 2)}) ${n.slice(2, 7)}-${n.slice(7)}`;
     }
     return (n, c) => (s(), o("div", {
-      class: w(["trx-phone-input", { "trx-phone-input--invalid": t.invalid, "trx-phone-input--disabled": t.disabled }])
+      class: y(["trx-phone-input", { "trx-phone-input--invalid": t.invalid, "trx-phone-input--disabled": t.disabled }])
     }, [
-      t.showDdi ? (s(), o("span", Oo, v(t.ddi), 1)) : h("", !0),
+      t.showDdi ? (s(), o("span", No, v(t.ddi), 1)) : h("", !0),
       c[0] || (c[0] = e("i", { class: "pi pi-phone trx-phone-input__icon" }, null, -1)),
       e("input", {
         class: "trx-phone-input__field",
@@ -2424,10 +2421,10 @@ const ws = /* @__PURE__ */ g({
         disabled: t.disabled,
         autocomplete: "tel",
         onInput: i
-      }, null, 40, jo)
+      }, null, 40, qo)
     ], 2));
   }
-}), yT = /* @__PURE__ */ A(Ho, [["__scopeId", "data-v-d0bc586c"]]), Uo = /* @__PURE__ */ g({
+}), pT = /* @__PURE__ */ M(Fo, [["__scopeId", "data-v-d0bc586c"]]), Oo = /* @__PURE__ */ g({
   __name: "TrxWaveform",
   props: {
     data: {},
@@ -2448,10 +2445,10 @@ const ws = /* @__PURE__ */ g({
       if (!_) return;
       const d = window.devicePixelRatio || 1, p = r.barWidth + r.barGap, m = p * r.data.length - r.barGap;
       u.width = m * d, u.height = r.height * d, u.style.width = `${m}px`, u.style.height = `${r.height}px`, _.scale(d, d);
-      const x = r.color || getComputedStyle(document.documentElement).getPropertyValue("--trx-accent-color").trim() || "#10b981", f = r.progressColor || "#10b981", T = r.height / 2;
+      const x = r.color || getComputedStyle(document.documentElement).getPropertyValue("--trx-accent-color").trim() || "#10b981", f = r.progressColor || "#10b981", k = r.height / 2;
       r.data.forEach(($, C) => {
-        const M = C * p, E = Math.max(2, $ * r.height * 0.9), F = T - E / 2, q = C / r.data.length < r.progress;
-        _.fillStyle = q ? f : x + "66", _.beginPath(), _.roundRect(M, F, r.barWidth, E, 1), _.fill();
+        const A = C * p, E = Math.max(2, $ * r.height * 0.9), F = k - E / 2, q = C / r.data.length < r.progress;
+        _.fillStyle = q ? f : x + "66", _.beginPath(), _.roundRect(A, F, r.barWidth, E, 1), _.fill();
       });
     }
     function c(u) {
@@ -2467,14 +2464,14 @@ const ws = /* @__PURE__ */ g({
       onClick: c
     }, null, 512));
   }
-}), kT = /* @__PURE__ */ A(Uo, [["__scopeId", "data-v-c031b667"]]), Wo = { class: "trx-transcription" }, Go = {
+}), vT = /* @__PURE__ */ M(Oo, [["__scopeId", "data-v-c031b667"]]), jo = { class: "trx-transcription" }, Ho = {
   key: 0,
   class: "trx-transcription__avatar"
-}, Ko = { class: "trx-transcription__bubble" }, Yo = { class: "trx-transcription__header" }, Jo = { class: "trx-transcription__speaker" }, Xo = { class: "trx-transcription__time" }, Qo = {
+}, Uo = { class: "trx-transcription__bubble" }, Wo = { class: "trx-transcription__header" }, Go = { class: "trx-transcription__speaker" }, Ko = { class: "trx-transcription__time" }, Yo = {
   key: 0,
   class: "trx-transcription__low-conf",
   title: "Baixa confiança"
-}, Zo = ["innerHTML"], tr = /* @__PURE__ */ g({
+}, Jo = ["innerHTML"], Xo = /* @__PURE__ */ g({
   __name: "TrxTranscription",
   props: {
     segments: {},
@@ -2505,32 +2502,32 @@ const ws = /* @__PURE__ */ g({
     function c(u) {
       return u.split(" ").slice(0, 2).map((_) => _[0]).join("").toUpperCase();
     }
-    return (u, _) => (s(), o("div", Wo, [
+    return (u, _) => (s(), o("div", jo, [
       (s(!0), o(V, null, b(t.segments, (d) => (s(), o("div", {
         key: d.id,
-        class: w(["trx-transcription__segment", [
+        class: y(["trx-transcription__segment", [
           `trx-transcription__segment--${d.speaker}`,
           { "trx-transcription__segment--active": i(d) }
         ]])
       }, [
-        d.speaker !== "system" ? (s(), o("div", Go, v(c(n(d.speaker))), 1)) : h("", !0),
-        e("div", Ko, [
-          e("div", Yo, [
-            e("span", Jo, v(n(d.speaker)), 1),
-            e("span", Xo, v(r(d.startTime)), 1),
-            d.confidence !== void 0 && d.confidence < 0.7 ? (s(), o("span", Qo, [..._[0] || (_[0] = [
+        d.speaker !== "system" ? (s(), o("div", Ho, v(c(n(d.speaker))), 1)) : h("", !0),
+        e("div", Uo, [
+          e("div", Wo, [
+            e("span", Go, v(n(d.speaker)), 1),
+            e("span", Ko, v(r(d.startTime)), 1),
+            d.confidence !== void 0 && d.confidence < 0.7 ? (s(), o("span", Yo, [..._[0] || (_[0] = [
               e("i", { class: "pi pi-exclamation-triangle" }, null, -1)
             ])])) : h("", !0)
           ]),
           e("p", {
             class: "trx-transcription__text",
             innerHTML: l(d.text)
-          }, null, 8, Zo)
+          }, null, 8, Jo)
         ])
       ], 2))), 128))
     ]));
   }
-}), wT = /* @__PURE__ */ A(tr, [["__scopeId", "data-v-2470dac6"]]), er = /* @__PURE__ */ g({
+}), mT = /* @__PURE__ */ M(Xo, [["__scopeId", "data-v-2470dac6"]]), Qo = /* @__PURE__ */ g({
   __name: "TrxSparkline",
   props: {
     data: {},
@@ -2550,15 +2547,15 @@ const ws = /* @__PURE__ */ g({
       if (!n) return;
       const c = window.devicePixelRatio || 1;
       l.width = a.width * c, l.height = a.height * c, l.style.width = `${a.width}px`, l.style.height = `${a.height}px`, n.scale(c, c);
-      const u = a.color || getComputedStyle(document.documentElement).getPropertyValue("--trx-accent-color").trim() || "#10b981", _ = Math.min(...a.data), p = Math.max(...a.data) - _ || 1, m = 2, x = a.data.map((f, T) => ({
-        x: T / (a.data.length - 1) * (a.width - m * 2) + m,
+      const u = a.color || getComputedStyle(document.documentElement).getPropertyValue("--trx-accent-color").trim() || "#10b981", _ = Math.min(...a.data), p = Math.max(...a.data) - _ || 1, m = 2, x = a.data.map((f, k) => ({
+        x: k / (a.data.length - 1) * (a.width - m * 2) + m,
         y: a.height - m - (f - _) / p * (a.height - m * 2)
       }));
       if (n.beginPath(), n.moveTo(x[0].x, x[0].y), x.slice(1).forEach((f) => n.lineTo(f.x, f.y)), a.fill) {
         const f = x[x.length - 1];
         n.lineTo(f.x, a.height), n.lineTo(x[0].x, a.height), n.closePath();
-        const T = n.createLinearGradient(0, 0, 0, a.height);
-        T.addColorStop(0, u + "33"), T.addColorStop(1, u + "00"), n.fillStyle = T, n.fill(), n.beginPath(), n.moveTo(x[0].x, x[0].y), x.slice(1).forEach(($) => n.lineTo($.x, $.y));
+        const k = n.createLinearGradient(0, 0, 0, a.height);
+        k.addColorStop(0, u + "33"), k.addColorStop(1, u + "00"), n.fillStyle = k, n.fill(), n.beginPath(), n.moveTo(x[0].x, x[0].y), x.slice(1).forEach(($) => n.lineTo($.x, $.y));
       }
       if (n.strokeStyle = u, n.lineWidth = a.strokeWidth, n.lineJoin = "round", n.lineCap = "round", n.stroke(), a.showDot) {
         const f = x[x.length - 1];
@@ -2571,7 +2568,7 @@ const ws = /* @__PURE__ */ g({
       class: "trx-sparkline"
     }, null, 512));
   }
-}), sr = /* @__PURE__ */ A(er, [["__scopeId", "data-v-5bfe2b98"]]), ar = /* @__PURE__ */ g({
+}), Zo = /* @__PURE__ */ M(Qo, [["__scopeId", "data-v-5bfe2b98"]]), tr = /* @__PURE__ */ g({
   __name: "TrxGaugeChart",
   props: {
     value: {},
@@ -2596,10 +2593,10 @@ const ws = /* @__PURE__ */ g({
       if (!c) return;
       const u = window.devicePixelRatio || 1;
       n.width = a.size * u, n.height = a.size * 0.65 * u, n.style.width = `${a.size}px`, n.style.height = `${a.size * 0.65}px`, c.scale(u, u);
-      const _ = a.size / 2, d = a.size * 0.55, p = (a.size - a.thickness * 2 - 8) / 2, m = Math.PI, x = 2 * Math.PI, f = Math.max(0, Math.min(1, (a.value - a.min) / (a.max - a.min))), T = m + f * Math.PI, $ = getComputedStyle(document.documentElement), C = $.getPropertyValue("--trx-border-color").trim() || "#e2e8f0";
-      c.beginPath(), c.arc(_, d, p, m, x), c.strokeStyle = C, c.lineWidth = a.thickness, c.lineCap = "round", c.stroke(), f > 0 && (c.beginPath(), c.arc(_, d, p, m, T), c.strokeStyle = i.value, c.lineWidth = a.thickness, c.lineCap = "round", c.stroke()), c.fillStyle = $.getPropertyValue("--trx-text-primary").trim() || "#1e293b", c.font = `bold ${a.size * 0.16}px Inter, system-ui`, c.textAlign = "center", c.textBaseline = "middle";
-      const M = `${Math.round(a.value)}${a.unit || ""}`;
-      c.fillText(M, _, d - a.size * 0.04), a.label && (c.fillStyle = $.getPropertyValue("--trx-text-secondary").trim() || "#64748b", c.font = `${a.size * 0.09}px Inter, system-ui`, c.fillText(a.label, _, d + a.size * 0.1));
+      const _ = a.size / 2, d = a.size * 0.55, p = (a.size - a.thickness * 2 - 8) / 2, m = Math.PI, x = 2 * Math.PI, f = Math.max(0, Math.min(1, (a.value - a.min) / (a.max - a.min))), k = m + f * Math.PI, $ = getComputedStyle(document.documentElement), C = $.getPropertyValue("--trx-border-color").trim() || "#e2e8f0";
+      c.beginPath(), c.arc(_, d, p, m, x), c.strokeStyle = C, c.lineWidth = a.thickness, c.lineCap = "round", c.stroke(), f > 0 && (c.beginPath(), c.arc(_, d, p, m, k), c.strokeStyle = i.value, c.lineWidth = a.thickness, c.lineCap = "round", c.stroke()), c.fillStyle = $.getPropertyValue("--trx-text-primary").trim() || "#1e293b", c.font = `bold ${a.size * 0.16}px Inter, system-ui`, c.textAlign = "center", c.textBaseline = "middle";
+      const A = `${Math.round(a.value)}${a.unit || ""}`;
+      c.fillText(A, _, d - a.size * 0.04), a.label && (c.fillStyle = $.getPropertyValue("--trx-text-secondary").trim() || "#64748b", c.font = `${a.size * 0.09}px Inter, system-ui`, c.fillText(a.label, _, d + a.size * 0.1));
     }
     return W(l), Z(() => [a.value, a.color, a.size], l), (n, c) => (s(), o("canvas", {
       ref_key: "canvas",
@@ -2607,19 +2604,19 @@ const ws = /* @__PURE__ */ g({
       class: "trx-gauge"
     }, null, 512));
   }
-}), TT = /* @__PURE__ */ A(ar, [["__scopeId", "data-v-6d505e7d"]]), lr = { class: "trx-metric-card__main" }, nr = { class: "trx-metric-card__title" }, or = { class: "trx-metric-card__value-row" }, rr = {
+}), fT = /* @__PURE__ */ M(tr, [["__scopeId", "data-v-6d505e7d"]]), er = { class: "trx-metric-card__main" }, sr = { class: "trx-metric-card__title" }, ar = { class: "trx-metric-card__value-row" }, lr = {
   key: 0,
   class: "trx-metric-card__skeleton"
-}, ir = {
+}, nr = {
   key: 0,
   class: "trx-metric-card__unit"
-}, cr = {
+}, or = {
   key: 0,
   class: "trx-metric-card__change-label"
-}, ur = {
+}, rr = {
   key: 0,
   class: "trx-metric-card__chart"
-}, dr = /* @__PURE__ */ g({
+}, ir = /* @__PURE__ */ g({
   __name: "TrxMetricCard",
   props: {
     title: {},
@@ -2641,32 +2638,32 @@ const ws = /* @__PURE__ */ g({
     return (n, c) => {
       var u;
       return s(), o("div", {
-        class: w(["trx-metric-card", `trx-metric-card--${t.color}`])
+        class: y(["trx-metric-card", `trx-metric-card--${t.color}`])
       }, [
-        e("div", lr, [
-          e("p", nr, v(t.title), 1),
-          e("div", or, [
-            t.loading ? (s(), o("span", rr)) : (s(), o(V, { key: 1 }, [
+        e("div", er, [
+          e("p", sr, v(t.title), 1),
+          e("div", ar, [
+            t.loading ? (s(), o("span", lr)) : (s(), o(V, { key: 1 }, [
               e("span", {
                 class: "trx-metric-card__value",
                 style: R({ color: r.value })
               }, v(t.value), 5),
-              t.unit ? (s(), o("span", ir, v(t.unit), 1)) : h("", !0)
+              t.unit ? (s(), o("span", nr, v(t.unit), 1)) : h("", !0)
             ], 64))
           ]),
           t.change !== void 0 ? (s(), o("div", {
             key: 0,
-            class: w(["trx-metric-card__change", i.value ? "trx-metric-card__change--up" : "trx-metric-card__change--down"])
+            class: y(["trx-metric-card__change", i.value ? "trx-metric-card__change--up" : "trx-metric-card__change--down"])
           }, [
             e("i", {
-              class: w(l.value)
+              class: y(l.value)
             }, null, 2),
             e("span", null, v(Math.abs(t.change)) + "%", 1),
-            t.changeLabel ? (s(), o("span", cr, v(t.changeLabel), 1)) : h("", !0)
+            t.changeLabel ? (s(), o("span", or, v(t.changeLabel), 1)) : h("", !0)
           ], 2)) : h("", !0)
         ]),
-        (u = t.sparklineData) != null && u.length ? (s(), o("div", ur, [
-          O(sr, {
+        (u = t.sparklineData) != null && u.length ? (s(), o("div", rr, [
+          O(Zo, {
             data: t.sparklineData,
             width: 80,
             height: 40,
@@ -2676,13 +2673,13 @@ const ws = /* @__PURE__ */ g({
       ], 2);
     };
   }
-}), CT = /* @__PURE__ */ A(dr, [["__scopeId", "data-v-6c648207"]]), _r = { class: "trx-heatmap" }, pr = {
+}), xT = /* @__PURE__ */ M(ir, [["__scopeId", "data-v-6c648207"]]), cr = { class: "trx-heatmap" }, ur = {
   key: 0,
   class: "trx-heatmap__hour-labels"
-}, vr = { class: "trx-heatmap__grid" }, mr = {
+}, dr = { class: "trx-heatmap__grid" }, _r = {
   key: 0,
   class: "trx-heatmap__day-label"
-}, fr = ["title"], xr = /* @__PURE__ */ g({
+}, pr = ["title"], vr = /* @__PURE__ */ g({
   __name: "TrxHeatmap",
   props: {
     data: {},
@@ -2702,8 +2699,8 @@ const ws = /* @__PURE__ */ g({
     function c(u) {
       return u === 0 || u === 6 || u === 12 || u === 18 || u === 23 ? `${u}h` : "";
     }
-    return (u, _) => (s(), o("div", _r, [
-      t.showLabels ? (s(), o("div", pr, [
+    return (u, _) => (s(), o("div", cr, [
+      t.showLabels ? (s(), o("div", ur, [
         _[0] || (_[0] = e("div", { class: "trx-heatmap__corner" }, null, -1)),
         (s(!0), o(V, null, b(P(r), (d) => (s(), o("div", {
           key: d,
@@ -2711,12 +2708,12 @@ const ws = /* @__PURE__ */ g({
           style: R({ width: `${t.cellSize}px` })
         }, v(c(d)), 5))), 128))
       ])) : h("", !0),
-      e("div", vr, [
+      e("div", dr, [
         (s(!0), o(V, null, b(t.days, (d, p) => (s(), o("div", {
           key: p,
           class: "trx-heatmap__row"
         }, [
-          t.showLabels ? (s(), o("div", mr, v(d), 1)) : h("", !0),
+          t.showLabels ? (s(), o("div", _r, v(d), 1)) : h("", !0),
           (s(!0), o(V, null, b(P(r), (m) => {
             var x, f;
             return s(), o("div", {
@@ -2728,13 +2725,13 @@ const ws = /* @__PURE__ */ g({
                 opacity: n(((x = l(p, m)) == null ? void 0 : x.value) ?? 0)
               }),
               title: `${d} ${m}h: ${((f = l(p, m)) == null ? void 0 : f.value) ?? 0}`
-            }, null, 12, fr);
+            }, null, 12, pr);
           }), 128))
         ]))), 128))
       ])
     ]));
   }
-}), ST = /* @__PURE__ */ A(xr, [["__scopeId", "data-v-3bac74cd"]]), hr = /* @__PURE__ */ g({
+}), hT = /* @__PURE__ */ M(vr, [["__scopeId", "data-v-3bac74cd"]]), mr = /* @__PURE__ */ g({
   __name: "TrxDashboardGrid",
   props: {
     columns: { default: 12 },
@@ -2751,16 +2748,16 @@ const ws = /* @__PURE__ */ g({
       I(a.$slots, "default", {}, void 0, !0)
     ], 4));
   }
-}), IT = /* @__PURE__ */ A(hr, [["__scopeId", "data-v-b95e8456"]]), $r = { class: "trx-table-toolbar" }, gr = {
+}), $T = /* @__PURE__ */ M(mr, [["__scopeId", "data-v-b95e8456"]]), fr = { class: "trx-table-toolbar" }, xr = {
   key: 0,
   class: "trx-table-toolbar__bulk"
-}, br = { class: "trx-table-toolbar__bulk-count" }, yr = { class: "trx-table-toolbar__main" }, kr = { class: "trx-table-toolbar__search" }, wr = ["value", "placeholder"], Tr = { class: "trx-table-toolbar__center" }, Cr = {
+}, hr = { class: "trx-table-toolbar__bulk-count" }, $r = { class: "trx-table-toolbar__main" }, gr = { class: "trx-table-toolbar__search" }, br = ["value", "placeholder"], yr = { class: "trx-table-toolbar__center" }, kr = {
   key: 0,
   class: "trx-table-toolbar__total"
-}, Sr = { class: "trx-table-toolbar__actions" }, Ir = ["disabled"], Vr = {
+}, wr = { class: "trx-table-toolbar__actions" }, Tr = ["disabled"], Cr = {
   key: 0,
   class: "trx-table-toolbar__filter-panel"
-}, Br = /* @__PURE__ */ g({
+}, Sr = /* @__PURE__ */ g({
   __name: "TrxTableToolbar",
   props: {
     searchValue: {},
@@ -2771,19 +2768,19 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:searchValue", "refresh", "filter"],
   setup(t, { emit: a }) {
-    const r = a, i = D(!1);
-    return (l, n) => (s(), o("div", $r, [
+    const r = a, i = z(!1);
+    return (l, n) => (s(), o("div", fr, [
       O(j, { name: "trx-bulk-slide" }, {
         default: B(() => [
-          t.selectedCount && t.selectedCount > 0 ? (s(), o("div", gr, [
-            e("span", br, v(t.selectedCount) + " selecionado(s)", 1),
+          t.selectedCount && t.selectedCount > 0 ? (s(), o("div", xr, [
+            e("span", hr, v(t.selectedCount) + " selecionado(s)", 1),
             I(l.$slots, "bulk-actions", {}, void 0, !0)
           ])) : h("", !0)
         ]),
         _: 3
       }),
-      e("div", yr, [
-        e("div", kr, [
+      e("div", $r, [
+        e("div", gr, [
           n[5] || (n[5] = e("i", { class: "pi pi-search trx-table-toolbar__search-icon" }, null, -1)),
           e("input", {
             class: "trx-table-toolbar__search-input",
@@ -2791,7 +2788,7 @@ const ws = /* @__PURE__ */ g({
             value: t.searchValue,
             placeholder: t.searchPlaceholder,
             onInput: n[0] || (n[0] = (c) => r("update:searchValue", c.target.value))
-          }, null, 40, wr),
+          }, null, 40, br),
           t.searchValue ? (s(), o("button", {
             key: 0,
             class: "trx-table-toolbar__search-clear",
@@ -2800,14 +2797,14 @@ const ws = /* @__PURE__ */ g({
             e("i", { class: "pi pi-times" }, null, -1)
           ])])) : h("", !0)
         ]),
-        e("div", Tr, [
-          t.total !== void 0 ? (s(), o("span", Cr, v(t.total) + " registro(s) ", 1)) : h("", !0)
+        e("div", yr, [
+          t.total !== void 0 ? (s(), o("span", kr, v(t.total) + " registro(s) ", 1)) : h("", !0)
         ]),
-        e("div", Sr, [
+        e("div", wr, [
           I(l.$slots, "filters", {}, () => [
             l.$slots["filter-panel"] ? (s(), o("button", {
               key: 0,
-              class: w(["trx-table-toolbar__btn", { "trx-table-toolbar__btn--active": i.value }]),
+              class: y(["trx-table-toolbar__btn", { "trx-table-toolbar__btn--active": i.value }]),
               onClick: n[2] || (n[2] = (c) => {
                 i.value = !i.value, r("filter");
               }),
@@ -2817,21 +2814,21 @@ const ws = /* @__PURE__ */ g({
             ])], 2)) : h("", !0)
           ], !0),
           e("button", {
-            class: w(["trx-table-toolbar__btn", { "trx-table-toolbar__btn--loading": t.loading }]),
+            class: y(["trx-table-toolbar__btn", { "trx-table-toolbar__btn--loading": t.loading }]),
             onClick: n[3] || (n[3] = (c) => r("refresh")),
             title: "Atualizar",
             disabled: t.loading
           }, [
             e("i", {
-              class: w(t.loading ? "pi pi-spin pi-spinner" : "pi pi-refresh")
+              class: y(t.loading ? "pi pi-spin pi-spinner" : "pi pi-refresh")
             }, null, 2)
-          ], 10, Ir),
+          ], 10, Tr),
           I(l.$slots, "actions", {}, void 0, !0)
         ])
       ]),
       O(j, { name: "trx-slide-down" }, {
         default: B(() => [
-          i.value && l.$slots["filter-panel"] ? (s(), o("div", Vr, [
+          i.value && l.$slots["filter-panel"] ? (s(), o("div", Cr, [
             I(l.$slots, "filter-panel", {}, void 0, !0)
           ])) : h("", !0)
         ]),
@@ -2839,10 +2836,10 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), VT = /* @__PURE__ */ A(Br, [["__scopeId", "data-v-874b5252"]]), Pr = {
+}), gT = /* @__PURE__ */ M(Sr, [["__scopeId", "data-v-874b5252"]]), Ir = {
   key: 0,
   class: "trx-bulk-actions"
-}, Ar = { class: "trx-bulk-actions__count" }, Mr = { class: "trx-bulk-actions__items" }, Lr = /* @__PURE__ */ g({
+}, Vr = { class: "trx-bulk-actions__count" }, Br = { class: "trx-bulk-actions__items" }, Pr = /* @__PURE__ */ g({
   __name: "TrxBulkActions",
   props: {
     count: {},
@@ -2857,9 +2854,9 @@ const ws = /* @__PURE__ */ g({
     });
     return (c, u) => (s(), L(j, { name: "trx-bulk-up" }, {
       default: B(() => [
-        l.value ? (s(), o("div", Pr, [
-          e("span", Ar, v(n.value), 1),
-          e("div", Mr, [
+        l.value ? (s(), o("div", Ir, [
+          e("span", Vr, v(n.value), 1),
+          e("div", Br, [
             I(c.$slots, "default", {}, void 0, !0)
           ]),
           e("button", {
@@ -2874,10 +2871,10 @@ const ws = /* @__PURE__ */ g({
       _: 3
     }));
   }
-}), BT = /* @__PURE__ */ A(Lr, [["__scopeId", "data-v-5f6bea7d"]]), zr = { class: "trx-export-btn" }, Dr = ["disabled"], Er = {
+}), bT = /* @__PURE__ */ M(Pr, [["__scopeId", "data-v-5f6bea7d"]]), Mr = { class: "trx-export-btn" }, Ar = ["disabled"], Lr = {
   key: 0,
   class: "trx-export-btn__menu"
-}, Rr = ["onClick"], Nr = /* @__PURE__ */ g({
+}, zr = ["onClick"], Dr = /* @__PURE__ */ g({
   __name: "TrxExportButton",
   props: {
     formats: { default: () => ["csv", "excel"] },
@@ -2887,7 +2884,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["export"],
   setup(t, { emit: a }) {
-    const r = a, i = D(!1), l = {
+    const r = a, i = z(!1), l = {
       csv: { label: "CSV", icon: "pi pi-file" },
       excel: { label: "Excel", icon: "pi pi-file-excel" },
       pdf: { label: "PDF", icon: "pi pi-file-pdf" }
@@ -2899,46 +2896,46 @@ const ws = /* @__PURE__ */ g({
       const _ = document.querySelector(".trx-export-btn");
       _ && !_.contains(u.target) && (i.value = !1);
     }
-    return W(() => document.addEventListener("click", c, !0)), G(() => document.removeEventListener("click", c, !0)), (u, _) => (s(), o("div", zr, [
+    return W(() => document.addEventListener("click", c, !0)), G(() => document.removeEventListener("click", c, !0)), (u, _) => (s(), o("div", Mr, [
       e("button", {
         class: "trx-export-btn__trigger",
         disabled: t.disabled || t.loading,
         onClick: _[0] || (_[0] = (d) => i.value = !i.value)
       }, [
         e("i", {
-          class: w(t.loading ? "pi pi-spin pi-spinner" : "pi pi-download")
+          class: y(t.loading ? "pi pi-spin pi-spinner" : "pi pi-download")
         }, null, 2),
         e("span", null, v(t.label), 1),
         e("i", {
-          class: w(["pi pi-chevron-down trx-export-btn__arrow", { "trx-export-btn__arrow--open": i.value }])
+          class: y(["pi pi-chevron-down trx-export-btn__arrow", { "trx-export-btn__arrow--open": i.value }])
         }, null, 2)
-      ], 8, Dr),
+      ], 8, Ar),
       O(j, { name: "trx-dropdown" }, {
         default: B(() => [
-          i.value ? (s(), o("div", Er, [
+          i.value ? (s(), o("div", Lr, [
             (s(!0), o(V, null, b(t.formats, (d) => (s(), o("button", {
               key: d,
               class: "trx-export-btn__item",
               onClick: (p) => n(d)
             }, [
               e("i", {
-                class: w(l[d].icon)
+                class: y(l[d].icon)
               }, null, 2),
               e("span", null, v(l[d].label), 1)
-            ], 8, Rr))), 128))
+            ], 8, zr))), 128))
           ])) : h("", !0)
         ]),
         _: 1
       })
     ]));
   }
-}), PT = /* @__PURE__ */ A(Nr, [["__scopeId", "data-v-2e0f2f33"]]), qr = { class: "trx-col-config" }, Fr = {
+}), yT = /* @__PURE__ */ M(Dr, [["__scopeId", "data-v-2e0f2f33"]]), Er = { class: "trx-col-config" }, Rr = {
   key: 0,
   class: "trx-col-config__panel"
-}, Or = ["checked", "disabled", "onChange"], jr = {
+}, Nr = ["checked", "disabled", "onChange"], qr = {
   key: 0,
   class: "trx-col-config__lock"
-}, Hr = /* @__PURE__ */ g({
+}, Fr = /* @__PURE__ */ g({
   __name: "TrxColumnConfig",
   props: {
     columns: {},
@@ -2946,7 +2943,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(!1);
+    const r = t, i = a, l = z(!1);
     function n(_) {
       const d = r.columns.find((x) => x.key === _);
       if (d != null && d.required) return;
@@ -2960,7 +2957,7 @@ const ws = /* @__PURE__ */ g({
       const d = document.querySelector(".trx-col-config");
       d && !d.contains(_.target) && (l.value = !1);
     }
-    return W(() => document.addEventListener("click", u, !0)), G(() => document.removeEventListener("click", u, !0)), (_, d) => (s(), o("div", qr, [
+    return W(() => document.addEventListener("click", u, !0)), G(() => document.removeEventListener("click", u, !0)), (_, d) => (s(), o("div", Er, [
       e("button", {
         class: "trx-col-config__trigger",
         onClick: d[0] || (d[0] = (p) => l.value = !l.value),
@@ -2970,20 +2967,20 @@ const ws = /* @__PURE__ */ g({
       ])]),
       O(j, { name: "trx-dropdown" }, {
         default: B(() => [
-          l.value ? (s(), o("div", Fr, [
+          l.value ? (s(), o("div", Rr, [
             d[3] || (d[3] = e("p", { class: "trx-col-config__title" }, "Colunas visíveis", -1)),
             (s(!0), o(V, null, b(t.columns, (p) => (s(), o("label", {
               key: p.key,
-              class: w(["trx-col-config__item", { "trx-col-config__item--required": p.required }])
+              class: y(["trx-col-config__item", { "trx-col-config__item--required": p.required }])
             }, [
               e("input", {
                 type: "checkbox",
                 checked: c(p.key),
                 disabled: p.required,
                 onChange: (m) => n(p.key)
-              }, null, 40, Or),
+              }, null, 40, Nr),
               e("span", null, v(p.label), 1),
-              p.required ? (s(), o("span", jr, [...d[2] || (d[2] = [
+              p.required ? (s(), o("span", qr, [...d[2] || (d[2] = [
                 e("i", { class: "pi pi-lock" }, null, -1)
               ])])) : h("", !0)
             ], 2))), 128))
@@ -2993,7 +2990,7 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), AT = /* @__PURE__ */ A(Hr, [["__scopeId", "data-v-e1297a23"]]), Ur = ["value", "disabled", "placeholder", "max"], Wr = ["value", "disabled", "placeholder", "min"], Gr = /* @__PURE__ */ g({
+}), kT = /* @__PURE__ */ M(Fr, [["__scopeId", "data-v-e1297a23"]]), Or = ["value", "disabled", "placeholder", "max"], jr = ["value", "disabled", "placeholder", "min"], Hr = /* @__PURE__ */ g({
   __name: "TrxDateRangePicker",
   props: {
     modelValue: { default: () => ({ start: null, end: null }) },
@@ -3026,7 +3023,7 @@ const ws = /* @__PURE__ */ g({
       return !!((p = r.modelValue) != null && p.start || (m = r.modelValue) != null && m.end);
     });
     return (p, m) => (s(), o("div", {
-      class: w(["trx-daterange", { "trx-daterange--disabled": t.disabled }])
+      class: y(["trx-daterange", { "trx-daterange--disabled": t.disabled }])
     }, [
       m[1] || (m[1] = e("i", { class: "pi pi-calendar trx-daterange__icon" }, null, -1)),
       e("input", {
@@ -3037,7 +3034,7 @@ const ws = /* @__PURE__ */ g({
         placeholder: t.startPlaceholder,
         max: n.value || void 0,
         onChange: c
-      }, null, 40, Ur),
+      }, null, 40, Or),
       m[2] || (m[2] = e("span", { class: "trx-daterange__sep" }, "→", -1)),
       e("input", {
         class: "trx-daterange__input",
@@ -3047,7 +3044,7 @@ const ws = /* @__PURE__ */ g({
         placeholder: t.endPlaceholder,
         min: l.value || void 0,
         onChange: u
-      }, null, 40, Wr),
+      }, null, 40, jr),
       d.value && !t.disabled ? (s(), o("button", {
         key: 0,
         class: "trx-daterange__clear",
@@ -3057,7 +3054,7 @@ const ws = /* @__PURE__ */ g({
       ])])) : h("", !0)
     ], 2));
   }
-}), MT = /* @__PURE__ */ A(Gr, [["__scopeId", "data-v-7a43f167"]]), Kr = ["value", "disabled", "placeholder"], Yr = /* @__PURE__ */ g({
+}), wT = /* @__PURE__ */ M(Hr, [["__scopeId", "data-v-7a43f167"]]), Ur = ["value", "disabled", "placeholder"], Wr = /* @__PURE__ */ g({
   __name: "TrxDurationInput",
   props: {
     modelValue: { default: 0 },
@@ -3081,7 +3078,7 @@ const ws = /* @__PURE__ */ g({
       isNaN(d) || i("update:modelValue", d);
     }
     return (u, _) => (s(), o("div", {
-      class: w(["trx-duration", { "trx-duration--invalid": t.invalid, "trx-duration--disabled": t.disabled }])
+      class: y(["trx-duration", { "trx-duration--invalid": t.invalid, "trx-duration--disabled": t.disabled }])
     }, [
       _[0] || (_[0] = e("i", { class: "pi pi-clock trx-duration__icon" }, null, -1)),
       e("input", {
@@ -3092,16 +3089,16 @@ const ws = /* @__PURE__ */ g({
         placeholder: t.placeholder ?? (t.format === "hh:mm:ss" ? "00:00:00" : "00:00"),
         pattern: "[0-9]{1,2}:[0-9]{2}(:[0-9]{2})?",
         onChange: c
-      }, null, 40, Kr)
+      }, null, 40, Ur)
     ], 2));
   }
-}), LT = /* @__PURE__ */ A(Yr, [["__scopeId", "data-v-6df8b487"]]), Jr = ["disabled"], Xr = {
+}), TT = /* @__PURE__ */ M(Wr, [["__scopeId", "data-v-6df8b487"]]), Gr = ["disabled"], Kr = {
   key: 1,
   class: "pi pi-chevron-down trx-timepicker__arrow"
-}, Qr = {
+}, Yr = {
   key: 0,
   class: "trx-timepicker__panel"
-}, Zr = ["onClick"], ti = /* @__PURE__ */ g({
+}, Jr = ["onClick"], Xr = /* @__PURE__ */ g({
   __name: "TrxTimePicker",
   props: {
     modelValue: {},
@@ -3112,7 +3109,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(!1), n = S(() => {
+    const r = t, i = a, l = z(!1), n = S(() => {
       const d = [];
       for (let m = 0; m < 1440; m += r.step) {
         const x = Math.floor(m / 60), f = m % 60;
@@ -3131,7 +3128,7 @@ const ws = /* @__PURE__ */ g({
       p && !p.contains(d.target) && (l.value = !1);
     }
     return W(() => document.addEventListener("click", _, !0)), G(() => document.removeEventListener("click", _, !0)), (d, p) => (s(), o("div", {
-      class: w(["trx-timepicker", { "trx-timepicker--invalid": t.invalid, "trx-timepicker--disabled": t.disabled }])
+      class: y(["trx-timepicker", { "trx-timepicker--invalid": t.invalid, "trx-timepicker--disabled": t.disabled }])
     }, [
       e("button", {
         class: "trx-timepicker__trigger",
@@ -3140,35 +3137,35 @@ const ws = /* @__PURE__ */ g({
       }, [
         p[1] || (p[1] = e("i", { class: "pi pi-clock trx-timepicker__icon" }, null, -1)),
         e("span", {
-          class: w({ "trx-timepicker__placeholder": !t.modelValue })
+          class: y({ "trx-timepicker__placeholder": !t.modelValue })
         }, v(t.modelValue || t.placeholder), 3),
         t.modelValue ? (s(), o("i", {
           key: 0,
           class: "pi pi-times trx-timepicker__clear",
           onClick: H(u, ["stop"])
-        })) : (s(), o("i", Xr))
-      ], 8, Jr),
+        })) : (s(), o("i", Kr))
+      ], 8, Gr),
       O(j, { name: "trx-dropdown" }, {
         default: B(() => [
-          l.value ? (s(), o("div", Qr, [
+          l.value ? (s(), o("div", Yr, [
             (s(!0), o(V, null, b(n.value, (m) => (s(), o("button", {
               key: m,
-              class: w(["trx-timepicker__option", { "trx-timepicker__option--active": m === t.modelValue }]),
+              class: y(["trx-timepicker__option", { "trx-timepicker__option--active": m === t.modelValue }]),
               onClick: (x) => c(m)
-            }, v(m), 11, Zr))), 128))
+            }, v(m), 11, Jr))), 128))
           ])) : h("", !0)
         ]),
         _: 1
       })
     ], 2));
   }
-}), zT = /* @__PURE__ */ A(ti, [["__scopeId", "data-v-6f06dd60"]]), ei = ["accept", "multiple"], si = { class: "trx-dropzone__label" }, ai = {
+}), CT = /* @__PURE__ */ M(Xr, [["__scopeId", "data-v-6f06dd60"]]), Qr = ["accept", "multiple"], Zr = { class: "trx-dropzone__label" }, ti = {
   key: 0,
   class: "trx-dropzone__hint"
-}, li = {
+}, ei = {
   key: 1,
   class: "trx-dropzone__hint"
-}, ni = /* @__PURE__ */ g({
+}, si = /* @__PURE__ */ g({
   __name: "TrxFileDropzone",
   props: {
     accept: {},
@@ -3180,7 +3177,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["files", "error"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(!1), n = D();
+    const r = t, i = a, l = z(!1), n = z();
     function c(x) {
       x.preventDefault(), r.disabled || (l.value = !0);
     }
@@ -3188,9 +3185,9 @@ const ws = /* @__PURE__ */ g({
       l.value = !1;
     }
     function _(x) {
-      var T;
+      var k;
       if (x.preventDefault(), l.value = !1, r.disabled) return;
-      const f = Array.from(((T = x.dataTransfer) == null ? void 0 : T.files) ?? []);
+      const f = Array.from(((k = x.dataTransfer) == null ? void 0 : k.files) ?? []);
       p(f);
     }
     function d(x) {
@@ -3199,9 +3196,9 @@ const ws = /* @__PURE__ */ g({
     }
     function p(x) {
       if (r.maxSize) {
-        const f = x.filter((T) => T.size > r.maxSize * 1024 * 1024);
+        const f = x.filter((k) => k.size > r.maxSize * 1024 * 1024);
         if (f.length) {
-          i("error", `Arquivo(s) excedem ${r.maxSize}MB: ${f.map((T) => T.name).join(", ")}`);
+          i("error", `Arquivo(s) excedem ${r.maxSize}MB: ${f.map((k) => k.name).join(", ")}`);
           return;
         }
       }
@@ -3212,7 +3209,7 @@ const ws = /* @__PURE__ */ g({
       r.disabled || (x = n.value) == null || x.click();
     }
     return (x, f) => (s(), o("div", {
-      class: w(["trx-dropzone", {
+      class: y(["trx-dropzone", {
         "trx-dropzone--dragging": l.value,
         "trx-dropzone--disabled": t.disabled
       }]),
@@ -3229,20 +3226,20 @@ const ws = /* @__PURE__ */ g({
         accept: t.accept,
         multiple: t.multiple,
         onChange: d
-      }, null, 40, ei),
+      }, null, 40, Qr),
       f[0] || (f[0] = e("i", { class: "pi pi-upload trx-dropzone__icon" }, null, -1)),
-      e("p", si, v(t.label), 1),
-      t.hint ? (s(), o("p", ai, v(t.hint), 1)) : h("", !0),
-      t.maxSize ? (s(), o("p", li, "Máx. " + v(t.maxSize) + "MB por arquivo", 1)) : h("", !0)
+      e("p", Zr, v(t.label), 1),
+      t.hint ? (s(), o("p", ti, v(t.hint), 1)) : h("", !0),
+      t.maxSize ? (s(), o("p", ei, "Máx. " + v(t.maxSize) + "MB por arquivo", 1)) : h("", !0)
     ], 34));
   }
-}), DT = /* @__PURE__ */ A(ni, [["__scopeId", "data-v-83847ba3"]]), oi = { class: "trx-address__row" }, ri = { class: "trx-address__field trx-address__field--zip" }, ii = { class: "trx-address__label" }, ci = { key: 0 }, ui = { class: "trx-address__cep-wrap" }, di = ["value", "disabled"], _i = {
+}), ST = /* @__PURE__ */ M(si, [["__scopeId", "data-v-83847ba3"]]), ai = { class: "trx-address__row" }, li = { class: "trx-address__field trx-address__field--zip" }, ni = { class: "trx-address__label" }, oi = { key: 0 }, ri = { class: "trx-address__cep-wrap" }, ii = ["value", "disabled"], ci = {
   key: 0,
   class: "pi pi-spin pi-spinner trx-address__cep-icon"
-}, pi = {
+}, ui = {
   key: 0,
   class: "trx-address__error"
-}, vi = { class: "trx-address__row trx-address__row--street" }, mi = { class: "trx-address__field" }, fi = ["value", "disabled"], xi = { class: "trx-address__field trx-address__field--number" }, hi = ["value", "disabled"], $i = { class: "trx-address__row" }, gi = { class: "trx-address__field" }, bi = ["value", "disabled"], yi = { class: "trx-address__field" }, ki = ["value", "disabled"], wi = { class: "trx-address__row" }, Ti = { class: "trx-address__field" }, Ci = ["value", "disabled"], Si = { class: "trx-address__field trx-address__field--state" }, Ii = ["value", "disabled"], Vi = /* @__PURE__ */ g({
+}, di = { class: "trx-address__row trx-address__row--street" }, _i = { class: "trx-address__field" }, pi = ["value", "disabled"], vi = { class: "trx-address__field trx-address__field--number" }, mi = ["value", "disabled"], fi = { class: "trx-address__row" }, xi = { class: "trx-address__field" }, hi = ["value", "disabled"], $i = { class: "trx-address__field" }, gi = ["value", "disabled"], bi = { class: "trx-address__row" }, yi = { class: "trx-address__field" }, ki = ["value", "disabled"], wi = { class: "trx-address__field trx-address__field--state" }, Ti = ["value", "disabled"], Ci = /* @__PURE__ */ g({
   __name: "TrxAddressForm",
   props: {
     modelValue: { default: () => ({}) },
@@ -3251,7 +3248,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(!1), n = D("");
+    const r = t, i = a, l = z(!1), n = z("");
     function c(_, d) {
       i("update:modelValue", { ...r.modelValue, [_]: d });
     }
@@ -3281,33 +3278,33 @@ const ws = /* @__PURE__ */ g({
       }
     }
     return (_, d) => {
-      var p, m, x, f, T, $, C;
+      var p, m, x, f, k, $, C;
       return s(), o("div", {
-        class: w(["trx-address", { "trx-address--disabled": t.disabled }])
+        class: y(["trx-address", { "trx-address--disabled": t.disabled }])
       }, [
-        e("div", oi, [
-          e("div", ri, [
-            e("label", ii, [
+        e("div", ai, [
+          e("div", li, [
+            e("label", ni, [
               d[7] || (d[7] = N("CEP ", -1)),
-              t.required ? (s(), o("span", ci, "*")) : h("", !0)
+              t.required ? (s(), o("span", oi, "*")) : h("", !0)
             ]),
-            e("div", ui, [
+            e("div", ri, [
               e("input", {
-                class: w(["trx-address__input", { "trx-address__input--error": n.value }]),
+                class: y(["trx-address__input", { "trx-address__input--error": n.value }]),
                 type: "text",
                 maxlength: "9",
                 placeholder: "00000-000",
                 value: ((p = t.modelValue) == null ? void 0 : p.zipCode) ?? "",
                 disabled: t.disabled,
-                onInput: d[0] || (d[0] = (M) => u(M.target.value))
-              }, null, 42, di),
-              l.value ? (s(), o("i", _i)) : h("", !0)
+                onInput: d[0] || (d[0] = (A) => u(A.target.value))
+              }, null, 42, ii),
+              l.value ? (s(), o("i", ci)) : h("", !0)
             ]),
-            n.value ? (s(), o("span", pi, v(n.value), 1)) : h("", !0)
+            n.value ? (s(), o("span", ui, v(n.value), 1)) : h("", !0)
           ])
         ]),
-        e("div", vi, [
-          e("div", mi, [
+        e("div", di, [
+          e("div", _i, [
             d[8] || (d[8] = e("label", { class: "trx-address__label" }, "Logradouro", -1)),
             e("input", {
               class: "trx-address__input",
@@ -3315,10 +3312,10 @@ const ws = /* @__PURE__ */ g({
               placeholder: "Rua, Avenida...",
               value: ((m = t.modelValue) == null ? void 0 : m.street) ?? "",
               disabled: t.disabled,
-              onInput: d[1] || (d[1] = (M) => c("street", M.target.value))
-            }, null, 40, fi)
+              onInput: d[1] || (d[1] = (A) => c("street", A.target.value))
+            }, null, 40, pi)
           ]),
-          e("div", xi, [
+          e("div", vi, [
             d[9] || (d[9] = e("label", { class: "trx-address__label" }, "Número", -1)),
             e("input", {
               class: "trx-address__input",
@@ -3326,12 +3323,12 @@ const ws = /* @__PURE__ */ g({
               placeholder: "Nº",
               value: ((x = t.modelValue) == null ? void 0 : x.number) ?? "",
               disabled: t.disabled,
-              onInput: d[2] || (d[2] = (M) => c("number", M.target.value))
-            }, null, 40, hi)
+              onInput: d[2] || (d[2] = (A) => c("number", A.target.value))
+            }, null, 40, mi)
           ])
         ]),
-        e("div", $i, [
-          e("div", gi, [
+        e("div", fi, [
+          e("div", xi, [
             d[10] || (d[10] = e("label", { class: "trx-address__label" }, "Complemento", -1)),
             e("input", {
               class: "trx-address__input",
@@ -3339,23 +3336,23 @@ const ws = /* @__PURE__ */ g({
               placeholder: "Apto, Sala...",
               value: ((f = t.modelValue) == null ? void 0 : f.complement) ?? "",
               disabled: t.disabled,
-              onInput: d[3] || (d[3] = (M) => c("complement", M.target.value))
-            }, null, 40, bi)
+              onInput: d[3] || (d[3] = (A) => c("complement", A.target.value))
+            }, null, 40, hi)
           ]),
-          e("div", yi, [
+          e("div", $i, [
             d[11] || (d[11] = e("label", { class: "trx-address__label" }, "Bairro", -1)),
             e("input", {
               class: "trx-address__input",
               type: "text",
               placeholder: "Bairro",
-              value: ((T = t.modelValue) == null ? void 0 : T.district) ?? "",
+              value: ((k = t.modelValue) == null ? void 0 : k.district) ?? "",
               disabled: t.disabled,
-              onInput: d[4] || (d[4] = (M) => c("district", M.target.value))
-            }, null, 40, ki)
+              onInput: d[4] || (d[4] = (A) => c("district", A.target.value))
+            }, null, 40, gi)
           ])
         ]),
-        e("div", wi, [
-          e("div", Ti, [
+        e("div", bi, [
+          e("div", yi, [
             d[12] || (d[12] = e("label", { class: "trx-address__label" }, "Cidade", -1)),
             e("input", {
               class: "trx-address__input",
@@ -3363,10 +3360,10 @@ const ws = /* @__PURE__ */ g({
               placeholder: "Cidade",
               value: (($ = t.modelValue) == null ? void 0 : $.city) ?? "",
               disabled: t.disabled,
-              onInput: d[5] || (d[5] = (M) => c("city", M.target.value))
-            }, null, 40, Ci)
+              onInput: d[5] || (d[5] = (A) => c("city", A.target.value))
+            }, null, 40, ki)
           ]),
-          e("div", Si, [
+          e("div", wi, [
             d[13] || (d[13] = e("label", { class: "trx-address__label" }, "UF", -1)),
             e("input", {
               class: "trx-address__input",
@@ -3375,41 +3372,41 @@ const ws = /* @__PURE__ */ g({
               placeholder: "UF",
               value: ((C = t.modelValue) == null ? void 0 : C.state) ?? "",
               disabled: t.disabled,
-              onInput: d[6] || (d[6] = (M) => c("state", M.target.value))
-            }, null, 40, Ii)
+              onInput: d[6] || (d[6] = (A) => c("state", A.target.value))
+            }, null, 40, Ti)
           ])
         ])
       ], 2);
     };
   }
-}), ET = /* @__PURE__ */ A(Vi, [["__scopeId", "data-v-4f713181"]]), Bi = { class: "trx-page-layout" }, Pi = {
+}), IT = /* @__PURE__ */ M(Ci, [["__scopeId", "data-v-4f713181"]]), Si = { class: "trx-page-layout" }, Ii = {
   key: 0,
   class: "trx-page-layout__breadcrumb"
-}, Ai = {
+}, Vi = {
   key: 0,
   class: "trx-page-layout__sep"
-}, Mi = ["href"], Li = {
+}, Bi = ["href"], Pi = {
   key: 2,
   class: "trx-page-layout__crumb"
-}, zi = {
+}, Mi = {
   key: 1,
   class: "trx-page-layout__header"
-}, Di = { class: "trx-page-layout__heading" }, Ei = {
+}, Ai = { class: "trx-page-layout__heading" }, Li = {
   key: 0,
   class: "trx-page-layout__skeleton trx-page-layout__skeleton--title"
-}, Ri = {
+}, zi = {
   key: 0,
   class: "trx-page-layout__title"
-}, Ni = {
+}, Di = {
   key: 1,
   class: "trx-page-layout__subtitle"
-}, qi = {
+}, Ei = {
   key: 0,
   class: "trx-page-layout__actions"
-}, Fi = { class: "trx-page-layout__content" }, Oi = {
+}, Ri = { class: "trx-page-layout__content" }, Ni = {
   key: 2,
   class: "trx-page-layout__footer"
-}, ji = /* @__PURE__ */ g({
+}, qi = /* @__PURE__ */ g({
   __name: "TrxPageLayout",
   props: {
     title: {},
@@ -3420,48 +3417,48 @@ const ws = /* @__PURE__ */ g({
   setup(t) {
     return (a, r) => {
       var i;
-      return s(), o("div", Bi, [
-        (i = t.breadcrumbs) != null && i.length ? (s(), o("div", Pi, [
+      return s(), o("div", Si, [
+        (i = t.breadcrumbs) != null && i.length ? (s(), o("div", Ii, [
           (s(!0), o(V, null, b(t.breadcrumbs, (l, n) => (s(), o(V, { key: n }, [
-            n > 0 ? (s(), o("span", Ai, "/")) : h("", !0),
+            n > 0 ? (s(), o("span", Vi, "/")) : h("", !0),
             l.to ? (s(), o("a", {
               key: 1,
               class: "trx-page-layout__crumb trx-page-layout__crumb--link",
               href: l.to
-            }, v(l.label), 9, Mi)) : (s(), o("span", Li, v(l.label), 1))
+            }, v(l.label), 9, Bi)) : (s(), o("span", Pi, v(l.label), 1))
           ], 64))), 128))
         ])) : h("", !0),
-        t.title || a.$slots.header ? (s(), o("div", zi, [
-          e("div", Di, [
-            t.loading ? (s(), o("div", Ei)) : (s(), o(V, { key: 1 }, [
-              t.title ? (s(), o("h1", Ri, v(t.title), 1)) : h("", !0),
-              t.subtitle ? (s(), o("p", Ni, v(t.subtitle), 1)) : h("", !0)
+        t.title || a.$slots.header ? (s(), o("div", Mi, [
+          e("div", Ai, [
+            t.loading ? (s(), o("div", Li)) : (s(), o(V, { key: 1 }, [
+              t.title ? (s(), o("h1", zi, v(t.title), 1)) : h("", !0),
+              t.subtitle ? (s(), o("p", Di, v(t.subtitle), 1)) : h("", !0)
             ], 64))
           ]),
-          a.$slots.actions ? (s(), o("div", qi, [
+          a.$slots.actions ? (s(), o("div", Ei, [
             I(a.$slots, "actions", {}, void 0, !0)
           ])) : h("", !0),
           I(a.$slots, "header", {}, void 0, !0)
         ])) : h("", !0),
-        e("div", Fi, [
+        e("div", Ri, [
           I(a.$slots, "default", {}, void 0, !0)
         ]),
-        a.$slots.footer ? (s(), o("div", Oi, [
+        a.$slots.footer ? (s(), o("div", Ni, [
           I(a.$slots, "footer", {}, void 0, !0)
         ])) : h("", !0)
       ]);
     };
   }
-}), RT = /* @__PURE__ */ A(ji, [["__scopeId", "data-v-2b3d5429"]]), Hi = { class: "trx-tabs-router" }, Ui = {
+}), VT = /* @__PURE__ */ M(qi, [["__scopeId", "data-v-2b3d5429"]]), Fi = { class: "trx-tabs-router" }, Oi = {
   class: "trx-tabs-router__nav",
   role: "tablist"
-}, Wi = ["disabled", "aria-selected", "onClick"], Gi = {
+}, ji = ["disabled", "aria-selected", "onClick"], Hi = {
   key: 1,
   class: "trx-tabs-router__badge"
-}, Ki = {
+}, Ui = {
   class: "trx-tabs-router__content",
   role: "tabpanel"
-}, Yi = /* @__PURE__ */ g({
+}, Wi = /* @__PURE__ */ g({
   __name: "TrxTabsRouter",
   props: {
     tabs: {},
@@ -3470,11 +3467,11 @@ const ws = /* @__PURE__ */ g({
   emits: ["update:modelValue"],
   setup(t, { emit: a }) {
     const r = a;
-    return (i, l) => (s(), o("div", Hi, [
-      e("nav", Ui, [
+    return (i, l) => (s(), o("div", Fi, [
+      e("nav", Oi, [
         (s(!0), o(V, null, b(t.tabs, (n) => (s(), o("button", {
           key: n.key,
-          class: w(["trx-tabs-router__tab", { "trx-tabs-router__tab--active": t.modelValue === n.key }]),
+          class: y(["trx-tabs-router__tab", { "trx-tabs-router__tab--active": t.modelValue === n.key }]),
           disabled: n.disabled,
           role: "tab",
           "aria-selected": t.modelValue === n.key,
@@ -3482,21 +3479,21 @@ const ws = /* @__PURE__ */ g({
         }, [
           n.icon ? (s(), o("i", {
             key: 0,
-            class: w(n.icon)
+            class: y(n.icon)
           }, null, 2)) : h("", !0),
           e("span", null, v(n.label), 1),
-          n.badge !== void 0 ? (s(), o("span", Gi, v(n.badge), 1)) : h("", !0)
-        ], 10, Wi))), 128))
+          n.badge !== void 0 ? (s(), o("span", Hi, v(n.badge), 1)) : h("", !0)
+        ], 10, ji))), 128))
       ]),
-      e("div", Ki, [
+      e("div", Ui, [
         I(i.$slots, "default", {}, void 0, !0)
       ])
     ]));
   }
-}), NT = /* @__PURE__ */ A(Yi, [["__scopeId", "data-v-e69a3f91"]]), Ji = { class: "trx-mobile-nav" }, Xi = ["onClick"], Qi = { class: "trx-mobile-nav__icon-wrap" }, Zi = {
+}), BT = /* @__PURE__ */ M(Wi, [["__scopeId", "data-v-e69a3f91"]]), Gi = { class: "trx-mobile-nav" }, Ki = ["onClick"], Yi = { class: "trx-mobile-nav__icon-wrap" }, Ji = {
   key: 0,
   class: "trx-mobile-nav__badge"
-}, tc = { class: "trx-mobile-nav__label" }, ec = /* @__PURE__ */ g({
+}, Xi = { class: "trx-mobile-nav__label" }, Qi = /* @__PURE__ */ g({
   __name: "TrxMobileNav",
   props: {
     items: {},
@@ -3508,38 +3505,38 @@ const ws = /* @__PURE__ */ g({
     function i(l) {
       r("update:modelValue", l.key), r("select", l);
     }
-    return (l, n) => (s(), o("nav", Ji, [
+    return (l, n) => (s(), o("nav", Gi, [
       (s(!0), o(V, null, b(t.items, (c) => (s(), o("button", {
         key: c.key,
-        class: w(["trx-mobile-nav__item", { "trx-mobile-nav__item--active": t.modelValue === c.key }]),
+        class: y(["trx-mobile-nav__item", { "trx-mobile-nav__item--active": t.modelValue === c.key }]),
         onClick: (u) => i(c)
       }, [
-        e("div", Qi, [
+        e("div", Yi, [
           e("i", {
-            class: w(c.icon)
+            class: y(c.icon)
           }, null, 2),
-          c.badge ? (s(), o("span", Zi, v(c.badge > 99 ? "99+" : c.badge), 1)) : h("", !0)
+          c.badge ? (s(), o("span", Ji, v(c.badge > 99 ? "99+" : c.badge), 1)) : h("", !0)
         ]),
-        e("span", tc, v(c.label), 1)
-      ], 10, Xi))), 128))
+        e("span", Xi, v(c.label), 1)
+      ], 10, Ki))), 128))
     ]));
   }
-}), qT = /* @__PURE__ */ A(ec, [["__scopeId", "data-v-5b0a32c4"]]), sc = { class: "trx-user-menu" }, ac = ["src", "alt"], lc = {
+}), PT = /* @__PURE__ */ M(Qi, [["__scopeId", "data-v-5b0a32c4"]]), Zi = { class: "trx-user-menu" }, tc = ["src", "alt"], ec = {
   key: 1,
   class: "trx-user-menu__initials"
-}, nc = { class: "trx-user-menu__info" }, oc = { class: "trx-user-menu__name" }, rc = {
+}, sc = { class: "trx-user-menu__info" }, ac = { class: "trx-user-menu__name" }, lc = {
   key: 0,
   class: "trx-user-menu__role"
-}, ic = {
+}, nc = {
   key: 0,
   class: "trx-user-menu__panel"
-}, cc = {
+}, oc = {
   key: 0,
   class: "trx-user-menu__email"
-}, uc = {
+}, rc = {
   key: 0,
   class: "trx-user-menu__sep"
-}, dc = ["onClick"], _c = /* @__PURE__ */ g({
+}, ic = ["onClick"], cc = /* @__PURE__ */ g({
   __name: "TrxUserMenu",
   props: {
     name: {},
@@ -3550,7 +3547,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["select", "logout"],
   setup(t, { emit: a }) {
-    const r = a, i = D(!1);
+    const r = a, i = z(!1);
     function l(u) {
       i.value = !1, u.key === "logout" ? r("logout") : r("select", u.key);
     }
@@ -3559,7 +3556,7 @@ const ws = /* @__PURE__ */ g({
       const _ = document.querySelector(".trx-user-menu");
       _ && !_.contains(u.target) && (i.value = !1);
     }
-    return W(() => document.addEventListener("click", c, !0)), G(() => document.removeEventListener("click", c, !0)), (u, _) => (s(), o("div", sc, [
+    return W(() => document.addEventListener("click", c, !0)), G(() => document.removeEventListener("click", c, !0)), (u, _) => (s(), o("div", Zi, [
       e("button", {
         class: "trx-user-menu__trigger",
         onClick: _[0] || (_[0] = (d) => i.value = !i.value)
@@ -3569,33 +3566,33 @@ const ws = /* @__PURE__ */ g({
           src: t.avatar,
           alt: t.name,
           class: "trx-user-menu__avatar"
-        }, null, 8, ac)) : (s(), o("span", lc, v(n(t.name)), 1)),
-        e("div", nc, [
-          e("span", oc, v(t.name), 1),
-          t.role ? (s(), o("span", rc, v(t.role), 1)) : h("", !0)
+        }, null, 8, tc)) : (s(), o("span", ec, v(n(t.name)), 1)),
+        e("div", sc, [
+          e("span", ac, v(t.name), 1),
+          t.role ? (s(), o("span", lc, v(t.role), 1)) : h("", !0)
         ]),
         e("i", {
-          class: w(["pi pi-chevron-down trx-user-menu__arrow", { "trx-user-menu__arrow--open": i.value }])
+          class: y(["pi pi-chevron-down trx-user-menu__arrow", { "trx-user-menu__arrow--open": i.value }])
         }, null, 2)
       ]),
       O(j, { name: "trx-dropdown" }, {
         default: B(() => [
-          i.value ? (s(), o("div", ic, [
-            t.email ? (s(), o("div", cc, v(t.email), 1)) : h("", !0),
+          i.value ? (s(), o("div", nc, [
+            t.email ? (s(), o("div", oc, v(t.email), 1)) : h("", !0),
             (s(!0), o(V, null, b(t.items, (d) => (s(), o(V, {
               key: d.key
             }, [
-              d.separator ? (s(), o("hr", uc)) : (s(), o("button", {
+              d.separator ? (s(), o("hr", rc)) : (s(), o("button", {
                 key: 1,
-                class: w(["trx-user-menu__item", { "trx-user-menu__item--danger": d.danger }]),
+                class: y(["trx-user-menu__item", { "trx-user-menu__item--danger": d.danger }]),
                 onClick: (p) => l(d)
               }, [
                 d.icon ? (s(), o("i", {
                   key: 0,
-                  class: w(d.icon)
+                  class: y(d.icon)
                 }, null, 2)) : h("", !0),
                 e("span", null, v(d.label), 1)
-              ], 10, dc))
+              ], 10, ic))
             ], 64))), 128))
           ])) : h("", !0)
         ]),
@@ -3603,25 +3600,25 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), FT = /* @__PURE__ */ A(_c, [["__scopeId", "data-v-919df4aa"]]), pc = { class: "trx-profile-card" }, vc = {
+}), MT = /* @__PURE__ */ M(cc, [["__scopeId", "data-v-919df4aa"]]), uc = { class: "trx-profile-card" }, dc = {
   key: 0,
   class: "trx-profile-card__loading"
-}, mc = { class: "trx-profile-card__avatar-wrap" }, fc = ["src", "alt"], xc = {
+}, _c = { class: "trx-profile-card__avatar-wrap" }, pc = ["src", "alt"], vc = {
   key: 1,
   class: "trx-profile-card__initials"
-}, hc = { class: "trx-profile-card__name" }, $c = {
+}, mc = { class: "trx-profile-card__name" }, fc = {
   key: 0,
   class: "trx-profile-card__role"
-}, gc = {
+}, xc = {
   key: 1,
   class: "trx-profile-card__email"
-}, bc = { class: "trx-profile-card__status" }, yc = {
+}, hc = { class: "trx-profile-card__status" }, $c = {
   key: 2,
   class: "trx-profile-card__stats"
-}, kc = { class: "trx-profile-card__stat-value" }, wc = { class: "trx-profile-card__stat-label" }, Tc = {
+}, gc = { class: "trx-profile-card__stat-value" }, bc = { class: "trx-profile-card__stat-label" }, yc = {
   key: 3,
   class: "trx-profile-card__actions"
-}, Cc = /* @__PURE__ */ g({
+}, kc = /* @__PURE__ */ g({
   __name: "TrxProfileCard",
   props: {
     name: {},
@@ -3649,50 +3646,50 @@ const ws = /* @__PURE__ */ g({
     }
     return (l, n) => {
       var c;
-      return s(), o("div", pc, [
-        t.loading ? (s(), o("div", vc, [...n[0] || (n[0] = [
+      return s(), o("div", uc, [
+        t.loading ? (s(), o("div", dc, [...n[0] || (n[0] = [
           e("div", { class: "trx-profile-card__skel trx-profile-card__skel--avatar" }, null, -1),
           e("div", { class: "trx-profile-card__skel trx-profile-card__skel--name" }, null, -1),
           e("div", { class: "trx-profile-card__skel trx-profile-card__skel--role" }, null, -1)
         ])])) : (s(), o(V, { key: 1 }, [
-          e("div", mc, [
+          e("div", _c, [
             t.avatar ? (s(), o("img", {
               key: 0,
               src: t.avatar,
               alt: t.name,
               class: "trx-profile-card__avatar"
-            }, null, 8, fc)) : (s(), o("span", xc, v(i(t.name)), 1)),
+            }, null, 8, pc)) : (s(), o("span", vc, v(i(t.name)), 1)),
             e("span", {
               class: "trx-profile-card__status-dot",
               style: R({ background: r[t.status ?? "offline"] })
             }, null, 4)
           ]),
-          e("h3", hc, v(t.name), 1),
-          t.role ? (s(), o("p", $c, v(t.role), 1)) : h("", !0),
-          t.email ? (s(), o("p", gc, v(t.email), 1)) : h("", !0),
-          e("div", bc, [
+          e("h3", mc, v(t.name), 1),
+          t.role ? (s(), o("p", fc, v(t.role), 1)) : h("", !0),
+          t.email ? (s(), o("p", xc, v(t.email), 1)) : h("", !0),
+          e("div", hc, [
             e("span", {
               class: "trx-profile-card__status-label",
               style: R({ color: r[t.status ?? "offline"] })
             }, v(a[t.status ?? "offline"]), 5)
           ]),
-          (c = t.stats) != null && c.length ? (s(), o("div", yc, [
+          (c = t.stats) != null && c.length ? (s(), o("div", $c, [
             (s(!0), o(V, null, b(t.stats, (u) => (s(), o("div", {
               key: u.label,
               class: "trx-profile-card__stat"
             }, [
-              e("span", kc, v(u.value), 1),
-              e("span", wc, v(u.label), 1)
+              e("span", gc, v(u.value), 1),
+              e("span", bc, v(u.label), 1)
             ]))), 128))
           ])) : h("", !0),
-          l.$slots.actions ? (s(), o("div", Tc, [
+          l.$slots.actions ? (s(), o("div", yc, [
             I(l.$slots, "actions", {}, void 0, !0)
           ])) : h("", !0)
         ], 64))
       ]);
     };
   }
-}), OT = /* @__PURE__ */ A(Cc, [["__scopeId", "data-v-b3cb7a45"]]), Sc = /* @__PURE__ */ g({
+}), AT = /* @__PURE__ */ M(kc, [["__scopeId", "data-v-b3cb7a45"]]), wc = /* @__PURE__ */ g({
   __name: "TrxRoleBadge",
   props: {
     role: {},
@@ -3708,11 +3705,11 @@ const ws = /* @__PURE__ */ g({
       viewer: { label: "Visualizador", color: "var(--trx-text-secondary)" }
     }, r = t, i = a[r.role] ?? { label: r.role, color: "var(--trx-text-secondary)" }, l = r.label ?? i.label;
     return (n, c) => (s(), o("span", {
-      class: w(["trx-role-badge", `trx-role-badge--${t.size}`]),
+      class: y(["trx-role-badge", `trx-role-badge--${t.size}`]),
       style: R({ "--role-color": P(i).color })
     }, v(P(l)), 7));
   }
-}), jT = /* @__PURE__ */ A(Sc, [["__scopeId", "data-v-fa2938f0"]]), HT = /* @__PURE__ */ g({
+}), LT = /* @__PURE__ */ M(wc, [["__scopeId", "data-v-fa2938f0"]]), zT = /* @__PURE__ */ g({
   __name: "TrxPermissionGate",
   props: {
     permission: {},
@@ -3726,31 +3723,31 @@ const ws = /* @__PURE__ */ g({
     });
     return (i, l) => r.value ? I(i.$slots, "default", { key: 0 }) : I(i.$slots, "fallback", { key: 1 });
   }
-}), Ic = { class: "trx-notif-bell" }, Vc = {
+}), Tc = { class: "trx-notif-bell" }, Cc = {
   key: 0,
   class: "trx-notif-bell__count"
-}, Bc = {
+}, Sc = {
   key: 0,
   class: "trx-notif-bell__panel"
-}, Pc = { class: "trx-notif-bell__header" }, Ac = {
+}, Ic = { class: "trx-notif-bell__header" }, Vc = {
   key: 0,
   class: "trx-notif-bell__loading"
-}, Mc = {
+}, Bc = {
   key: 1,
   class: "trx-notif-bell__empty"
-}, Lc = {
+}, Pc = {
   key: 2,
   class: "trx-notif-bell__list"
-}, zc = ["onClick"], Dc = { class: "trx-notif-bell__item-content" }, Ec = { class: "trx-notif-bell__item-title" }, Rc = {
+}, Mc = ["onClick"], Ac = { class: "trx-notif-bell__item-content" }, Lc = { class: "trx-notif-bell__item-title" }, zc = {
   key: 0,
   class: "trx-notif-bell__item-body"
-}, Nc = {
+}, Dc = {
   key: 1,
   class: "trx-notif-bell__item-time"
-}, qc = {
+}, Ec = {
   key: 0,
   class: "trx-notif-bell__item-dot"
-}, Fc = /* @__PURE__ */ g({
+}, Rc = /* @__PURE__ */ g({
   __name: "TrxNotificationBell",
   props: {
     items: { default: () => [] },
@@ -3759,7 +3756,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["read", "read-all", "open"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(!1), n = () => r.count ?? r.items.filter((p) => !p.read).length, c = {
+    const r = t, i = a, l = z(!1), n = () => r.count ?? r.items.filter((p) => !p.read).length, c = {
       info: "pi pi-info-circle",
       success: "pi pi-check-circle",
       warning: "pi pi-exclamation-triangle",
@@ -3777,18 +3774,18 @@ const ws = /* @__PURE__ */ g({
       const m = document.querySelector(".trx-notif-bell");
       m && !m.contains(p.target) && (l.value = !1);
     }
-    return W(() => document.addEventListener("click", d, !0)), G(() => document.removeEventListener("click", d, !0)), (p, m) => (s(), o("div", Ic, [
+    return W(() => document.addEventListener("click", d, !0)), G(() => document.removeEventListener("click", d, !0)), (p, m) => (s(), o("div", Tc, [
       e("button", {
-        class: w(["trx-notif-bell__btn", { "trx-notif-bell__btn--active": l.value }]),
+        class: y(["trx-notif-bell__btn", { "trx-notif-bell__btn--active": l.value }]),
         onClick: _
       }, [
         m[1] || (m[1] = e("i", { class: "pi pi-bell" }, null, -1)),
-        n() > 0 ? (s(), o("span", Vc, v(n() > 99 ? "99+" : n()), 1)) : h("", !0)
+        n() > 0 ? (s(), o("span", Cc, v(n() > 99 ? "99+" : n()), 1)) : h("", !0)
       ], 2),
       O(j, { name: "trx-dropdown" }, {
         default: B(() => [
-          l.value ? (s(), o("div", Bc, [
-            e("div", Pc, [
+          l.value ? (s(), o("div", Sc, [
+            e("div", Ic, [
               m[2] || (m[2] = e("span", { class: "trx-notif-bell__title" }, "Notificações", -1)),
               n() > 0 ? (s(), o("button", {
                 key: 0,
@@ -3796,12 +3793,12 @@ const ws = /* @__PURE__ */ g({
                 onClick: m[0] || (m[0] = (x) => i("read-all"))
               }, " Marcar todas como lidas ")) : h("", !0)
             ]),
-            t.loading ? (s(), o("div", Ac, [...m[3] || (m[3] = [
+            t.loading ? (s(), o("div", Vc, [...m[3] || (m[3] = [
               e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
-            ])])) : t.items.length ? (s(), o("div", Lc, [
+            ])])) : t.items.length ? (s(), o("div", Pc, [
               (s(!0), o(V, null, b(t.items, (x) => (s(), o("div", {
                 key: x.id,
-                class: w(["trx-notif-bell__item", { "trx-notif-bell__item--unread": !x.read }]),
+                class: y(["trx-notif-bell__item", { "trx-notif-bell__item--unread": !x.read }]),
                 onClick: (f) => i("read", x.id)
               }, [
                 e("div", {
@@ -3809,17 +3806,17 @@ const ws = /* @__PURE__ */ g({
                   style: R({ color: u[x.type ?? "info"] })
                 }, [
                   e("i", {
-                    class: w(x.icon ?? c[x.type ?? "info"])
+                    class: y(x.icon ?? c[x.type ?? "info"])
                   }, null, 2)
                 ], 4),
-                e("div", Dc, [
-                  e("p", Ec, v(x.title), 1),
-                  x.body ? (s(), o("p", Rc, v(x.body), 1)) : h("", !0),
-                  x.time ? (s(), o("span", Nc, v(x.time), 1)) : h("", !0)
+                e("div", Ac, [
+                  e("p", Lc, v(x.title), 1),
+                  x.body ? (s(), o("p", zc, v(x.body), 1)) : h("", !0),
+                  x.time ? (s(), o("span", Dc, v(x.time), 1)) : h("", !0)
                 ]),
-                x.read ? h("", !0) : (s(), o("div", qc))
-              ], 10, zc))), 128))
-            ])) : (s(), o("div", Mc, [...m[4] || (m[4] = [
+                x.read ? h("", !0) : (s(), o("div", Ec))
+              ], 10, Mc))), 128))
+            ])) : (s(), o("div", Bc, [...m[4] || (m[4] = [
               e("i", { class: "pi pi-bell-slash" }, null, -1),
               e("span", null, "Nenhuma notificação", -1)
             ])]))
@@ -3829,10 +3826,10 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), UT = /* @__PURE__ */ A(Fc, [["__scopeId", "data-v-e26fa7e6"]]), Oc = {
+}), DT = /* @__PURE__ */ M(Rc, [["__scopeId", "data-v-e26fa7e6"]]), Nc = {
   key: 0,
   class: "trx-conn-status__label"
-}, jc = /* @__PURE__ */ g({
+}, qc = /* @__PURE__ */ g({
   __name: "TrxConnectionStatus",
   props: {
     status: {},
@@ -3851,24 +3848,24 @@ const ws = /* @__PURE__ */ g({
       style: R({ "--conn-color": r.value.color })
     }, [
       e("span", {
-        class: w(["trx-conn-status__dot", { "trx-conn-status__dot--pulse": r.value.pulse }])
+        class: y(["trx-conn-status__dot", { "trx-conn-status__dot--pulse": r.value.pulse }])
       }, null, 2),
       e("i", {
-        class: w(["trx-conn-status__icon", r.value.icon])
+        class: y(["trx-conn-status__icon", r.value.icon])
       }, null, 2),
-      t.showLabel ? (s(), o("span", Oc, v(i.value), 1)) : h("", !0)
+      t.showLabel ? (s(), o("span", Nc, v(i.value), 1)) : h("", !0)
     ], 4));
   }
-}), WT = /* @__PURE__ */ A(jc, [["__scopeId", "data-v-da8341e1"]]), Hc = { class: "trx-confirm-btn" }, Uc = {
+}), ET = /* @__PURE__ */ M(qc, [["__scopeId", "data-v-da8341e1"]]), Fc = { class: "trx-confirm-btn" }, Oc = {
   key: "idle",
   class: "trx-confirm-btn__idle"
-}, Wc = ["disabled"], Gc = {
+}, jc = ["disabled"], Hc = {
   key: 0,
   class: "pi pi-spin pi-spinner"
-}, Kc = {
+}, Uc = {
   key: "confirm",
   class: "trx-confirm-btn__confirm-row"
-}, Yc = /* @__PURE__ */ g({
+}, Wc = /* @__PURE__ */ g({
   __name: "TrxConfirmButton",
   props: {
     label: { default: "Excluir" },
@@ -3881,7 +3878,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["confirm"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(!1);
+    const r = t, i = a, l = z(!1);
     let n;
     function c() {
       r.disabled || r.loading || (l.value = !0, n = setTimeout(() => {
@@ -3894,13 +3891,13 @@ const ws = /* @__PURE__ */ g({
     function _() {
       clearTimeout(n), l.value = !1;
     }
-    return (d, p) => (s(), o("div", Hc, [
+    return (d, p) => (s(), o("div", Fc, [
       O(j, {
         name: "trx-confirm-swap",
         mode: "out-in"
       }, {
         default: B(() => [
-          l.value ? (s(), o("div", Kc, [
+          l.value ? (s(), o("div", Uc, [
             p[0] || (p[0] = e("span", { class: "trx-confirm-btn__question" }, "Tem certeza?", -1)),
             e("button", {
               class: "trx-confirm-btn__btn trx-confirm-btn__btn--confirm",
@@ -3910,25 +3907,25 @@ const ws = /* @__PURE__ */ g({
               class: "trx-confirm-btn__btn trx-confirm-btn__btn--cancel",
               onClick: _
             }, v(t.cancelLabel), 1)
-          ])) : (s(), o("div", Uc, [
+          ])) : (s(), o("div", Oc, [
             e("button", {
-              class: w(["trx-confirm-btn__btn", `trx-confirm-btn__btn--${t.variant}`]),
+              class: y(["trx-confirm-btn__btn", `trx-confirm-btn__btn--${t.variant}`]),
               disabled: t.disabled || t.loading,
               onClick: c
             }, [
-              t.loading ? (s(), o("i", Gc)) : t.icon ? (s(), o("i", {
+              t.loading ? (s(), o("i", Hc)) : t.icon ? (s(), o("i", {
                 key: 1,
-                class: w(t.icon)
+                class: y(t.icon)
               }, null, 2)) : h("", !0),
               e("span", null, v(t.label), 1)
-            ], 10, Wc)
+            ], 10, jc)
           ]))
         ]),
         _: 1
       })
     ]));
   }
-}), GT = /* @__PURE__ */ A(Yc, [["__scopeId", "data-v-8d2f9f6d"]]), Jc = { key: 1 }, Xc = /* @__PURE__ */ g({
+}), RT = /* @__PURE__ */ M(Wc, [["__scopeId", "data-v-8d2f9f6d"]]), Gc = { key: 1 }, Kc = /* @__PURE__ */ g({
   __name: "TrxSaveIndicator",
   props: {
     state: {},
@@ -3954,24 +3951,24 @@ const ws = /* @__PURE__ */ g({
         }, [
           r.value.icon ? (s(), o("i", {
             key: 0,
-            class: w(r.value.icon)
+            class: y(r.value.icon)
           }, null, 2)) : h("", !0),
-          r.value.text ? (s(), o("span", Jc, v(r.value.text), 1)) : h("", !0)
+          r.value.text ? (s(), o("span", Gc, v(r.value.text), 1)) : h("", !0)
         ], 4)) : h("", !0)
       ]),
       _: 1
     }));
   }
-}), KT = /* @__PURE__ */ A(Xc, [["__scopeId", "data-v-74d4ab40"]]), Qc = { class: "trx-chat-bubble__content" }, Zc = {
+}), NT = /* @__PURE__ */ M(Kc, [["__scopeId", "data-v-74d4ab40"]]), Yc = { class: "trx-chat-bubble__content" }, Jc = {
   key: 0,
   class: "trx-chat-bubble__author"
-}, tu = { class: "trx-chat-bubble__body" }, eu = {
+}, Xc = { class: "trx-chat-bubble__body" }, Qc = {
   key: 0,
   class: "trx-chat-bubble__text"
-}, su = ["src", "alt"], au = ["src"], lu = ["href"], nu = { class: "trx-chat-bubble__meta" }, ou = {
+}, Zc = ["src", "alt"], tu = ["src"], eu = ["href"], su = { class: "trx-chat-bubble__meta" }, au = {
   key: 0,
   class: "trx-chat-bubble__time"
-}, ru = /* @__PURE__ */ g({
+}, lu = /* @__PURE__ */ g({
   __name: "TrxChatBubble",
   props: {
     message: {},
@@ -3998,23 +3995,23 @@ const ws = /* @__PURE__ */ g({
       error: "var(--trx-danger-color)"
     };
     return (i, l) => (s(), o("div", {
-      class: w(["trx-chat-bubble", `trx-chat-bubble--${t.direction}`])
+      class: y(["trx-chat-bubble", `trx-chat-bubble--${t.direction}`])
     }, [
-      e("div", Qc, [
-        t.author && t.direction === "in" ? (s(), o("span", Zc, v(t.author), 1)) : h("", !0),
-        e("div", tu, [
+      e("div", Yc, [
+        t.author && t.direction === "in" ? (s(), o("span", Jc, v(t.author), 1)) : h("", !0),
+        e("div", Xc, [
           I(i.$slots, "default", {}, () => [
-            t.type === "text" ? (s(), o("p", eu, v(t.message), 1)) : t.type === "image" && t.fileUrl ? (s(), o("img", {
+            t.type === "text" ? (s(), o("p", Qc, v(t.message), 1)) : t.type === "image" && t.fileUrl ? (s(), o("img", {
               key: 1,
               class: "trx-chat-bubble__image",
               src: t.fileUrl,
               alt: t.fileName
-            }, null, 8, su)) : t.type === "audio" && t.fileUrl ? (s(), o("audio", {
+            }, null, 8, Zc)) : t.type === "audio" && t.fileUrl ? (s(), o("audio", {
               key: 2,
               class: "trx-chat-bubble__audio",
               src: t.fileUrl,
               controls: ""
-            }, null, 8, au)) : t.type === "file" ? (s(), o("a", {
+            }, null, 8, tu)) : t.type === "file" ? (s(), o("a", {
               key: 3,
               class: "trx-chat-bubble__file",
               href: t.fileUrl,
@@ -4023,33 +4020,33 @@ const ws = /* @__PURE__ */ g({
             }, [
               l[0] || (l[0] = e("i", { class: "pi pi-file" }, null, -1)),
               e("span", null, v(t.fileName ?? "Arquivo"), 1)
-            ], 8, lu)) : h("", !0)
+            ], 8, eu)) : h("", !0)
           ], !0)
         ]),
-        e("div", nu, [
-          t.time ? (s(), o("span", ou, v(t.time), 1)) : h("", !0),
+        e("div", su, [
+          t.time ? (s(), o("span", au, v(t.time), 1)) : h("", !0),
           t.status && t.direction === "out" ? (s(), o("i", {
             key: 1,
-            class: w([a[t.status], "trx-chat-bubble__status"]),
+            class: y([a[t.status], "trx-chat-bubble__status"]),
             style: R({ color: r[t.status] })
           }, null, 6)) : h("", !0)
         ])
       ])
     ], 2));
   }
-}), iu = /* @__PURE__ */ A(ru, [["__scopeId", "data-v-4e61c314"]]), cu = { class: "trx-chat-window" }, uu = {
+}), nu = /* @__PURE__ */ M(lu, [["__scopeId", "data-v-4e61c314"]]), ou = { class: "trx-chat-window" }, ru = {
   key: 0,
   class: "trx-chat-window__header"
-}, du = { class: "trx-chat-window__avatar" }, _u = ["src", "alt"], pu = { key: 1 }, vu = { class: "trx-chat-window__contact-info" }, mu = { class: "trx-chat-window__contact-name" }, fu = {
+}, iu = { class: "trx-chat-window__avatar" }, cu = ["src", "alt"], uu = { key: 1 }, du = { class: "trx-chat-window__contact-info" }, _u = { class: "trx-chat-window__contact-name" }, pu = {
   key: 0,
   class: "trx-chat-window__contact-status"
-}, xu = {
+}, vu = {
   key: 0,
   class: "trx-chat-window__loading"
-}, hu = {
+}, mu = {
   key: 1,
   class: "trx-chat-window__empty"
-}, $u = { class: "trx-chat-window__composer" }, gu = ["disabled"], bu = ["placeholder", "disabled"], yu = ["disabled"], ku = /* @__PURE__ */ g({
+}, fu = { class: "trx-chat-window__composer" }, xu = ["disabled"], hu = ["placeholder", "disabled"], $u = ["disabled"], gu = /* @__PURE__ */ g({
   __name: "TrxChatWindow",
   props: {
     messages: { default: () => [] },
@@ -4060,7 +4057,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["send", "attach"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(""), n = D();
+    const r = t, i = a, l = z(""), n = z();
     function c() {
       const p = l.value.trim();
       !p || r.disabled || (i("send", p), l.value = "");
@@ -4080,18 +4077,18 @@ const ws = /* @__PURE__ */ g({
     function d(p) {
       return p.split(" ").map((m) => m[0]).slice(0, 2).join("").toUpperCase();
     }
-    return (p, m) => (s(), o("div", cu, [
-      t.contact ? (s(), o("div", uu, [
-        e("div", du, [
+    return (p, m) => (s(), o("div", ou, [
+      t.contact ? (s(), o("div", ru, [
+        e("div", iu, [
           t.contact.avatar ? (s(), o("img", {
             key: 0,
             src: t.contact.avatar,
             alt: t.contact.name
-          }, null, 8, _u)) : (s(), o("span", pu, v(d(t.contact.name)), 1))
+          }, null, 8, cu)) : (s(), o("span", uu, v(d(t.contact.name)), 1))
         ]),
-        e("div", vu, [
-          e("span", mu, v(t.contact.name), 1),
-          t.contact.status ?? t.contact.subtitle ? (s(), o("span", fu, v(t.contact.status ?? t.contact.subtitle), 1)) : h("", !0)
+        e("div", du, [
+          e("span", _u, v(t.contact.name), 1),
+          t.contact.status ?? t.contact.subtitle ? (s(), o("span", pu, v(t.contact.status ?? t.contact.subtitle), 1)) : h("", !0)
         ]),
         I(p.$slots, "header-actions", {}, void 0, !0)
       ])) : h("", !0),
@@ -4100,17 +4097,17 @@ const ws = /* @__PURE__ */ g({
         ref: n,
         class: "trx-chat-window__messages"
       }, [
-        t.loading ? (s(), o("div", xu, [...m[2] || (m[2] = [
+        t.loading ? (s(), o("div", vu, [...m[2] || (m[2] = [
           e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
-        ])])) : t.messages.length ? h("", !0) : (s(), o("div", hu, [...m[3] || (m[3] = [
+        ])])) : t.messages.length ? h("", !0) : (s(), o("div", mu, [...m[3] || (m[3] = [
           e("i", { class: "pi pi-comments" }, null, -1),
           e("span", null, "Nenhuma mensagem ainda", -1)
         ])])),
-        (s(!0), o(V, null, b(t.messages, (x) => (s(), L(iu, Ct({
+        (s(!0), o(V, null, b(t.messages, (x) => (s(), L(nu, Ct({
           key: x.id
         }, { ref_for: !0 }, x), null, 16))), 128))
       ], 512),
-      e("div", $u, [
+      e("div", fu, [
         e("button", {
           class: "trx-chat-window__attach",
           onClick: m[0] || (m[0] = (x) => i("attach")),
@@ -4118,7 +4115,7 @@ const ws = /* @__PURE__ */ g({
           disabled: t.disabled
         }, [...m[4] || (m[4] = [
           e("i", { class: "pi pi-paperclip" }, null, -1)
-        ])], 8, gu),
+        ])], 8, xu),
         Y(e("textarea", {
           class: "trx-chat-window__input",
           placeholder: t.placeholder,
@@ -4126,7 +4123,7 @@ const ws = /* @__PURE__ */ g({
           rows: "1",
           disabled: t.disabled,
           onKeydown: u
-        }, null, 40, bu), [
+        }, null, 40, hu), [
           [J, l.value]
         ]),
         e("button", {
@@ -4136,11 +4133,11 @@ const ws = /* @__PURE__ */ g({
           title: "Enviar"
         }, [...m[5] || (m[5] = [
           e("i", { class: "pi pi-send" }, null, -1)
-        ])], 8, yu)
+        ])], 8, $u)
       ])
     ]));
   }
-}), YT = /* @__PURE__ */ A(ku, [["__scopeId", "data-v-5f901218"]]), wu = ["title"], Tu = { key: 0 }, Cu = /* @__PURE__ */ g({
+}), qT = /* @__PURE__ */ M(gu, [["__scopeId", "data-v-5f901218"]]), bu = ["title"], yu = { key: 0 }, ku = /* @__PURE__ */ g({
   __name: "TrxChannelBadge",
   props: {
     channel: {},
@@ -4160,32 +4157,32 @@ const ws = /* @__PURE__ */ g({
       messenger: { label: "Messenger", icon: "pi pi-facebook", color: "#0099FF" }
     }, r = t, i = a[r.channel] ?? { label: r.channel, icon: "pi pi-question-circle", color: "var(--trx-text-secondary)" };
     return (l, n) => (s(), o("span", {
-      class: w(["trx-channel-badge", `trx-channel-badge--${t.size}`]),
+      class: y(["trx-channel-badge", `trx-channel-badge--${t.size}`]),
       style: R({ "--ch-color": P(i).color }),
       title: P(i).label
     }, [
       e("i", {
-        class: w(P(i).icon)
+        class: y(P(i).icon)
       }, null, 2),
-      !t.iconOnly && t.showLabel ? (s(), o("span", Tu, v(P(i).label), 1)) : h("", !0)
-    ], 14, wu));
+      !t.iconOnly && t.showLabel ? (s(), o("span", yu, v(P(i).label), 1)) : h("", !0)
+    ], 14, bu));
   }
-}), ut = /* @__PURE__ */ A(Cu, [["__scopeId", "data-v-90daa003"]]), Su = { class: "trx-contact-card" }, Iu = {
+}), ut = /* @__PURE__ */ M(ku, [["__scopeId", "data-v-90daa003"]]), wu = { class: "trx-contact-card" }, Tu = {
   key: 0,
   class: "trx-contact-card__skeleton"
-}, Vu = { class: "trx-contact-card__left" }, Bu = { class: "trx-contact-card__avatar" }, Pu = ["src", "alt"], Au = { key: 1 }, Mu = { class: "trx-contact-card__info" }, Lu = { class: "trx-contact-card__name" }, zu = {
+}, Cu = { class: "trx-contact-card__left" }, Su = { class: "trx-contact-card__avatar" }, Iu = ["src", "alt"], Vu = { key: 1 }, Bu = { class: "trx-contact-card__info" }, Pu = { class: "trx-contact-card__name" }, Mu = {
   key: 0,
   class: "trx-contact-card__detail"
-}, Du = {
+}, Au = {
   key: 1,
   class: "trx-contact-card__detail"
-}, Eu = {
+}, Lu = {
   key: 2,
   class: "trx-contact-card__meta"
-}, Ru = {
+}, zu = {
   key: 1,
   class: "trx-contact-card__last"
-}, Nu = { class: "trx-contact-card__actions" }, qu = /* @__PURE__ */ g({
+}, Du = { class: "trx-contact-card__actions" }, Eu = /* @__PURE__ */ g({
   __name: "TrxContactCard",
   props: {
     name: {},
@@ -4203,43 +4200,43 @@ const ws = /* @__PURE__ */ g({
     function i(l) {
       return l.split(" ").map((n) => n[0]).slice(0, 2).join("").toUpperCase();
     }
-    return (l, n) => (s(), o("div", Su, [
-      t.loading ? (s(), o("div", Iu, [...n[3] || (n[3] = [
+    return (l, n) => (s(), o("div", wu, [
+      t.loading ? (s(), o("div", Tu, [...n[3] || (n[3] = [
         e("div", { class: "trx-contact-card__skel trx-contact-card__skel--avatar" }, null, -1),
         e("div", { class: "trx-contact-card__skel-info" }, [
           e("div", { class: "trx-contact-card__skel trx-contact-card__skel--name" }),
           e("div", { class: "trx-contact-card__skel trx-contact-card__skel--sub" })
         ], -1)
       ])])) : (s(), o(V, { key: 1 }, [
-        e("div", Vu, [
-          e("div", Bu, [
+        e("div", Cu, [
+          e("div", Su, [
             t.avatar ? (s(), o("img", {
               key: 0,
               src: t.avatar,
               alt: t.name
-            }, null, 8, Pu)) : (s(), o("span", Au, v(i(t.name)), 1))
+            }, null, 8, Iu)) : (s(), o("span", Vu, v(i(t.name)), 1))
           ]),
-          e("div", Mu, [
-            e("span", Lu, v(t.name), 1),
-            t.phone ? (s(), o("span", zu, [
+          e("div", Bu, [
+            e("span", Pu, v(t.name), 1),
+            t.phone ? (s(), o("span", Mu, [
               n[4] || (n[4] = e("i", { class: "pi pi-phone" }, null, -1)),
               N(" " + v(t.phone), 1)
             ])) : h("", !0),
-            t.email ? (s(), o("span", Du, [
+            t.email ? (s(), o("span", Au, [
               n[5] || (n[5] = e("i", { class: "pi pi-envelope" }, null, -1)),
               N(" " + v(t.email), 1)
             ])) : h("", !0),
-            t.channel || t.lastContact ? (s(), o("div", Eu, [
+            t.channel || t.lastContact ? (s(), o("div", Lu, [
               t.channel ? (s(), L(ut, {
                 key: 0,
                 channel: t.channel,
                 size: "sm"
               }, null, 8, ["channel"])) : h("", !0),
-              t.lastContact ? (s(), o("span", Ru, v(t.lastContact), 1)) : h("", !0)
+              t.lastContact ? (s(), o("span", zu, v(t.lastContact), 1)) : h("", !0)
             ])) : h("", !0)
           ])
         ]),
-        e("div", Nu, [
+        e("div", Du, [
           t.phone ? (s(), o("button", {
             key: 0,
             class: "trx-contact-card__btn",
@@ -4266,16 +4263,16 @@ const ws = /* @__PURE__ */ g({
       ], 64))
     ]));
   }
-}), JT = /* @__PURE__ */ A(qu, [["__scopeId", "data-v-3bd57308"]]), Fu = { class: "trx-ticket-card__top" }, Ou = { class: "trx-ticket-card__id" }, ju = { class: "trx-ticket-card__badges" }, Hu = ["title"], Uu = { class: "trx-ticket-card__title" }, Wu = { class: "trx-ticket-card__meta" }, Gu = {
+}), FT = /* @__PURE__ */ M(Eu, [["__scopeId", "data-v-3bd57308"]]), Ru = { class: "trx-ticket-card__top" }, Nu = { class: "trx-ticket-card__id" }, qu = { class: "trx-ticket-card__badges" }, Fu = ["title"], Ou = { class: "trx-ticket-card__title" }, ju = { class: "trx-ticket-card__meta" }, Hu = {
   key: 0,
   class: "trx-ticket-card__meta-item"
-}, Ku = {
+}, Uu = {
   key: 1,
   class: "trx-ticket-card__meta-item"
-}, Yu = {
+}, Wu = {
   key: 2,
   class: "trx-ticket-card__meta-item trx-ticket-card__meta-item--time"
-}, Ju = /* @__PURE__ */ g({
+}, Gu = /* @__PURE__ */ g({
   __name: "TrxTicketCard",
   props: {
     id: {},
@@ -4305,9 +4302,9 @@ const ws = /* @__PURE__ */ g({
       class: "trx-ticket-card",
       onClick: c[3] || (c[3] = (u) => l("view"))
     }, [
-      e("div", Fu, [
-        e("span", Ou, "#" + v(t.id), 1),
-        e("div", ju, [
+      e("div", Ru, [
+        e("span", Nu, "#" + v(t.id), 1),
+        e("div", qu, [
           t.channel ? (s(), L(ut, {
             key: 0,
             channel: t.channel,
@@ -4325,22 +4322,22 @@ const ws = /* @__PURE__ */ g({
             title: i[t.priority ?? "medium"].label
           }, [
             e("i", {
-              class: w(i[t.priority ?? "medium"].icon)
+              class: y(i[t.priority ?? "medium"].icon)
             }, null, 2)
-          ], 12, Hu)
+          ], 12, Fu)
         ])
       ]),
-      e("p", Uu, v(t.title), 1),
-      e("div", Wu, [
-        t.customer ? (s(), o("span", Gu, [
+      e("p", Ou, v(t.title), 1),
+      e("div", ju, [
+        t.customer ? (s(), o("span", Hu, [
           c[4] || (c[4] = e("i", { class: "pi pi-user" }, null, -1)),
           N(" " + v(t.customer), 1)
         ])) : h("", !0),
-        t.agent ? (s(), o("span", Ku, [
+        t.agent ? (s(), o("span", Uu, [
           c[5] || (c[5] = e("i", { class: "pi pi-headphones" }, null, -1)),
           N(" " + v(t.agent), 1)
         ])) : h("", !0),
-        t.updatedAt ?? t.createdAt ? (s(), o("span", Yu, [
+        t.updatedAt ?? t.createdAt ? (s(), o("span", Wu, [
           c[6] || (c[6] = e("i", { class: "pi pi-clock" }, null, -1)),
           N(" " + v(t.updatedAt ?? t.createdAt), 1)
         ])) : h("", !0)
@@ -4369,16 +4366,16 @@ const ws = /* @__PURE__ */ g({
       ])
     ]));
   }
-}), XT = /* @__PURE__ */ A(Ju, [["__scopeId", "data-v-c88df6d1"]]), Xu = { class: "trx-call-history" }, Qu = {
+}), OT = /* @__PURE__ */ M(Gu, [["__scopeId", "data-v-c88df6d1"]]), Ku = { class: "trx-call-history" }, Yu = {
   key: 0,
   class: "trx-call-history__empty"
-}, Zu = {
+}, Ju = {
   key: 1,
   class: "trx-call-history__empty"
-}, td = {
+}, Xu = {
   key: 2,
   class: "trx-call-history__list"
-}, ed = ["onClick"], sd = { class: "trx-call-history__info" }, ad = { class: "trx-call-history__name" }, ld = { class: "trx-call-history__sub" }, nd = { class: "trx-call-history__meta" }, od = { class: "trx-call-history__duration" }, rd = { class: "trx-call-history__time" }, id = ["onClick"], cd = ["onClick"], ud = /* @__PURE__ */ g({
+}, Qu = ["onClick"], Zu = { class: "trx-call-history__info" }, td = { class: "trx-call-history__name" }, ed = { class: "trx-call-history__sub" }, sd = { class: "trx-call-history__meta" }, ad = { class: "trx-call-history__duration" }, ld = { class: "trx-call-history__time" }, nd = ["onClick"], od = ["onClick"], rd = /* @__PURE__ */ g({
   __name: "TrxCallHistory",
   props: {
     calls: { default: () => [] },
@@ -4397,10 +4394,10 @@ const ws = /* @__PURE__ */ g({
       const c = Math.floor(n / 60), u = n % 60;
       return `${c}:${String(u).padStart(2, "0")}`;
     }
-    return (n, c) => (s(), o("div", Xu, [
-      t.loading ? (s(), o("div", Qu, [...c[1] || (c[1] = [
+    return (n, c) => (s(), o("div", Ku, [
+      t.loading ? (s(), o("div", Yu, [...c[1] || (c[1] = [
         e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
-      ])])) : t.calls.length ? (s(), o("div", td, [
+      ])])) : t.calls.length ? (s(), o("div", Xu, [
         (s(!0), o(V, null, b(t.calls, (u) => (s(), o("div", {
           key: u.id,
           class: "trx-call-history__item",
@@ -4411,16 +4408,16 @@ const ws = /* @__PURE__ */ g({
             style: R({ color: i[u.direction].color })
           }, [
             e("i", {
-              class: w(i[u.direction].icon)
+              class: y(i[u.direction].icon)
             }, null, 2)
           ], 4),
-          e("div", sd, [
-            e("span", ad, v(u.callerName ?? u.callerId), 1),
-            e("span", ld, v(u.callerId) + " · " + v(i[u.direction].label), 1)
+          e("div", Zu, [
+            e("span", td, v(u.callerName ?? u.callerId), 1),
+            e("span", ed, v(u.callerId) + " · " + v(i[u.direction].label), 1)
           ]),
-          e("div", nd, [
-            e("span", od, v(l(u.duration)), 1),
-            e("span", rd, v(u.startedAt), 1)
+          e("div", sd, [
+            e("span", ad, v(l(u.duration)), 1),
+            e("span", ld, v(u.startedAt), 1)
           ]),
           e("div", {
             class: "trx-call-history__actions",
@@ -4434,35 +4431,35 @@ const ws = /* @__PURE__ */ g({
               onClick: (_) => r("play", u.id)
             }, [...c[3] || (c[3] = [
               e("i", { class: "pi pi-play" }, null, -1)
-            ])], 8, id)) : h("", !0),
+            ])], 8, nd)) : h("", !0),
             e("button", {
               class: "trx-call-history__btn",
               title: "Ligar de volta",
               onClick: (_) => r("callback", u)
             }, [...c[4] || (c[4] = [
               e("i", { class: "pi pi-phone" }, null, -1)
-            ])], 8, cd)
+            ])], 8, od)
           ])
-        ], 8, ed))), 128))
-      ])) : (s(), o("div", Zu, [...c[2] || (c[2] = [
+        ], 8, Qu))), 128))
+      ])) : (s(), o("div", Ju, [...c[2] || (c[2] = [
         e("i", { class: "pi pi-phone-slash" }, null, -1),
         e("span", null, "Nenhuma chamada encontrada", -1)
       ])]))
     ]));
   }
-}), QT = /* @__PURE__ */ A(ud, [["__scopeId", "data-v-09f018c0"]]), dd = { class: "trx-call-script" }, _d = { class: "trx-call-script__header" }, pd = { class: "trx-call-script__title" }, vd = { class: "trx-call-script__progress" }, md = { class: "trx-call-script__progress-bar" }, fd = {
+}), jT = /* @__PURE__ */ M(rd, [["__scopeId", "data-v-09f018c0"]]), id = { class: "trx-call-script" }, cd = { class: "trx-call-script__header" }, ud = { class: "trx-call-script__title" }, dd = { class: "trx-call-script__progress" }, _d = { class: "trx-call-script__progress-bar" }, pd = {
   key: 0,
   class: "trx-call-script__step"
-}, xd = { class: "trx-call-script__step-header" }, hd = { class: "trx-call-script__step-title" }, $d = { class: "trx-call-script__step-content" }, gd = {
+}, vd = { class: "trx-call-script__step-header" }, md = { class: "trx-call-script__step-title" }, fd = { class: "trx-call-script__step-content" }, xd = {
   key: 1,
   class: "trx-call-script__empty"
-}, bd = { class: "trx-call-script__nav" }, yd = ["disabled"], kd = {
+}, hd = { class: "trx-call-script__nav" }, $d = ["disabled"], gd = {
   key: 0,
   class: "pi pi-chevron-right"
-}, wd = {
+}, bd = {
   key: 1,
   class: "pi pi-check"
-}, Td = /* @__PURE__ */ g({
+}, yd = /* @__PURE__ */ g({
   __name: "TrxCallScript",
   props: {
     steps: { default: () => [] },
@@ -4470,7 +4467,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["complete", "stepChange"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(0);
+    const r = t, i = a, l = z(0);
     function n() {
       l.value < r.steps.length - 1 ? (l.value++, i("stepChange", l.value)) : i("complete");
     }
@@ -4482,30 +4479,30 @@ const ws = /* @__PURE__ */ g({
       question: "pi pi-question-circle",
       action: "pi pi-check-circle"
     };
-    return (_, d) => (s(), o("div", dd, [
-      e("div", _d, [
-        e("span", pd, v(t.title), 1),
-        e("span", vd, v(l.value + 1) + " / " + v(t.steps.length), 1)
+    return (_, d) => (s(), o("div", id, [
+      e("div", cd, [
+        e("span", ud, v(t.title), 1),
+        e("span", dd, v(l.value + 1) + " / " + v(t.steps.length), 1)
       ]),
-      e("div", md, [
+      e("div", _d, [
         e("div", {
           class: "trx-call-script__progress-fill",
           style: R({ width: `${(l.value + 1) / t.steps.length * 100}%` })
         }, null, 4)
       ]),
-      t.steps[l.value] ? (s(), o("div", fd, [
-        e("div", xd, [
+      t.steps[l.value] ? (s(), o("div", pd, [
+        e("div", vd, [
           e("i", {
-            class: w(u[t.steps[l.value].type ?? "info"])
+            class: y(u[t.steps[l.value].type ?? "info"])
           }, null, 2),
-          e("h4", hd, v(t.steps[l.value].title), 1)
+          e("h4", md, v(t.steps[l.value].title), 1)
         ]),
-        e("p", $d, v(t.steps[l.value].content), 1)
-      ])) : (s(), o("div", gd, [...d[0] || (d[0] = [
+        e("p", fd, v(t.steps[l.value].content), 1)
+      ])) : (s(), o("div", xd, [...d[0] || (d[0] = [
         e("i", { class: "pi pi-file-edit" }, null, -1),
         e("span", null, "Nenhum script disponível", -1)
       ])])),
-      e("div", bd, [
+      e("div", hd, [
         e("button", {
           class: "trx-call-script__btn trx-call-script__btn--secondary",
           disabled: l.value === 0,
@@ -4513,34 +4510,34 @@ const ws = /* @__PURE__ */ g({
         }, [...d[1] || (d[1] = [
           e("i", { class: "pi pi-chevron-left" }, null, -1),
           N(" Anterior ", -1)
-        ])], 8, yd),
+        ])], 8, $d),
         e("button", {
           class: "trx-call-script__btn trx-call-script__btn--primary",
           onClick: n
         }, [
           N(v(l.value === t.steps.length - 1 ? "Concluir" : "Próximo") + " ", 1),
-          l.value < t.steps.length - 1 ? (s(), o("i", kd)) : (s(), o("i", wd))
+          l.value < t.steps.length - 1 ? (s(), o("i", gd)) : (s(), o("i", bd))
         ])
       ])
     ]));
   }
-}), ZT = /* @__PURE__ */ A(Td, [["__scopeId", "data-v-b430310e"]]), Cd = ["disabled"], Sd = {
+}), HT = /* @__PURE__ */ M(yd, [["__scopeId", "data-v-b430310e"]]), kd = ["disabled"], wd = {
   key: 0,
   class: "trx-disposition__selected"
-}, Id = {
+}, Td = {
   key: 1,
   class: "trx-disposition__placeholder"
-}, Vd = {
+}, Cd = {
   key: 0,
   class: "trx-disposition__panel"
-}, Bd = ["onClick"], Pd = {
+}, Sd = ["onClick"], Id = {
   key: 1,
   class: "pi pi-pencil trx-disposition__note-icon",
   title: "Requer observação"
-}, Ad = {
+}, Vd = {
   key: 0,
   class: "trx-disposition__note-wrap"
-}, Md = ["value"], Ld = /* @__PURE__ */ g({
+}, Bd = ["value"], Pd = /* @__PURE__ */ g({
   __name: "TrxDispositionPicker",
   props: {
     dispositions: { default: () => [] },
@@ -4551,7 +4548,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "update:note", "confirm"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(!1), n = D(r.note ?? ""), c = D(r.dispositions.find((p) => p.id === r.modelValue) ?? null);
+    const r = t, i = a, l = z(!1), n = z(r.note ?? ""), c = z(r.dispositions.find((p) => p.id === r.modelValue) ?? null);
     function u(p) {
       c.value = p, l.value = !1, i("update:modelValue", p.id), p.requireNote || i("confirm", p.id, n.value);
     }
@@ -4565,50 +4562,50 @@ const ws = /* @__PURE__ */ g({
     return W(() => document.addEventListener("click", d, !0)), G(() => document.removeEventListener("click", d, !0)), (p, m) => {
       var x;
       return s(), o("div", {
-        class: w(["trx-disposition", { "trx-disposition--disabled": t.disabled }])
+        class: y(["trx-disposition", { "trx-disposition--disabled": t.disabled }])
       }, [
         e("button", {
           class: "trx-disposition__trigger",
           disabled: t.disabled,
           onClick: m[0] || (m[0] = (f) => l.value = !l.value)
         }, [
-          c.value ? (s(), o("span", Sd, [
+          c.value ? (s(), o("span", wd, [
             c.value.icon ? (s(), o("i", {
               key: 0,
-              class: w(c.value.icon),
+              class: y(c.value.icon),
               style: R({ color: c.value.color })
             }, null, 6)) : h("", !0),
             e("span", {
               style: R({ color: c.value.color })
             }, v(c.value.label), 5)
-          ])) : (s(), o("span", Id, v(t.placeholder), 1)),
+          ])) : (s(), o("span", Td, v(t.placeholder), 1)),
           e("i", {
-            class: w(["pi pi-chevron-down trx-disposition__arrow", { "trx-disposition__arrow--open": l.value }])
+            class: y(["pi pi-chevron-down trx-disposition__arrow", { "trx-disposition__arrow--open": l.value }])
           }, null, 2)
-        ], 8, Cd),
+        ], 8, kd),
         O(j, { name: "trx-dropdown" }, {
           default: B(() => [
-            l.value ? (s(), o("div", Vd, [
+            l.value ? (s(), o("div", Cd, [
               (s(!0), o(V, null, b(t.dispositions, (f) => (s(), o("button", {
                 key: f.id,
-                class: w(["trx-disposition__option", { "trx-disposition__option--active": t.modelValue === f.id }]),
-                onClick: (T) => u(f)
+                class: y(["trx-disposition__option", { "trx-disposition__option--active": t.modelValue === f.id }]),
+                onClick: (k) => u(f)
               }, [
                 f.icon ? (s(), o("i", {
                   key: 0,
-                  class: w(f.icon),
+                  class: y(f.icon),
                   style: R({ color: f.color })
                 }, null, 6)) : h("", !0),
                 e("span", {
                   style: R({ color: f.color })
                 }, v(f.label), 5),
-                f.requireNote ? (s(), o("i", Pd)) : h("", !0)
-              ], 10, Bd))), 128))
+                f.requireNote ? (s(), o("i", Id)) : h("", !0)
+              ], 10, Sd))), 128))
             ])) : h("", !0)
           ]),
           _: 1
         }),
-        (x = c.value) != null && x.requireNote ? (s(), o("div", Ad, [
+        (x = c.value) != null && x.requireNote ? (s(), o("div", Vd, [
           e("textarea", {
             class: "trx-disposition__note",
             placeholder: "Adicione uma observação...",
@@ -4617,7 +4614,7 @@ const ws = /* @__PURE__ */ g({
             onInput: m[1] || (m[1] = (f) => {
               n.value = f.target.value, i("update:note", n.value);
             })
-          }, null, 40, Md),
+          }, null, 40, Bd),
           e("button", {
             class: "trx-disposition__confirm",
             onClick: _
@@ -4629,13 +4626,13 @@ const ws = /* @__PURE__ */ g({
       ], 2);
     };
   }
-}), tC = /* @__PURE__ */ A(Ld, [["__scopeId", "data-v-52a3852f"]]), zd = { class: "trx-dialer-list" }, Dd = {
+}), UT = /* @__PURE__ */ M(Pd, [["__scopeId", "data-v-52a3852f"]]), Md = { class: "trx-dialer-list" }, Ad = {
   key: 0,
   class: "trx-dialer-list__empty"
-}, Ed = ["onClick"], Rd = { class: "trx-dialer-list__info" }, Nd = { class: "trx-dialer-list__name" }, qd = { class: "trx-dialer-list__phone" }, Fd = { class: "trx-dialer-list__meta" }, Od = {
+}, Ld = ["onClick"], zd = { class: "trx-dialer-list__info" }, Dd = { class: "trx-dialer-list__name" }, Ed = { class: "trx-dialer-list__phone" }, Rd = { class: "trx-dialer-list__meta" }, Nd = {
   key: 0,
   class: "trx-dialer-list__attempts"
-}, jd = ["onClick"], Hd = ["onClick"], Ud = /* @__PURE__ */ g({
+}, qd = ["onClick"], Fd = ["onClick"], Od = /* @__PURE__ */ g({
   __name: "TrxDialerList",
   props: {
     contacts: { default: () => [] },
@@ -4652,12 +4649,12 @@ const ws = /* @__PURE__ */ g({
       failed: { label: "Falhou", color: "var(--trx-danger-color)", icon: "pi pi-times" },
       skipped: { label: "Ignorado", color: "var(--trx-text-secondary)", icon: "pi pi-forward" }
     };
-    return (l, n) => (s(), o("div", zd, [
-      t.loading ? (s(), o("div", Dd, [...n[1] || (n[1] = [
+    return (l, n) => (s(), o("div", Md, [
+      t.loading ? (s(), o("div", Ad, [...n[1] || (n[1] = [
         e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
       ])])) : (s(!0), o(V, { key: 1 }, b(t.contacts, (c) => (s(), o("div", {
         key: c.id,
-        class: w(["trx-dialer-list__item", { "trx-dialer-list__item--current": t.currentId === c.id }]),
+        class: y(["trx-dialer-list__item", { "trx-dialer-list__item--current": t.currentId === c.id }]),
         onClick: (u) => r("view", c)
       }, [
         e("div", {
@@ -4665,19 +4662,19 @@ const ws = /* @__PURE__ */ g({
           style: R({ color: i[c.status].color })
         }, [
           e("i", {
-            class: w(i[c.status].icon)
+            class: y(i[c.status].icon)
           }, null, 2)
         ], 4),
-        e("div", Rd, [
-          e("span", Nd, v(c.name), 1),
-          e("span", qd, v(c.phone), 1)
+        e("div", zd, [
+          e("span", Dd, v(c.name), 1),
+          e("span", Ed, v(c.phone), 1)
         ]),
-        e("div", Fd, [
+        e("div", Rd, [
           e("span", {
             class: "trx-dialer-list__status-label",
             style: R({ color: i[c.status].color })
           }, v(i[c.status].label), 5),
-          c.attempts ? (s(), o("span", Od, v(c.attempts) + "x", 1)) : h("", !0)
+          c.attempts ? (s(), o("span", Nd, v(c.attempts) + "x", 1)) : h("", !0)
         ]),
         e("div", {
           class: "trx-dialer-list__actions",
@@ -4691,7 +4688,7 @@ const ws = /* @__PURE__ */ g({
             onClick: (u) => r("dial", c)
           }, [...n[2] || (n[2] = [
             e("i", { class: "pi pi-phone" }, null, -1)
-          ])], 8, jd)) : h("", !0),
+          ])], 8, qd)) : h("", !0),
           c.status === "pending" ? (s(), o("button", {
             key: 1,
             class: "trx-dialer-list__btn",
@@ -4699,21 +4696,21 @@ const ws = /* @__PURE__ */ g({
             onClick: (u) => r("skip", c.id)
           }, [...n[3] || (n[3] = [
             e("i", { class: "pi pi-forward" }, null, -1)
-          ])], 8, Hd)) : h("", !0)
+          ])], 8, Fd)) : h("", !0)
         ])
-      ], 10, Ed))), 128))
+      ], 10, Ld))), 128))
     ]));
   }
-}), eC = /* @__PURE__ */ A(Ud, [["__scopeId", "data-v-179000fd"]]), Wd = { class: "trx-ivr" }, Gd = {
+}), WT = /* @__PURE__ */ M(Od, [["__scopeId", "data-v-179000fd"]]), jd = { class: "trx-ivr" }, Hd = {
   key: 0,
   class: "trx-ivr__toolbar"
-}, Kd = ["onClick"], Yd = { class: "trx-ivr__canvas" }, Jd = ["onClick"], Xd = { class: "trx-ivr__node-type" }, Qd = { class: "trx-ivr__node-body" }, Zd = { class: "trx-ivr__node-label" }, t_ = {
+}, Ud = ["onClick"], Wd = { class: "trx-ivr__canvas" }, Gd = ["onClick"], Kd = { class: "trx-ivr__node-type" }, Yd = { class: "trx-ivr__node-body" }, Jd = { class: "trx-ivr__node-label" }, Xd = {
   key: 0,
   class: "trx-ivr__node-options"
-}, e_ = { class: "trx-ivr__key" }, s_ = {
+}, Qd = { class: "trx-ivr__key" }, Zd = {
   key: 0,
   class: "trx-ivr__empty"
-}, a_ = /* @__PURE__ */ g({
+}, t_ = /* @__PURE__ */ g({
   __name: "TrxIVRBuilder",
   props: {
     nodes: { default: () => [] },
@@ -4721,7 +4718,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:nodes", "nodeClick", "nodeAdd"],
   setup(t, { emit: a }) {
-    const r = a, i = D(null), l = {
+    const r = a, i = z(null), l = {
       start: { icon: "pi pi-play-circle", color: "var(--trx-success-color)", label: "Início" },
       menu: { icon: "pi pi-list", color: "var(--trx-accent-color)", label: "Menu" },
       message: { icon: "pi pi-volume-up", color: "var(--trx-warning-color)", label: "Mensagem" },
@@ -4732,8 +4729,8 @@ const ws = /* @__PURE__ */ g({
     function c(u) {
       i.value = u.id, r("nodeClick", u);
     }
-    return (u, _) => (s(), o("div", Wd, [
-      t.readonly ? h("", !0) : (s(), o("div", Gd, [
+    return (u, _) => (s(), o("div", jd, [
+      t.readonly ? h("", !0) : (s(), o("div", Hd, [
         _[0] || (_[0] = e("span", { class: "trx-ivr__toolbar-label" }, "Adicionar nó:", -1)),
         (s(), o(V, null, b(n, (d) => e("button", {
           key: d,
@@ -4742,17 +4739,17 @@ const ws = /* @__PURE__ */ g({
           onClick: (p) => r("nodeAdd", d)
         }, [
           e("i", {
-            class: w(l[d].icon)
+            class: y(l[d].icon)
           }, null, 2),
           N(" " + v(l[d].label), 1)
-        ], 12, Kd)), 64))
+        ], 12, Ud)), 64))
       ])),
-      e("div", Yd, [
+      e("div", Wd, [
         (s(!0), o(V, null, b(t.nodes, (d) => {
           var p;
           return s(), o("div", {
             key: d.id,
-            class: w(["trx-ivr__node", { "trx-ivr__node--selected": i.value === d.id }]),
+            class: y(["trx-ivr__node", { "trx-ivr__node--selected": i.value === d.id }]),
             style: R({ left: d.x + "px", top: d.y + "px", "--node-color": l[d.type].color }),
             onClick: (m) => c(d)
           }, [
@@ -4761,25 +4758,25 @@ const ws = /* @__PURE__ */ g({
               style: R({ background: l[d.type].color })
             }, [
               e("i", {
-                class: w([l[d.type].icon, "trx-ivr__node-icon"])
+                class: y([l[d.type].icon, "trx-ivr__node-icon"])
               }, null, 2),
-              e("span", Xd, v(l[d.type].label), 1)
+              e("span", Kd, v(l[d.type].label), 1)
             ], 4),
-            e("div", Qd, [
-              e("span", Zd, v(d.label), 1),
-              (p = d.options) != null && p.length ? (s(), o("div", t_, [
+            e("div", Yd, [
+              e("span", Jd, v(d.label), 1),
+              (p = d.options) != null && p.length ? (s(), o("div", Xd, [
                 (s(!0), o(V, null, b(d.options, (m) => (s(), o("div", {
                   key: m.key,
                   class: "trx-ivr__node-option"
                 }, [
-                  e("kbd", e_, v(m.key), 1),
+                  e("kbd", Qd, v(m.key), 1),
                   e("span", null, v(m.label), 1)
                 ]))), 128))
               ])) : h("", !0)
             ])
-          ], 14, Jd);
+          ], 14, Gd);
         }), 128)),
-        t.nodes.length ? h("", !0) : (s(), o("div", s_, [..._[1] || (_[1] = [
+        t.nodes.length ? h("", !0) : (s(), o("div", Zd, [..._[1] || (_[1] = [
           e("i", {
             class: "pi pi-sitemap",
             style: { "font-size": "2rem", color: "var(--trx-text-secondary)" }
@@ -4789,13 +4786,13 @@ const ws = /* @__PURE__ */ g({
       ])
     ]));
   }
-}), sC = /* @__PURE__ */ A(a_, [["__scopeId", "data-v-af6b0bd0"]]), l_ = ["width", "height", "viewBox"], n_ = ["cx", "cy", "r", "stroke", "stroke-width"], o_ = ["cx", "cy", "r", "stroke", "stroke-width", "stroke-dasharray"], r_ = { class: "trx-progress-ring__label" }, i_ = {
+}), GT = /* @__PURE__ */ M(t_, [["__scopeId", "data-v-af6b0bd0"]]), e_ = ["width", "height", "viewBox"], s_ = ["cx", "cy", "r", "stroke", "stroke-width"], a_ = ["cx", "cy", "r", "stroke", "stroke-width", "stroke-dasharray"], l_ = { class: "trx-progress-ring__label" }, n_ = {
   key: 0,
   class: "trx-progress-ring__unit"
-}, c_ = {
+}, o_ = {
   key: 1,
   class: "trx-progress-ring__text"
-}, u_ = /* @__PURE__ */ g({
+}, r_ = /* @__PURE__ */ g({
   __name: "TrxProgressRing",
   props: {
     value: { default: 0 },
@@ -4830,7 +4827,7 @@ const ws = /* @__PURE__ */ g({
           fill: "none",
           stroke: t.trackColor,
           "stroke-width": t.thickness
-        }, null, 8, n_),
+        }, null, 8, s_),
         e("circle", {
           class: "trx-progress-ring__arc",
           cx: t.size / 2,
@@ -4847,25 +4844,25 @@ const ws = /* @__PURE__ */ g({
             transformOrigin: "center",
             transition: t.animate ? "stroke-dasharray 0.5s ease" : "none"
           })
-        }, null, 12, o_)
-      ], 8, l_)),
-      e("div", r_, [
+        }, null, 12, a_)
+      ], 8, e_)),
+      e("div", l_, [
         t.showValue ? (s(), o("span", {
           key: 0,
           class: "trx-progress-ring__value",
           style: R({ color: t.color })
         }, [
           N(v(u.value), 1),
-          t.unit ? (s(), o("span", i_, v(t.unit), 1)) : h("", !0)
+          t.unit ? (s(), o("span", n_, v(t.unit), 1)) : h("", !0)
         ], 4)) : h("", !0),
-        t.label ? (s(), o("span", c_, v(t.label), 1)) : h("", !0)
+        t.label ? (s(), o("span", o_, v(t.label), 1)) : h("", !0)
       ])
     ], 4));
   }
-}), aC = /* @__PURE__ */ A(u_, [["__scopeId", "data-v-a5c29afc"]]), d_ = { class: "trx-ticker" }, __ = {
+}), KT = /* @__PURE__ */ M(r_, [["__scopeId", "data-v-a5c29afc"]]), i_ = { class: "trx-ticker" }, c_ = {
   key: 0,
   class: "trx-ticker__label"
-}, p_ = { key: 0 }, v_ = { key: 1 }, m_ = /* @__PURE__ */ g({
+}, u_ = { key: 0 }, d_ = { key: 1 }, __ = /* @__PURE__ */ g({
   __name: "TrxRealTimeTicker",
   props: {
     value: { default: 0 },
@@ -4877,37 +4874,37 @@ const ws = /* @__PURE__ */ g({
     animate: { type: Boolean, default: !0 }
   },
   setup(t) {
-    const a = t, r = D("neutral");
+    const a = t, r = z("neutral");
     let i;
     Z(() => a.value, (c, u) => {
       c === u || !a.animate || (clearTimeout(i), r.value = c > u ? "up" : "down", i = setTimeout(() => r.value = "neutral", 1500));
     });
     const l = S(() => (a.value ?? 0).toFixed(a.decimals)), n = S(() => r.value === "up" ? "var(--trx-success-color)" : r.value === "down" ? "var(--trx-danger-color)" : "var(--trx-text-primary)");
-    return (c, u) => (s(), o("div", d_, [
-      t.label ? (s(), o("span", __, v(t.label), 1)) : h("", !0),
+    return (c, u) => (s(), o("div", i_, [
+      t.label ? (s(), o("span", c_, v(t.label), 1)) : h("", !0),
       e("span", {
-        class: w(["trx-ticker__value", `trx-ticker__value--${r.value}`]),
+        class: y(["trx-ticker__value", `trx-ticker__value--${r.value}`]),
         style: R({ color: n.value })
       }, [
-        t.prefix ? (s(), o("span", p_, v(t.prefix), 1)) : h("", !0),
+        t.prefix ? (s(), o("span", u_, v(t.prefix), 1)) : h("", !0),
         N(v(l.value), 1),
-        t.unit ? (s(), o("span", v_, v(t.unit), 1)) : h("", !0)
+        t.unit ? (s(), o("span", d_, v(t.unit), 1)) : h("", !0)
       ], 6)
     ]));
   }
-}), lC = /* @__PURE__ */ A(m_, [["__scopeId", "data-v-66246e1c"]]), f_ = { class: "trx-funnel" }, x_ = {
+}), YT = /* @__PURE__ */ M(__, [["__scopeId", "data-v-66246e1c"]]), p_ = { class: "trx-funnel" }, v_ = {
   key: 0,
   class: "trx-funnel__empty"
-}, h_ = {
+}, m_ = {
   key: 1,
   class: "trx-funnel__steps"
-}, $_ = { class: "trx-funnel__bar-wrap" }, g_ = { class: "trx-funnel__info" }, b_ = { class: "trx-funnel__label" }, y_ = { class: "trx-funnel__numbers" }, k_ = {
+}, f_ = { class: "trx-funnel__bar-wrap" }, x_ = { class: "trx-funnel__info" }, h_ = { class: "trx-funnel__label" }, $_ = { class: "trx-funnel__numbers" }, g_ = {
   key: 1,
   class: "trx-funnel__pct"
-}, w_ = {
+}, b_ = {
   key: 0,
   class: "trx-funnel__drop"
-}, T_ = /* @__PURE__ */ g({
+}, y_ = /* @__PURE__ */ g({
   __name: "TrxFunnelChart",
   props: {
     steps: { default: () => [] },
@@ -4931,44 +4928,44 @@ const ws = /* @__PURE__ */ g({
         convRate: c === 0 ? 100 : Math.round(n.value / a.steps[0].value * 100)
       }))
     );
-    return (n, c) => (s(), o("div", f_, [
-      t.steps.length ? (s(), o("div", h_, [
+    return (n, c) => (s(), o("div", p_, [
+      t.steps.length ? (s(), o("div", m_, [
         (s(!0), o(V, null, b(l.value, (u, _) => (s(), o("div", {
           key: _,
           class: "trx-funnel__step"
         }, [
-          e("div", $_, [
+          e("div", f_, [
             e("div", {
-              class: w(["trx-funnel__bar", { "trx-funnel__bar--animated": t.animated }]),
+              class: y(["trx-funnel__bar", { "trx-funnel__bar--animated": t.animated }]),
               style: R({ width: u.pct + "%", background: u.color })
             }, null, 6)
           ]),
-          e("div", g_, [
-            e("span", b_, v(u.label), 1),
-            e("div", y_, [
+          e("div", x_, [
+            e("span", h_, v(u.label), 1),
+            e("div", $_, [
               t.showValues ? (s(), o("span", {
                 key: 0,
                 class: "trx-funnel__value",
                 style: R({ color: u.color })
               }, v(u.value.toLocaleString("pt-BR")), 5)) : h("", !0),
-              t.showPercent ? (s(), o("span", k_, v(u.convRate) + "%", 1)) : h("", !0)
+              t.showPercent ? (s(), o("span", g_, v(u.convRate) + "%", 1)) : h("", !0)
             ])
           ]),
-          _ < l.value.length - 1 ? (s(), o("div", w_, [
+          _ < l.value.length - 1 ? (s(), o("div", b_, [
             c[1] || (c[1] = e("i", { class: "pi pi-arrow-down" }, null, -1)),
             e("span", null, v((l.value[_ + 1].value - u.value).toLocaleString("pt-BR")), 1)
           ])) : h("", !0)
         ]))), 128))
-      ])) : (s(), o("div", x_, [...c[0] || (c[0] = [
+      ])) : (s(), o("div", v_, [...c[0] || (c[0] = [
         e("i", { class: "pi pi-chart-bar" }, null, -1),
         N(" Sem dados ", -1)
       ])]))
     ]));
   }
-}), nC = /* @__PURE__ */ A(T_, [["__scopeId", "data-v-2ff82e24"]]), C_ = { class: "trx-line-chart" }, S_ = ["viewBox", "height"], I_ = ["x1", "y1", "x2", "y2"], V_ = ["x", "y"], B_ = ["x", "y"], P_ = { key: 0 }, A_ = ["id"], M_ = ["stop-color"], L_ = ["stop-color"], z_ = ["d", "fill"], D_ = ["d", "stroke"], E_ = ["cx", "cy", "fill"], R_ = {
+}), JT = /* @__PURE__ */ M(y_, [["__scopeId", "data-v-2ff82e24"]]), k_ = { class: "trx-line-chart" }, w_ = ["viewBox", "height"], T_ = ["x1", "y1", "x2", "y2"], C_ = ["x", "y"], S_ = ["x", "y"], I_ = { key: 0 }, V_ = ["id"], B_ = ["stop-color"], P_ = ["stop-color"], M_ = ["d", "fill"], A_ = ["d", "stroke"], L_ = ["cx", "cy", "fill"], z_ = {
   key: 0,
   class: "trx-line-chart__legend"
-}, _t = 600, N_ = /* @__PURE__ */ g({
+}, _t = 600, D_ = /* @__PURE__ */ g({
   __name: "TrxLineChart",
   props: {
     labels: { default: () => [] },
@@ -4982,36 +4979,36 @@ const ws = /* @__PURE__ */ g({
   setup(t) {
     const a = ["var(--trx-accent-color)", "#60a5fa", "#f472b6", "#fb923c", "#a78bfa"], r = t, i = { top: 16, right: 16, bottom: 32, left: 40 }, l = S(() => _t - i.left - i.right), n = S(() => r.height - i.top - i.bottom), c = S(() => r.datasets.flatMap((f) => f.data)), u = S(() => Math.min(...c.value, 0)), _ = S(() => Math.max(...c.value, 1));
     function d(f) {
-      const T = r.labels.length - 1 || 1;
-      return i.left + f / T * l.value;
+      const k = r.labels.length - 1 || 1;
+      return i.left + f / k * l.value;
     }
     function p(f) {
       return i.top + n.value - (f - u.value) / (_.value - u.value) * n.value;
     }
-    function m(f, T) {
+    function m(f, k) {
       if (!f.length) return "";
-      const $ = f.map((M, E) => [d(E), p(M)]);
+      const $ = f.map((A, E) => [d(E), p(A)]);
       let C = `M ${$[0][0]} ${$[0][1]}`;
       if (r.smooth)
-        for (let M = 1; M < $.length; M++) {
-          const E = ($[M - 1][0] + $[M][0]) / 2;
-          C += ` C ${E} ${$[M - 1][1]} ${E} ${$[M][1]} ${$[M][0]} ${$[M][1]}`;
+        for (let A = 1; A < $.length; A++) {
+          const E = ($[A - 1][0] + $[A][0]) / 2;
+          C += ` C ${E} ${$[A - 1][1]} ${E} ${$[A][1]} ${$[A][0]} ${$[A][1]}`;
         }
       else
-        $.slice(1).forEach(([M, E]) => {
-          C += ` L ${M} ${E}`;
+        $.slice(1).forEach(([A, E]) => {
+          C += ` L ${A} ${E}`;
         });
-      if (T) {
-        const M = $[$.length - 1][0], E = i.top + n.value;
-        C += ` L ${M} ${E} L ${$[0][0]} ${E} Z`;
+      if (k) {
+        const A = $[$.length - 1][0], E = i.top + n.value;
+        C += ` L ${A} ${E} L ${$[0][0]} ${E} Z`;
       }
       return C;
     }
-    const x = S(() => Array.from({ length: 5 }, (T, $) => {
+    const x = S(() => Array.from({ length: 5 }, (k, $) => {
       const C = u.value + $ / 4 * (_.value - u.value);
       return { v: Math.round(C), y: p(C) };
     }));
-    return (f, T) => (s(), o("div", C_, [
+    return (f, k) => (s(), o("div", k_, [
       (s(), o("svg", {
         viewBox: `0 0 ${_t} ${t.height}`,
         height: t.height,
@@ -5026,7 +5023,7 @@ const ws = /* @__PURE__ */ g({
           y2: $.y,
           stroke: "var(--trx-border-color)",
           "stroke-width": "1"
-        }, null, 8, I_))), 128)) : h("", !0),
+        }, null, 8, T_))), 128)) : h("", !0),
         (s(!0), o(V, null, b(x.value, ($) => (s(), o("text", {
           key: "l" + $.v,
           x: i.left - 6,
@@ -5034,7 +5031,7 @@ const ws = /* @__PURE__ */ g({
           "text-anchor": "end",
           "font-size": "10",
           fill: "var(--trx-text-secondary)"
-        }, v($.v), 9, V_))), 128)),
+        }, v($.v), 9, C_))), 128)),
         (s(!0), o(V, null, b(t.labels, ($, C) => (s(), o("text", {
           key: "x" + C,
           x: d(C),
@@ -5042,9 +5039,9 @@ const ws = /* @__PURE__ */ g({
           "text-anchor": "middle",
           "font-size": "10",
           fill: "var(--trx-text-secondary)"
-        }, v($), 9, B_))), 128)),
+        }, v($), 9, S_))), 128)),
         (s(!0), o(V, null, b(t.datasets, ($, C) => (s(), o(V, { key: C }, [
-          t.filled ? (s(), o("defs", P_, [
+          t.filled ? (s(), o("defs", I_, [
             e("linearGradient", {
               id: `fill-${C}`,
               x1: "0",
@@ -5056,20 +5053,20 @@ const ws = /* @__PURE__ */ g({
                 offset: "0%",
                 "stop-color": $.color ?? a[C % a.length],
                 "stop-opacity": "0.25"
-              }, null, 8, M_),
+              }, null, 8, B_),
               e("stop", {
                 offset: "100%",
                 "stop-color": $.color ?? a[C % a.length],
                 "stop-opacity": "0.02"
-              }, null, 8, L_)
-            ], 8, A_)
+              }, null, 8, P_)
+            ], 8, V_)
           ])) : h("", !0),
           t.filled ? (s(), o("path", {
             key: 1,
             d: m($.data, !0),
             fill: `url(#fill-${C})`,
             stroke: "none"
-          }, null, 8, z_)) : h("", !0),
+          }, null, 8, M_)) : h("", !0),
           e("path", {
             d: m($.data, !1),
             stroke: $.color ?? a[C % a.length],
@@ -5077,17 +5074,17 @@ const ws = /* @__PURE__ */ g({
             fill: "none",
             "stroke-linecap": "round",
             "stroke-linejoin": "round"
-          }, null, 8, D_),
-          t.showDots ? (s(!0), o(V, { key: 2 }, b($.data, (M, E) => (s(), o("circle", {
+          }, null, 8, A_),
+          t.showDots ? (s(!0), o(V, { key: 2 }, b($.data, (A, E) => (s(), o("circle", {
             key: E,
             cx: d(E),
-            cy: p(M),
+            cy: p(A),
             r: "3",
             fill: $.color ?? a[C % a.length]
-          }, null, 8, E_))), 128)) : h("", !0)
+          }, null, 8, L_))), 128)) : h("", !0)
         ], 64))), 128))
-      ], 8, S_)),
-      t.datasets.length > 1 ? (s(), o("div", R_, [
+      ], 8, w_)),
+      t.datasets.length > 1 ? (s(), o("div", z_, [
         (s(!0), o(V, null, b(t.datasets, ($, C) => (s(), o("div", {
           key: C,
           class: "trx-line-chart__legend-item"
@@ -5101,10 +5098,10 @@ const ws = /* @__PURE__ */ g({
       ])) : h("", !0)
     ]));
   }
-}), oC = /* @__PURE__ */ A(N_, [["__scopeId", "data-v-fe35e9f6"]]), q_ = { class: "trx-bar-chart" }, F_ = ["viewBox", "height"], O_ = ["x1", "y1", "x2", "y2"], j_ = ["x", "y"], H_ = ["x", "y"], U_ = ["x", "y", "width", "height", "fill"], W_ = ["x", "y", "width", "height", "fill"], G_ = ["x", "y", "fill"], K_ = {
+}), XT = /* @__PURE__ */ M(D_, [["__scopeId", "data-v-fe35e9f6"]]), E_ = { class: "trx-bar-chart" }, R_ = ["viewBox", "height"], N_ = ["x1", "y1", "x2", "y2"], q_ = ["x", "y"], F_ = ["x", "y"], O_ = ["x", "y", "width", "height", "fill"], j_ = ["x", "y", "width", "height", "fill"], H_ = ["x", "y", "fill"], U_ = {
   key: 0,
   class: "trx-bar-chart__legend"
-}, pt = 600, Y_ = /* @__PURE__ */ g({
+}, pt = 600, W_ = /* @__PURE__ */ g({
   __name: "TrxBarChart",
   props: {
     labels: { default: () => [] },
@@ -5116,35 +5113,35 @@ const ws = /* @__PURE__ */ g({
     stacked: { type: Boolean, default: !1 }
   },
   setup(t) {
-    const a = ["var(--trx-accent-color)", "#60a5fa", "#f472b6", "#fb923c", "#a78bfa"], r = t, i = { top: 20, right: 16, bottom: 36, left: 44 }, l = S(() => pt - i.left - i.right), n = S(() => r.height - i.top - i.bottom), c = S(() => r.stacked ? Math.max(...r.labels.map((T, $) => r.datasets.reduce((C, M) => C + (M.data[$] ?? 0), 0)), 1) : Math.max(...r.datasets.flatMap((T) => T.data), 1)), u = S(() => l.value / (r.labels.length || 1)), _ = S(
+    const a = ["var(--trx-accent-color)", "#60a5fa", "#f472b6", "#fb923c", "#a78bfa"], r = t, i = { top: 20, right: 16, bottom: 36, left: 44 }, l = S(() => pt - i.left - i.right), n = S(() => r.height - i.top - i.bottom), c = S(() => r.stacked ? Math.max(...r.labels.map((k, $) => r.datasets.reduce((C, A) => C + (A.data[$] ?? 0), 0)), 1) : Math.max(...r.datasets.flatMap((k) => k.data), 1)), u = S(() => l.value / (r.labels.length || 1)), _ = S(
       () => r.stacked ? u.value * 0.6 : u.value * 0.8 / (r.datasets.length || 1)
     );
-    function d(T, $) {
-      const C = i.left + T * u.value;
+    function d(k, $) {
+      const C = i.left + k * u.value;
       return r.stacked ? C + u.value * 0.2 : C + u.value * 0.1 + $ * _.value;
     }
-    function p(T, $ = 0) {
-      const C = T / c.value * n.value;
+    function p(k, $ = 0) {
+      const C = k / c.value * n.value;
       return i.top + n.value - C - $ / c.value * n.value;
     }
-    function m(T) {
-      return T / c.value * n.value;
+    function m(k) {
+      return k / c.value * n.value;
     }
     const x = S(
-      () => Array.from({ length: 5 }, (T, $) => {
-        const C = Math.round($ / 4 * c.value), M = i.top + n.value - $ / 4 * n.value;
-        return { v: C, y: M };
+      () => Array.from({ length: 5 }, (k, $) => {
+        const C = Math.round($ / 4 * c.value), A = i.top + n.value - $ / 4 * n.value;
+        return { v: C, y: A };
       })
     ), f = S(
-      () => r.labels.map((T, $) => {
+      () => r.labels.map((k, $) => {
         let C = 0;
-        return r.datasets.map((M, E) => {
-          const F = M.data[$] ?? 0, q = { v: F, offset: C, di: E };
+        return r.datasets.map((A, E) => {
+          const F = A.data[$] ?? 0, q = { v: F, offset: C, di: E };
           return C += F, q;
         });
       })
     );
-    return (T, $) => (s(), o("div", q_, [
+    return (k, $) => (s(), o("div", E_, [
       (s(), o("svg", {
         viewBox: `0 0 ${pt} ${t.height}`,
         height: t.height,
@@ -5159,7 +5156,7 @@ const ws = /* @__PURE__ */ g({
           y2: C.y,
           stroke: "var(--trx-border-color)",
           "stroke-width": "1"
-        }, null, 8, O_))), 128)) : h("", !0),
+        }, null, 8, N_))), 128)) : h("", !0),
         (s(!0), o(V, null, b(x.value, (C) => (s(), o("text", {
           key: "yl" + C.v,
           x: i.left - 6,
@@ -5167,63 +5164,63 @@ const ws = /* @__PURE__ */ g({
           "text-anchor": "end",
           "font-size": "10",
           fill: "var(--trx-text-secondary)"
-        }, v(C.v), 9, j_))), 128)),
-        (s(!0), o(V, null, b(t.labels, (C, M) => (s(), o("text", {
-          key: "xl" + M,
-          x: i.left + M * u.value + u.value / 2,
+        }, v(C.v), 9, q_))), 128)),
+        (s(!0), o(V, null, b(t.labels, (C, A) => (s(), o("text", {
+          key: "xl" + A,
+          x: i.left + A * u.value + u.value / 2,
           y: i.top + n.value + 18,
           "text-anchor": "middle",
           "font-size": "10",
           fill: "var(--trx-text-secondary)"
-        }, v(C), 9, H_))), 128)),
-        t.stacked ? (s(!0), o(V, { key: 1 }, b(f.value, (C, M) => (s(), o(V, { key: M }, [
+        }, v(C), 9, F_))), 128)),
+        t.stacked ? (s(!0), o(V, { key: 1 }, b(f.value, (C, A) => (s(), o(V, { key: A }, [
           (s(!0), o(V, null, b(C, (E) => (s(), o("rect", {
             key: E.di,
-            x: d(M, 0),
+            x: d(A, 0),
             y: p(E.v, E.offset),
             width: _.value,
             height: m(E.v),
             fill: t.datasets[E.di].color ?? a[E.di % a.length],
             rx: "2"
-          }, null, 8, U_))), 128))
-        ], 64))), 128)) : (s(!0), o(V, { key: 2 }, b(t.datasets, (C, M) => (s(), o(V, { key: M }, [
+          }, null, 8, O_))), 128))
+        ], 64))), 128)) : (s(!0), o(V, { key: 2 }, b(t.datasets, (C, A) => (s(), o(V, { key: A }, [
           (s(!0), o(V, null, b(C.data, (E, F) => (s(), o("rect", {
             key: F,
-            x: d(F, M),
+            x: d(F, A),
             y: p(E),
             width: _.value,
             height: m(E),
-            fill: C.color ?? a[M % a.length],
+            fill: C.color ?? a[A % a.length],
             rx: "2"
-          }, null, 8, W_))), 128)),
+          }, null, 8, j_))), 128)),
           t.showValues ? (s(!0), o(V, { key: 0 }, b(C.data, (E, F) => (s(), o("text", {
             key: "val" + F,
-            x: d(F, M) + _.value / 2,
+            x: d(F, A) + _.value / 2,
             y: p(E) - 3,
             "text-anchor": "middle",
             "font-size": "9",
-            fill: C.color ?? a[M % a.length]
-          }, v(E), 9, G_))), 128)) : h("", !0)
+            fill: C.color ?? a[A % a.length]
+          }, v(E), 9, H_))), 128)) : h("", !0)
         ], 64))), 128))
-      ], 8, F_)),
-      t.datasets.length > 1 ? (s(), o("div", K_, [
-        (s(!0), o(V, null, b(t.datasets, (C, M) => (s(), o("div", {
-          key: M,
+      ], 8, R_)),
+      t.datasets.length > 1 ? (s(), o("div", U_, [
+        (s(!0), o(V, null, b(t.datasets, (C, A) => (s(), o("div", {
+          key: A,
           class: "trx-bar-chart__legend-item"
         }, [
           e("span", {
             class: "trx-bar-chart__legend-dot",
-            style: R({ background: C.color ?? a[M % a.length] })
+            style: R({ background: C.color ?? a[A % a.length] })
           }, null, 4),
           N(" " + v(C.label), 1)
         ]))), 128))
       ])) : h("", !0)
     ]));
   }
-}), rC = /* @__PURE__ */ A(Y_, [["__scopeId", "data-v-cad2549b"]]), J_ = { class: "trx-donut" }, X_ = { class: "trx-donut__chart" }, Q_ = ["width", "height", "viewBox"], Z_ = ["cx", "cy", "r", "stroke-width"], tp = ["cx", "cy", "r", "stroke", "stroke-width", "stroke-dasharray", "stroke-dashoffset"], ep = ["x", "y"], sp = ["x", "y"], ap = {
+}), QT = /* @__PURE__ */ M(W_, [["__scopeId", "data-v-cad2549b"]]), G_ = { class: "trx-donut" }, K_ = { class: "trx-donut__chart" }, Y_ = ["width", "height", "viewBox"], J_ = ["cx", "cy", "r", "stroke-width"], X_ = ["cx", "cy", "r", "stroke", "stroke-width", "stroke-dasharray", "stroke-dashoffset"], Q_ = ["x", "y"], Z_ = ["x", "y"], tp = {
   key: 0,
   class: "trx-donut__legend"
-}, lp = { class: "trx-donut__legend-label" }, np = { class: "trx-donut__legend-pct" }, op = /* @__PURE__ */ g({
+}, ep = { class: "trx-donut__legend-label" }, sp = { class: "trx-donut__legend-pct" }, ap = /* @__PURE__ */ g({
   __name: "TrxDonutChart",
   props: {
     slices: { default: () => [] },
@@ -5238,12 +5235,12 @@ const ws = /* @__PURE__ */ g({
     const a = ["var(--trx-accent-color)", "#60a5fa", "#f472b6", "#fb923c", "#a78bfa", "#facc15"], r = t, i = S(() => r.size / 2), l = S(() => r.size / 2), n = S(() => (r.size - r.thickness) / 2), c = S(() => 2 * Math.PI * n.value), u = S(() => r.slices.reduce((d, p) => d + p.value, 0) || 1), _ = S(() => {
       let d = 0;
       return r.slices.map((p, m) => {
-        const x = p.value / u.value, f = x * c.value, T = c.value - f, $ = { ...p, dash: f, gap: T, offset: d, color: p.color ?? a[m % a.length], pct: Math.round(x * 100) };
+        const x = p.value / u.value, f = x * c.value, k = c.value - f, $ = { ...p, dash: f, gap: k, offset: d, color: p.color ?? a[m % a.length], pct: Math.round(x * 100) };
         return d += f, $;
       });
     });
-    return (d, p) => (s(), o("div", J_, [
-      e("div", X_, [
+    return (d, p) => (s(), o("div", G_, [
+      e("div", K_, [
         (s(), o("svg", {
           width: t.size,
           height: t.size,
@@ -5256,7 +5253,7 @@ const ws = /* @__PURE__ */ g({
             fill: "none",
             stroke: "var(--trx-bg-secondary)",
             "stroke-width": t.thickness
-          }, null, 8, Z_),
+          }, null, 8, J_),
           (s(!0), o(V, null, b(_.value, (m, x) => (s(), o("circle", {
             key: x,
             cx: i.value,
@@ -5269,7 +5266,7 @@ const ws = /* @__PURE__ */ g({
             "stroke-dashoffset": -(m.offset - c.value / 4),
             "stroke-linecap": "butt",
             style: R(t.animated ? { transition: "stroke-dasharray 0.6s ease" } : {})
-          }, null, 12, tp))), 128)),
+          }, null, 12, X_))), 128)),
           e("text", {
             x: i.value,
             y: l.value - (t.sublabel ? 8 : 4),
@@ -5277,7 +5274,7 @@ const ws = /* @__PURE__ */ g({
             "font-size": "14",
             "font-weight": "700",
             fill: "var(--trx-text-primary)"
-          }, v(t.label ?? u.value.toLocaleString("pt-BR")), 9, ep),
+          }, v(t.label ?? u.value.toLocaleString("pt-BR")), 9, Q_),
           t.sublabel ? (s(), o("text", {
             key: 0,
             x: i.value,
@@ -5285,10 +5282,10 @@ const ws = /* @__PURE__ */ g({
             "text-anchor": "middle",
             "font-size": "10",
             fill: "var(--trx-text-secondary)"
-          }, v(t.sublabel), 9, sp)) : h("", !0)
-        ], 8, Q_))
+          }, v(t.sublabel), 9, Z_)) : h("", !0)
+        ], 8, Y_))
       ]),
-      t.showLegend ? (s(), o("div", ap, [
+      t.showLegend ? (s(), o("div", tp, [
         (s(!0), o(V, null, b(_.value, (m, x) => (s(), o("div", {
           key: x,
           class: "trx-donut__legend-item"
@@ -5297,13 +5294,13 @@ const ws = /* @__PURE__ */ g({
             class: "trx-donut__legend-dot",
             style: R({ background: m.color })
           }, null, 4),
-          e("span", lp, v(m.label), 1),
-          e("span", np, v(m.pct) + "%", 1)
+          e("span", ep, v(m.label), 1),
+          e("span", sp, v(m.pct) + "%", 1)
         ]))), 128))
       ])) : h("", !0)
     ]));
   }
-}), iC = /* @__PURE__ */ A(op, [["__scopeId", "data-v-962cda3e"]]), rp = ["value", "placeholder", "disabled"], ip = /* @__PURE__ */ g({
+}), ZT = /* @__PURE__ */ M(ap, [["__scopeId", "data-v-962cda3e"]]), lp = ["value", "placeholder", "disabled"], np = /* @__PURE__ */ g({
   __name: "TrxCurrencyInput",
   props: {
     modelValue: {},
@@ -5333,7 +5330,7 @@ const ws = /* @__PURE__ */ g({
       _.target.value = l.value;
     }
     return (_, d) => (s(), o("div", {
-      class: w(["trx-currency", { "trx-currency--invalid": t.invalid, "trx-currency--disabled": t.disabled }])
+      class: y(["trx-currency", { "trx-currency--invalid": t.invalid, "trx-currency--disabled": t.disabled }])
     }, [
       e("input", {
         class: "trx-currency__input",
@@ -5345,13 +5342,13 @@ const ws = /* @__PURE__ */ g({
         onFocus: c,
         onBlur: u,
         onInput: n
-      }, null, 40, rp)
+      }, null, 40, lp)
     ], 2));
   }
-}), cC = /* @__PURE__ */ A(ip, [["__scopeId", "data-v-4e40eeca"]]), cp = ["disabled"], up = { class: "trx-color-picker__hex" }, dp = {
+}), tC = /* @__PURE__ */ M(np, [["__scopeId", "data-v-4e40eeca"]]), op = ["disabled"], rp = { class: "trx-color-picker__hex" }, ip = {
   key: 0,
   class: "trx-color-picker__panel"
-}, _p = { class: "trx-color-picker__presets" }, pp = ["title", "onClick"], vp = { class: "trx-color-picker__custom" }, mp = ["value"], fp = [
+}, cp = { class: "trx-color-picker__presets" }, up = ["title", "onClick"], dp = { class: "trx-color-picker__custom" }, _p = ["value"], pp = [
   "#ef4444",
   "#f97316",
   "#eab308",
@@ -5364,16 +5361,16 @@ const ws = /* @__PURE__ */ g({
   "#6b7280",
   "#000000",
   "#ffffff"
-], xp = /* @__PURE__ */ g({
+], vp = /* @__PURE__ */ g({
   __name: "TrxColorPicker",
   props: {
     modelValue: { default: "#10b981" },
-    presets: { default: () => fp },
+    presets: { default: () => pp },
     disabled: { type: Boolean }
   },
   emits: ["update:modelValue"],
   setup(t, { emit: a }) {
-    const r = a, i = D(!1);
+    const r = a, i = z(!1);
     function l(u) {
       r("update:modelValue", u), i.value = !1;
     }
@@ -5385,7 +5382,7 @@ const ws = /* @__PURE__ */ g({
       _ && !_.contains(u.target) && (i.value = !1);
     }
     return W(() => document.addEventListener("click", c, !0)), G(() => document.removeEventListener("click", c, !0)), (u, _) => (s(), o("div", {
-      class: w(["trx-color-picker", { "trx-color-picker--disabled": t.disabled }])
+      class: y(["trx-color-picker", { "trx-color-picker--disabled": t.disabled }])
     }, [
       e("button", {
         class: "trx-color-picker__trigger",
@@ -5396,22 +5393,22 @@ const ws = /* @__PURE__ */ g({
           class: "trx-color-picker__swatch",
           style: R({ background: t.modelValue })
         }, null, 4),
-        e("span", up, v(t.modelValue), 1),
+        e("span", rp, v(t.modelValue), 1),
         _[2] || (_[2] = e("i", { class: "pi pi-chevron-down trx-color-picker__arrow" }, null, -1))
-      ], 8, cp),
+      ], 8, op),
       O(j, { name: "trx-dropdown" }, {
         default: B(() => [
-          i.value ? (s(), o("div", dp, [
-            e("div", _p, [
+          i.value ? (s(), o("div", ip, [
+            e("div", cp, [
               (s(!0), o(V, null, b(t.presets, (d) => (s(), o("button", {
                 key: d,
-                class: w(["trx-color-picker__preset", { "trx-color-picker__preset--active": t.modelValue === d }]),
+                class: y(["trx-color-picker__preset", { "trx-color-picker__preset--active": t.modelValue === d }]),
                 style: R({ background: d, borderColor: d === "#ffffff" ? "#e5e7eb" : d }),
                 title: d,
                 onClick: (p) => l(d)
-              }, null, 14, pp))), 128))
+              }, null, 14, up))), 128))
             ]),
-            e("div", vp, [
+            e("div", dp, [
               _[3] || (_[3] = e("span", null, "Personalizado:", -1)),
               e("input", {
                 type: "color",
@@ -5419,7 +5416,7 @@ const ws = /* @__PURE__ */ g({
                 value: t.modelValue,
                 onInput: n,
                 onChange: _[1] || (_[1] = (d) => i.value = !1)
-              }, null, 40, mp)
+              }, null, 40, _p)
             ])
           ])) : h("", !0)
         ]),
@@ -5427,10 +5424,10 @@ const ws = /* @__PURE__ */ g({
       })
     ], 2));
   }
-}), uC = /* @__PURE__ */ A(xp, [["__scopeId", "data-v-7ca62925"]]), hp = ["disabled", "onClick"], $p = ["placeholder", "disabled"], gp = {
+}), eC = /* @__PURE__ */ M(vp, [["__scopeId", "data-v-7ca62925"]]), mp = ["disabled", "onClick"], fp = ["placeholder", "disabled"], xp = {
   key: 0,
   class: "trx-tag-input__suggestions"
-}, bp = ["onMousedown"], yp = /* @__PURE__ */ g({
+}, hp = ["onMousedown"], $p = /* @__PURE__ */ g({
   __name: "TrxTagInput",
   props: {
     modelValue: { default: () => [] },
@@ -5442,7 +5439,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D("");
+    const r = t, i = a, l = z("");
     function n(p) {
       const m = p.trim();
       if (!m || r.modelValue.includes(m)) {
@@ -5457,7 +5454,7 @@ const ws = /* @__PURE__ */ g({
     function u(p) {
       (p.key === "Enter" || p.key === ",") && l.value.trim() && (p.preventDefault(), n(l.value)), p.key === "Backspace" && !l.value && r.modelValue.length && c(r.modelValue[r.modelValue.length - 1]);
     }
-    const _ = D([]);
+    const _ = z([]);
     function d() {
       var p;
       if (!((p = r.suggestions) != null && p.length) || !l.value) {
@@ -5470,7 +5467,7 @@ const ws = /* @__PURE__ */ g({
     }
     return (p, m) => (s(), o(V, null, [
       e("div", {
-        class: w(["trx-tag-input", { "trx-tag-input--invalid": t.invalid, "trx-tag-input--disabled": t.disabled }]),
+        class: y(["trx-tag-input", { "trx-tag-input--invalid": t.invalid, "trx-tag-input--disabled": t.disabled }]),
         onClick: m[2] || (m[2] = (x) => {
           var f;
           return (f = p.$el.querySelector("input")) == null ? void 0 : f.focus();
@@ -5487,7 +5484,7 @@ const ws = /* @__PURE__ */ g({
             onClick: H((f) => c(x), ["stop"])
           }, [...m[3] || (m[3] = [
             e("i", { class: "pi pi-times" }, null, -1)
-          ])], 8, hp)
+          ])], 8, mp)
         ]))), 128)),
         !t.max || t.modelValue.length < t.max ? Y((s(), o("input", {
           key: 0,
@@ -5500,20 +5497,20 @@ const ws = /* @__PURE__ */ g({
           onBlur: m[1] || (m[1] = (x) => {
             l.value && n(l.value), _.value = [];
           })
-        }, null, 40, $p)), [
+        }, null, 40, fp)), [
           [J, l.value]
         ]) : h("", !0)
       ], 2),
-      _.value.length ? (s(), o("div", gp, [
+      _.value.length ? (s(), o("div", xp, [
         (s(!0), o(V, null, b(_.value, (x) => (s(), o("button", {
           key: x,
           class: "trx-tag-input__suggestion",
           onMousedown: H((f) => n(x), ["prevent"])
-        }, v(x), 41, bp))), 128))
+        }, v(x), 41, hp))), 128))
       ])) : h("", !0)
     ], 64));
   }
-}), dC = /* @__PURE__ */ A(yp, [["__scopeId", "data-v-0a95e840"]]), kp = ["type", "value", "disabled", "onInput", "onKeydown"], wp = /* @__PURE__ */ g({
+}), sC = /* @__PURE__ */ M($p, [["__scopeId", "data-v-0a95e840"]]), gp = ["type", "value", "disabled", "onInput", "onKeydown"], bp = /* @__PURE__ */ g({
   __name: "TrxOTPInput",
   props: {
     modelValue: { default: "" },
@@ -5524,22 +5521,22 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "complete"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D([]);
+    const r = t, i = a, l = z([]);
     function n(d) {
       return (r.modelValue ?? "")[d] ?? "";
     }
     function c(d, p) {
-      var T;
+      var k;
       const m = d.target.value.replace(/\D/g, "").slice(-1), x = (r.modelValue ?? "").split("");
       x[p] = m;
       const f = x.join("").slice(0, r.length);
-      i("update:modelValue", f), m && p < r.length - 1 && ((T = l.value[p + 1]) == null || T.focus()), f.length === r.length && i("complete", f);
+      i("update:modelValue", f), m && p < r.length - 1 && ((k = l.value[p + 1]) == null || k.focus()), f.length === r.length && i("complete", f);
     }
     function u(d, p) {
       var m, x, f;
       if (d.key === "Backspace") {
-        const T = (r.modelValue ?? "").split("");
-        !T[p] && p > 0 ? ((m = l.value[p - 1]) == null || m.focus(), T[p - 1] = "") : T[p] = "", i("update:modelValue", T.join(""));
+        const k = (r.modelValue ?? "").split("");
+        !k[p] && p > 0 ? ((m = l.value[p - 1]) == null || m.focus(), k[p - 1] = "") : k[p] = "", i("update:modelValue", k.join(""));
       }
       d.key === "ArrowLeft" && p > 0 && ((x = l.value[p - 1]) == null || x.focus()), d.key === "ArrowRight" && p < r.length - 1 && ((f = l.value[p + 1]) == null || f.focus());
     }
@@ -5550,7 +5547,7 @@ const ws = /* @__PURE__ */ g({
       i("update:modelValue", p), p.length === r.length && i("complete", p), (x = l.value[Math.min(p.length, r.length - 1)]) == null || x.focus();
     }
     return (d, p) => (s(), o("div", {
-      class: w(["trx-otp", { "trx-otp--invalid": t.invalid }])
+      class: y(["trx-otp", { "trx-otp--invalid": t.invalid }])
     }, [
       (s(!0), o(V, null, b(t.length, (m) => (s(), o("input", {
         key: m - 1,
@@ -5558,7 +5555,7 @@ const ws = /* @__PURE__ */ g({
         ref: (x) => {
           x && (l.value[m - 1] = x);
         },
-        class: w(["trx-otp__cell", { "trx-otp__cell--filled": !!n(m - 1) }]),
+        class: y(["trx-otp__cell", { "trx-otp__cell--filled": !!n(m - 1) }]),
         type: t.masked ? "password" : "text",
         inputmode: "numeric",
         maxlength: "1",
@@ -5568,13 +5565,13 @@ const ws = /* @__PURE__ */ g({
         onKeydown: (x) => u(x, m - 1),
         onPaste: _,
         onFocus: p[0] || (p[0] = (x) => x.target.select())
-      }, null, 42, kp))), 128))
+      }, null, 42, gp))), 128))
     ], 2));
   }
-}), _C = /* @__PURE__ */ A(wp, [["__scopeId", "data-v-a732ce3a"]]), Tp = {
+}), aC = /* @__PURE__ */ M(bp, [["__scopeId", "data-v-a732ce3a"]]), yp = {
   key: 0,
   class: "trx-sig-pad__placeholder"
-}, Cp = { class: "trx-sig-pad__footer" }, Sp = ["disabled"], Ip = /* @__PURE__ */ g({
+}, kp = { class: "trx-sig-pad__footer" }, wp = ["disabled"], Tp = /* @__PURE__ */ g({
   __name: "TrxSignaturePad",
   props: {
     width: { default: 400 },
@@ -5586,30 +5583,30 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["change", "clear"],
   setup(t, { expose: a, emit: r }) {
-    const i = t, l = r, n = ot("canvas"), c = D(!1), u = D(!0);
+    const i = t, l = r, n = ot("canvas"), c = z(!1), u = z(!0);
     function _() {
       var $;
       return (($ = n.value) == null ? void 0 : $.getContext("2d")) ?? null;
     }
     function d($) {
-      const C = n.value.getBoundingClientRect(), M = "touches" in $ ? $.touches[0] : $;
-      return { x: M.clientX - C.left, y: M.clientY - C.top };
+      const C = n.value.getBoundingClientRect(), A = "touches" in $ ? $.touches[0] : $;
+      return { x: A.clientX - C.left, y: A.clientY - C.top };
     }
     function p($) {
       if (i.disabled) return;
       $.preventDefault(), c.value = !0;
       const C = _();
       if (!C) return;
-      const { x: M, y: E } = d($);
-      C.beginPath(), C.moveTo(M, E);
+      const { x: A, y: E } = d($);
+      C.beginPath(), C.moveTo(A, E);
     }
     function m($) {
       if (!c.value || i.disabled) return;
       $.preventDefault();
       const C = _();
       if (!C) return;
-      const { x: M, y: E } = d($);
-      C.lineTo(M, E), C.strokeStyle = i.lineColor, C.lineWidth = i.lineWidth, C.lineCap = "round", C.lineJoin = "round", C.stroke(), u.value = !1;
+      const { x: A, y: E } = d($);
+      C.lineTo(A, E), C.strokeStyle = i.lineColor, C.lineWidth = i.lineWidth, C.lineCap = "round", C.lineJoin = "round", C.stroke(), u.value = !1;
     }
     function x() {
       var $;
@@ -5619,7 +5616,7 @@ const ws = /* @__PURE__ */ g({
       const $ = _();
       !$ || !n.value || ($.clearRect(0, 0, n.value.width, n.value.height), u.value = !0, l("clear"), l("change", null));
     }
-    function T() {
+    function k() {
       var $;
       return u.value ? null : (($ = n.value) == null ? void 0 : $.toDataURL()) ?? null;
     }
@@ -5628,8 +5625,8 @@ const ws = /* @__PURE__ */ g({
       if (!$ || !n.value) return;
       const C = window.devicePixelRatio || 1;
       n.value.width = i.width * C, n.value.height = i.height * C, $.scale(C, C);
-    }), a({ clear: f, toDataURL: T }), ($, C) => (s(), o("div", {
-      class: w(["trx-sig-pad", { "trx-sig-pad--disabled": t.disabled }])
+    }), a({ clear: f, toDataURL: k }), ($, C) => (s(), o("div", {
+      class: y(["trx-sig-pad", { "trx-sig-pad--disabled": t.disabled }])
     }, [
       e("div", {
         class: "trx-sig-pad__canvas-wrap",
@@ -5648,9 +5645,9 @@ const ws = /* @__PURE__ */ g({
           onTouchmove: m,
           onTouchend: x
         }, null, 36),
-        u.value ? (s(), o("span", Tp, v(t.placeholder), 1)) : h("", !0)
+        u.value ? (s(), o("span", yp, v(t.placeholder), 1)) : h("", !0)
       ], 4),
-      e("div", Cp, [
+      e("div", kp, [
         C[1] || (C[1] = e("span", { class: "trx-sig-pad__line-label" }, "Assinatura", -1)),
         e("button", {
           class: "trx-sig-pad__clear",
@@ -5659,11 +5656,11 @@ const ws = /* @__PURE__ */ g({
         }, [...C[0] || (C[0] = [
           e("i", { class: "pi pi-trash" }, null, -1),
           N(" Limpar ", -1)
-        ])], 8, Sp)
+        ])], 8, wp)
       ])
     ], 2));
   }
-}), pC = /* @__PURE__ */ A(Ip, [["__scopeId", "data-v-49c2b653"]]), Vp = { class: "trx-md-editor__bar" }, Bp = { class: "trx-md-editor__toolbar" }, Pp = ["title", "disabled", "onClick"], Ap = { class: "trx-md-editor__modes" }, Mp = ["onClick"], Lp = ["value", "placeholder", "disabled"], zp = ["innerHTML"], Dp = /* @__PURE__ */ g({
+}), lC = /* @__PURE__ */ M(Tp, [["__scopeId", "data-v-49c2b653"]]), Cp = { class: "trx-md-editor__bar" }, Sp = { class: "trx-md-editor__toolbar" }, Ip = ["title", "disabled", "onClick"], Vp = { class: "trx-md-editor__modes" }, Bp = ["onClick"], Pp = ["value", "placeholder", "disabled"], Mp = ["innerHTML"], Ap = /* @__PURE__ */ g({
   __name: "TrxMarkdownEditor",
   props: {
     modelValue: { default: "" },
@@ -5674,12 +5671,12 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D("write"), n = S(() => r.modelValue.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/^#{6}\s(.+)$/gm, "<h6>$1</h6>").replace(/^#{5}\s(.+)$/gm, "<h5>$1</h5>").replace(/^#{4}\s(.+)$/gm, "<h4>$1</h4>").replace(/^#{3}\s(.+)$/gm, "<h3>$1</h3>").replace(/^#{2}\s(.+)$/gm, "<h2>$1</h2>").replace(/^#{1}\s(.+)$/gm, "<h1>$1</h1>").replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/__(.+?)__/g, "<strong>$1</strong>").replace(/\*(.+?)\*/g, "<em>$1</em>").replace(/_(.+?)_/g, "<em>$1</em>").replace(/`(.+?)`/g, "<code>$1</code>").replace(/^- (.+)$/gm, "<li>$1</li>").replace(/(<li>.*<\/li>\n?)+/g, "<ul>$&</ul>").replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank">$1</a>').replace(/\n/g, "<br>"));
+    const r = t, i = a, l = z("write"), n = S(() => r.modelValue.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/^#{6}\s(.+)$/gm, "<h6>$1</h6>").replace(/^#{5}\s(.+)$/gm, "<h5>$1</h5>").replace(/^#{4}\s(.+)$/gm, "<h4>$1</h4>").replace(/^#{3}\s(.+)$/gm, "<h3>$1</h3>").replace(/^#{2}\s(.+)$/gm, "<h2>$1</h2>").replace(/^#{1}\s(.+)$/gm, "<h1>$1</h1>").replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/__(.+?)__/g, "<strong>$1</strong>").replace(/\*(.+?)\*/g, "<em>$1</em>").replace(/_(.+?)_/g, "<em>$1</em>").replace(/`(.+?)`/g, "<code>$1</code>").replace(/^- (.+)$/gm, "<li>$1</li>").replace(/(<li>.*<\/li>\n?)+/g, "<ul>$&</ul>").replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank">$1</a>').replace(/\n/g, "<br>"));
     function c(_, d = "") {
       const p = document.querySelector(".trx-md-editor__textarea");
       if (!p) return;
-      const m = p.selectionStart, x = p.selectionEnd, f = p.value.slice(m, x), T = p.value.slice(0, m) + _ + f + d + p.value.slice(x);
-      i("update:modelValue", T), setTimeout(() => {
+      const m = p.selectionStart, x = p.selectionEnd, f = p.value.slice(m, x), k = p.value.slice(0, m) + _ + f + d + p.value.slice(x);
+      i("update:modelValue", k), setTimeout(() => {
         p.focus(), p.setSelectionRange(m + _.length, m + _.length + f.length);
       }, 0);
     }
@@ -5691,10 +5688,10 @@ const ws = /* @__PURE__ */ g({
       { icon: "pi pi-link", title: "Link", action: () => c("[texto](", ")") }
     ];
     return (_, d) => (s(), o("div", {
-      class: w(["trx-md-editor", { "trx-md-editor--disabled": t.disabled }])
+      class: y(["trx-md-editor", { "trx-md-editor--disabled": t.disabled }])
     }, [
-      e("div", Vp, [
-        e("div", Bp, [
+      e("div", Cp, [
+        e("div", Sp, [
           (s(), o(V, null, b(u, (p) => e("button", {
             key: p.title,
             class: "trx-md-editor__tool-btn",
@@ -5703,20 +5700,20 @@ const ws = /* @__PURE__ */ g({
             onClick: H((m) => p.action(), ["prevent"])
           }, [
             e("i", {
-              class: w(p.icon)
+              class: y(p.icon)
             }, null, 2)
-          ], 8, Pp)), 64))
+          ], 8, Ip)), 64))
         ]),
-        e("div", Ap, [
+        e("div", Vp, [
           (s(), o(V, null, b(["write", "split", "preview"], (p) => e("button", {
             key: p,
-            class: w(["trx-md-editor__mode-btn", { active: l.value === p }]),
+            class: y(["trx-md-editor__mode-btn", { active: l.value === p }]),
             onClick: (m) => l.value = p
-          }, v(p === "write" ? "Editar" : p === "preview" ? "Preview" : "Split"), 11, Mp)), 64))
+          }, v(p === "write" ? "Editar" : p === "preview" ? "Preview" : "Split"), 11, Bp)), 64))
         ])
       ]),
       e("div", {
-        class: w(["trx-md-editor__body", `trx-md-editor__body--${l.value}`])
+        class: y(["trx-md-editor__body", `trx-md-editor__body--${l.value}`])
       }, [
         l.value !== "preview" ? (s(), o("textarea", {
           key: 0,
@@ -5726,20 +5723,20 @@ const ws = /* @__PURE__ */ g({
           disabled: t.disabled,
           style: R({ minHeight: t.minHeight, maxHeight: t.maxHeight }),
           onInput: d[0] || (d[0] = (p) => i("update:modelValue", p.target.value))
-        }, null, 44, Lp)) : h("", !0),
+        }, null, 44, Pp)) : h("", !0),
         l.value !== "write" ? (s(), o("div", {
           key: 1,
           class: "trx-md-editor__preview",
           style: R({ minHeight: t.minHeight }),
           innerHTML: n.value
-        }, null, 12, zp)) : h("", !0)
+        }, null, 12, Mp)) : h("", !0)
       ], 2)
     ], 2));
   }
-}), vC = /* @__PURE__ */ A(Dp, [["__scopeId", "data-v-c4b3f5b2"]]), Ep = { class: "trx-json-editor__bar" }, Rp = { class: "trx-json-editor__actions" }, Np = ["disabled"], qp = ["disabled"], Fp = { class: "trx-json-editor__body" }, Op = { class: "trx-json-editor__lines" }, jp = ["value", "disabled"], Hp = {
+}), nC = /* @__PURE__ */ M(Ap, [["__scopeId", "data-v-c4b3f5b2"]]), Lp = { class: "trx-json-editor__bar" }, zp = { class: "trx-json-editor__actions" }, Dp = ["disabled"], Ep = ["disabled"], Rp = { class: "trx-json-editor__body" }, Np = { class: "trx-json-editor__lines" }, qp = ["value", "disabled"], Fp = {
   key: 0,
   class: "trx-json-editor__error"
-}, Up = /* @__PURE__ */ g({
+}, Op = /* @__PURE__ */ g({
   __name: "TrxJsonEditor",
   props: {
     modelValue: { default: () => ({}) },
@@ -5749,7 +5746,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "error"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(JSON.stringify(r.modelValue, null, 2)), n = D("");
+    const r = t, i = a, l = z(JSON.stringify(r.modelValue, null, 2)), n = z("");
     Z(() => r.modelValue, (m) => {
       try {
         const x = JSON.parse(l.value);
@@ -5788,11 +5785,11 @@ const ws = /* @__PURE__ */ g({
     const p = S(() => l.value.split(`
 `).length);
     return (m, x) => (s(), o("div", {
-      class: w(["trx-json-editor", { "trx-json-editor--error": n.value, "trx-json-editor--disabled": t.disabled }])
+      class: y(["trx-json-editor", { "trx-json-editor--error": n.value, "trx-json-editor--disabled": t.disabled }])
     }, [
-      e("div", Ep, [
+      e("div", Lp, [
         x[2] || (x[2] = e("span", { class: "trx-json-editor__lang" }, "JSON", -1)),
-        e("div", Rp, [
+        e("div", zp, [
           e("button", {
             class: "trx-json-editor__btn",
             disabled: t.disabled,
@@ -5800,7 +5797,7 @@ const ws = /* @__PURE__ */ g({
           }, [...x[0] || (x[0] = [
             e("i", { class: "pi pi-align-left" }, null, -1),
             N(" Formatar ", -1)
-          ])], 8, Np),
+          ])], 8, Dp),
           e("button", {
             class: "trx-json-editor__btn",
             disabled: t.disabled,
@@ -5808,11 +5805,11 @@ const ws = /* @__PURE__ */ g({
           }, [...x[1] || (x[1] = [
             e("i", { class: "pi pi-minus" }, null, -1),
             N(" Minificar ", -1)
-          ])], 8, qp)
+          ])], 8, Ep)
         ])
       ]),
-      e("div", Fp, [
-        e("div", Op, [
+      e("div", Rp, [
+        e("div", Np, [
           (s(!0), o(V, null, b(p.value, (f) => (s(), o("div", {
             key: f,
             class: "trx-json-editor__line-num"
@@ -5826,30 +5823,30 @@ const ws = /* @__PURE__ */ g({
           spellcheck: "false",
           autocomplete: "off",
           onInput: c
-        }, null, 44, jp)
+        }, null, 44, qp)
       ]),
-      n.value ? (s(), o("div", Hp, [
+      n.value ? (s(), o("div", Fp, [
         x[3] || (x[3] = e("i", { class: "pi pi-exclamation-triangle" }, null, -1)),
         N(" " + v(n.value), 1)
       ])) : h("", !0)
     ], 2));
   }
-}), mC = /* @__PURE__ */ A(Up, [["__scopeId", "data-v-04c442f5"]]), Wp = ["title"], Gp = { class: "trx-sidebar-nav__items" }, Kp = {
+}), oC = /* @__PURE__ */ M(Op, [["__scopeId", "data-v-04c442f5"]]), jp = ["title"], Hp = { class: "trx-sidebar-nav__items" }, Up = {
   key: 0,
   class: "trx-sidebar-nav__sep"
-}, Yp = { key: 1 }, Jp = ["title", "onClick"], Xp = {
+}, Wp = { key: 1 }, Gp = ["title", "onClick"], Kp = {
   key: 1,
   class: "trx-sidebar-nav__label"
-}, Qp = {
+}, Yp = {
   key: 2,
   class: "trx-sidebar-nav__badge"
-}, Zp = {
+}, Jp = {
   key: 0,
   class: "trx-sidebar-nav__children"
-}, tv = ["onClick"], ev = {
+}, Xp = ["onClick"], Qp = {
   key: 1,
   class: "trx-sidebar-nav__badge"
-}, sv = /* @__PURE__ */ g({
+}, Zp = /* @__PURE__ */ g({
   __name: "TrxSidebarNav",
   props: {
     items: { default: () => [] },
@@ -5860,7 +5857,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "update:collapsed", "select"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(/* @__PURE__ */ new Set());
+    const r = t, i = a, l = z(/* @__PURE__ */ new Set());
     function n(_) {
       l.value.has(_) ? l.value.delete(_) : l.value.add(_);
     }
@@ -5877,7 +5874,7 @@ const ws = /* @__PURE__ */ g({
       return r.modelValue === _.key ? !0 : ((d = _.children) == null ? void 0 : d.some((p) => p.key === r.modelValue)) ?? !1;
     }
     return (_, d) => (s(), o("nav", {
-      class: w(["trx-sidebar-nav", { "trx-sidebar-nav--collapsed": t.collapsed }]),
+      class: y(["trx-sidebar-nav", { "trx-sidebar-nav--collapsed": t.collapsed }]),
       style: R({ width: t.collapsed ? t.collapsedWidth : t.width })
     }, [
       e("button", {
@@ -5886,18 +5883,18 @@ const ws = /* @__PURE__ */ g({
         title: t.collapsed ? "Expandir" : "Recolher"
       }, [
         e("i", {
-          class: w(t.collapsed ? "pi pi-angle-right" : "pi pi-angle-left")
+          class: y(t.collapsed ? "pi pi-angle-right" : "pi pi-angle-left")
         }, null, 2)
-      ], 8, Wp),
-      e("div", Gp, [
+      ], 8, jp),
+      e("div", Hp, [
         (s(!0), o(V, null, b(t.items, (p) => {
           var m, x;
           return s(), o(V, {
             key: p.key
           }, [
-            p.separator ? (s(), o("hr", Kp)) : (s(), o("div", Yp, [
+            p.separator ? (s(), o("hr", Up)) : (s(), o("div", Wp, [
               e("button", {
-                class: w(["trx-sidebar-nav__item", {
+                class: y(["trx-sidebar-nav__item", {
                   "trx-sidebar-nav__item--active": u(p),
                   "trx-sidebar-nav__item--open": l.value.has(p.key)
                 }]),
@@ -5906,28 +5903,28 @@ const ws = /* @__PURE__ */ g({
               }, [
                 p.icon ? (s(), o("i", {
                   key: 0,
-                  class: w([p.icon, "trx-sidebar-nav__icon"])
+                  class: y([p.icon, "trx-sidebar-nav__icon"])
                 }, null, 2)) : h("", !0),
-                t.collapsed ? h("", !0) : (s(), o("span", Xp, v(p.label), 1)),
-                !t.collapsed && p.badge ? (s(), o("span", Qp, v(p.badge), 1)) : h("", !0),
+                t.collapsed ? h("", !0) : (s(), o("span", Kp, v(p.label), 1)),
+                !t.collapsed && p.badge ? (s(), o("span", Yp, v(p.badge), 1)) : h("", !0),
                 !t.collapsed && ((m = p.children) != null && m.length) ? (s(), o("i", {
                   key: 3,
-                  class: w(["pi pi-chevron-down trx-sidebar-nav__arrow", { "trx-sidebar-nav__arrow--open": l.value.has(p.key) }])
+                  class: y(["pi pi-chevron-down trx-sidebar-nav__arrow", { "trx-sidebar-nav__arrow--open": l.value.has(p.key) }])
                 }, null, 2)) : h("", !0)
-              ], 10, Jp),
-              !t.collapsed && ((x = p.children) != null && x.length) && l.value.has(p.key) ? (s(), o("div", Zp, [
+              ], 10, Gp),
+              !t.collapsed && ((x = p.children) != null && x.length) && l.value.has(p.key) ? (s(), o("div", Jp, [
                 (s(!0), o(V, null, b(p.children, (f) => (s(), o("button", {
                   key: f.key,
-                  class: w(["trx-sidebar-nav__child", { "trx-sidebar-nav__child--active": t.modelValue === f.key }]),
-                  onClick: (T) => c(f)
+                  class: y(["trx-sidebar-nav__child", { "trx-sidebar-nav__child--active": t.modelValue === f.key }]),
+                  onClick: (k) => c(f)
                 }, [
                   f.icon ? (s(), o("i", {
                     key: 0,
-                    class: w(f.icon)
+                    class: y(f.icon)
                   }, null, 2)) : h("", !0),
                   e("span", null, v(f.label), 1),
-                  f.badge ? (s(), o("span", ev, v(f.badge), 1)) : h("", !0)
-                ], 10, tv))), 128))
+                  f.badge ? (s(), o("span", Qp, v(f.badge), 1)) : h("", !0)
+                ], 10, Xp))), 128))
               ])) : h("", !0)
             ]))
           ], 64);
@@ -5935,16 +5932,16 @@ const ws = /* @__PURE__ */ g({
       ])
     ], 6));
   }
-}), fC = /* @__PURE__ */ A(sv, [["__scopeId", "data-v-f2db473b"]]), av = { class: "trx-palette__search" }, lv = ["placeholder"], nv = { class: "trx-palette__results" }, ov = { class: "trx-palette__group-label" }, rv = ["onClick", "onMouseenter"], iv = { class: "trx-palette__item-info" }, cv = { class: "trx-palette__item-label" }, uv = {
+}), rC = /* @__PURE__ */ M(Zp, [["__scopeId", "data-v-f2db473b"]]), tv = { class: "trx-palette__search" }, ev = ["placeholder"], sv = { class: "trx-palette__results" }, av = { class: "trx-palette__group-label" }, lv = ["onClick", "onMouseenter"], nv = { class: "trx-palette__item-info" }, ov = { class: "trx-palette__item-label" }, rv = {
   key: 0,
   class: "trx-palette__item-desc"
-}, dv = {
+}, iv = {
   key: 1,
   class: "trx-palette__shortcut"
-}, _v = {
+}, cv = {
   key: 1,
   class: "trx-palette__empty"
-}, pv = /* @__PURE__ */ g({
+}, uv = /* @__PURE__ */ g({
   __name: "TrxCommandPalette",
   props: {
     commands: { default: () => [] },
@@ -5953,26 +5950,26 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(""), n = D(0), c = D(), u = S(() => {
+    const r = t, i = a, l = z(""), n = z(0), c = z(), u = S(() => {
       if (!l.value) return r.commands;
       const f = l.value.toLowerCase();
       return r.commands.filter(
-        (T) => {
+        (k) => {
           var $;
-          return T.label.toLowerCase().includes(f) || (($ = T.description) == null ? void 0 : $.toLowerCase().includes(f));
+          return k.label.toLowerCase().includes(f) || (($ = k.description) == null ? void 0 : $.toLowerCase().includes(f));
         }
       );
     }), _ = S(() => {
       const f = {};
-      for (const T of u.value) {
-        const $ = T.group ?? "Geral";
-        f[$] || (f[$] = []), f[$].push(T);
+      for (const k of u.value) {
+        const $ = k.group ?? "Geral";
+        f[$] || (f[$] = []), f[$].push(k);
       }
       return f;
     }), d = S(() => u.value);
     Z(() => r.modelValue, async (f) => {
-      var T;
-      f && (l.value = "", n.value = 0, await nt(), (T = c.value) == null || T.focus());
+      var k;
+      f && (l.value = "", n.value = 0, await nt(), (k = c.value) == null || k.focus());
     });
     function p() {
       i("update:modelValue", !1);
@@ -5987,7 +5984,7 @@ const ws = /* @__PURE__ */ g({
       }
       f.key === "ArrowDown" && (f.preventDefault(), n.value = Math.min(n.value + 1, d.value.length - 1)), f.key === "ArrowUp" && (f.preventDefault(), n.value = Math.max(n.value - 1, 0)), f.key === "Enter" && d.value[n.value] && m(d.value[n.value]);
     }
-    return (f, T) => (s(), L(et, { to: "body" }, [
+    return (f, k) => (s(), L(et, { to: "body" }, [
       O(j, { name: "trx-palette-fade" }, {
         default: B(() => [
           t.modelValue ? (s(), o("div", {
@@ -5999,16 +5996,16 @@ const ws = /* @__PURE__ */ g({
               class: "trx-palette",
               onKeydown: x
             }, [
-              e("div", av, [
-                T[2] || (T[2] = e("i", { class: "pi pi-search trx-palette__search-icon" }, null, -1)),
+              e("div", tv, [
+                k[2] || (k[2] = e("i", { class: "pi pi-search trx-palette__search-icon" }, null, -1)),
                 Y(e("input", {
                   ref_key: "searchInput",
                   ref: c,
                   class: "trx-palette__input",
                   placeholder: t.placeholder,
-                  "onUpdate:modelValue": T[0] || (T[0] = ($) => l.value = $),
-                  onInput: T[1] || (T[1] = ($) => n.value = 0)
-                }, null, 40, lv), [
+                  "onUpdate:modelValue": k[0] || (k[0] = ($) => l.value = $),
+                  onInput: k[1] || (k[1] = ($) => n.value = 0)
+                }, null, 40, ev), [
                   [J, l.value]
                 ]),
                 e("kbd", {
@@ -6016,26 +6013,26 @@ const ws = /* @__PURE__ */ g({
                   onClick: p
                 }, "Esc")
               ]),
-              e("div", nv, [
+              e("div", sv, [
                 u.value.length ? (s(!0), o(V, { key: 0 }, b(_.value, ($, C) => (s(), o(V, { key: C }, [
-                  e("div", ov, v(C), 1),
-                  (s(!0), o(V, null, b($, (M) => (s(), o("button", {
-                    key: M.id,
-                    class: w(["trx-palette__item", { "trx-palette__item--active": d.value.indexOf(M) === n.value }]),
-                    onClick: (E) => m(M),
-                    onMouseenter: (E) => n.value = d.value.indexOf(M)
+                  e("div", av, v(C), 1),
+                  (s(!0), o(V, null, b($, (A) => (s(), o("button", {
+                    key: A.id,
+                    class: y(["trx-palette__item", { "trx-palette__item--active": d.value.indexOf(A) === n.value }]),
+                    onClick: (E) => m(A),
+                    onMouseenter: (E) => n.value = d.value.indexOf(A)
                   }, [
-                    M.icon ? (s(), o("i", {
+                    A.icon ? (s(), o("i", {
                       key: 0,
-                      class: w([M.icon, "trx-palette__item-icon"])
+                      class: y([A.icon, "trx-palette__item-icon"])
                     }, null, 2)) : h("", !0),
-                    e("div", iv, [
-                      e("span", cv, v(M.label), 1),
-                      M.description ? (s(), o("span", uv, v(M.description), 1)) : h("", !0)
+                    e("div", nv, [
+                      e("span", ov, v(A.label), 1),
+                      A.description ? (s(), o("span", rv, v(A.description), 1)) : h("", !0)
                     ]),
-                    M.shortcut ? (s(), o("kbd", dv, v(M.shortcut), 1)) : h("", !0)
-                  ], 42, rv))), 128))
-                ], 64))), 128)) : (s(), o("div", _v, [...T[3] || (T[3] = [
+                    A.shortcut ? (s(), o("kbd", iv, v(A.shortcut), 1)) : h("", !0)
+                  ], 42, lv))), 128))
+                ], 64))), 128)) : (s(), o("div", cv, [...k[3] || (k[3] = [
                   e("i", { class: "pi pi-search" }, null, -1),
                   e("span", null, "Nenhum comando encontrado", -1)
                 ])]))
@@ -6047,22 +6044,22 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), xC = /* @__PURE__ */ A(pv, [["__scopeId", "data-v-b994f6f6"]]), vv = { class: "trx-wizard" }, mv = { class: "trx-wizard__steps" }, fv = ["onClick"], xv = { class: "trx-wizard__step-circle" }, hv = {
+}), iC = /* @__PURE__ */ M(uv, [["__scopeId", "data-v-b994f6f6"]]), dv = { class: "trx-wizard" }, _v = { class: "trx-wizard__steps" }, pv = ["onClick"], vv = { class: "trx-wizard__step-circle" }, mv = {
   key: 0,
   class: "pi pi-check"
-}, $v = { key: 2 }, gv = { class: "trx-wizard__step-info" }, bv = { class: "trx-wizard__step-label" }, yv = {
+}, fv = { key: 2 }, xv = { class: "trx-wizard__step-info" }, hv = { class: "trx-wizard__step-label" }, $v = {
   key: 0,
   class: "trx-wizard__step-optional"
-}, kv = { class: "trx-wizard__content" }, wv = { class: "trx-wizard__footer" }, Tv = ["disabled"], Cv = { class: "trx-wizard__counter" }, Sv = ["disabled"], Iv = {
+}, gv = { class: "trx-wizard__content" }, bv = { class: "trx-wizard__footer" }, yv = ["disabled"], kv = { class: "trx-wizard__counter" }, wv = ["disabled"], Tv = {
   key: 0,
   class: "pi pi-spin pi-spinner"
-}, Vv = {
+}, Cv = {
   key: 0,
   class: "pi pi-chevron-right"
-}, Bv = {
+}, Sv = {
   key: 1,
   class: "pi pi-check"
-}, Pv = /* @__PURE__ */ g({
+}, Iv = /* @__PURE__ */ g({
   __name: "TrxWizard",
   props: {
     steps: { default: () => [] },
@@ -6072,7 +6069,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "next", "prev", "finish"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(/* @__PURE__ */ new Set([0]));
+    const r = t, i = a, l = z(/* @__PURE__ */ new Set([0]));
     function n(p) {
       p < 0 || p >= r.steps.length || p > (r.modelValue ?? 0) && !r.canGoNext || (l.value.add(p), i("update:modelValue", p));
     }
@@ -6090,43 +6087,43 @@ const ws = /* @__PURE__ */ g({
       p < 0 || (i("update:modelValue", p), i("prev", p));
     }
     const _ = S(() => (r.modelValue ?? 0) === 0), d = S(() => (r.modelValue ?? 0) === r.steps.length - 1);
-    return (p, m) => (s(), o("div", vv, [
-      e("div", mv, [
+    return (p, m) => (s(), o("div", dv, [
+      e("div", _v, [
         (s(!0), o(V, null, b(t.steps, (x, f) => (s(), o(V, {
           key: x.key
         }, [
           e("div", {
-            class: w(["trx-wizard__step", {
+            class: y(["trx-wizard__step", {
               "trx-wizard__step--active": f === t.modelValue,
               "trx-wizard__step--completed": f < (t.modelValue ?? 0),
               "trx-wizard__step--visited": l.value.has(f)
             }]),
-            onClick: (T) => n(f)
+            onClick: (k) => n(f)
           }, [
-            e("div", xv, [
-              f < (t.modelValue ?? 0) ? (s(), o("i", hv)) : x.icon ? (s(), o("i", {
+            e("div", vv, [
+              f < (t.modelValue ?? 0) ? (s(), o("i", mv)) : x.icon ? (s(), o("i", {
                 key: 1,
-                class: w(x.icon)
-              }, null, 2)) : (s(), o("span", $v, v(f + 1), 1))
+                class: y(x.icon)
+              }, null, 2)) : (s(), o("span", fv, v(f + 1), 1))
             ]),
-            e("div", gv, [
-              e("span", bv, v(x.label), 1),
-              x.optional ? (s(), o("span", yv, "Opcional")) : h("", !0)
+            e("div", xv, [
+              e("span", hv, v(x.label), 1),
+              x.optional ? (s(), o("span", $v, "Opcional")) : h("", !0)
             ])
-          ], 10, fv),
+          ], 10, pv),
           f < t.steps.length - 1 ? (s(), o("div", {
             key: 0,
-            class: w(["trx-wizard__connector", { "trx-wizard__connector--done": f < (t.modelValue ?? 0) }])
+            class: y(["trx-wizard__connector", { "trx-wizard__connector--done": f < (t.modelValue ?? 0) }])
           }, null, 2)) : h("", !0)
         ], 64))), 128))
       ]),
-      e("div", kv, [
+      e("div", gv, [
         I(p.$slots, "default", {
           step: t.steps[t.modelValue ?? 0],
           index: t.modelValue ?? 0
         }, void 0, !0)
       ]),
-      e("div", wv, [
+      e("div", bv, [
         e("button", {
           class: "trx-wizard__btn trx-wizard__btn--secondary",
           disabled: _.value,
@@ -6134,37 +6131,37 @@ const ws = /* @__PURE__ */ g({
         }, [...m[0] || (m[0] = [
           e("i", { class: "pi pi-chevron-left" }, null, -1),
           N(" Anterior ", -1)
-        ])], 8, Tv),
-        e("span", Cv, v((t.modelValue ?? 0) + 1) + " / " + v(t.steps.length), 1),
+        ])], 8, yv),
+        e("span", kv, v((t.modelValue ?? 0) + 1) + " / " + v(t.steps.length), 1),
         e("button", {
           class: "trx-wizard__btn trx-wizard__btn--primary",
           disabled: !t.canGoNext || t.loading,
           onClick: c
         }, [
-          t.loading ? (s(), o("i", Iv)) : (s(), o(V, { key: 1 }, [
+          t.loading ? (s(), o("i", Tv)) : (s(), o(V, { key: 1 }, [
             N(v(d.value ? "Concluir" : "Próximo") + " ", 1),
-            d.value ? (s(), o("i", Bv)) : (s(), o("i", Vv))
+            d.value ? (s(), o("i", Sv)) : (s(), o("i", Cv))
           ], 64))
-        ], 8, Sv)
+        ], 8, wv)
       ])
     ]));
   }
-}), hC = /* @__PURE__ */ A(Pv, [["__scopeId", "data-v-25e71378"]]), Av = { class: "trx-onboarding" }, Mv = { class: "trx-onboarding__header" }, Lv = { class: "trx-onboarding__title-top" }, zv = {
+}), cC = /* @__PURE__ */ M(Iv, [["__scopeId", "data-v-25e71378"]]), Vv = { class: "trx-onboarding" }, Bv = { class: "trx-onboarding__header" }, Pv = { class: "trx-onboarding__title-top" }, Mv = {
   key: 0,
   class: "trx-onboarding__body"
-}, Dv = {
+}, Av = {
   key: 0,
   class: "trx-onboarding__image-wrap"
-}, Ev = ["src", "alt"], Rv = {
+}, Lv = ["src", "alt"], zv = {
   key: 1,
   class: "trx-onboarding__icon-wrap"
-}, Nv = { class: "trx-onboarding__step-title" }, qv = { class: "trx-onboarding__step-desc" }, Fv = { class: "trx-onboarding__dots" }, Ov = ["onClick"], jv = { class: "trx-onboarding__footer" }, Hv = { key: 1 }, Uv = {
+}, Dv = { class: "trx-onboarding__step-title" }, Ev = { class: "trx-onboarding__step-desc" }, Rv = { class: "trx-onboarding__dots" }, Nv = ["onClick"], qv = { class: "trx-onboarding__footer" }, Fv = { key: 1 }, Ov = {
   key: 0,
   class: "pi pi-arrow-right"
-}, Wv = {
+}, jv = {
   key: 1,
   class: "pi pi-check"
-}, Gv = /* @__PURE__ */ g({
+}, Hv = /* @__PURE__ */ g({
   __name: "TrxOnboarding",
   props: {
     steps: { default: () => [] },
@@ -6186,38 +6183,38 @@ const ws = /* @__PURE__ */ g({
     function d(p) {
       i("update:modelValue", p);
     }
-    return (p, m) => (s(), o("div", Av, [
-      e("div", Mv, [
-        e("span", Lv, v(t.title), 1),
+    return (p, m) => (s(), o("div", Vv, [
+      e("div", Bv, [
+        e("span", Pv, v(t.title), 1),
         t.skippable && !c.value ? (s(), o("button", {
           key: 0,
           class: "trx-onboarding__skip",
           onClick: m[0] || (m[0] = (x) => i("skip"))
         }, v(t.skipLabel), 1)) : h("", !0)
       ]),
-      n.value ? (s(), o("div", zv, [
-        n.value.image ? (s(), o("div", Dv, [
+      n.value ? (s(), o("div", Mv, [
+        n.value.image ? (s(), o("div", Av, [
           e("img", {
             src: n.value.image,
             alt: n.value.title,
             class: "trx-onboarding__image"
-          }, null, 8, Ev)
-        ])) : n.value.icon ? (s(), o("div", Rv, [
+          }, null, 8, Lv)
+        ])) : n.value.icon ? (s(), o("div", zv, [
           e("i", {
-            class: w([n.value.icon, "trx-onboarding__icon"])
+            class: y([n.value.icon, "trx-onboarding__icon"])
           }, null, 2)
         ])) : h("", !0),
-        e("h2", Nv, v(n.value.title), 1),
-        e("p", qv, v(n.value.description), 1)
+        e("h2", Dv, v(n.value.title), 1),
+        e("p", Ev, v(n.value.description), 1)
       ])) : h("", !0),
-      e("div", Fv, [
+      e("div", Rv, [
         (s(!0), o(V, null, b(t.steps, (x, f) => (s(), o("button", {
           key: f,
-          class: w(["trx-onboarding__dot", { "trx-onboarding__dot--active": f === l.value, "trx-onboarding__dot--done": f < l.value }]),
-          onClick: (T) => d(f)
-        }, null, 10, Ov))), 128))
+          class: y(["trx-onboarding__dot", { "trx-onboarding__dot--active": f === l.value, "trx-onboarding__dot--done": f < l.value }]),
+          onClick: (k) => d(f)
+        }, null, 10, Nv))), 128))
       ]),
-      e("div", jv, [
+      e("div", qv, [
         l.value > 0 ? (s(), o("button", {
           key: 0,
           class: "trx-onboarding__btn trx-onboarding__btn--prev",
@@ -6225,30 +6222,30 @@ const ws = /* @__PURE__ */ g({
         }, [...m[1] || (m[1] = [
           e("i", { class: "pi pi-arrow-left" }, null, -1),
           N(" Anterior ", -1)
-        ])])) : (s(), o("span", Hv)),
+        ])])) : (s(), o("span", Fv)),
         e("button", {
           class: "trx-onboarding__btn trx-onboarding__btn--next",
           onClick: u
         }, [
           N(v(c.value ? t.finishLabel : "Próximo") + " ", 1),
-          c.value ? (s(), o("i", Wv)) : (s(), o("i", Uv))
+          c.value ? (s(), o("i", jv)) : (s(), o("i", Ov))
         ])
       ])
     ]));
   }
-}), $C = /* @__PURE__ */ A(Gv, [["__scopeId", "data-v-4359f9ee"]]), Kv = { class: "trx-kanban" }, Yv = ["onDrop"], Jv = { class: "trx-kanban__col-header" }, Xv = { class: "trx-kanban__col-label" }, Qv = { class: "trx-kanban__col-count" }, Zv = { key: 0 }, tm = { class: "trx-kanban__cards" }, em = ["onDragstart", "onClick"], sm = { class: "trx-kanban__card-header" }, am = { class: "trx-kanban__card-title" }, lm = ["title"], nm = {
+}), uC = /* @__PURE__ */ M(Hv, [["__scopeId", "data-v-4359f9ee"]]), Uv = { class: "trx-kanban" }, Wv = ["onDrop"], Gv = { class: "trx-kanban__col-header" }, Kv = { class: "trx-kanban__col-label" }, Yv = { class: "trx-kanban__col-count" }, Jv = { key: 0 }, Xv = { class: "trx-kanban__cards" }, Qv = ["onDragstart", "onClick"], Zv = { class: "trx-kanban__card-header" }, tm = { class: "trx-kanban__card-title" }, em = ["title"], sm = {
   key: 0,
   class: "trx-kanban__card-desc"
-}, om = {
+}, am = {
   key: 1,
   class: "trx-kanban__card-tags"
-}, rm = {
+}, lm = {
   key: 2,
   class: "trx-kanban__card-assignee"
-}, im = { class: "trx-kanban__card-avatar" }, cm = { class: "trx-kanban__card-assignee-name" }, um = {
+}, nm = { class: "trx-kanban__card-avatar" }, om = { class: "trx-kanban__card-assignee-name" }, rm = {
   key: 0,
   class: "trx-kanban__col-empty"
-}, dm = /* @__PURE__ */ g({
+}, im = /* @__PURE__ */ g({
   __name: "TrxKanbanBoard",
   props: {
     columns: { default: () => [] },
@@ -6268,7 +6265,7 @@ const ws = /* @__PURE__ */ g({
     function c(u) {
       !l || l.fromCol === u || (r("move", l.cardId, l.fromCol, u), l = null);
     }
-    return (u, _) => (s(), o("div", Kv, [
+    return (u, _) => (s(), o("div", Uv, [
       (s(!0), o(V, null, b(t.columns, (d) => (s(), o("div", {
         key: d.id,
         class: "trx-kanban__col",
@@ -6276,18 +6273,18 @@ const ws = /* @__PURE__ */ g({
         }, ["prevent"])),
         onDrop: (p) => c(d.id)
       }, [
-        e("div", Jv, [
+        e("div", Gv, [
           e("div", {
             class: "trx-kanban__col-dot",
             style: R({ background: d.color ?? "var(--trx-accent-color)" })
           }, null, 4),
-          e("span", Xv, v(d.label), 1),
-          e("span", Qv, [
+          e("span", Kv, v(d.label), 1),
+          e("span", Yv, [
             N(v(d.cards.length), 1),
-            d.limit ? (s(), o("span", Zv, "/" + v(d.limit), 1)) : h("", !0)
+            d.limit ? (s(), o("span", Jv, "/" + v(d.limit), 1)) : h("", !0)
           ])
         ]),
-        e("div", tm, [
+        e("div", Xv, [
           (s(!0), o(V, null, b(d.cards, (p) => {
             var m;
             return s(), o("div", {
@@ -6297,46 +6294,46 @@ const ws = /* @__PURE__ */ g({
               onDragstart: (x) => n(p.id, d.id),
               onClick: (x) => r("cardClick", p, d.id)
             }, [
-              e("div", sm, [
-                e("p", am, v(p.title), 1),
+              e("div", Zv, [
+                e("p", tm, v(p.title), 1),
                 p.priority ? (s(), o("span", {
                   key: 0,
                   class: "trx-kanban__card-priority",
                   style: R({ color: i[p.priority] }),
                   title: p.priority
-                }, "●", 12, lm)) : h("", !0)
+                }, "●", 12, em)) : h("", !0)
               ]),
-              p.description ? (s(), o("p", nm, v(p.description), 1)) : h("", !0),
-              (m = p.tags) != null && m.length ? (s(), o("div", om, [
+              p.description ? (s(), o("p", sm, v(p.description), 1)) : h("", !0),
+              (m = p.tags) != null && m.length ? (s(), o("div", am, [
                 (s(!0), o(V, null, b(p.tags, (x) => (s(), o("span", {
                   key: x,
                   class: "trx-kanban__card-tag"
                 }, v(x), 1))), 128))
               ])) : h("", !0),
-              p.assignee ? (s(), o("div", rm, [
-                e("span", im, v(p.assignee.split(" ").map((x) => x[0]).join("").slice(0, 2).toUpperCase()), 1),
-                e("span", cm, v(p.assignee), 1)
+              p.assignee ? (s(), o("div", lm, [
+                e("span", nm, v(p.assignee.split(" ").map((x) => x[0]).join("").slice(0, 2).toUpperCase()), 1),
+                e("span", om, v(p.assignee), 1)
               ])) : h("", !0)
-            ], 40, em);
+            ], 40, Qv);
           }), 128)),
-          d.cards.length ? h("", !0) : (s(), o("div", um, [..._[1] || (_[1] = [
+          d.cards.length ? h("", !0) : (s(), o("div", rm, [..._[1] || (_[1] = [
             e("i", { class: "pi pi-inbox" }, null, -1),
             e("span", null, "Vazio", -1)
           ])]))
         ])
-      ], 40, Yv))), 128))
+      ], 40, Wv))), 128))
     ]));
   }
-}), gC = /* @__PURE__ */ A(dm, [["__scopeId", "data-v-9ad32a8a"]]), _m = { class: "trx-calendar" }, pm = { class: "trx-calendar__header" }, vm = { class: "trx-calendar__month" }, mm = { class: "trx-calendar__grid" }, fm = ["onClick"], xm = {
+}), dC = /* @__PURE__ */ M(im, [["__scopeId", "data-v-9ad32a8a"]]), cm = { class: "trx-calendar" }, um = { class: "trx-calendar__header" }, dm = { class: "trx-calendar__month" }, _m = { class: "trx-calendar__grid" }, pm = ["onClick"], vm = {
   key: 0,
   class: "trx-calendar__day"
-}, hm = {
+}, mm = {
   key: 1,
   class: "trx-calendar__events"
-}, $m = ["title", "onClick"], gm = {
+}, fm = ["title", "onClick"], xm = {
   key: 0,
   class: "trx-calendar__more"
-}, bm = /* @__PURE__ */ g({
+}, hm = /* @__PURE__ */ g({
   __name: "TrxCalendarView",
   props: {
     events: { default: () => [] },
@@ -6345,38 +6342,38 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "eventClick", "dateClick"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = /* @__PURE__ */ new Date(), n = D(l.getFullYear()), c = D(l.getMonth()), u = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"], _ = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"], d = S(() => new Date(n.value, c.value, 1).getDay()), p = S(() => new Date(n.value, c.value + 1, 0).getDate()), m = S(() => {
-      const M = [];
-      for (let E = 0; E < d.value; E++) M.push({ day: null, dateStr: "" });
+    const r = t, i = a, l = /* @__PURE__ */ new Date(), n = z(l.getFullYear()), c = z(l.getMonth()), u = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"], _ = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"], d = S(() => new Date(n.value, c.value, 1).getDay()), p = S(() => new Date(n.value, c.value + 1, 0).getDate()), m = S(() => {
+      const A = [];
+      for (let E = 0; E < d.value; E++) A.push({ day: null, dateStr: "" });
       for (let E = 1; E <= p.value; E++) {
         const F = String(c.value + 1).padStart(2, "0"), q = String(E).padStart(2, "0");
-        M.push({ day: E, dateStr: `${n.value}-${F}-${q}` });
+        A.push({ day: E, dateStr: `${n.value}-${F}-${q}` });
       }
-      return M;
+      return A;
     }), x = S(() => {
-      const M = {};
+      const A = {};
       for (const E of r.events)
-        M[E.date] || (M[E.date] = []), M[E.date].push(E);
-      return M;
+        A[E.date] || (A[E.date] = []), A[E.date].push(E);
+      return A;
     }), f = `${l.getFullYear()}-${String(l.getMonth() + 1).padStart(2, "0")}-${String(l.getDate()).padStart(2, "0")}`;
-    function T() {
+    function k() {
       c.value === 0 ? (c.value = 11, n.value--) : c.value--;
     }
     function $() {
       c.value === 11 ? (c.value = 0, n.value++) : c.value++;
     }
-    function C(M) {
-      i("update:modelValue", M), i("dateClick", M);
+    function C(A) {
+      i("update:modelValue", A), i("dateClick", A);
     }
-    return (M, E) => (s(), o("div", _m, [
-      e("div", pm, [
+    return (A, E) => (s(), o("div", cm, [
+      e("div", um, [
         e("button", {
           class: "trx-calendar__nav",
-          onClick: T
+          onClick: k
         }, [...E[0] || (E[0] = [
           e("i", { class: "pi pi-chevron-left" }, null, -1)
         ])]),
-        e("span", vm, v(_[c.value]) + " " + v(n.value), 1),
+        e("span", dm, v(_[c.value]) + " " + v(n.value), 1),
         e("button", {
           class: "trx-calendar__nav",
           onClick: $
@@ -6384,36 +6381,36 @@ const ws = /* @__PURE__ */ g({
           e("i", { class: "pi pi-chevron-right" }, null, -1)
         ])])
       ]),
-      e("div", mm, [
+      e("div", _m, [
         (s(), o(V, null, b(u, (F) => e("div", {
           key: F,
           class: "trx-calendar__weekday"
         }, v(F), 1)), 64)),
         (s(!0), o(V, null, b(m.value, (F, q) => (s(), o("div", {
           key: q,
-          class: w(["trx-calendar__cell", {
+          class: y(["trx-calendar__cell", {
             "trx-calendar__cell--empty": !F.day,
             "trx-calendar__cell--today": F.dateStr === f,
             "trx-calendar__cell--selected": F.dateStr === t.modelValue
           }]),
           onClick: (K) => F.day && C(F.dateStr)
         }, [
-          F.day ? (s(), o("span", xm, v(F.day), 1)) : h("", !0),
-          F.dateStr && x.value[F.dateStr] ? (s(), o("div", hm, [
+          F.day ? (s(), o("span", vm, v(F.day), 1)) : h("", !0),
+          F.dateStr && x.value[F.dateStr] ? (s(), o("div", mm, [
             (s(!0), o(V, null, b(x.value[F.dateStr].slice(0, 2), (K) => (s(), o("div", {
               key: K.id,
               class: "trx-calendar__event",
               style: R({ background: K.color ?? "var(--trx-accent-color)" }),
               title: K.title,
               onClick: H((dt) => i("eventClick", K), ["stop"])
-            }, v(K.title), 13, $m))), 128)),
-            x.value[F.dateStr].length > 2 ? (s(), o("div", gm, " +" + v(x.value[F.dateStr].length - 2), 1)) : h("", !0)
+            }, v(K.title), 13, fm))), 128)),
+            x.value[F.dateStr].length > 2 ? (s(), o("div", xm, " +" + v(x.value[F.dateStr].length - 2), 1)) : h("", !0)
           ])) : h("", !0)
-        ], 10, fm))), 128))
+        ], 10, pm))), 128))
       ])
     ]));
   }
-}), bC = /* @__PURE__ */ A(bm, [["__scopeId", "data-v-007ab8e8"]]), ym = /* @__PURE__ */ g({
+}), _C = /* @__PURE__ */ M(hm, [["__scopeId", "data-v-007ab8e8"]]), $m = /* @__PURE__ */ g({
   __name: "TrxVirtualList",
   props: {
     items: { default: () => [] },
@@ -6422,7 +6419,7 @@ const ws = /* @__PURE__ */ g({
     overscan: { default: 5 }
   },
   setup(t) {
-    const a = t, r = D(), i = D(0), l = S(() => Math.ceil(a.height / a.itemHeight) + a.overscan * 2), n = S(() => Math.max(0, Math.floor(i.value / a.itemHeight) - a.overscan)), c = S(() => Math.min(a.items.length, n.value + l.value)), u = S(() => a.items.slice(n.value, c.value).map((m, x) => ({ item: m, index: n.value + x }))), _ = S(() => a.items.length * a.itemHeight), d = S(() => n.value * a.itemHeight);
+    const a = t, r = z(), i = z(0), l = S(() => Math.ceil(a.height / a.itemHeight) + a.overscan * 2), n = S(() => Math.max(0, Math.floor(i.value / a.itemHeight) - a.overscan)), c = S(() => Math.min(a.items.length, n.value + l.value)), u = S(() => a.items.slice(n.value, c.value).map((m, x) => ({ item: m, index: n.value + x }))), _ = S(() => a.items.length * a.itemHeight), d = S(() => n.value * a.itemHeight);
     function p() {
       var m;
       i.value = ((m = r.value) == null ? void 0 : m.scrollTop) ?? 0;
@@ -6445,29 +6442,29 @@ const ws = /* @__PURE__ */ g({
         e("div", {
           style: R({ transform: `translateY(${d.value}px)` })
         }, [
-          (s(!0), o(V, null, b(u.value, ({ item: f, index: T }) => (s(), o("div", {
-            key: T,
+          (s(!0), o(V, null, b(u.value, ({ item: f, index: k }) => (s(), o("div", {
+            key: k,
             style: R({ height: `${t.itemHeight}px` })
           }, [
             I(m.$slots, "default", {
               item: f,
-              index: T
+              index: k
             }, void 0, !0)
           ], 4))), 128))
         ], 4)
       ], 4)
     ], 4));
   }
-}), yC = /* @__PURE__ */ A(ym, [["__scopeId", "data-v-ecf43584"]]), km = { class: "trx-code-block" }, wm = { class: "trx-code-block__header" }, Tm = { class: "trx-code-block__lang-wrap" }, Cm = {
+}), pC = /* @__PURE__ */ M($m, [["__scopeId", "data-v-ecf43584"]]), gm = { class: "trx-code-block" }, bm = { class: "trx-code-block__header" }, ym = { class: "trx-code-block__lang-wrap" }, km = {
   key: 0,
   class: "trx-code-block__filename"
-}, Sm = {
+}, wm = {
   key: 1,
   class: "trx-code-block__lang"
-}, Im = ["title"], Vm = { class: "trx-code-block__table" }, Bm = {
+}, Tm = ["title"], Cm = { class: "trx-code-block__table" }, Sm = {
   key: 0,
   class: "trx-code-block__lineno"
-}, Pm = { class: "trx-code-block__line" }, Am = /* @__PURE__ */ g({
+}, Im = { class: "trx-code-block__line" }, Vm = /* @__PURE__ */ g({
   __name: "TrxCodeBlock",
   props: {
     code: { default: "" },
@@ -6477,7 +6474,7 @@ const ws = /* @__PURE__ */ g({
     maxHeight: {}
   },
   setup(t) {
-    const a = t, r = D(!1);
+    const a = t, r = z(!1);
     async function i() {
       await navigator.clipboard.writeText(a.code), r.value = !0, setTimeout(() => r.value = !1, 2e3);
     }
@@ -6485,13 +6482,13 @@ const ws = /* @__PURE__ */ g({
       return n.split(`
 `);
     }
-    return (n, c) => (s(), o("div", km, [
-      e("div", wm, [
-        e("div", Tm, [
-          t.filename ? (s(), o("span", Cm, [
+    return (n, c) => (s(), o("div", gm, [
+      e("div", bm, [
+        e("div", ym, [
+          t.filename ? (s(), o("span", km, [
             c[0] || (c[0] = e("i", { class: "pi pi-file" }, null, -1)),
             N(" " + v(t.filename), 1)
-          ])) : (s(), o("span", Sm, v(t.language), 1))
+          ])) : (s(), o("span", wm, v(t.language), 1))
         ]),
         e("button", {
           class: "trx-code-block__copy",
@@ -6499,27 +6496,27 @@ const ws = /* @__PURE__ */ g({
           title: r.value ? "Copiado!" : "Copiar"
         }, [
           e("i", {
-            class: w(r.value ? "pi pi-check" : "pi pi-copy")
+            class: y(r.value ? "pi pi-check" : "pi pi-copy")
           }, null, 2),
           e("span", null, v(r.value ? "Copiado" : "Copiar"), 1)
-        ], 8, Im)
+        ], 8, Tm)
       ]),
       e("div", {
         class: "trx-code-block__body",
         style: R(t.maxHeight ? { maxHeight: t.maxHeight, overflowY: "auto" } : {})
       }, [
-        e("table", Vm, [
+        e("table", Cm, [
           e("tbody", null, [
             (s(!0), o(V, null, b(l(t.code), (u, _) => (s(), o("tr", { key: _ }, [
-              t.showLineNumbers ? (s(), o("td", Bm, v(_ + 1), 1)) : h("", !0),
-              e("td", Pm, v(u || " "), 1)
+              t.showLineNumbers ? (s(), o("td", Sm, v(_ + 1), 1)) : h("", !0),
+              e("td", Im, v(u || " "), 1)
             ]))), 128))
           ])
         ])
       ], 4)
     ]));
   }
-}), kC = /* @__PURE__ */ A(Am, [["__scopeId", "data-v-c068f365"]]), Mm = ["innerHTML"], Lm = /* @__PURE__ */ g({
+}), vC = /* @__PURE__ */ M(Vm, [["__scopeId", "data-v-c068f365"]]), Bm = ["innerHTML"], Pm = /* @__PURE__ */ g({
   __name: "TrxMarkdownRenderer",
   props: {
     content: { default: "" },
@@ -6534,11 +6531,11 @@ const ws = /* @__PURE__ */ g({
       ), i = i.replace(/^#{6}\s(.+)$/gm, "<h6>$1</h6>").replace(/^#{5}\s(.+)$/gm, "<h5>$1</h5>").replace(/^#{4}\s(.+)$/gm, "<h4>$1</h4>").replace(/^#{3}\s(.+)$/gm, "<h3>$1</h3>").replace(/^#{2}\s(.+)$/gm, "<h2>$1</h2>").replace(/^#{1}\s(.+)$/gm, "<h1>$1</h1>"), i = i.replace(/^---$/gm, "<hr>"), i = i.replace(/^&gt;\s(.+)$/gm, "<blockquote>$1</blockquote>"), i = i.replace(/^[-*]\s(.+)$/gm, "<li>$1</li>"), i = i.replace(/(<li>[\s\S]*?<\/li>)\n?(?!<li>)/g, "<ul>$1</ul>"), i = i.replace(/^\d+\.\s(.+)$/gm, "<oli>$1</oli>"), i = i.replace(/(<oli>[\s\S]*?<\/oli>)\n?(?!<oli>)/g, "<ol>$1</ol>"), i = i.replace(/<\/?oli>/g, (l) => l === "<oli>" ? "<li>" : "</li>"), i = i.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/__(.+?)__/g, "<strong>$1</strong>").replace(/\*(.+?)\*/g, "<em>$1</em>").replace(/_(.+?)_/g, "<em>$1</em>").replace(/~~(.+?)~~/g, "<del>$1</del>").replace(/`(.+?)`/g, '<code class="trx-md__inline-code">$1</code>').replace(/!\[(.+?)\]\((.+?)\)/g, '<img src="$2" alt="$1" class="trx-md__img">').replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank" rel="noopener" class="trx-md__link">$1</a>'), i = i.replace(/\n{2,}/g, "</p><p>"), i = `<p>${i}</p>`, i = i.replace(/<p>(<h[1-6]>|<\/h[1-6]>|<hr>|<blockquote>|<\/blockquote>|<ul>|<\/ul>|<ol>|<\/ol>|<pre>|<\/pre>)/g, "$1"), i = i.replace(/(<\/h[1-6]>|<hr>|<\/blockquote>|<\/ul>|<\/ol>|<\/pre>)<\/p>/g, "$1"), i = i.replace(/<p><\/p>/g, ""), i = i.replace(/\n/g, "<br>"), i;
     });
     return (i, l) => (s(), o("div", {
-      class: w(["trx-md-renderer", { "trx-md-renderer--prose": t.prose }]),
+      class: y(["trx-md-renderer", { "trx-md-renderer--prose": t.prose }]),
       innerHTML: r.value
-    }, null, 10, Mm));
+    }, null, 10, Bm));
   }
-}), wC = /* @__PURE__ */ A(Lm, [["__scopeId", "data-v-68ad6346"]]), zm = { class: "trx-truncate" }, Dm = /* @__PURE__ */ g({
+}), mC = /* @__PURE__ */ M(Pm, [["__scopeId", "data-v-68ad6346"]]), Mm = { class: "trx-truncate" }, Am = /* @__PURE__ */ g({
   __name: "TrxTruncateText",
   props: {
     text: { default: "" },
@@ -6547,10 +6544,10 @@ const ws = /* @__PURE__ */ g({
     collapseLabel: { default: "Ver menos" }
   },
   setup(t) {
-    const a = D(!1);
-    return (r, i) => (s(), o("div", zm, [
+    const a = z(!1);
+    return (r, i) => (s(), o("div", Mm, [
       e("div", {
-        class: w(["trx-truncate__content", { "trx-truncate__content--collapsed": !a.value }]),
+        class: y(["trx-truncate__content", { "trx-truncate__content--collapsed": !a.value }]),
         style: R(a.value ? {} : { "-webkit-line-clamp": String(t.lines) })
       }, [
         I(r.$slots, "default", {}, () => [
@@ -6563,18 +6560,18 @@ const ws = /* @__PURE__ */ g({
       }, [
         N(v(a.value ? t.collapseLabel : t.expandLabel) + " ", 1),
         e("i", {
-          class: w(a.value ? "pi pi-chevron-up" : "pi pi-chevron-down")
+          class: y(a.value ? "pi pi-chevron-up" : "pi pi-chevron-down")
         }, null, 2)
       ])
     ]));
   }
-}), TC = /* @__PURE__ */ A(Dm, [["__scopeId", "data-v-4d051201"]]), Em = { class: "trx-conv-list" }, Rm = {
+}), fC = /* @__PURE__ */ M(Am, [["__scopeId", "data-v-4d051201"]]), Lm = { class: "trx-conv-list" }, zm = {
   key: 0,
   class: "trx-conv-list__skeleton"
-}, Nm = ["onClick"], qm = { class: "trx-conv-list__avatar" }, Fm = ["src", "alt"], Om = { key: 1 }, jm = { class: "trx-conv-list__info" }, Hm = { class: "trx-conv-list__top" }, Um = { class: "trx-conv-list__name" }, Wm = { class: "trx-conv-list__time" }, Gm = { class: "trx-conv-list__bottom" }, Km = { class: "trx-conv-list__msg" }, Ym = { class: "trx-conv-list__meta" }, Jm = {
+}, Dm = ["onClick"], Em = { class: "trx-conv-list__avatar" }, Rm = ["src", "alt"], Nm = { key: 1 }, qm = { class: "trx-conv-list__info" }, Fm = { class: "trx-conv-list__top" }, Om = { class: "trx-conv-list__name" }, jm = { class: "trx-conv-list__time" }, Hm = { class: "trx-conv-list__bottom" }, Um = { class: "trx-conv-list__msg" }, Wm = { class: "trx-conv-list__meta" }, Gm = {
   key: 1,
   class: "trx-conv-list__unread"
-}, Xm = /* @__PURE__ */ g({
+}, Km = /* @__PURE__ */ g({
   __name: "TrxConversationList",
   props: {
     conversations: { default: () => [] },
@@ -6591,8 +6588,8 @@ const ws = /* @__PURE__ */ g({
     function l(n) {
       return n.split(" ").map((c) => c[0]).slice(0, 2).join("").toUpperCase();
     }
-    return (n, c) => (s(), o("div", Em, [
-      t.loading ? (s(), o("div", Rm, [
+    return (n, c) => (s(), o("div", Lm, [
+      t.loading ? (s(), o("div", zm, [
         (s(), o(V, null, b(5, (u) => e("div", {
           key: u,
           class: "trx-conv-list__skel-item"
@@ -6605,29 +6602,29 @@ const ws = /* @__PURE__ */ g({
         ])])), 64))
       ])) : (s(!0), o(V, { key: 1 }, b(t.conversations, (u) => (s(), o("div", {
         key: u.id,
-        class: w(["trx-conv-list__item", { "trx-conv-list__item--active": t.activeId === u.id }]),
+        class: y(["trx-conv-list__item", { "trx-conv-list__item--active": t.activeId === u.id }]),
         onClick: (_) => r("select", u)
       }, [
-        e("div", qm, [
+        e("div", Em, [
           u.avatar ? (s(), o("img", {
             key: 0,
             src: u.avatar,
             alt: u.contact
-          }, null, 8, Fm)) : (s(), o("span", Om, v(l(u.contact)), 1)),
+          }, null, 8, Rm)) : (s(), o("span", Nm, v(l(u.contact)), 1)),
           u.status ? (s(), o("span", {
             key: 2,
             class: "trx-conv-list__status-dot",
             style: R({ background: i[u.status] })
           }, null, 4)) : h("", !0)
         ]),
-        e("div", jm, [
-          e("div", Hm, [
-            e("span", Um, v(u.contact), 1),
-            e("span", Wm, v(u.lastTime), 1)
+        e("div", qm, [
+          e("div", Fm, [
+            e("span", Om, v(u.contact), 1),
+            e("span", jm, v(u.lastTime), 1)
           ]),
-          e("div", Gm, [
-            e("span", Km, v(u.lastMessage ?? "—"), 1),
-            e("div", Ym, [
+          e("div", Hm, [
+            e("span", Um, v(u.lastMessage ?? "—"), 1),
+            e("div", Wm, [
               u.channel ? (s(), L(ut, {
                 key: 0,
                 channel: u.channel,
@@ -6635,29 +6632,29 @@ const ws = /* @__PURE__ */ g({
                 "icon-only": "",
                 "show-label": !1
               }, null, 8, ["channel"])) : h("", !0),
-              u.unread ? (s(), o("span", Jm, v(u.unread), 1)) : h("", !0)
+              u.unread ? (s(), o("span", Gm, v(u.unread), 1)) : h("", !0)
             ])
           ])
         ])
-      ], 10, Nm))), 128))
+      ], 10, Dm))), 128))
     ]));
   }
-}), CC = /* @__PURE__ */ A(Xm, [["__scopeId", "data-v-43f7b6c7"]]), Qm = { class: "trx-lead-card__header" }, Zm = { class: "trx-lead-card__avatar" }, tf = { class: "trx-lead-card__identity" }, ef = { class: "trx-lead-card__name" }, sf = {
+}), xC = /* @__PURE__ */ M(Km, [["__scopeId", "data-v-43f7b6c7"]]), Ym = { class: "trx-lead-card__header" }, Jm = { class: "trx-lead-card__avatar" }, Xm = { class: "trx-lead-card__identity" }, Qm = { class: "trx-lead-card__name" }, Zm = {
   key: 0,
   class: "trx-lead-card__company"
-}, af = { class: "trx-lead-card__badges" }, lf = ["title"], nf = {
+}, tf = { class: "trx-lead-card__badges" }, ef = ["title"], sf = {
   key: 0,
   class: "trx-lead-card__value"
-}, of = { class: "trx-lead-card__meta" }, rf = {
+}, af = { class: "trx-lead-card__meta" }, lf = {
   key: 0,
   class: "trx-lead-card__source"
-}, cf = {
+}, nf = {
   key: 1,
   class: "trx-lead-card__assignee"
-}, uf = {
+}, of = {
   key: 2,
   class: "trx-lead-card__time"
-}, df = /* @__PURE__ */ g({
+}, rf = /* @__PURE__ */ g({
   __name: "TrxLeadCard",
   props: {
     name: {},
@@ -6695,34 +6692,34 @@ const ws = /* @__PURE__ */ g({
       class: "trx-lead-card",
       onClick: _[4] || (_[4] = (d) => l("view"))
     }, [
-      e("div", Qm, [
-        e("div", Zm, v(c(t.name)), 1),
-        e("div", tf, [
-          e("span", ef, v(t.name), 1),
-          t.company ? (s(), o("span", sf, v(t.company), 1)) : h("", !0)
+      e("div", Ym, [
+        e("div", Jm, v(c(t.name)), 1),
+        e("div", Xm, [
+          e("span", Qm, v(t.name), 1),
+          t.company ? (s(), o("span", Zm, v(t.company), 1)) : h("", !0)
         ]),
-        e("div", af, [
+        e("div", tf, [
           e("span", {
             class: "trx-lead-card__status",
             style: R({ "--lst-color": r[t.status ?? "new"].color })
           }, v(r[t.status ?? "new"].label), 5),
           e("i", {
-            class: w([i[t.priority ?? "medium"], "trx-lead-card__priority"]),
+            class: y([i[t.priority ?? "medium"], "trx-lead-card__priority"]),
             title: t.priority
-          }, null, 10, lf)
+          }, null, 10, ef)
         ])
       ]),
-      t.value ? (s(), o("div", nf, v(n(t.value)), 1)) : h("", !0),
-      e("div", of, [
-        t.source ? (s(), o("span", rf, [
+      t.value ? (s(), o("div", sf, v(n(t.value)), 1)) : h("", !0),
+      e("div", af, [
+        t.source ? (s(), o("span", lf, [
           _[5] || (_[5] = e("i", { class: "pi pi-map-marker" }, null, -1)),
           N(" " + v(t.source), 1)
         ])) : h("", !0),
-        t.assignee ? (s(), o("span", cf, [
+        t.assignee ? (s(), o("span", nf, [
           _[6] || (_[6] = e("i", { class: "pi pi-user" }, null, -1)),
           N(" " + v(t.assignee), 1)
         ])) : h("", !0),
-        t.updatedAt ? (s(), o("span", uf, [
+        t.updatedAt ? (s(), o("span", of, [
           _[7] || (_[7] = e("i", { class: "pi pi-clock" }, null, -1)),
           N(" " + v(t.updatedAt), 1)
         ])) : h("", !0)
@@ -6758,10 +6755,10 @@ const ws = /* @__PURE__ */ g({
       ])
     ]));
   }
-}), SC = /* @__PURE__ */ A(df, [["__scopeId", "data-v-dcad9a9f"]]), _f = { class: "trx-sla__header" }, pf = { class: "trx-sla__label" }, vf = {
+}), hC = /* @__PURE__ */ M(rf, [["__scopeId", "data-v-dcad9a9f"]]), cf = { class: "trx-sla__header" }, uf = { class: "trx-sla__label" }, df = {
   key: 0,
   class: "trx-sla__bar"
-}, mf = /* @__PURE__ */ g({
+}, _f = /* @__PURE__ */ g({
   __name: "TrxSLAIndicator",
   props: {
     deadline: {},
@@ -6778,25 +6775,25 @@ const ws = /* @__PURE__ */ g({
     const l = S(() => i(a.deadline) - i(a.createdAt)), n = S(() => r() - i(a.createdAt)), c = S(() => Math.max(0, i(a.deadline) - r())), u = S(() => Math.min(1, l.value > 0 ? n.value / l.value : 0)), _ = S(() => c.value === 0), d = S(() => !_.value && u.value >= a.warningThreshold), p = S(() => _.value ? "var(--trx-danger-color)" : d.value ? "var(--trx-warning-color)" : "var(--trx-success-color)");
     function m(x) {
       if (x <= 0) return "Vencido";
-      const f = Math.floor(x / 36e5), T = Math.floor(x % 36e5 / 6e4);
-      return f > 0 ? `${f}h ${T}m` : `${T}m`;
+      const f = Math.floor(x / 36e5), k = Math.floor(x % 36e5 / 6e4);
+      return f > 0 ? `${f}h ${k}m` : `${k}m`;
     }
     return (x, f) => (s(), o("div", {
       class: "trx-sla",
       style: R({ "--sla-color": p.value })
     }, [
-      e("div", _f, [
-        e("span", pf, v(t.label ?? "SLA"), 1),
+      e("div", cf, [
+        e("span", uf, v(t.label ?? "SLA"), 1),
         e("span", {
-          class: w(["trx-sla__time", { "trx-sla__time--breached": _.value }])
+          class: y(["trx-sla__time", { "trx-sla__time--breached": _.value }])
         }, [
           e("i", {
-            class: w(_.value ? "pi pi-times-circle" : d.value ? "pi pi-exclamation-triangle" : "pi pi-clock")
+            class: y(_.value ? "pi pi-times-circle" : d.value ? "pi pi-exclamation-triangle" : "pi pi-clock")
           }, null, 2),
           N(" " + v(m(c.value)), 1)
         ], 2)
       ]),
-      t.showProgress ? (s(), o("div", vf, [
+      t.showProgress ? (s(), o("div", df, [
         e("div", {
           class: "trx-sla__fill",
           style: R({ width: `${u.value * 100}%` })
@@ -6804,25 +6801,25 @@ const ws = /* @__PURE__ */ g({
       ])) : h("", !0)
     ], 4));
   }
-}), IC = /* @__PURE__ */ A(mf, [["__scopeId", "data-v-dbfaca6d"]]), ff = { class: "trx-crm-timeline" }, xf = {
+}), $C = /* @__PURE__ */ M(_f, [["__scopeId", "data-v-dbfaca6d"]]), pf = { class: "trx-crm-timeline" }, vf = {
   key: 0,
   class: "trx-crm-timeline__loading"
-}, hf = {
+}, mf = {
   key: 1,
   class: "trx-crm-timeline__empty"
-}, $f = {
+}, ff = {
   key: 2,
   class: "trx-crm-timeline__list"
-}, gf = ["onClick"], bf = { class: "trx-crm-timeline__line-wrap" }, yf = { class: "trx-crm-timeline__content" }, kf = { class: "trx-crm-timeline__header" }, wf = { class: "trx-crm-timeline__date" }, Tf = { class: "trx-crm-timeline__title-row" }, Cf = { class: "trx-crm-timeline__title" }, Sf = {
+}, xf = ["onClick"], hf = { class: "trx-crm-timeline__line-wrap" }, $f = { class: "trx-crm-timeline__content" }, gf = { class: "trx-crm-timeline__header" }, bf = { class: "trx-crm-timeline__date" }, yf = { class: "trx-crm-timeline__title-row" }, kf = { class: "trx-crm-timeline__title" }, wf = {
   key: 0,
   class: "trx-crm-timeline__desc"
-}, If = { class: "trx-crm-timeline__meta" }, Vf = {
+}, Tf = { class: "trx-crm-timeline__meta" }, Cf = {
   key: 0,
   class: "trx-crm-timeline__author"
-}, Bf = {
+}, Sf = {
   key: 1,
   class: "trx-crm-timeline__duration"
-}, Pf = /* @__PURE__ */ g({
+}, If = /* @__PURE__ */ g({
   __name: "TrxCRMTimeline",
   props: {
     events: { default: () => [] },
@@ -6847,69 +6844,69 @@ const ws = /* @__PURE__ */ g({
     function n(c) {
       return new Date(c).toLocaleString("pt-BR", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" });
     }
-    return (c, u) => (s(), o("div", ff, [
-      t.loading ? (s(), o("div", xf, [...u[0] || (u[0] = [
+    return (c, u) => (s(), o("div", pf, [
+      t.loading ? (s(), o("div", vf, [...u[0] || (u[0] = [
         e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
-      ])])) : t.events.length ? (s(), o("div", $f, [
+      ])])) : t.events.length ? (s(), o("div", ff, [
         (s(!0), o(V, null, b(t.events, (_) => (s(), o("div", {
           key: _.id,
           class: "trx-crm-timeline__item",
           onClick: (d) => r("eventClick", _)
         }, [
-          e("div", bf, [
+          e("div", hf, [
             e("div", {
               class: "trx-crm-timeline__dot",
               style: R({ background: i[_.type].color })
             }, [
               e("i", {
-                class: w([i[_.type].icon, "trx-crm-timeline__dot-icon"])
+                class: y([i[_.type].icon, "trx-crm-timeline__dot-icon"])
               }, null, 2)
             ], 4),
             u[2] || (u[2] = e("div", { class: "trx-crm-timeline__line" }, null, -1))
           ]),
-          e("div", yf, [
-            e("div", kf, [
+          e("div", $f, [
+            e("div", gf, [
               e("span", {
                 class: "trx-crm-timeline__type-badge",
                 style: R({ color: i[_.type].color })
               }, v(i[_.type].label), 5),
-              e("span", wf, v(n(_.date)), 1)
+              e("span", bf, v(n(_.date)), 1)
             ]),
-            e("div", Tf, [
-              e("span", Cf, v(_.title), 1),
+            e("div", yf, [
+              e("span", kf, v(_.title), 1),
               _.outcome ? (s(), o("span", {
                 key: 0,
                 class: "trx-crm-timeline__outcome",
                 style: R({ color: l[_.outcome].color })
               }, [
                 e("i", {
-                  class: w(l[_.outcome].icon)
+                  class: y(l[_.outcome].icon)
                 }, null, 2)
               ], 4)) : h("", !0)
             ]),
-            _.description ? (s(), o("p", Sf, v(_.description), 1)) : h("", !0),
-            e("div", If, [
-              _.author ? (s(), o("span", Vf, [
+            _.description ? (s(), o("p", wf, v(_.description), 1)) : h("", !0),
+            e("div", Tf, [
+              _.author ? (s(), o("span", Cf, [
                 u[3] || (u[3] = e("i", { class: "pi pi-user" }, null, -1)),
                 N(" " + v(_.author), 1)
               ])) : h("", !0),
-              _.duration ? (s(), o("span", Bf, [
+              _.duration ? (s(), o("span", Sf, [
                 u[4] || (u[4] = e("i", { class: "pi pi-clock" }, null, -1)),
                 N(" " + v(_.duration), 1)
               ])) : h("", !0)
             ])
           ])
-        ], 8, gf))), 128))
-      ])) : (s(), o("div", hf, [...u[1] || (u[1] = [
+        ], 8, xf))), 128))
+      ])) : (s(), o("div", mf, [...u[1] || (u[1] = [
         e("i", { class: "pi pi-history" }, null, -1),
         e("span", null, "Nenhuma atividade registrada", -1)
       ])]))
     ]));
   }
-}), VC = /* @__PURE__ */ A(Pf, [["__scopeId", "data-v-2b8a2f92"]]), Af = { class: "trx-maintenance" }, Mf = { class: "trx-maintenance__card" }, Lf = ["src"], zf = { class: "trx-maintenance__title" }, Df = { class: "trx-maintenance__message" }, Ef = {
+}), gC = /* @__PURE__ */ M(If, [["__scopeId", "data-v-2b8a2f92"]]), Vf = { class: "trx-maintenance" }, Bf = { class: "trx-maintenance__card" }, Pf = ["src"], Mf = { class: "trx-maintenance__title" }, Af = { class: "trx-maintenance__message" }, Lf = {
   key: 1,
   class: "trx-maintenance__eta"
-}, Rf = /* @__PURE__ */ g({
+}, zf = /* @__PURE__ */ g({
   __name: "TrxMaintenancePage",
   props: {
     title: { default: "Em Manutenção" },
@@ -6919,20 +6916,20 @@ const ws = /* @__PURE__ */ g({
     logoSrc: {}
   },
   setup(t) {
-    return (a, r) => (s(), o("div", Af, [
-      e("div", Mf, [
+    return (a, r) => (s(), o("div", Vf, [
+      e("div", Bf, [
         t.logoSrc ? (s(), o("img", {
           key: 0,
           src: t.logoSrc,
           class: "trx-maintenance__logo",
           alt: "Logo"
-        }, null, 8, Lf)) : h("", !0),
+        }, null, 8, Pf)) : h("", !0),
         r[2] || (r[2] = e("div", { class: "trx-maintenance__icon" }, [
           e("i", { class: "pi pi-wrench" })
         ], -1)),
-        e("h1", zf, v(t.title), 1),
-        e("p", Df, v(t.message), 1),
-        t.estimatedTime ? (s(), o("div", Ef, [
+        e("h1", Mf, v(t.title), 1),
+        e("p", Af, v(t.message), 1),
+        t.estimatedTime ? (s(), o("div", Lf, [
           r[1] || (r[1] = e("i", { class: "pi pi-clock" }, null, -1)),
           e("span", null, [
             r[0] || (r[0] = N("Previsão de retorno: ", -1)),
@@ -6943,10 +6940,10 @@ const ws = /* @__PURE__ */ g({
       ])
     ]));
   }
-}), BC = /* @__PURE__ */ A(Rf, [["__scopeId", "data-v-b30655b1"]]), Nf = {
+}), bC = /* @__PURE__ */ M(zf, [["__scopeId", "data-v-b30655b1"]]), Df = {
   key: 0,
   class: "trx-session-backdrop"
-}, qf = { class: "trx-session-dialog" }, Ff = { class: "trx-session-dialog__msg" }, Of = { class: "trx-session-dialog__actions" }, jf = /* @__PURE__ */ g({
+}, Ef = { class: "trx-session-dialog" }, Rf = { class: "trx-session-dialog__msg" }, Nf = { class: "trx-session-dialog__actions" }, qf = /* @__PURE__ */ g({
   __name: "TrxSessionTimeout",
   props: {
     timeoutMs: { default: 30 * 60 * 1e3 },
@@ -6955,7 +6952,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["timeout", "extend", "update:modelValue"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(r.timeoutMs), n = D(!1);
+    const r = t, i = a, l = z(r.timeoutMs), n = z(!1);
     let c, u;
     function _() {
       clearTimeout(u), clearInterval(c), l.value = r.timeoutMs, n.value = !1, u = setTimeout(d, r.timeoutMs - r.warningMs);
@@ -6974,22 +6971,22 @@ const ws = /* @__PURE__ */ g({
     }), G(() => {
       clearTimeout(u), clearInterval(c), m.forEach(($) => window.removeEventListener($, _));
     });
-    const x = S(() => Math.floor(l.value / 6e4)), f = S(() => Math.floor(l.value % 6e4 / 1e3)), T = S(() => `${x.value}:${String(f.value).padStart(2, "0")}`);
+    const x = S(() => Math.floor(l.value / 6e4)), f = S(() => Math.floor(l.value % 6e4 / 1e3)), k = S(() => `${x.value}:${String(f.value).padStart(2, "0")}`);
     return ($, C) => (s(), L(et, { to: "body" }, [
       O(j, { name: "trx-session-fade" }, {
         default: B(() => [
-          n.value ? (s(), o("div", Nf, [
-            e("div", qf, [
+          n.value ? (s(), o("div", Df, [
+            e("div", Ef, [
               C[4] || (C[4] = e("div", { class: "trx-session-dialog__icon" }, [
                 e("i", { class: "pi pi-clock" })
               ], -1)),
               C[5] || (C[5] = e("h2", { class: "trx-session-dialog__title" }, "Sessão expirando", -1)),
-              e("p", Ff, [
+              e("p", Rf, [
                 C[1] || (C[1] = N(" Sua sessão expirará em ", -1)),
-                e("strong", null, v(T.value), 1),
+                e("strong", null, v(k.value), 1),
                 C[2] || (C[2] = N(" por inatividade. ", -1))
               ]),
-              e("div", Of, [
+              e("div", Nf, [
                 e("button", {
                   class: "trx-session-dialog__btn trx-session-dialog__btn--extend",
                   onClick: p
@@ -6999,7 +6996,7 @@ const ws = /* @__PURE__ */ g({
                 ])]),
                 e("button", {
                   class: "trx-session-dialog__btn trx-session-dialog__btn--logout",
-                  onClick: C[0] || (C[0] = (M) => i("timeout"))
+                  onClick: C[0] || (C[0] = (A) => i("timeout"))
                 }, " Sair agora ")
               ])
             ])
@@ -7009,7 +7006,7 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), PC = /* @__PURE__ */ A(jf, [["__scopeId", "data-v-3b5d9421"]]), Hf = { class: "trx-shortcut-panel" }, Uf = { class: "trx-shortcut-panel__header" }, Wf = { class: "trx-shortcut-panel__body" }, Gf = { class: "trx-shortcut-panel__group-label" }, Kf = { class: "trx-shortcut-panel__list" }, Yf = { class: "trx-shortcut-panel__desc" }, Jf = { class: "trx-shortcut-panel__keys" }, Xf = { class: "trx-shortcut-panel__footer" }, Qf = { class: "trx-shortcut-panel__key" }, Zf = /* @__PURE__ */ g({
+}), yC = /* @__PURE__ */ M(qf, [["__scopeId", "data-v-3b5d9421"]]), Ff = { class: "trx-shortcut-panel" }, Of = { class: "trx-shortcut-panel__header" }, jf = { class: "trx-shortcut-panel__body" }, Hf = { class: "trx-shortcut-panel__group-label" }, Uf = { class: "trx-shortcut-panel__list" }, Wf = { class: "trx-shortcut-panel__desc" }, Gf = { class: "trx-shortcut-panel__keys" }, Kf = { class: "trx-shortcut-panel__footer" }, Yf = { class: "trx-shortcut-panel__key" }, Jf = /* @__PURE__ */ g({
   __name: "TrxShortcutHelper",
   props: {
     shortcuts: { default: () => [] },
@@ -7034,8 +7031,8 @@ const ws = /* @__PURE__ */ g({
             class: "trx-shortcut-backdrop",
             onClick: c[1] || (c[1] = H((u) => i("update:modelValue", !1), ["self"]))
           }, [
-            e("div", Hf, [
-              e("div", Uf, [
+            e("div", Ff, [
+              e("div", Of, [
                 c[3] || (c[3] = e("h3", { class: "trx-shortcut-panel__title" }, "Atalhos de Teclado", -1)),
                 e("button", {
                   class: "trx-shortcut-panel__close",
@@ -7044,16 +7041,16 @@ const ws = /* @__PURE__ */ g({
                   e("i", { class: "pi pi-times" }, null, -1)
                 ])])
               ]),
-              e("div", Wf, [
+              e("div", jf, [
                 (s(!0), o(V, null, b(l(), (u, _) => (s(), o(V, { key: _ }, [
-                  e("div", Gf, v(_), 1),
-                  e("div", Kf, [
+                  e("div", Hf, v(_), 1),
+                  e("div", Uf, [
                     (s(!0), o(V, null, b(u, (d, p) => (s(), o("div", {
                       key: p,
                       class: "trx-shortcut-panel__item"
                     }, [
-                      e("span", Yf, v(d.description), 1),
-                      e("div", Jf, [
+                      e("span", Wf, v(d.description), 1),
+                      e("div", Gf, [
                         (s(!0), o(V, null, b(d.keys, (m) => (s(), o("kbd", {
                           key: m,
                           class: "trx-shortcut-panel__key"
@@ -7063,9 +7060,9 @@ const ws = /* @__PURE__ */ g({
                   ])
                 ], 64))), 128))
               ]),
-              e("div", Xf, [
+              e("div", Kf, [
                 c[4] || (c[4] = N(" Pressione ", -1)),
-                e("kbd", Qf, v(t.triggerKey), 1),
+                e("kbd", Yf, v(t.triggerKey), 1),
                 c[5] || (c[5] = N(" para abrir/fechar ", -1))
               ])
             ])
@@ -7075,7 +7072,7 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), AC = /* @__PURE__ */ A(Zf, [["__scopeId", "data-v-d5032b0e"]]), MC = /* @__PURE__ */ g({
+}), kC = /* @__PURE__ */ M(Jf, [["__scopeId", "data-v-d5032b0e"]]), wC = /* @__PURE__ */ g({
   __name: "TrxFeatureFlag",
   props: {
     flag: {},
@@ -7085,10 +7082,10 @@ const ws = /* @__PURE__ */ g({
     const a = t, r = S(() => a.flags[a.flag] === !0);
     return (i, l) => r.value ? I(i.$slots, "default", { key: 0 }) : I(i.$slots, "disabled", { key: 1 });
   }
-}), tx = { class: "trx-dtmf" }, ex = ["onClick"], sx = { class: "trx-dtmf__main" }, ax = {
+}), Xf = { class: "trx-dtmf" }, Qf = ["onClick"], Zf = { class: "trx-dtmf__main" }, tx = {
   key: 0,
   class: "trx-dtmf__sub"
-}, lx = /* @__PURE__ */ g({
+}, ex = /* @__PURE__ */ g({
   __name: "TrxDTMFPad",
   emits: ["digit"],
   setup(t, { emit: a }) {
@@ -7114,7 +7111,7 @@ const ws = /* @__PURE__ */ g({
     function n(c) {
       r("digit", c);
     }
-    return (c, u) => (s(), o("div", tx, [
+    return (c, u) => (s(), o("div", Xf, [
       (s(), o(V, null, b(i, (_, d) => e("div", {
         key: d,
         class: "trx-dtmf__row"
@@ -7124,19 +7121,19 @@ const ws = /* @__PURE__ */ g({
           class: "trx-dtmf__key",
           onClick: (m) => n(p)
         }, [
-          e("span", sx, v(p), 1),
-          l[p] ? (s(), o("span", ax, v(l[p]), 1)) : h("", !0)
-        ], 8, ex))), 128))
+          e("span", Zf, v(p), 1),
+          l[p] ? (s(), o("span", tx, v(l[p]), 1)) : h("", !0)
+        ], 8, Qf))), 128))
       ])), 64))
     ]));
   }
-}), LC = /* @__PURE__ */ A(lx, [["__scopeId", "data-v-2f681100"]]), nx = { class: "trx-tf-dialog" }, ox = { class: "trx-tf-dialog__header" }, rx = { class: "trx-tf-dialog__type-tabs" }, ix = ["onClick"], cx = { class: "trx-tf-dialog__search" }, ux = { class: "trx-tf-dialog__list" }, dx = {
+}), TC = /* @__PURE__ */ M(ex, [["__scopeId", "data-v-2f681100"]]), sx = { class: "trx-tf-dialog" }, ax = { class: "trx-tf-dialog__header" }, lx = { class: "trx-tf-dialog__type-tabs" }, nx = ["onClick"], ox = { class: "trx-tf-dialog__search" }, rx = { class: "trx-tf-dialog__list" }, ix = {
   key: 0,
   class: "trx-tf-dialog__loading"
-}, _x = ["onClick"], px = { class: "trx-tf-dialog__item-info" }, vx = { class: "trx-tf-dialog__item-name" }, mx = { class: "trx-tf-dialog__item-ext" }, fx = { class: "trx-tf-dialog__item-status" }, xx = {
+}, cx = ["onClick"], ux = { class: "trx-tf-dialog__item-info" }, dx = { class: "trx-tf-dialog__item-name" }, _x = { class: "trx-tf-dialog__item-ext" }, px = { class: "trx-tf-dialog__item-status" }, vx = {
   key: 1,
   class: "trx-tf-dialog__empty"
-}, hx = { class: "trx-tf-dialog__footer" }, $x = ["disabled"], gx = /* @__PURE__ */ g({
+}, mx = { class: "trx-tf-dialog__footer" }, fx = ["disabled"], xx = /* @__PURE__ */ g({
   __name: "TrxTransferDialog",
   props: {
     targets: { default: () => [] },
@@ -7145,7 +7142,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "transfer"],
   setup(t, { emit: a }) {
-    const r = a, i = D("blind"), l = D(""), n = D(null);
+    const r = a, i = z("blind"), l = z(""), n = z(null);
     return (c, u) => (s(), L(et, { to: "body" }, [
       O(j, { name: "trx-tf-fade" }, {
         default: B(() => [
@@ -7154,8 +7151,8 @@ const ws = /* @__PURE__ */ g({
             class: "trx-tf-backdrop",
             onClick: u[4] || (u[4] = H((_) => r("update:modelValue", !1), ["self"]))
           }, [
-            e("div", nx, [
-              e("div", ox, [
+            e("div", sx, [
+              e("div", ax, [
                 u[6] || (u[6] = e("h3", { class: "trx-tf-dialog__title" }, "Transferir Chamada", -1)),
                 e("button", {
                   class: "trx-tf-dialog__close",
@@ -7164,14 +7161,14 @@ const ws = /* @__PURE__ */ g({
                   e("i", { class: "pi pi-times" }, null, -1)
                 ])])
               ]),
-              e("div", rx, [
+              e("div", lx, [
                 (s(), o(V, null, b(["blind", "attended", "conference"], (_) => e("button", {
                   key: _,
-                  class: w(["trx-tf-dialog__type-btn", { active: i.value === _ }]),
+                  class: y(["trx-tf-dialog__type-btn", { active: i.value === _ }]),
                   onClick: (d) => i.value = _
-                }, v(_ === "blind" ? "Cega" : _ === "attended" ? "Assistida" : "Conferência"), 11, ix)), 64))
+                }, v(_ === "blind" ? "Cega" : _ === "attended" ? "Assistida" : "Conferência"), 11, nx)), 64))
               ]),
-              e("div", cx, [
+              e("div", ox, [
                 u[7] || (u[7] = e("i", { class: "pi pi-search trx-tf-dialog__search-icon" }, null, -1)),
                 Y(e("input", {
                   "onUpdate:modelValue": u[1] || (u[1] = (_) => l.value = _),
@@ -7182,30 +7179,30 @@ const ws = /* @__PURE__ */ g({
                   [J, l.value]
                 ])
               ]),
-              e("div", ux, [
-                t.loading ? (s(), o("div", dx, [...u[8] || (u[8] = [
+              e("div", rx, [
+                t.loading ? (s(), o("div", ix, [...u[8] || (u[8] = [
                   e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
                 ])])) : h("", !0),
                 (s(!0), o(V, null, b(t.targets.filter((_) => !l.value || _.name.toLowerCase().includes(l.value.toLowerCase()) || _.extension.includes(l.value)), (_) => {
                   var d;
                   return s(), o("div", {
                     key: _.id,
-                    class: w(["trx-tf-dialog__item", { "trx-tf-dialog__item--selected": ((d = n.value) == null ? void 0 : d.id) === _.id, "trx-tf-dialog__item--unavailable": !_.available }]),
+                    class: y(["trx-tf-dialog__item", { "trx-tf-dialog__item--selected": ((d = n.value) == null ? void 0 : d.id) === _.id, "trx-tf-dialog__item--unavailable": !_.available }]),
                     onClick: (p) => n.value = _
                   }, [
                     e("div", {
-                      class: w(["trx-tf-dialog__item-dot", _.available ? "available" : "busy"])
+                      class: y(["trx-tf-dialog__item-dot", _.available ? "available" : "busy"])
                     }, null, 2),
-                    e("div", px, [
-                      e("span", vx, v(_.name), 1),
-                      e("span", mx, v(_.extension), 1)
+                    e("div", ux, [
+                      e("span", dx, v(_.name), 1),
+                      e("span", _x, v(_.extension), 1)
                     ]),
-                    e("span", fx, v(_.available ? "Disponível" : "Ocupado"), 1)
-                  ], 10, _x);
+                    e("span", px, v(_.available ? "Disponível" : "Ocupado"), 1)
+                  ], 10, cx);
                 }), 128)),
-                !t.targets.length && !t.loading ? (s(), o("div", xx, " Nenhum ramal encontrado ")) : h("", !0)
+                !t.targets.length && !t.loading ? (s(), o("div", vx, " Nenhum ramal encontrado ")) : h("", !0)
               ]),
-              e("div", hx, [
+              e("div", mx, [
                 e("button", {
                   class: "trx-tf-dialog__btn trx-tf-dialog__btn--cancel",
                   onClick: u[2] || (u[2] = (_) => r("update:modelValue", !1))
@@ -7217,7 +7214,7 @@ const ws = /* @__PURE__ */ g({
                 }, [
                   u[9] || (u[9] = e("i", { class: "pi pi-phone" }, null, -1)),
                   N(" " + v(i.value === "blind" ? "Transferir" : i.value === "attended" ? "Consultar" : "Conferência"), 1)
-                ], 8, $x)
+                ], 8, fx)
               ])
             ])
           ])) : h("", !0)
@@ -7226,25 +7223,25 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), zC = /* @__PURE__ */ A(gx, [["__scopeId", "data-v-d021e3e9"]]), bx = { class: "trx-monitor" }, yx = {
+}), CC = /* @__PURE__ */ M(xx, [["__scopeId", "data-v-d021e3e9"]]), hx = { class: "trx-monitor" }, $x = {
   key: 0,
   class: "trx-monitor__empty"
-}, kx = {
+}, gx = {
   key: 1,
   class: "trx-monitor__empty"
-}, wx = {
+}, bx = {
   key: 2,
   class: "trx-monitor__list"
-}, Tx = { class: "trx-monitor__agent" }, Cx = { class: "trx-monitor__agent-name" }, Sx = { class: "trx-monitor__agent-ext" }, Ix = { class: "trx-monitor__call-info" }, Vx = { class: "trx-monitor__customer" }, Bx = {
+}, yx = { class: "trx-monitor__agent" }, kx = { class: "trx-monitor__agent-name" }, wx = { class: "trx-monitor__agent-ext" }, Tx = { class: "trx-monitor__call-info" }, Cx = { class: "trx-monitor__customer" }, Sx = {
   key: 0,
   class: "trx-monitor__queue"
-}, Px = { class: "trx-monitor__duration" }, Ax = {
+}, Ix = { class: "trx-monitor__duration" }, Vx = {
   key: 0,
   class: "trx-monitor__active-badge"
-}, Mx = ["onClick"], Lx = {
+}, Bx = ["onClick"], Px = {
   key: 1,
   class: "trx-monitor__actions"
-}, zx = ["title", "onClick"], Dx = /* @__PURE__ */ g({
+}, Mx = ["title", "onClick"], Ax = /* @__PURE__ */ g({
   __name: "TrxCallMonitor",
   props: {
     calls: { default: () => [] },
@@ -7263,24 +7260,24 @@ const ws = /* @__PURE__ */ g({
       const c = Math.floor(n / 60), u = n % 60;
       return `${String(c).padStart(2, "0")}:${String(u).padStart(2, "0")}`;
     }
-    return (n, c) => (s(), o("div", bx, [
-      t.loading ? (s(), o("div", yx, [...c[0] || (c[0] = [
+    return (n, c) => (s(), o("div", hx, [
+      t.loading ? (s(), o("div", $x, [...c[0] || (c[0] = [
         e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
-      ])])) : t.calls.length ? (s(), o("div", wx, [
+      ])])) : t.calls.length ? (s(), o("div", bx, [
         (s(!0), o(V, null, b(t.calls, (u) => (s(), o("div", {
           key: u.id,
-          class: w(["trx-monitor__item", { "trx-monitor__item--active": t.activeId === u.id }])
+          class: y(["trx-monitor__item", { "trx-monitor__item--active": t.activeId === u.id }])
         }, [
+          e("div", yx, [
+            e("span", kx, v(u.agentName), 1),
+            e("span", wx, v(u.agentExt), 1)
+          ]),
           e("div", Tx, [
-            e("span", Cx, v(u.agentName), 1),
-            e("span", Sx, v(u.agentExt), 1)
+            e("span", Cx, v(u.customerName ?? u.customerPhone), 1),
+            u.queue ? (s(), o("span", Sx, v(u.queue), 1)) : h("", !0)
           ]),
-          e("div", Ix, [
-            e("span", Vx, v(u.customerName ?? u.customerPhone), 1),
-            u.queue ? (s(), o("span", Bx, v(u.queue), 1)) : h("", !0)
-          ]),
-          e("span", Px, v(l(u.duration)), 1),
-          t.activeId === u.id ? (s(), o("div", Ax, [
+          e("span", Ix, v(l(u.duration)), 1),
+          t.activeId === u.id ? (s(), o("div", Vx, [
             c[3] || (c[3] = e("i", { class: "pi pi-circle-fill trx-monitor__pulse" }, null, -1)),
             N(" " + v(t.activeMode === "listen" ? "Escutando" : t.activeMode === "whisper" ? "Sussurrando" : "Na chamada") + " ", 1),
             e("button", {
@@ -7288,8 +7285,8 @@ const ws = /* @__PURE__ */ g({
               onClick: (_) => r("stop", u.id)
             }, [...c[2] || (c[2] = [
               e("i", { class: "pi pi-stop-circle" }, null, -1)
-            ])], 8, Mx)
-          ])) : (s(), o("div", Lx, [
+            ])], 8, Bx)
+          ])) : (s(), o("div", Px, [
             (s(), o(V, null, b(i, (_) => e("button", {
               key: _.key,
               class: "trx-monitor__mode-btn",
@@ -7298,12 +7295,12 @@ const ws = /* @__PURE__ */ g({
               onClick: (d) => r("monitor", u, _.key)
             }, [
               e("i", {
-                class: w(_.icon)
+                class: y(_.icon)
               }, null, 2)
-            ], 12, zx)), 64))
+            ], 12, Mx)), 64))
           ]))
         ], 2))), 128))
-      ])) : (s(), o("div", kx, [...c[1] || (c[1] = [
+      ])) : (s(), o("div", gx, [...c[1] || (c[1] = [
         e("i", {
           class: "pi pi-phone",
           style: { "font-size": "1.5rem" }
@@ -7312,16 +7309,16 @@ const ws = /* @__PURE__ */ g({
       ])]))
     ]));
   }
-}), DC = /* @__PURE__ */ A(Dx, [["__scopeId", "data-v-df8b4f98"]]), Ex = ["disabled"], Rx = {
+}), SC = /* @__PURE__ */ M(Ax, [["__scopeId", "data-v-df8b4f98"]]), Lx = ["disabled"], zx = {
   key: 0,
   class: "trx-break__panel"
-}, Nx = ["onClick"], qx = { class: "trx-break__reason-label" }, Fx = {
+}, Dx = ["onClick"], Ex = { class: "trx-break__reason-label" }, Rx = {
   key: 0,
   class: "trx-break__reason-max"
-}, Ox = {
+}, Nx = {
   key: 0,
   class: "trx-break__empty"
-}, jx = /* @__PURE__ */ g({
+}, qx = /* @__PURE__ */ g({
   __name: "TrxBreakSelector",
   props: {
     reasons: { default: () => [] },
@@ -7330,9 +7327,9 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "start", "end"],
   setup(t, { emit: a }) {
-    const r = a, i = D(!1);
+    const r = a, i = z(!1);
     return (l, n) => (s(), o("div", {
-      class: w(["trx-break", { "trx-break--active": t.modelValue }])
+      class: y(["trx-break", { "trx-break--active": t.modelValue }])
     }, [
       e("button", {
         class: "trx-break__trigger",
@@ -7340,17 +7337,17 @@ const ws = /* @__PURE__ */ g({
         onClick: n[0] || (n[0] = (c) => t.modelValue ? (r("update:modelValue", null), r("end")) : i.value = !i.value)
       }, [
         e("i", {
-          class: w(t.modelValue ? "pi pi-play" : "pi pi-pause")
+          class: y(t.modelValue ? "pi pi-play" : "pi pi-pause")
         }, null, 2),
         e("span", null, v(t.modelValue ? "Retornar" : "Iniciar Pausa"), 1),
         t.modelValue ? h("", !0) : (s(), o("i", {
           key: 0,
-          class: w(["pi pi-chevron-down trx-break__arrow", { rotated: i.value }])
+          class: y(["pi pi-chevron-down trx-break__arrow", { rotated: i.value }])
         }, null, 2))
-      ], 8, Ex),
+      ], 8, Lx),
       O(j, { name: "trx-break-drop" }, {
         default: B(() => [
-          i.value && !t.modelValue ? (s(), o("div", Rx, [
+          i.value && !t.modelValue ? (s(), o("div", zx, [
             n[1] || (n[1] = e("div", { class: "trx-break__panel-title" }, "Motivo da pausa", -1)),
             (s(!0), o(V, null, b(t.reasons, (c) => (s(), o("button", {
               key: c.id,
@@ -7360,28 +7357,28 @@ const ws = /* @__PURE__ */ g({
               }
             }, [
               e("i", {
-                class: w([c.icon ?? "pi pi-circle", "trx-break__reason-icon"])
+                class: y([c.icon ?? "pi pi-circle", "trx-break__reason-icon"])
               }, null, 2),
-              e("span", qx, v(c.label), 1),
-              c.maxMinutes ? (s(), o("span", Fx, v(c.maxMinutes) + "min", 1)) : h("", !0)
-            ], 8, Nx))), 128)),
-            t.reasons.length ? h("", !0) : (s(), o("div", Ox, "Nenhum motivo configurado"))
+              e("span", Ex, v(c.label), 1),
+              c.maxMinutes ? (s(), o("span", Rx, v(c.maxMinutes) + "min", 1)) : h("", !0)
+            ], 8, Dx))), 128)),
+            t.reasons.length ? h("", !0) : (s(), o("div", Nx, "Nenhum motivo configurado"))
           ])) : h("", !0)
         ]),
         _: 1
       })
     ], 2));
   }
-}), EC = /* @__PURE__ */ A(jx, [["__scopeId", "data-v-11d04d15"]]), Hx = { class: "trx-qm" }, Ux = {
+}), IC = /* @__PURE__ */ M(qx, [["__scopeId", "data-v-11d04d15"]]), Fx = { class: "trx-qm" }, Ox = {
   key: 0,
   class: "trx-qm__loading"
-}, Wx = {
+}, jx = {
   key: 1,
   class: "trx-qm__empty"
-}, Gx = {
+}, Hx = {
   key: 2,
   class: "trx-qm__list"
-}, Kx = { class: "trx-qm__queue-header" }, Yx = { class: "trx-qm__queue-name" }, Jx = { class: "trx-qm__agents" }, Xx = { class: "trx-qm__metric" }, Qx = { class: "trx-qm__metric-value trx-qm__metric-value--warn" }, Zx = { class: "trx-qm__metric" }, th = { class: "trx-qm__metric-value trx-qm__metric-value--active" }, eh = { class: "trx-qm__metric" }, sh = { class: "trx-qm__metric-value" }, ah = { class: "trx-qm__metric" }, lh = { class: "trx-qm__metric" }, nh = { class: "trx-qm__metric-value" }, oh = { class: "trx-qm__metric" }, rh = { class: "trx-qm__sl-bar" }, ih = /* @__PURE__ */ g({
+}, Ux = { class: "trx-qm__queue-header" }, Wx = { class: "trx-qm__queue-name" }, Gx = { class: "trx-qm__agents" }, Kx = { class: "trx-qm__metric" }, Yx = { class: "trx-qm__metric-value trx-qm__metric-value--warn" }, Jx = { class: "trx-qm__metric" }, Xx = { class: "trx-qm__metric-value trx-qm__metric-value--active" }, Qx = { class: "trx-qm__metric" }, Zx = { class: "trx-qm__metric-value" }, th = { class: "trx-qm__metric" }, eh = { class: "trx-qm__metric" }, sh = { class: "trx-qm__metric-value" }, ah = { class: "trx-qm__metric" }, lh = { class: "trx-qm__sl-bar" }, nh = /* @__PURE__ */ g({
   __name: "TrxQueueMetrics",
   props: {
     queues: { default: () => [] },
@@ -7396,45 +7393,45 @@ const ws = /* @__PURE__ */ g({
     function r(i) {
       return i >= 80 ? "var(--trx-success-color)" : i >= 60 ? "var(--trx-warning-color)" : "var(--trx-danger-color)";
     }
-    return (i, l) => (s(), o("div", Hx, [
-      t.loading ? (s(), o("div", Ux, [...l[0] || (l[0] = [
+    return (i, l) => (s(), o("div", Fx, [
+      t.loading ? (s(), o("div", Ox, [...l[0] || (l[0] = [
         e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
-      ])])) : t.queues.length ? (s(), o("div", Gx, [
+      ])])) : t.queues.length ? (s(), o("div", Hx, [
         (s(!0), o(V, null, b(t.queues, (n) => (s(), o("div", {
           key: n.name,
           class: "trx-qm__queue"
         }, [
-          e("div", Kx, [
-            e("span", Yx, v(n.name), 1),
-            e("span", Jx, v(n.agentsReady) + "/" + v(n.agentsTotal) + " agentes", 1)
+          e("div", Ux, [
+            e("span", Wx, v(n.name), 1),
+            e("span", Gx, v(n.agentsReady) + "/" + v(n.agentsTotal) + " agentes", 1)
           ]),
           e("div", {
-            class: w(["trx-qm__metrics", { "trx-qm__metrics--compact": t.compact }])
+            class: y(["trx-qm__metrics", { "trx-qm__metrics--compact": t.compact }])
           }, [
-            e("div", Xx, [
-              e("span", Qx, v(n.waiting), 1),
+            e("div", Kx, [
+              e("span", Yx, v(n.waiting), 1),
               l[1] || (l[1] = e("span", { class: "trx-qm__metric-label" }, "Aguardando", -1))
             ]),
-            e("div", Zx, [
-              e("span", th, v(n.active), 1),
+            e("div", Jx, [
+              e("span", Xx, v(n.active), 1),
               l[2] || (l[2] = e("span", { class: "trx-qm__metric-label" }, "Em atendimento", -1))
             ]),
-            e("div", eh, [
-              e("span", sh, v(n.abandoned), 1),
+            e("div", Qx, [
+              e("span", Zx, v(n.abandoned), 1),
               l[3] || (l[3] = e("span", { class: "trx-qm__metric-label" }, "Abandonadas", -1))
             ]),
-            e("div", ah, [
+            e("div", th, [
               e("span", {
                 class: "trx-qm__metric-value",
                 style: R({ color: r(n.serviceLevel) })
               }, v(n.serviceLevel) + "%", 5),
               l[4] || (l[4] = e("span", { class: "trx-qm__metric-label" }, "Nível de Serviço", -1))
             ]),
-            e("div", lh, [
-              e("span", nh, v(a(n.avgWait)), 1),
+            e("div", eh, [
+              e("span", sh, v(a(n.avgWait)), 1),
               l[5] || (l[5] = e("span", { class: "trx-qm__metric-label" }, "TMA Espera", -1))
             ]),
-            e("div", oh, [
+            e("div", ah, [
               e("span", {
                 class: "trx-qm__metric-value",
                 style: R({ color: n.longestWait > 120 ? "var(--trx-danger-color)" : void 0 })
@@ -7442,35 +7439,35 @@ const ws = /* @__PURE__ */ g({
               l[6] || (l[6] = e("span", { class: "trx-qm__metric-label" }, "Maior Espera", -1))
             ])
           ], 2),
-          e("div", rh, [
+          e("div", lh, [
             e("div", {
               class: "trx-qm__sl-fill",
               style: R({ width: n.serviceLevel + "%", background: r(n.serviceLevel) })
             }, null, 4)
           ])
         ]))), 128))
-      ])) : (s(), o("div", Wx, "Nenhuma fila configurada"))
+      ])) : (s(), o("div", jx, "Nenhuma fila configurada"))
     ]));
   }
-}), RC = /* @__PURE__ */ A(ih, [["__scopeId", "data-v-63231ab6"]]), ch = { class: "trx-rank" }, uh = {
+}), VC = /* @__PURE__ */ M(nh, [["__scopeId", "data-v-63231ab6"]]), oh = { class: "trx-rank" }, rh = {
   key: 0,
   class: "trx-rank__header"
-}, dh = { class: "trx-rank__title" }, _h = {
+}, ih = { class: "trx-rank__title" }, ch = {
   key: 1,
   class: "trx-rank__loading"
-}, ph = {
+}, uh = {
   key: 2,
   class: "trx-rank__empty"
-}, vh = {
+}, dh = {
   key: 3,
   class: "trx-rank__list"
-}, mh = ["onClick"], fh = { class: "trx-rank__pos" }, xh = { class: "trx-rank__avatar-wrap" }, hh = ["src", "alt"], $h = {
+}, _h = ["onClick"], ph = { class: "trx-rank__pos" }, vh = { class: "trx-rank__avatar-wrap" }, mh = ["src", "alt"], fh = {
   key: 1,
   class: "trx-rank__avatar-init"
-}, gh = { class: "trx-rank__name" }, bh = { class: "trx-rank__bar-wrap" }, yh = { class: "trx-rank__value-wrap" }, kh = { class: "trx-rank__value" }, wh = {
+}, xh = { class: "trx-rank__name" }, hh = { class: "trx-rank__bar-wrap" }, $h = { class: "trx-rank__value-wrap" }, gh = { class: "trx-rank__value" }, bh = {
   key: 0,
   class: "trx-rank__unit"
-}, Th = /* @__PURE__ */ g({
+}, yh = /* @__PURE__ */ g({
   __name: "TrxAgentRanking",
   props: {
     entries: { default: () => [] },
@@ -7482,51 +7479,51 @@ const ws = /* @__PURE__ */ g({
   emits: ["rowClick"],
   setup(t, { emit: a }) {
     const r = a, i = ["🥇", "🥈", "🥉"];
-    return (l, n) => (s(), o("div", ch, [
-      t.title ? (s(), o("div", uh, [
-        e("span", dh, v(t.title), 1)
+    return (l, n) => (s(), o("div", oh, [
+      t.title ? (s(), o("div", rh, [
+        e("span", ih, v(t.title), 1)
       ])) : h("", !0),
-      t.loading ? (s(), o("div", _h, [...n[0] || (n[0] = [
+      t.loading ? (s(), o("div", ch, [...n[0] || (n[0] = [
         e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
-      ])])) : t.entries.length ? (s(), o("div", vh, [
+      ])])) : t.entries.length ? (s(), o("div", dh, [
         (s(!0), o(V, null, b(t.entries, (c, u) => (s(), o("div", {
           key: c.id,
-          class: w(["trx-rank__item", { "trx-rank__item--highlight": t.highlight === c.id }]),
+          class: y(["trx-rank__item", { "trx-rank__item--highlight": t.highlight === c.id }]),
           onClick: (_) => r("rowClick", c)
         }, [
-          e("span", fh, v(u < 3 ? i[u] : `#${u + 1}`), 1),
-          e("div", xh, [
+          e("span", ph, v(u < 3 ? i[u] : `#${u + 1}`), 1),
+          e("div", vh, [
             c.avatar ? (s(), o("img", {
               key: 0,
               src: c.avatar,
               class: "trx-rank__avatar",
               alt: c.name
-            }, null, 8, hh)) : (s(), o("div", $h, v(c.name[0]), 1))
+            }, null, 8, mh)) : (s(), o("div", fh, v(c.name[0]), 1))
           ]),
-          e("span", gh, v(c.name), 1),
-          e("div", bh, [
+          e("span", xh, v(c.name), 1),
+          e("div", hh, [
             e("div", {
               class: "trx-rank__bar",
               style: R({ width: (t.maxValue ? c.value / t.maxValue * 100 : 100) + "%" })
             }, null, 4)
           ]),
-          e("div", yh, [
-            e("span", kh, v(c.value.toLocaleString("pt-BR")), 1),
-            c.unit ? (s(), o("span", wh, v(c.unit), 1)) : h("", !0),
+          e("div", $h, [
+            e("span", gh, v(c.value.toLocaleString("pt-BR")), 1),
+            c.unit ? (s(), o("span", bh, v(c.unit), 1)) : h("", !0),
             c.delta !== void 0 ? (s(), o("span", {
               key: 1,
-              class: w(["trx-rank__delta", c.delta > 0 ? "up" : c.delta < 0 ? "down" : ""])
+              class: y(["trx-rank__delta", c.delta > 0 ? "up" : c.delta < 0 ? "down" : ""])
             }, [
               e("i", {
-                class: w(c.delta > 0 ? "pi pi-arrow-up" : c.delta < 0 ? "pi pi-arrow-down" : "pi pi-minus")
+                class: y(c.delta > 0 ? "pi pi-arrow-up" : c.delta < 0 ? "pi pi-arrow-down" : "pi pi-minus")
               }, null, 2)
             ], 2)) : h("", !0)
           ])
-        ], 10, mh))), 128))
-      ])) : (s(), o("div", ph, "Sem dados"))
+        ], 10, _h))), 128))
+      ])) : (s(), o("div", uh, "Sem dados"))
     ]));
   }
-}), NC = /* @__PURE__ */ A(Th, [["__scopeId", "data-v-f7fb6516"]]), Ch = { class: "trx-recorder__indicator" }, Sh = { class: "trx-recorder__label" }, Ih = { class: "trx-recorder__time" }, Vh = { class: "trx-recorder__controls" }, Bh = ["disabled"], Ph = ["disabled"], Ah = ["disabled"], Mh = ["disabled"], Lh = /* @__PURE__ */ g({
+}), BC = /* @__PURE__ */ M(yh, [["__scopeId", "data-v-f7fb6516"]]), kh = { class: "trx-recorder__indicator" }, wh = { class: "trx-recorder__label" }, Th = { class: "trx-recorder__time" }, Ch = { class: "trx-recorder__controls" }, Sh = ["disabled"], Ih = ["disabled"], Vh = ["disabled"], Bh = ["disabled"], Ph = /* @__PURE__ */ g({
   __name: "TrxCallRecorder",
   props: {
     state: { default: "idle" },
@@ -7540,16 +7537,16 @@ const ws = /* @__PURE__ */ g({
       return `${String(n).padStart(2, "0")}:${String(c).padStart(2, "0")}`;
     });
     return (n, c) => (s(), o("div", {
-      class: w(["trx-recorder", `trx-recorder--${t.state}`])
+      class: y(["trx-recorder", `trx-recorder--${t.state}`])
     }, [
-      e("div", Ch, [
+      e("div", kh, [
         e("span", {
-          class: w(["trx-recorder__dot", { "trx-recorder__dot--blink": t.state === "recording" }])
+          class: y(["trx-recorder__dot", { "trx-recorder__dot--blink": t.state === "recording" }])
         }, null, 2),
-        e("span", Sh, v(t.state === "idle" ? "Sem gravação" : t.state === "recording" ? "Gravando" : "Pausado"), 1)
+        e("span", wh, v(t.state === "idle" ? "Sem gravação" : t.state === "recording" ? "Gravando" : "Pausado"), 1)
       ]),
-      e("span", Ih, v(l.value), 1),
-      e("div", Vh, [
+      e("span", Th, v(l.value), 1),
+      e("div", Ch, [
         t.state === "idle" ? (s(), o("button", {
           key: 0,
           class: "trx-recorder__btn trx-recorder__btn--start",
@@ -7558,7 +7555,7 @@ const ws = /* @__PURE__ */ g({
           onClick: c[0] || (c[0] = (u) => i("start"))
         }, [...c[4] || (c[4] = [
           e("i", { class: "pi pi-circle-fill" }, null, -1)
-        ])], 8, Bh)) : (s(), o(V, { key: 1 }, [
+        ])], 8, Sh)) : (s(), o(V, { key: 1 }, [
           t.state === "recording" ? (s(), o("button", {
             key: 0,
             class: "trx-recorder__btn trx-recorder__btn--pause",
@@ -7567,7 +7564,7 @@ const ws = /* @__PURE__ */ g({
             onClick: c[1] || (c[1] = (u) => i("pause"))
           }, [...c[5] || (c[5] = [
             e("i", { class: "pi pi-pause" }, null, -1)
-          ])], 8, Ph)) : (s(), o("button", {
+          ])], 8, Ih)) : (s(), o("button", {
             key: 1,
             class: "trx-recorder__btn trx-recorder__btn--resume",
             disabled: t.disabled,
@@ -7575,7 +7572,7 @@ const ws = /* @__PURE__ */ g({
             onClick: c[2] || (c[2] = (u) => i("resume"))
           }, [...c[6] || (c[6] = [
             e("i", { class: "pi pi-play" }, null, -1)
-          ])], 8, Ah)),
+          ])], 8, Vh)),
           e("button", {
             class: "trx-recorder__btn trx-recorder__btn--stop",
             disabled: t.disabled,
@@ -7583,27 +7580,27 @@ const ws = /* @__PURE__ */ g({
             onClick: c[3] || (c[3] = (u) => i("stop"))
           }, [...c[7] || (c[7] = [
             e("i", { class: "pi pi-stop" }, null, -1)
-          ])], 8, Mh)
+          ])], 8, Bh)
         ], 64))
       ])
     ], 2));
   }
-}), qC = /* @__PURE__ */ A(Lh, [["__scopeId", "data-v-86250438"]]), zh = { class: "trx-ext-picker__name" }, Dh = { class: "trx-ext-picker__ext" }, Eh = {
+}), PC = /* @__PURE__ */ M(Ph, [["__scopeId", "data-v-86250438"]]), Mh = { class: "trx-ext-picker__name" }, Ah = { class: "trx-ext-picker__ext" }, Lh = {
   key: 1,
   class: "trx-ext-picker__placeholder"
-}, Rh = {
+}, zh = {
   key: 0,
   class: "trx-ext-picker__panel"
-}, Nh = { class: "trx-ext-picker__search-wrap" }, qh = {
+}, Dh = { class: "trx-ext-picker__search-wrap" }, Eh = {
   key: 0,
   class: "trx-ext-picker__loading"
-}, Fh = {
+}, Rh = {
   key: 1,
   class: "trx-ext-picker__list"
-}, Oh = ["onClick"], jh = { class: "trx-ext-picker__item-info" }, Hh = { class: "trx-ext-picker__item-name" }, Uh = { class: "trx-ext-picker__item-dept" }, Wh = { class: "trx-ext-picker__item-ext" }, Gh = {
+}, Nh = ["onClick"], qh = { class: "trx-ext-picker__item-info" }, Fh = { class: "trx-ext-picker__item-name" }, Oh = { class: "trx-ext-picker__item-dept" }, jh = { class: "trx-ext-picker__item-ext" }, Hh = {
   key: 0,
   class: "trx-ext-picker__empty"
-}, Kh = /* @__PURE__ */ g({
+}, Uh = /* @__PURE__ */ g({
   __name: "TrxExtensionPicker",
   props: {
     extensions: { default: () => [] },
@@ -7614,7 +7611,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "select"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(""), n = D(!1), c = S(
+    const r = t, i = a, l = z(""), n = z(!1), c = S(
       () => r.extensions.filter(
         (p) => !l.value || p.name.toLowerCase().includes(l.value.toLowerCase()) || p.extension.includes(l.value) || (p.department ?? "").toLowerCase().includes(l.value.toLowerCase())
       )
@@ -7626,32 +7623,32 @@ const ws = /* @__PURE__ */ g({
       i("update:modelValue", null), l.value = "";
     }
     return (p, m) => (s(), o("div", {
-      class: w(["trx-ext-picker", { open: n.value }])
+      class: y(["trx-ext-picker", { open: n.value }])
     }, [
       e("div", {
-        class: w(["trx-ext-picker__trigger", { disabled: t.disabled }]),
+        class: y(["trx-ext-picker__trigger", { disabled: t.disabled }]),
         onClick: m[0] || (m[0] = (x) => !t.disabled && (n.value = !n.value))
       }, [
         u.value ? (s(), o(V, { key: 0 }, [
           e("div", {
-            class: w(["trx-ext-picker__dot", u.value.available ? "on" : "off"])
+            class: y(["trx-ext-picker__dot", u.value.available ? "on" : "off"])
           }, null, 2),
-          e("span", zh, v(u.value.name), 1),
-          e("span", Dh, v(u.value.extension), 1),
+          e("span", Mh, v(u.value.name), 1),
+          e("span", Ah, v(u.value.extension), 1),
           e("button", {
             class: "trx-ext-picker__clear",
             onClick: H(d, ["stop"])
           }, [...m[2] || (m[2] = [
             e("i", { class: "pi pi-times" }, null, -1)
           ])])
-        ], 64)) : (s(), o("span", Eh, [
+        ], 64)) : (s(), o("span", Lh, [
           m[3] || (m[3] = e("i", { class: "pi pi-phone" }, null, -1)),
           N(" " + v(t.placeholder), 1)
         ])),
         m[4] || (m[4] = e("i", { class: "pi pi-chevron-down trx-ext-picker__arrow" }, null, -1))
       ], 2),
-      n.value ? (s(), o("div", Rh, [
-        e("div", Nh, [
+      n.value ? (s(), o("div", zh, [
+        e("div", Dh, [
           m[5] || (m[5] = e("i", { class: "pi pi-search trx-ext-picker__search-icon" }, null, -1)),
           Y(e("input", {
             "onUpdate:modelValue": m[1] || (m[1] = (x) => l.value = x),
@@ -7662,41 +7659,41 @@ const ws = /* @__PURE__ */ g({
             [J, l.value]
           ])
         ]),
-        t.loading ? (s(), o("div", qh, [...m[6] || (m[6] = [
+        t.loading ? (s(), o("div", Eh, [...m[6] || (m[6] = [
           e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
-        ])])) : (s(), o("div", Fh, [
+        ])])) : (s(), o("div", Rh, [
           (s(!0), o(V, null, b(c.value, (x) => (s(), o("div", {
             key: x.id,
-            class: w(["trx-ext-picker__item", { "trx-ext-picker__item--selected": t.modelValue === x.id }]),
+            class: y(["trx-ext-picker__item", { "trx-ext-picker__item--selected": t.modelValue === x.id }]),
             onClick: (f) => _(x)
           }, [
             e("div", {
-              class: w(["trx-ext-picker__dot", x.available ? "on" : "off"])
+              class: y(["trx-ext-picker__dot", x.available ? "on" : "off"])
             }, null, 2),
-            e("div", jh, [
-              e("span", Hh, v(x.name), 1),
-              e("span", Uh, v(x.department), 1)
+            e("div", qh, [
+              e("span", Fh, v(x.name), 1),
+              e("span", Oh, v(x.department), 1)
             ]),
-            e("span", Wh, v(x.extension), 1)
-          ], 10, Oh))), 128)),
-          c.value.length ? h("", !0) : (s(), o("div", Gh, "Nenhum resultado"))
+            e("span", jh, v(x.extension), 1)
+          ], 10, Nh))), 128)),
+          c.value.length ? h("", !0) : (s(), o("div", Hh, "Nenhum resultado"))
         ]))
       ])) : h("", !0)
     ], 2));
   }
-}), FC = /* @__PURE__ */ A(Kh, [["__scopeId", "data-v-0ff142eb"]]), Yh = { class: "trx-aht" }, Jh = { class: "trx-aht__header" }, Xh = { class: "trx-aht__label" }, Qh = { class: "trx-aht__target" }, Zh = { class: "trx-aht__value-row" }, t1 = { class: "trx-aht__bar-wrap" }, e1 = {
+}), MC = /* @__PURE__ */ M(Uh, [["__scopeId", "data-v-0ff142eb"]]), Wh = { class: "trx-aht" }, Gh = { class: "trx-aht__header" }, Kh = { class: "trx-aht__label" }, Yh = { class: "trx-aht__target" }, Jh = { class: "trx-aht__value-row" }, Xh = { class: "trx-aht__bar-wrap" }, Qh = {
   key: 0,
   class: "trx-aht__breakdown"
-}, s1 = {
+}, Zh = {
   key: 0,
   class: "trx-aht__seg"
-}, a1 = { class: "trx-aht__seg-val" }, l1 = {
+}, t1 = { class: "trx-aht__seg-val" }, e1 = {
   key: 1,
   class: "trx-aht__seg"
-}, n1 = { class: "trx-aht__seg-val" }, o1 = {
+}, s1 = { class: "trx-aht__seg-val" }, a1 = {
   key: 2,
   class: "trx-aht__seg"
-}, r1 = { class: "trx-aht__seg-val" }, i1 = /* @__PURE__ */ g({
+}, l1 = { class: "trx-aht__seg-val" }, n1 = /* @__PURE__ */ g({
   __name: "TrxAHTIndicator",
   props: {
     value: { default: 0 },
@@ -7714,26 +7711,26 @@ const ws = /* @__PURE__ */ g({
       return `${String(u).padStart(2, "0")}:${String(_).padStart(2, "0")}`;
     }
     const i = S(() => Math.min(a.value / (a.target || 1) * 100, 200)), l = S(() => i.value <= 80 ? "var(--trx-success-color)" : i.value <= 110 ? "var(--trx-warning-color)" : "var(--trx-danger-color)"), n = S(() => a.value - a.target);
-    return (c, u) => (s(), o("div", Yh, [
-      e("div", Jh, [
-        e("span", Xh, v(t.label), 1),
-        e("span", Qh, "Meta: " + v(r(t.target)), 1)
+    return (c, u) => (s(), o("div", Wh, [
+      e("div", Gh, [
+        e("span", Kh, v(t.label), 1),
+        e("span", Yh, "Meta: " + v(r(t.target)), 1)
       ]),
-      e("div", Zh, [
+      e("div", Jh, [
         e("span", {
           class: "trx-aht__value",
           style: R({ color: l.value })
         }, v(r(t.value)), 5),
         e("span", {
-          class: w(["trx-aht__delta", n.value > 0 ? "over" : "under"])
+          class: y(["trx-aht__delta", n.value > 0 ? "over" : "under"])
         }, [
           e("i", {
-            class: w(n.value > 0 ? "pi pi-arrow-up" : "pi pi-arrow-down")
+            class: y(n.value > 0 ? "pi pi-arrow-up" : "pi pi-arrow-down")
           }, null, 2),
           N(" " + v(r(Math.abs(n.value))), 1)
         ], 2)
       ]),
-      e("div", t1, [
+      e("div", Xh, [
         e("div", {
           class: "trx-aht__bar",
           style: R({ width: Math.min(i.value, 100) + "%", background: l.value })
@@ -7748,29 +7745,29 @@ const ws = /* @__PURE__ */ g({
           style: R({ width: i.value - 100 + "%", background: "var(--trx-danger-color)", opacity: 0.4 })
         }, null, 4)) : h("", !0)
       ]),
-      t.showBreakdown ? (s(), o("div", e1, [
-        t.talkTime !== void 0 ? (s(), o("div", s1, [
+      t.showBreakdown ? (s(), o("div", Qh, [
+        t.talkTime !== void 0 ? (s(), o("div", Zh, [
           u[1] || (u[1] = e("i", { class: "pi pi-phone" }, null, -1)),
           u[2] || (u[2] = e("span", null, "Fala", -1)),
-          e("span", a1, v(r(t.talkTime)), 1)
+          e("span", t1, v(r(t.talkTime)), 1)
         ])) : h("", !0),
-        t.holdTime !== void 0 ? (s(), o("div", l1, [
+        t.holdTime !== void 0 ? (s(), o("div", e1, [
           u[3] || (u[3] = e("i", { class: "pi pi-pause" }, null, -1)),
           u[4] || (u[4] = e("span", null, "Hold", -1)),
-          e("span", n1, v(r(t.holdTime)), 1)
+          e("span", s1, v(r(t.holdTime)), 1)
         ])) : h("", !0),
-        t.acwTime !== void 0 ? (s(), o("div", o1, [
+        t.acwTime !== void 0 ? (s(), o("div", a1, [
           u[5] || (u[5] = e("i", { class: "pi pi-file-edit" }, null, -1)),
           u[6] || (u[6] = e("span", null, "ACW", -1)),
-          e("span", r1, v(r(t.acwTime)), 1)
+          e("span", l1, v(r(t.acwTime)), 1)
         ])) : h("", !0)
       ])) : h("", !0)
     ]));
   }
-}), OC = /* @__PURE__ */ A(i1, [["__scopeId", "data-v-98b6df67"]]), c1 = { class: "trx-conf" }, u1 = { class: "trx-conf__header" }, d1 = { class: "trx-conf__header-info" }, _1 = { class: "trx-conf__count" }, p1 = { class: "trx-conf__participants" }, v1 = { class: "trx-conf__participant-avatar" }, m1 = {
+}), AC = /* @__PURE__ */ M(n1, [["__scopeId", "data-v-98b6df67"]]), o1 = { class: "trx-conf" }, r1 = { class: "trx-conf__header" }, i1 = { class: "trx-conf__header-info" }, c1 = { class: "trx-conf__count" }, u1 = { class: "trx-conf__participants" }, d1 = { class: "trx-conf__participant-avatar" }, _1 = {
   key: 0,
   class: "trx-conf__speaking-ring"
-}, f1 = { class: "trx-conf__participant-info" }, x1 = { class: "trx-conf__participant-name" }, h1 = { class: "trx-conf__participant-num" }, $1 = { class: "trx-conf__participant-dur" }, g1 = { class: "trx-conf__participant-actions" }, b1 = ["title", "onClick"], y1 = ["onClick"], k1 = { class: "trx-conf__controls" }, w1 = /* @__PURE__ */ g({
+}, p1 = { class: "trx-conf__participant-info" }, v1 = { class: "trx-conf__participant-name" }, m1 = { class: "trx-conf__participant-num" }, f1 = { class: "trx-conf__participant-dur" }, x1 = { class: "trx-conf__participant-actions" }, h1 = ["title", "onClick"], $1 = ["onClick"], g1 = { class: "trx-conf__controls" }, b1 = /* @__PURE__ */ g({
   __name: "TrxConferencePanel",
   props: {
     participants: { default: () => [] },
@@ -7785,13 +7782,13 @@ const ws = /* @__PURE__ */ g({
       const n = Math.floor(l / 60), c = l % 60;
       return `${String(n).padStart(2, "0")}:${String(c).padStart(2, "0")}`;
     }
-    return (l, n) => (s(), o("div", c1, [
-      e("div", u1, [
-        e("div", d1, [
+    return (l, n) => (s(), o("div", o1, [
+      e("div", r1, [
+        e("div", i1, [
           n[5] || (n[5] = e("i", { class: "pi pi-users trx-conf__icon" }, null, -1)),
           e("div", null, [
             n[4] || (n[4] = e("div", { class: "trx-conf__title" }, "Conferência", -1)),
-            e("div", _1, v(t.participants.length) + " participantes", 1)
+            e("div", c1, v(t.participants.length) + " participantes", 1)
           ])
         ]),
         e("button", {
@@ -7802,30 +7799,30 @@ const ws = /* @__PURE__ */ g({
           e("i", { class: "pi pi-plus" }, null, -1)
         ])])
       ]),
-      e("div", p1, [
+      e("div", u1, [
         (s(!0), o(V, null, b(t.participants, (c) => (s(), o("div", {
           key: c.id,
-          class: w(["trx-conf__participant", { "trx-conf__participant--speaking": c.speaking }])
+          class: y(["trx-conf__participant", { "trx-conf__participant--speaking": c.speaking }])
         }, [
-          e("div", v1, [
+          e("div", d1, [
             N(v(c.name[0]) + " ", 1),
-            c.speaking ? (s(), o("div", m1)) : h("", !0)
+            c.speaking ? (s(), o("div", _1)) : h("", !0)
           ]),
-          e("div", f1, [
-            e("span", x1, v(c.name), 1),
-            e("span", h1, v(c.number), 1)
+          e("div", p1, [
+            e("span", v1, v(c.name), 1),
+            e("span", m1, v(c.number), 1)
           ]),
-          e("span", $1, v(i(c.duration)), 1),
-          e("div", g1, [
+          e("span", f1, v(i(c.duration)), 1),
+          e("div", x1, [
             e("button", {
-              class: w(["trx-conf__p-btn", { muted: c.muted }]),
+              class: y(["trx-conf__p-btn", { muted: c.muted }]),
               title: c.muted ? "Ativar" : "Mutar",
               onClick: (u) => r("muteParticipant", c.id)
             }, [
               e("i", {
-                class: w(c.muted ? "pi pi-microphone-off" : "pi pi-microphone")
+                class: y(c.muted ? "pi pi-microphone-off" : "pi pi-microphone")
               }, null, 2)
-            ], 10, b1),
+            ], 10, h1),
             c.role !== "host" ? (s(), o("button", {
               key: 0,
               class: "trx-conf__p-btn trx-conf__p-btn--kick",
@@ -7833,22 +7830,22 @@ const ws = /* @__PURE__ */ g({
               onClick: (u) => r("kickParticipant", c.id)
             }, [...n[7] || (n[7] = [
               e("i", { class: "pi pi-times" }, null, -1)
-            ])], 8, y1)) : h("", !0)
+            ])], 8, $1)) : h("", !0)
           ])
         ], 2))), 128))
       ]),
-      e("div", k1, [
+      e("div", g1, [
         e("button", {
-          class: w(["trx-conf__ctrl-btn", { active: t.muted }]),
+          class: y(["trx-conf__ctrl-btn", { active: t.muted }]),
           title: "Mutar/Desmutar",
           onClick: n[1] || (n[1] = (c) => r("toggleMute"))
         }, [
           e("i", {
-            class: w(t.muted ? "pi pi-microphone-off" : "pi pi-microphone")
+            class: y(t.muted ? "pi pi-microphone-off" : "pi pi-microphone")
           }, null, 2)
         ], 2),
         e("button", {
-          class: w(["trx-conf__ctrl-btn", { active: t.onHold }]),
+          class: y(["trx-conf__ctrl-btn", { active: t.onHold }]),
           title: "Colocar em espera",
           onClick: n[2] || (n[2] = (c) => r("toggleHold"))
         }, [...n[8] || (n[8] = [
@@ -7867,10 +7864,10 @@ const ws = /* @__PURE__ */ g({
       ])
     ]));
   }
-}), jC = /* @__PURE__ */ A(w1, [["__scopeId", "data-v-a2f799aa"]]), T1 = { class: "trx-radar" }, C1 = ["width", "height", "viewBox"], S1 = ["points"], I1 = ["x1", "y1", "x2", "y2"], V1 = ["x", "y"], B1 = ["d", "fill"], P1 = ["d", "stroke"], A1 = ["cx", "cy", "fill"], M1 = {
+}), LC = /* @__PURE__ */ M(b1, [["__scopeId", "data-v-a2f799aa"]]), y1 = { class: "trx-radar" }, k1 = ["width", "height", "viewBox"], w1 = ["points"], T1 = ["x1", "y1", "x2", "y2"], C1 = ["x", "y"], S1 = ["d", "fill"], I1 = ["d", "stroke"], V1 = ["cx", "cy", "fill"], B1 = {
   key: 0,
   class: "trx-radar__legend"
-}, L1 = /* @__PURE__ */ g({
+}, P1 = /* @__PURE__ */ g({
   __name: "TrxRadarChart",
   props: {
     axes: { default: () => [] },
@@ -7886,43 +7883,43 @@ const ws = /* @__PURE__ */ g({
       return Math.PI * 2 * x / r.axes.length - Math.PI / 2;
     }
     function u(x, f) {
-      const T = x / r.levels * n.value, $ = c(f);
-      return [i.value + T * Math.cos($), l.value + T * Math.sin($)];
+      const k = x / r.levels * n.value, $ = c(f);
+      return [i.value + k * Math.cos($), l.value + k * Math.sin($)];
     }
     function _(x) {
-      const f = n.value + 14, T = c(x);
-      return [i.value + f * Math.cos(T), l.value + f * Math.sin(T)];
+      const f = n.value + 14, k = c(x);
+      return [i.value + f * Math.cos(k), l.value + f * Math.sin(k)];
     }
     function d(x) {
-      return x.map((f, T) => {
-        const $ = Math.min(f, r.max) / r.max * n.value, C = c(T);
+      return x.map((f, k) => {
+        const $ = Math.min(f, r.max) / r.max * n.value, C = c(k);
         return [i.value + $ * Math.cos(C), l.value + $ * Math.sin(C)];
       });
     }
     function p(x) {
-      return x.map((f, T) => `${T === 0 ? "M" : "L"}${f[0].toFixed(1)},${f[1].toFixed(1)}`).join(" ") + " Z";
+      return x.map((f, k) => `${k === 0 ? "M" : "L"}${f[0].toFixed(1)},${f[1].toFixed(1)}`).join(" ") + " Z";
     }
     const m = S(
       () => Array.from(
         { length: r.levels },
-        (x, f) => r.axes.map((T, $) => u(f + 1, $))
+        (x, f) => r.axes.map((k, $) => u(f + 1, $))
       )
     );
-    return (x, f) => (s(), o("div", T1, [
+    return (x, f) => (s(), o("div", y1, [
       (s(), o("svg", {
         width: t.size,
         height: t.size,
         viewBox: `0 0 ${t.size} ${t.size}`,
         style: { width: "100%", "max-width": "100%" }
       }, [
-        (s(!0), o(V, null, b(m.value, (T, $) => (s(), o("polygon", {
+        (s(!0), o(V, null, b(m.value, (k, $) => (s(), o("polygon", {
           key: $,
-          points: T.map((C) => C.join(",")).join(" "),
+          points: k.map((C) => C.join(",")).join(" "),
           fill: "none",
           stroke: "var(--trx-border-color)",
           "stroke-width": "1"
-        }, null, 8, S1))), 128)),
-        (s(!0), o(V, null, b(t.axes, (T, $) => (s(), o("line", {
+        }, null, 8, w1))), 128)),
+        (s(!0), o(V, null, b(t.axes, (k, $) => (s(), o("line", {
           key: $,
           x1: i.value,
           y1: l.value,
@@ -7930,8 +7927,8 @@ const ws = /* @__PURE__ */ g({
           y2: u(t.levels, $)[1],
           stroke: "var(--trx-border-color)",
           "stroke-width": "1"
-        }, null, 8, I1))), 128)),
-        (s(!0), o(V, null, b(t.axes, (T, $) => (s(), o("text", {
+        }, null, 8, T1))), 128)),
+        (s(!0), o(V, null, b(t.axes, (k, $) => (s(), o("text", {
           key: "l" + $,
           x: _($)[0],
           y: _($)[1],
@@ -7939,48 +7936,48 @@ const ws = /* @__PURE__ */ g({
           "dominant-baseline": "middle",
           "font-size": "10",
           fill: "var(--trx-text-secondary)"
-        }, v(T), 9, V1))), 128)),
-        (s(!0), o(V, null, b(t.datasets, (T, $) => (s(), o("g", { key: $ }, [
+        }, v(k), 9, C1))), 128)),
+        (s(!0), o(V, null, b(t.datasets, (k, $) => (s(), o("g", { key: $ }, [
           t.filled ? (s(), o("path", {
             key: 0,
-            d: p(d(T.data)),
-            fill: T.color ?? a[$ % a.length],
+            d: p(d(k.data)),
+            fill: k.color ?? a[$ % a.length],
             "fill-opacity": "0.15"
-          }, null, 8, B1)) : h("", !0),
+          }, null, 8, S1)) : h("", !0),
           e("path", {
-            d: p(d(T.data)),
+            d: p(d(k.data)),
             fill: "none",
-            stroke: T.color ?? a[$ % a.length],
+            stroke: k.color ?? a[$ % a.length],
             "stroke-width": "2",
             "stroke-linejoin": "round"
-          }, null, 8, P1),
-          (s(!0), o(V, null, b(T.data, (C, M) => (s(), o("circle", {
-            key: M,
-            cx: d(T.data)[M][0],
-            cy: d(T.data)[M][1],
+          }, null, 8, I1),
+          (s(!0), o(V, null, b(k.data, (C, A) => (s(), o("circle", {
+            key: A,
+            cx: d(k.data)[A][0],
+            cy: d(k.data)[A][1],
             r: "3",
-            fill: T.color ?? a[$ % a.length]
-          }, null, 8, A1))), 128))
+            fill: k.color ?? a[$ % a.length]
+          }, null, 8, V1))), 128))
         ]))), 128))
-      ], 8, C1)),
-      t.datasets.length > 1 ? (s(), o("div", M1, [
-        (s(!0), o(V, null, b(t.datasets, (T, $) => (s(), o("div", {
+      ], 8, k1)),
+      t.datasets.length > 1 ? (s(), o("div", B1, [
+        (s(!0), o(V, null, b(t.datasets, (k, $) => (s(), o("div", {
           key: $,
           class: "trx-radar__legend-item"
         }, [
           e("span", {
             class: "trx-radar__legend-dot",
-            style: R({ background: T.color ?? a[$ % a.length] })
+            style: R({ background: k.color ?? a[$ % a.length] })
           }, null, 4),
-          N(" " + v(T.label), 1)
+          N(" " + v(k.label), 1)
         ]))), 128))
       ])) : h("", !0)
     ]));
   }
-}), HC = /* @__PURE__ */ A(L1, [["__scopeId", "data-v-7ae6d64b"]]), z1 = { class: "trx-bullet" }, D1 = {
+}), zC = /* @__PURE__ */ M(P1, [["__scopeId", "data-v-7ae6d64b"]]), M1 = { class: "trx-bullet" }, A1 = {
   key: 0,
   class: "trx-bullet__label"
-}, E1 = { class: "trx-bullet__values" }, R1 = { class: "trx-bullet__val" }, N1 = { class: "trx-bullet__tgt" }, q1 = /* @__PURE__ */ g({
+}, L1 = { class: "trx-bullet__values" }, z1 = { class: "trx-bullet__val" }, D1 = { class: "trx-bullet__tgt" }, E1 = /* @__PURE__ */ g({
   __name: "TrxBulletChart",
   props: {
     items: { default: () => [] },
@@ -7998,12 +7995,12 @@ const ws = /* @__PURE__ */ g({
     function i(l) {
       return l.color ?? "var(--trx-accent-color)";
     }
-    return (l, n) => (s(), o("div", z1, [
+    return (l, n) => (s(), o("div", M1, [
       (s(!0), o(V, null, b(t.items, (c) => (s(), o("div", {
         key: c.label,
         class: "trx-bullet__row"
       }, [
-        t.showLabels ? (s(), o("div", D1, v(c.label), 1)) : h("", !0),
+        t.showLabels ? (s(), o("div", A1, v(c.label), 1)) : h("", !0),
         e("div", {
           class: "trx-bullet__chart",
           style: R({ height: t.height + "px" })
@@ -8029,14 +8026,14 @@ const ws = /* @__PURE__ */ g({
             style: R({ left: a(c.target, r(c)) + "%" })
           }, null, 4)
         ], 4),
-        e("div", E1, [
-          e("span", R1, v(c.value) + v(t.unit), 1),
-          e("span", N1, "/ " + v(c.target) + v(t.unit), 1)
+        e("div", L1, [
+          e("span", z1, v(c.value) + v(t.unit), 1),
+          e("span", D1, "/ " + v(c.target) + v(t.unit), 1)
         ])
       ]))), 128))
     ]));
   }
-}), UC = /* @__PURE__ */ A(q1, [["__scopeId", "data-v-f642af30"]]), F1 = { class: "trx-waterfall" }, O1 = ["viewBox", "height"], j1 = ["x1", "y1", "x2", "y2"], H1 = ["x", "y"], U1 = ["x1", "y1", "x2", "y2"], W1 = ["x", "y", "width", "height", "fill"], G1 = ["x1", "y1", "x2", "y2"], K1 = ["x", "y"], Y1 = ["x", "y", "fill"], vt = 600, J1 = /* @__PURE__ */ g({
+}), DC = /* @__PURE__ */ M(E1, [["__scopeId", "data-v-f642af30"]]), R1 = { class: "trx-waterfall" }, N1 = ["viewBox", "height"], q1 = ["x1", "y1", "x2", "y2"], F1 = ["x", "y"], O1 = ["x1", "y1", "x2", "y2"], j1 = ["x", "y", "width", "height", "fill"], H1 = ["x1", "y1", "x2", "y2"], U1 = ["x", "y"], W1 = ["x", "y", "fill"], vt = 600, G1 = /* @__PURE__ */ g({
   __name: "TrxWaterfallChart",
   props: {
     items: { default: () => [] },
@@ -8049,29 +8046,29 @@ const ws = /* @__PURE__ */ g({
   setup(t) {
     const a = t, r = { top: 20, right: 16, bottom: 36, left: 50 }, i = S(() => vt - r.left - r.right), l = S(() => a.height - r.top - r.bottom), n = S(() => {
       let f = 0;
-      return a.items.map((T) => {
-        if (T.isTotal) {
-          const C = f + T.value;
-          return { ...T, start: 0, end: C, running: f };
+      return a.items.map((k) => {
+        if (k.isTotal) {
+          const C = f + k.value;
+          return { ...k, start: 0, end: C, running: f };
         }
         const $ = f;
-        return f += T.value, { ...T, start: $, end: f, running: f };
+        return f += k.value, { ...k, start: $, end: f, running: f };
       });
     }), c = S(() => n.value.flatMap((f) => [f.start, f.end])), u = S(() => Math.min(...c.value, 0)), _ = S(() => Math.max(...c.value, 1)), d = S(() => i.value / a.items.length * 0.6);
     function p(f) {
       return r.top + l.value - (f - u.value) / (_.value - u.value) * l.value;
     }
     function m(f) {
-      const T = i.value / a.items.length;
-      return r.left + f * T + (T - d.value) / 2;
+      const k = i.value / a.items.length;
+      return r.left + f * k + (k - d.value) / 2;
     }
     const x = S(
-      () => Array.from({ length: 5 }, (f, T) => {
-        const $ = u.value + T / 4 * (_.value - u.value);
+      () => Array.from({ length: 5 }, (f, k) => {
+        const $ = u.value + k / 4 * (_.value - u.value);
         return { v: Math.round($), y: p($) };
       })
     );
-    return (f, T) => (s(), o("div", F1, [
+    return (f, k) => (s(), o("div", R1, [
       (s(), o("svg", {
         viewBox: `0 0 ${vt} ${t.height}`,
         height: t.height,
@@ -8086,7 +8083,7 @@ const ws = /* @__PURE__ */ g({
           y2: $.y,
           stroke: "var(--trx-border-color)",
           "stroke-width": "1"
-        }, null, 8, j1))), 128)),
+        }, null, 8, q1))), 128)),
         (s(!0), o(V, null, b(x.value, ($) => (s(), o("text", {
           key: "l" + $.v,
           x: r.left - 6,
@@ -8094,7 +8091,7 @@ const ws = /* @__PURE__ */ g({
           "text-anchor": "end",
           "font-size": "10",
           fill: "var(--trx-text-secondary)"
-        }, v($.v), 9, H1))), 128)),
+        }, v($.v), 9, F1))), 128)),
         e("line", {
           x1: r.left,
           y1: p(0),
@@ -8102,7 +8099,7 @@ const ws = /* @__PURE__ */ g({
           y2: p(0),
           stroke: "var(--trx-text-secondary)",
           "stroke-width": "1.5"
-        }, null, 8, U1),
+        }, null, 8, O1),
         (s(!0), o(V, null, b(n.value, ($, C) => (s(), o("g", { key: C }, [
           e("rect", {
             x: m(C),
@@ -8111,7 +8108,7 @@ const ws = /* @__PURE__ */ g({
             height: Math.abs(p($.start) - p($.end)),
             fill: $.isTotal ? t.totalColor : $.value >= 0 ? t.positiveColor : t.negativeColor,
             rx: "2"
-          }, null, 8, W1),
+          }, null, 8, j1),
           C < n.value.length - 1 && !$.isTotal && !n.value[C + 1].isTotal ? (s(), o("line", {
             key: 0,
             x1: m(C) + d.value,
@@ -8121,41 +8118,41 @@ const ws = /* @__PURE__ */ g({
             stroke: "var(--trx-border-color)",
             "stroke-width": "1",
             "stroke-dasharray": "3,3"
-          }, null, 8, G1)) : h("", !0),
+          }, null, 8, H1)) : h("", !0),
           e("text", {
             x: m(C) + d.value / 2,
             y: r.top + l.value + 18,
             "text-anchor": "middle",
             "font-size": "10",
             fill: "var(--trx-text-secondary)"
-          }, v($.label), 9, K1),
+          }, v($.label), 9, U1),
           e("text", {
             x: m(C) + d.value / 2,
             y: Math.min(p($.start), p($.end)) - 4,
             "text-anchor": "middle",
             "font-size": "9",
             fill: $.isTotal ? t.totalColor : $.value >= 0 ? t.positiveColor : t.negativeColor
-          }, v($.value > 0 ? "+" : "") + v($.value), 9, Y1)
+          }, v($.value > 0 ? "+" : "") + v($.value), 9, W1)
         ]))), 128))
-      ], 8, O1))
+      ], 8, N1))
     ]));
   }
-}), WC = /* @__PURE__ */ A(J1, [["__scopeId", "data-v-246079c5"]]), X1 = { class: "trx-hbar" }, Q1 = {
+}), EC = /* @__PURE__ */ M(G1, [["__scopeId", "data-v-246079c5"]]), K1 = { class: "trx-hbar" }, Y1 = {
   key: 0,
   class: "trx-hbar__loading"
-}, Z1 = {
+}, J1 = {
   key: 1,
   class: "trx-hbar__empty"
-}, t$ = {
+}, X1 = {
   key: 2,
   class: "trx-hbar__list"
-}, e$ = { class: "trx-hbar__label-row" }, s$ = { class: "trx-hbar__label" }, a$ = {
+}, Q1 = { class: "trx-hbar__label-row" }, Z1 = { class: "trx-hbar__label" }, t$ = {
   key: 0,
   class: "trx-hbar__values"
-}, l$ = {
+}, e$ = {
   key: 0,
   class: "trx-hbar__target-val"
-}, n$ = { class: "trx-hbar__track" }, o$ = /* @__PURE__ */ g({
+}, s$ = { class: "trx-hbar__track" }, a$ = /* @__PURE__ */ g({
   __name: "TrxHorizontalBar",
   props: {
     items: { default: () => [] },
@@ -8170,25 +8167,25 @@ const ws = /* @__PURE__ */ g({
     function r(i, l) {
       return l ?? Math.max(...i.map((n) => Math.max(n.value, n.target ?? 0)), 1);
     }
-    return (i, l) => (s(), o("div", X1, [
-      t.loading ? (s(), o("div", Q1, [...l[0] || (l[0] = [
+    return (i, l) => (s(), o("div", K1, [
+      t.loading ? (s(), o("div", Y1, [...l[0] || (l[0] = [
         e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
-      ])])) : t.items.length ? (s(), o("div", t$, [
+      ])])) : t.items.length ? (s(), o("div", X1, [
         (s(!0), o(V, null, b(t.items, (n, c) => (s(), o("div", {
           key: n.label,
           class: "trx-hbar__item"
         }, [
-          e("div", e$, [
-            e("span", s$, v(n.label), 1),
-            t.showValues ? (s(), o("div", a$, [
+          e("div", Q1, [
+            e("span", Z1, v(n.label), 1),
+            t.showValues ? (s(), o("div", t$, [
               e("span", {
                 class: "trx-hbar__value",
                 style: R({ color: n.color ?? a[c % a.length] })
               }, v(n.value.toLocaleString("pt-BR")) + v(t.unit), 5),
-              t.showTarget && n.target ? (s(), o("span", l$, "/ " + v(n.target) + v(t.unit), 1)) : h("", !0)
+              t.showTarget && n.target ? (s(), o("span", e$, "/ " + v(n.target) + v(t.unit), 1)) : h("", !0)
             ])) : h("", !0)
           ]),
-          e("div", n$, [
+          e("div", s$, [
             e("div", {
               class: "trx-hbar__fill",
               style: R({
@@ -8203,13 +8200,13 @@ const ws = /* @__PURE__ */ g({
             }, null, 4)) : h("", !0)
           ])
         ]))), 128))
-      ])) : (s(), o("div", Z1, "Sem dados"))
+      ])) : (s(), o("div", J1, "Sem dados"))
     ]));
   }
-}), GC = /* @__PURE__ */ A(o$, [["__scopeId", "data-v-699106b6"]]), r$ = { class: "trx-scatter" }, i$ = ["viewBox", "height"], c$ = ["x1", "y1", "x2", "y2"], u$ = ["x1", "y1", "x2", "y2"], d$ = ["x", "y"], _$ = ["x", "y"], p$ = ["cx", "cy", "r", "fill"], v$ = { key: 0 }, m$ = ["x", "y"], f$ = {
+}), RC = /* @__PURE__ */ M(a$, [["__scopeId", "data-v-699106b6"]]), l$ = { class: "trx-scatter" }, n$ = ["viewBox", "height"], o$ = ["x1", "y1", "x2", "y2"], r$ = ["x1", "y1", "x2", "y2"], i$ = ["x", "y"], c$ = ["x", "y"], u$ = ["cx", "cy", "r", "fill"], d$ = { key: 0 }, _$ = ["x", "y"], p$ = {
   key: 0,
   class: "trx-scatter__legend"
-}, mt = 600, x$ = /* @__PURE__ */ g({
+}, mt = 600, v$ = /* @__PURE__ */ g({
   __name: "TrxScatterChart",
   props: {
     datasets: { default: () => [] },
@@ -8220,21 +8217,21 @@ const ws = /* @__PURE__ */ g({
     showTooltip: { type: Boolean }
   },
   setup(t) {
-    const a = ["var(--trx-accent-color)", "#f472b6", "#60a5fa", "#fb923c", "#a78bfa"], r = t, i = { top: 16, right: 16, bottom: 36, left: 44 }, l = S(() => mt - i.left - i.right), n = S(() => r.height - i.top - i.bottom), c = S(() => r.datasets.flatMap((C) => C.data.map((M) => M.x))), u = S(() => r.datasets.flatMap((C) => C.data.map((M) => M.y))), _ = S(() => Math.min(...c.value, 0)), d = S(() => Math.max(...c.value, 1)), p = S(() => Math.min(...u.value, 0)), m = S(() => Math.max(...u.value, 1));
+    const a = ["var(--trx-accent-color)", "#f472b6", "#60a5fa", "#fb923c", "#a78bfa"], r = t, i = { top: 16, right: 16, bottom: 36, left: 44 }, l = S(() => mt - i.left - i.right), n = S(() => r.height - i.top - i.bottom), c = S(() => r.datasets.flatMap((C) => C.data.map((A) => A.x))), u = S(() => r.datasets.flatMap((C) => C.data.map((A) => A.y))), _ = S(() => Math.min(...c.value, 0)), d = S(() => Math.max(...c.value, 1)), p = S(() => Math.min(...u.value, 0)), m = S(() => Math.max(...u.value, 1));
     function x(C) {
       return i.left + (C - _.value) / (d.value - _.value) * l.value;
     }
     function f(C) {
       return i.top + n.value - (C - p.value) / (m.value - p.value) * n.value;
     }
-    const T = S(() => Array.from({ length: 5 }, (C, M) => {
-      const E = _.value + M / 4 * (d.value - _.value);
+    const k = S(() => Array.from({ length: 5 }, (C, A) => {
+      const E = _.value + A / 4 * (d.value - _.value);
       return { v: Math.round(E), x: x(E) };
-    })), $ = S(() => Array.from({ length: 5 }, (C, M) => {
-      const E = p.value + M / 4 * (m.value - p.value);
+    })), $ = S(() => Array.from({ length: 5 }, (C, A) => {
+      const E = p.value + A / 4 * (m.value - p.value);
       return { v: Math.round(E), y: f(E) };
     }));
-    return (C, M) => (s(), o("div", r$, [
+    return (C, A) => (s(), o("div", l$, [
       (s(), o("svg", {
         viewBox: `0 0 ${mt} ${t.height}`,
         height: t.height,
@@ -8250,8 +8247,8 @@ const ws = /* @__PURE__ */ g({
             y2: E.y,
             stroke: "var(--trx-border-color)",
             "stroke-width": "1"
-          }, null, 8, c$))), 128)),
-          (s(!0), o(V, null, b(T.value, (E) => (s(), o("line", {
+          }, null, 8, o$))), 128)),
+          (s(!0), o(V, null, b(k.value, (E) => (s(), o("line", {
             key: "gx" + E.v,
             x1: E.x,
             y1: i.top,
@@ -8259,7 +8256,7 @@ const ws = /* @__PURE__ */ g({
             y2: i.top + n.value,
             stroke: "var(--trx-border-color)",
             "stroke-width": "1"
-          }, null, 8, u$))), 128))
+          }, null, 8, r$))), 128))
         ], 64)) : h("", !0),
         (s(!0), o(V, null, b($.value, (E) => (s(), o("text", {
           key: "yl" + E.v,
@@ -8268,15 +8265,15 @@ const ws = /* @__PURE__ */ g({
           "text-anchor": "end",
           "font-size": "10",
           fill: "var(--trx-text-secondary)"
-        }, v(E.v), 9, d$))), 128)),
-        (s(!0), o(V, null, b(T.value, (E) => (s(), o("text", {
+        }, v(E.v), 9, i$))), 128)),
+        (s(!0), o(V, null, b(k.value, (E) => (s(), o("text", {
           key: "xl" + E.v,
           x: E.x,
           y: i.top + n.value + 18,
           "text-anchor": "middle",
           "font-size": "10",
           fill: "var(--trx-text-secondary)"
-        }, v(E.v), 9, _$))), 128)),
+        }, v(E.v), 9, c$))), 128)),
         (s(!0), o(V, null, b(t.datasets, (E, F) => (s(), o("g", { key: F }, [
           (s(!0), o(V, null, b(E.data, (q, K) => (s(), o("circle", {
             key: K,
@@ -8286,8 +8283,8 @@ const ws = /* @__PURE__ */ g({
             fill: E.color ?? a[F % a.length],
             "fill-opacity": "0.8"
           }, [
-            q.label ? (s(), o("title", v$, v(q.label) + ": (" + v(q.x) + ", " + v(q.y) + ")", 1)) : h("", !0)
-          ], 8, p$))), 128))
+            q.label ? (s(), o("title", d$, v(q.label) + ": (" + v(q.x) + ", " + v(q.y) + ")", 1)) : h("", !0)
+          ], 8, u$))), 128))
         ]))), 128)),
         t.xLabel ? (s(), o("text", {
           key: 1,
@@ -8296,9 +8293,9 @@ const ws = /* @__PURE__ */ g({
           "text-anchor": "middle",
           "font-size": "10",
           fill: "var(--trx-text-secondary)"
-        }, v(t.xLabel), 9, m$)) : h("", !0)
-      ], 8, i$)),
-      t.datasets.length > 1 ? (s(), o("div", f$, [
+        }, v(t.xLabel), 9, _$)) : h("", !0)
+      ], 8, n$)),
+      t.datasets.length > 1 ? (s(), o("div", p$, [
         (s(!0), o(V, null, b(t.datasets, (E, F) => (s(), o("div", {
           key: F,
           class: "trx-scatter__legend-item"
@@ -8312,10 +8309,10 @@ const ws = /* @__PURE__ */ g({
       ])) : h("", !0)
     ]));
   }
-}), KC = /* @__PURE__ */ A(x$, [["__scopeId", "data-v-6225f708"]]), h$ = { class: "trx-pie" }, $$ = ["width", "height", "viewBox"], g$ = ["d", "fill"], b$ = ["x", "y"], y$ = {
+}), NC = /* @__PURE__ */ M(v$, [["__scopeId", "data-v-6225f708"]]), m$ = { class: "trx-pie" }, f$ = ["width", "height", "viewBox"], x$ = ["d", "fill"], h$ = ["x", "y"], $$ = {
   key: 0,
   class: "trx-pie__legend"
-}, k$ = { class: "trx-pie__legend-label" }, w$ = { class: "trx-pie__legend-pct" }, T$ = /* @__PURE__ */ g({
+}, g$ = { class: "trx-pie__legend-label" }, b$ = { class: "trx-pie__legend-pct" }, y$ = /* @__PURE__ */ g({
   __name: "TrxPieChart",
   props: {
     slices: { default: () => [] },
@@ -8329,18 +8326,18 @@ const ws = /* @__PURE__ */ g({
       return r.slices.map((d, p) => {
         const m = d.value / c.value, x = m * 2 * Math.PI, f = _;
         _ += x;
-        const T = i.value + n.value * Math.cos(f), $ = l.value + n.value * Math.sin(f), C = i.value + n.value * Math.cos(_), M = l.value + n.value * Math.sin(_), E = x > Math.PI ? 1 : 0, F = f + x / 2;
+        const k = i.value + n.value * Math.cos(f), $ = l.value + n.value * Math.sin(f), C = i.value + n.value * Math.cos(_), A = l.value + n.value * Math.sin(_), E = x > Math.PI ? 1 : 0, F = f + x / 2;
         return {
           ...d,
           color: d.color ?? a[p % a.length],
           pct: Math.round(m * 100),
-          d: `M ${i.value} ${l.value} L ${T} ${$} A ${n.value} ${n.value} 0 ${E} 1 ${C} ${M} Z`,
+          d: `M ${i.value} ${l.value} L ${k} ${$} A ${n.value} ${n.value} 0 ${E} 1 ${C} ${A} Z`,
           labelX: i.value + n.value * 0.65 * Math.cos(F),
           labelY: l.value + n.value * 0.65 * Math.sin(F)
         };
       });
     });
-    return (_, d) => (s(), o("div", h$, [
+    return (_, d) => (s(), o("div", m$, [
       (s(), o("svg", {
         width: t.size,
         height: t.size,
@@ -8355,7 +8352,7 @@ const ws = /* @__PURE__ */ g({
           "stroke-width": "2"
         }, [
           e("title", null, v(p.label) + ": " + v(p.pct) + "%", 1)
-        ], 8, g$))), 128)),
+        ], 8, x$))), 128)),
         t.showLabels ? (s(!0), o(V, { key: 0 }, b(u.value.filter((p) => p.pct > 8), (p, m) => (s(), o("text", {
           key: "l" + m,
           x: p.labelX,
@@ -8365,9 +8362,9 @@ const ws = /* @__PURE__ */ g({
           "font-size": "11",
           "font-weight": "700",
           fill: "white"
-        }, v(p.pct) + "%", 9, b$))), 128)) : h("", !0)
-      ], 8, $$)),
-      t.showLegend ? (s(), o("div", y$, [
+        }, v(p.pct) + "%", 9, h$))), 128)) : h("", !0)
+      ], 8, f$)),
+      t.showLegend ? (s(), o("div", $$, [
         (s(!0), o(V, null, b(u.value, (p, m) => (s(), o("div", {
           key: m,
           class: "trx-pie__legend-item"
@@ -8376,19 +8373,19 @@ const ws = /* @__PURE__ */ g({
             class: "trx-pie__legend-dot",
             style: R({ background: p.color })
           }, null, 4),
-          e("span", k$, v(p.label), 1),
-          e("span", w$, v(p.pct) + "%", 1)
+          e("span", g$, v(p.label), 1),
+          e("span", b$, v(p.pct) + "%", 1)
         ]))), 128))
       ])) : h("", !0)
     ]));
   }
-}), YC = /* @__PURE__ */ A(T$, [["__scopeId", "data-v-a92927e0"]]), C$ = {
+}), qC = /* @__PURE__ */ M(y$, [["__scopeId", "data-v-a92927e0"]]), k$ = {
   key: 0,
   class: "trx-typing__name"
-}, S$ = {
+}, w$ = {
   key: 1,
   class: "trx-typing__text"
-}, I$ = /* @__PURE__ */ g({
+}, T$ = /* @__PURE__ */ g({
   __name: "TrxTypingIndicator",
   props: {
     name: {},
@@ -8400,7 +8397,7 @@ const ws = /* @__PURE__ */ g({
       default: B(() => [
         t.visible ? (s(), o("div", {
           key: 0,
-          class: w(["trx-typing", `trx-typing--${t.variant}`])
+          class: y(["trx-typing", `trx-typing--${t.variant}`])
         }, [
           t.variant === "bubble" ? (s(), o(V, { key: 0 }, [
             r[0] || (r[0] = e("div", { class: "trx-typing__bubble" }, [
@@ -8408,8 +8405,8 @@ const ws = /* @__PURE__ */ g({
               e("span", { class: "trx-typing__dot" }),
               e("span", { class: "trx-typing__dot" })
             ], -1)),
-            t.name ? (s(), o("span", C$, v(t.name) + " está digitando...", 1)) : h("", !0)
-          ], 64)) : (s(), o("span", S$, [
+            t.name ? (s(), o("span", k$, v(t.name) + " está digitando...", 1)) : h("", !0)
+          ], 64)) : (s(), o("span", w$, [
             N(v(t.name ? `${t.name} está digitando` : "Digitando") + " ", 1),
             r[1] || (r[1] = e("span", { class: "trx-typing__ellipsis" }, [
               e("span", null, "."),
@@ -8422,7 +8419,7 @@ const ws = /* @__PURE__ */ g({
       _: 1
     }));
   }
-}), JC = /* @__PURE__ */ A(I$, [["__scopeId", "data-v-04651ca9"]]), V$ = { class: "trx-quick-replies" }, B$ = ["disabled", "onClick"], P$ = /* @__PURE__ */ g({
+}), FC = /* @__PURE__ */ M(T$, [["__scopeId", "data-v-04651ca9"]]), C$ = { class: "trx-quick-replies" }, S$ = ["disabled", "onClick"], I$ = /* @__PURE__ */ g({
   __name: "TrxQuickReplies",
   props: {
     replies: { default: () => [] },
@@ -8431,22 +8428,22 @@ const ws = /* @__PURE__ */ g({
   emits: ["select"],
   setup(t, { emit: a }) {
     const r = a;
-    return (i, l) => (s(), o("div", V$, [
+    return (i, l) => (s(), o("div", C$, [
       (s(!0), o(V, null, b(t.replies, (n) => (s(), o("button", {
         key: n.id,
         class: "trx-quick-replies__btn",
         disabled: t.disabled,
         onClick: (c) => r("select", n)
-      }, v(n.label), 9, B$))), 128))
+      }, v(n.label), 9, S$))), 128))
     ]));
   }
-}), XC = /* @__PURE__ */ A(P$, [["__scopeId", "data-v-082e109e"]]), A$ = { class: "trx-canned__search-wrap" }, M$ = ["placeholder"], L$ = { class: "trx-canned__list" }, z$ = ["onClick", "onMouseenter"], D$ = { class: "trx-canned__shortcut" }, E$ = { class: "trx-canned__info" }, R$ = { class: "trx-canned__title" }, N$ = { class: "trx-canned__preview" }, q$ = {
+}), OC = /* @__PURE__ */ M(I$, [["__scopeId", "data-v-082e109e"]]), V$ = { class: "trx-canned__search-wrap" }, B$ = ["placeholder"], P$ = { class: "trx-canned__list" }, M$ = ["onClick", "onMouseenter"], A$ = { class: "trx-canned__shortcut" }, L$ = { class: "trx-canned__info" }, z$ = { class: "trx-canned__title" }, D$ = { class: "trx-canned__preview" }, E$ = {
   key: 0,
   class: "trx-canned__cat"
-}, F$ = {
+}, R$ = {
   key: 0,
   class: "trx-canned__empty"
-}, O$ = /* @__PURE__ */ g({
+}, N$ = /* @__PURE__ */ g({
   __name: "TrxCannedResponses",
   props: {
     responses: { default: () => [] },
@@ -8455,7 +8452,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "select"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(""), n = D(0), c = S(
+    const r = t, i = a, l = z(""), n = z(0), c = S(
       () => r.responses.filter(
         (d) => !l.value || d.shortcut.includes(l.value) || d.title.toLowerCase().includes(l.value.toLowerCase()) || d.content.toLowerCase().includes(l.value.toLowerCase())
       )
@@ -8471,7 +8468,7 @@ const ws = /* @__PURE__ */ g({
       class: "trx-canned",
       onKeydown: _
     }, [
-      e("div", A$, [
+      e("div", V$, [
         p[4] || (p[4] = e("i", { class: "pi pi-search trx-canned__search-icon" }, null, -1)),
         Y(e("input", {
           "onUpdate:modelValue": p[0] || (p[0] = (m) => l.value = m),
@@ -8479,7 +8476,7 @@ const ws = /* @__PURE__ */ g({
           placeholder: `Buscar resposta (${t.trigger}...)`,
           autofocus: "",
           onInput: p[1] || (p[1] = (m) => n.value = 0)
-        }, null, 40, M$), [
+        }, null, 40, B$), [
           [J, l.value]
         ]),
         e("button", {
@@ -8489,45 +8486,45 @@ const ws = /* @__PURE__ */ g({
           e("i", { class: "pi pi-times" }, null, -1)
         ])])
       ]),
-      e("div", L$, [
+      e("div", P$, [
         (s(!0), o(V, null, b(c.value, (m, x) => (s(), o("div", {
           key: m.id,
-          class: w(["trx-canned__item", { "trx-canned__item--highlighted": x === n.value }]),
+          class: y(["trx-canned__item", { "trx-canned__item--highlighted": x === n.value }]),
           onClick: (f) => u(m),
           onMouseenter: (f) => n.value = x
         }, [
-          e("code", D$, v(m.shortcut), 1),
-          e("div", E$, [
-            e("span", R$, v(m.title), 1),
-            e("span", N$, v(m.content), 1)
+          e("code", A$, v(m.shortcut), 1),
+          e("div", L$, [
+            e("span", z$, v(m.title), 1),
+            e("span", D$, v(m.content), 1)
           ]),
-          m.category ? (s(), o("span", q$, v(m.category), 1)) : h("", !0)
-        ], 42, z$))), 128)),
-        c.value.length ? h("", !0) : (s(), o("div", F$, "Nenhuma resposta encontrada"))
+          m.category ? (s(), o("span", E$, v(m.category), 1)) : h("", !0)
+        ], 42, M$))), 128)),
+        c.value.length ? h("", !0) : (s(), o("div", R$, "Nenhuma resposta encontrada"))
       ])
     ], 32)) : h("", !0);
   }
-}), QC = /* @__PURE__ */ A(O$, [["__scopeId", "data-v-b64dd5e1"]]), j$ = { class: "trx-email" }, H$ = { class: "trx-email__field" }, U$ = { class: "trx-email__chips" }, W$ = ["onClick"], G$ = {
+}), jC = /* @__PURE__ */ M(N$, [["__scopeId", "data-v-b64dd5e1"]]), q$ = { class: "trx-email" }, F$ = { class: "trx-email__field" }, O$ = { class: "trx-email__chips" }, j$ = ["onClick"], H$ = {
   key: 0,
   class: "trx-email__field"
-}, K$ = { class: "trx-email__chips" }, Y$ = ["onClick"], J$ = { class: "trx-email__field" }, X$ = { class: "trx-email__footer" }, Q$ = { class: "trx-email__footer-left" }, Z$ = {
+}, U$ = { class: "trx-email__chips" }, W$ = ["onClick"], G$ = { class: "trx-email__field" }, K$ = { class: "trx-email__footer" }, Y$ = { class: "trx-email__footer-left" }, J$ = {
   class: "trx-email__attach-btn",
   title: "Anexar arquivo"
-}, tg = {
+}, X$ = {
   key: 0,
   class: "trx-email__attach-count"
-}, eg = { class: "trx-email__footer-right" }, sg = ["disabled"], ag = /* @__PURE__ */ g({
+}, Q$ = { class: "trx-email__footer-right" }, Z$ = ["disabled"], tg = /* @__PURE__ */ g({
   __name: "TrxEmailComposer",
   emits: ["send", "discard"],
   setup(t, { emit: a }) {
-    const r = D({ to: [], cc: [], subject: "", body: "" }), i = D(""), l = D(""), n = D(!1), c = D(!1), u = a;
+    const r = z({ to: [], cc: [], subject: "", body: "" }), i = z(""), l = z(""), n = z(!1), c = z(!1), u = a;
     function _(x, f) {
-      const T = f.value.trim();
-      T && T.includes("@") && (r.value[x] = [...r.value[x] ?? [], T], f.value = "", x === "to" ? i.value = "" : l.value = "");
+      const k = f.value.trim();
+      k && k.includes("@") && (r.value[x] = [...r.value[x] ?? [], k], f.value = "", x === "to" ? i.value = "" : l.value = "");
     }
     function d(x, f) {
-      const T = [...r.value[x] ?? []];
-      T.splice(f, 1), r.value[x] = T;
+      const k = [...r.value[x] ?? []];
+      k.splice(f, 1), r.value[x] = k;
     }
     async function p() {
       c.value = !0, u("send", { ...r.value }), c.value = !1;
@@ -8537,11 +8534,11 @@ const ws = /* @__PURE__ */ g({
       f && (r.value.attachments = [...r.value.attachments ?? [], ...Array.from(f)]);
     }
     return (x, f) => {
-      var T;
-      return s(), o("div", j$, [
-        e("div", H$, [
+      var k;
+      return s(), o("div", q$, [
+        e("div", F$, [
           f[12] || (f[12] = e("label", { class: "trx-email__label" }, "Para", -1)),
-          e("div", U$, [
+          e("div", O$, [
             (s(!0), o(V, null, b(r.value.to, ($, C) => (s(), o("span", {
               key: C,
               class: "trx-email__chip"
@@ -8549,10 +8546,10 @@ const ws = /* @__PURE__ */ g({
               N(v($) + " ", 1),
               e("button", {
                 class: "trx-email__chip-remove",
-                onClick: (M) => d("to", C)
+                onClick: (A) => d("to", C)
               }, [...f[11] || (f[11] = [
                 e("i", { class: "pi pi-times" }, null, -1)
-              ])], 8, W$)
+              ])], 8, j$)
             ]))), 128)),
             Y(e("input", {
               "onUpdate:modelValue": f[0] || (f[0] = ($) => i.value = $),
@@ -8573,9 +8570,9 @@ const ws = /* @__PURE__ */ g({
             onClick: f[4] || (f[4] = ($) => n.value = !0)
           }, "CC"))
         ]),
-        n.value ? (s(), o("div", G$, [
+        n.value ? (s(), o("div", H$, [
           f[14] || (f[14] = e("label", { class: "trx-email__label" }, "CC", -1)),
-          e("div", K$, [
+          e("div", U$, [
             (s(!0), o(V, null, b(r.value.cc, ($, C) => (s(), o("span", {
               key: C,
               class: "trx-email__chip"
@@ -8583,10 +8580,10 @@ const ws = /* @__PURE__ */ g({
               N(v($) + " ", 1),
               e("button", {
                 class: "trx-email__chip-remove",
-                onClick: (M) => d("cc", C)
+                onClick: (A) => d("cc", C)
               }, [...f[13] || (f[13] = [
                 e("i", { class: "pi pi-times" }, null, -1)
-              ])], 8, Y$)
+              ])], 8, W$)
             ]))), 128)),
             Y(e("input", {
               "onUpdate:modelValue": f[5] || (f[5] = ($) => l.value = $),
@@ -8601,7 +8598,7 @@ const ws = /* @__PURE__ */ g({
             ])
           ])
         ])) : h("", !0),
-        e("div", J$, [
+        e("div", G$, [
           f[15] || (f[15] = e("label", { class: "trx-email__label" }, "Assunto", -1)),
           Y(e("input", {
             "onUpdate:modelValue": f[8] || (f[8] = ($) => r.value.subject = $),
@@ -8619,9 +8616,9 @@ const ws = /* @__PURE__ */ g({
         }, null, 512), [
           [J, r.value.body]
         ]),
-        e("div", X$, [
-          e("div", Q$, [
-            e("label", Z$, [
+        e("div", K$, [
+          e("div", Y$, [
+            e("label", J$, [
               f[16] || (f[16] = e("i", { class: "pi pi-paperclip" }, null, -1)),
               e("input", {
                 type: "file",
@@ -8630,9 +8627,9 @@ const ws = /* @__PURE__ */ g({
                 onChange: m
               }, null, 32)
             ]),
-            (T = r.value.attachments) != null && T.length ? (s(), o("span", tg, v(r.value.attachments.length) + " anexo(s) ", 1)) : h("", !0)
+            (k = r.value.attachments) != null && k.length ? (s(), o("span", X$, v(r.value.attachments.length) + " anexo(s) ", 1)) : h("", !0)
           ]),
-          e("div", eg, [
+          e("div", Q$, [
             e("button", {
               class: "trx-email__btn trx-email__btn--discard",
               onClick: f[10] || (f[10] = ($) => u("discard"))
@@ -8644,22 +8641,22 @@ const ws = /* @__PURE__ */ g({
             }, [
               f[17] || (f[17] = e("i", { class: "pi pi-send" }, null, -1)),
               N(" " + v(c.value ? "Enviando..." : "Enviar"), 1)
-            ], 8, sg)
+            ], 8, Z$)
           ])
         ])
       ]);
     };
   }
-}), ZC = /* @__PURE__ */ A(ag, [["__scopeId", "data-v-96c2a2b1"]]), lg = { class: "trx-tpl" }, ng = { class: "trx-tpl__search" }, og = { class: "trx-tpl__layout" }, rg = { class: "trx-tpl__list" }, ig = {
+}), HC = /* @__PURE__ */ M(tg, [["__scopeId", "data-v-96c2a2b1"]]), eg = { class: "trx-tpl" }, sg = { class: "trx-tpl__search" }, ag = { class: "trx-tpl__layout" }, lg = { class: "trx-tpl__list" }, ng = {
   key: 0,
   class: "trx-tpl__loading"
-}, cg = { class: "trx-tpl__cat-label" }, ug = ["onClick"], dg = { class: "trx-tpl__item-name" }, _g = { class: "trx-tpl__item-lang" }, pg = { class: "trx-tpl__preview" }, vg = {
+}, og = { class: "trx-tpl__cat-label" }, rg = ["onClick"], ig = { class: "trx-tpl__item-name" }, cg = { class: "trx-tpl__item-lang" }, ug = { class: "trx-tpl__preview" }, dg = {
   key: 0,
   class: "trx-tpl__no-select"
-}, mg = { class: "trx-tpl__preview-body" }, fg = {
+}, _g = { class: "trx-tpl__preview-body" }, pg = {
   key: 0,
   class: "trx-tpl__vars"
-}, xg = { class: "trx-tpl__var-label" }, hg = ["onUpdate:modelValue", "placeholder"], $g = /* @__PURE__ */ g({
+}, vg = { class: "trx-tpl__var-label" }, mg = ["onUpdate:modelValue", "placeholder"], fg = /* @__PURE__ */ g({
   __name: "TrxTemplateSelector",
   props: {
     templates: { default: () => [] },
@@ -8668,7 +8665,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:modelValue", "select"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(""), n = D(null), c = D({}), u = S(() => [...new Set(r.templates.map((x) => x.category))]), _ = S(
+    const r = t, i = a, l = z(""), n = z(null), c = z({}), u = S(() => [...new Set(r.templates.map((x) => x.category))]), _ = S(
       () => r.templates.filter(
         (x) => !l.value || x.name.toLowerCase().includes(l.value.toLowerCase()) || x.body.toLowerCase().includes(l.value.toLowerCase())
       )
@@ -8682,14 +8679,14 @@ const ws = /* @__PURE__ */ g({
     function m() {
       if (!n.value) return "";
       let x = n.value.body;
-      return Object.entries(c.value).forEach(([f, T]) => {
-        x = x.replace(new RegExp(f.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g"), T || f);
+      return Object.entries(c.value).forEach(([f, k]) => {
+        x = x.replace(new RegExp(f.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g"), k || f);
       }), x;
     }
     return (x, f) => {
-      var T;
-      return s(), o("div", lg, [
-        e("div", ng, [
+      var k;
+      return s(), o("div", eg, [
+        e("div", sg, [
           f[1] || (f[1] = e("i", { class: "pi pi-search trx-tpl__search-icon" }, null, -1)),
           Y(e("input", {
             "onUpdate:modelValue": f[0] || (f[0] = ($) => l.value = $),
@@ -8699,40 +8696,40 @@ const ws = /* @__PURE__ */ g({
             [J, l.value]
           ])
         ]),
-        e("div", og, [
-          e("div", rg, [
-            t.loading ? (s(), o("div", ig, [...f[2] || (f[2] = [
+        e("div", ag, [
+          e("div", lg, [
+            t.loading ? (s(), o("div", ng, [...f[2] || (f[2] = [
               e("i", { class: "pi pi-spin pi-spinner" }, null, -1)
             ])])) : (s(!0), o(V, { key: 1 }, b(u.value, ($) => (s(), o("div", { key: $ }, [
-              e("div", cg, v($), 1),
+              e("div", og, v($), 1),
               (s(!0), o(V, null, b(_.value.filter((C) => C.category === $), (C) => {
-                var M;
+                var A;
                 return s(), o("div", {
                   key: C.id,
-                  class: w(["trx-tpl__item", { "trx-tpl__item--active": ((M = n.value) == null ? void 0 : M.id) === C.id }]),
+                  class: y(["trx-tpl__item", { "trx-tpl__item--active": ((A = n.value) == null ? void 0 : A.id) === C.id }]),
                   onClick: (E) => d(C)
                 }, [
-                  e("span", dg, v(C.name), 1),
-                  e("span", _g, v(C.language), 1)
-                ], 10, ug);
+                  e("span", ig, v(C.name), 1),
+                  e("span", cg, v(C.language), 1)
+                ], 10, rg);
               }), 128))
             ]))), 128))
           ]),
-          e("div", pg, [
+          e("div", ug, [
             n.value ? (s(), o(V, { key: 1 }, [
-              e("div", mg, v(m()), 1),
-              (T = n.value.variables) != null && T.length ? (s(), o("div", fg, [
+              e("div", _g, v(m()), 1),
+              (k = n.value.variables) != null && k.length ? (s(), o("div", pg, [
                 f[4] || (f[4] = e("div", { class: "trx-tpl__vars-title" }, "Variáveis", -1)),
                 (s(!0), o(V, null, b(n.value.variables, ($) => (s(), o("div", {
                   key: $,
                   class: "trx-tpl__var-row"
                 }, [
-                  e("label", xg, v($), 1),
+                  e("label", vg, v($), 1),
                   Y(e("input", {
                     "onUpdate:modelValue": (C) => c.value[$] = C,
                     class: "trx-tpl__var-input",
                     placeholder: $
-                  }, null, 8, hg), [
+                  }, null, 8, mg), [
                     [J, c.value[$]]
                   ])
                 ]))), 128))
@@ -8744,7 +8741,7 @@ const ws = /* @__PURE__ */ g({
                 e("i", { class: "pi pi-check" }, null, -1),
                 N(" Usar Template ", -1)
               ])])
-            ], 64)) : (s(), o("div", vg, [...f[3] || (f[3] = [
+            ], 64)) : (s(), o("div", dg, [...f[3] || (f[3] = [
               e("i", {
                 class: "pi pi-file",
                 style: { "font-size": "1.5rem" }
@@ -8756,13 +8753,13 @@ const ws = /* @__PURE__ */ g({
       ]);
     };
   }
-}), t4 = /* @__PURE__ */ A($g, [["__scopeId", "data-v-6e07f607"]]), gg = { class: "trx-sentiment__icon-wrap" }, bg = { class: "trx-sentiment__emoji" }, yg = { class: "trx-sentiment__info" }, kg = { class: "trx-sentiment__label" }, wg = {
+}), UC = /* @__PURE__ */ M(fg, [["__scopeId", "data-v-6e07f607"]]), xg = { class: "trx-sentiment__icon-wrap" }, hg = { class: "trx-sentiment__emoji" }, $g = { class: "trx-sentiment__info" }, gg = { class: "trx-sentiment__label" }, bg = {
   key: 0,
   class: "trx-sentiment__score"
-}, Tg = {
+}, yg = {
   key: 0,
   class: "trx-sentiment__bar-wrap"
-}, Cg = /* @__PURE__ */ g({
+}, kg = /* @__PURE__ */ g({
   __name: "TrxSentimentIndicator",
   props: {
     sentiment: { default: "unknown" },
@@ -8779,17 +8776,17 @@ const ws = /* @__PURE__ */ g({
       unknown: { icon: "pi pi-question-circle", label: "Indefinido", color: "var(--trx-text-secondary)", emoji: "❓" }
     }, i = S(() => r[a.sentiment]), l = S(() => `${a.score >= 0 ? "+" : ""}${Math.round(a.score * 100)}`);
     return (n, c) => (s(), o("div", {
-      class: w(["trx-sentiment", `trx-sentiment--${t.size}`]),
+      class: y(["trx-sentiment", `trx-sentiment--${t.size}`]),
       style: R({ "--sc": i.value.color })
     }, [
-      e("div", gg, [
-        e("span", bg, v(i.value.emoji), 1)
+      e("div", xg, [
+        e("span", hg, v(i.value.emoji), 1)
       ]),
-      e("div", yg, [
-        e("span", kg, v(t.label ?? i.value.label), 1),
-        t.showScore && t.sentiment !== "unknown" ? (s(), o("span", wg, v(l.value), 1)) : h("", !0)
+      e("div", $g, [
+        e("span", gg, v(t.label ?? i.value.label), 1),
+        t.showScore && t.sentiment !== "unknown" ? (s(), o("span", bg, v(l.value), 1)) : h("", !0)
       ]),
-      t.showScore && t.sentiment !== "unknown" ? (s(), o("div", Tg, [
+      t.showScore && t.sentiment !== "unknown" ? (s(), o("div", yg, [
         e("div", {
           class: "trx-sentiment__bar",
           style: R({ width: Math.abs(t.score) * 100 + "%" })
@@ -8797,19 +8794,19 @@ const ws = /* @__PURE__ */ g({
       ])) : h("", !0)
     ], 6));
   }
-}), e4 = /* @__PURE__ */ A(Cg, [["__scopeId", "data-v-0cf3b19c"]]), Sg = { class: "trx-bot-bubble" }, Ig = { class: "trx-bot-bubble__avatar" }, Vg = ["src", "alt"], Bg = {
+}), WC = /* @__PURE__ */ M(kg, [["__scopeId", "data-v-0cf3b19c"]]), wg = { class: "trx-bot-bubble" }, Tg = { class: "trx-bot-bubble__avatar" }, Cg = ["src", "alt"], Sg = {
   key: 1,
   class: "trx-bot-bubble__avatar-init"
-}, Pg = { class: "trx-bot-bubble__content" }, Ag = { class: "trx-bot-bubble__name" }, Mg = { class: "trx-bot-bubble__message" }, Lg = {
+}, Ig = { class: "trx-bot-bubble__content" }, Vg = { class: "trx-bot-bubble__name" }, Bg = { class: "trx-bot-bubble__message" }, Pg = {
   key: 0,
   class: "trx-bot-bubble__typing"
-}, zg = { class: "trx-bot-bubble__text" }, Dg = {
+}, Mg = { class: "trx-bot-bubble__text" }, Ag = {
   key: 0,
   class: "trx-bot-bubble__options"
-}, Eg = ["onClick"], Rg = {
+}, Lg = ["onClick"], zg = {
   key: 0,
   class: "trx-bot-bubble__time"
-}, Ng = /* @__PURE__ */ g({
+}, Dg = /* @__PURE__ */ g({
   __name: "TrxBotBubble",
   props: {
     message: {},
@@ -8822,46 +8819,46 @@ const ws = /* @__PURE__ */ g({
   emits: ["optionSelect"],
   setup(t, { emit: a }) {
     const r = a;
-    return (i, l) => (s(), o("div", Sg, [
-      e("div", Ig, [
+    return (i, l) => (s(), o("div", wg, [
+      e("div", Tg, [
         t.botAvatar ? (s(), o("img", {
           key: 0,
           src: t.botAvatar,
           alt: t.botName,
           class: "trx-bot-bubble__avatar-img"
-        }, null, 8, Vg)) : (s(), o("div", Bg, [...l[0] || (l[0] = [
+        }, null, 8, Cg)) : (s(), o("div", Sg, [...l[0] || (l[0] = [
           e("i", { class: "pi pi-android" }, null, -1)
         ])]))
       ]),
-      e("div", Pg, [
-        e("div", Ag, v(t.botName), 1),
-        e("div", Mg, [
-          t.loading ? (s(), o("div", Lg, [...l[1] || (l[1] = [
+      e("div", Ig, [
+        e("div", Vg, v(t.botName), 1),
+        e("div", Bg, [
+          t.loading ? (s(), o("div", Pg, [...l[1] || (l[1] = [
             e("span", null, null, -1),
             e("span", null, null, -1),
             e("span", null, null, -1)
           ])])) : (s(), o(V, { key: 1 }, [
-            e("p", zg, v(t.message), 1),
-            t.options.length ? (s(), o("div", Dg, [
+            e("p", Mg, v(t.message), 1),
+            t.options.length ? (s(), o("div", Ag, [
               (s(!0), o(V, null, b(t.options, (n) => (s(), o("button", {
                 key: n,
                 class: "trx-bot-bubble__option",
                 onClick: (c) => r("optionSelect", n)
-              }, v(n), 9, Eg))), 128))
+              }, v(n), 9, Lg))), 128))
             ])) : h("", !0)
           ], 64))
         ]),
-        t.time ? (s(), o("span", Rg, v(t.time), 1)) : h("", !0)
+        t.time ? (s(), o("span", zg, v(t.time), 1)) : h("", !0)
       ])
     ]));
   }
-}), s4 = /* @__PURE__ */ A(Ng, [["__scopeId", "data-v-fdd3fdf6"]]), qg = { class: "trx-tz__content" }, Fg = { class: "trx-tz__time" }, Og = { class: "trx-tz__meta" }, jg = {
+}), GC = /* @__PURE__ */ M(Dg, [["__scopeId", "data-v-fdd3fdf6"]]), Eg = { class: "trx-tz__content" }, Rg = { class: "trx-tz__time" }, Ng = { class: "trx-tz__meta" }, qg = {
   key: 0,
   class: "trx-tz__date"
-}, Hg = { class: "trx-tz__offset" }, Ug = {
+}, Fg = { class: "trx-tz__offset" }, Og = {
   key: 0,
   class: "trx-tz__local"
-}, Wg = { class: "trx-tz__local-time" }, Gg = /* @__PURE__ */ g({
+}, jg = { class: "trx-tz__local-time" }, Hg = /* @__PURE__ */ g({
   __name: "TrxContactTimezone",
   props: {
     timezone: { default: "America/Sao_Paulo" },
@@ -8870,7 +8867,7 @@ const ws = /* @__PURE__ */ g({
     compact: { type: Boolean, default: !1 }
   },
   setup(t) {
-    const a = t, r = D(/* @__PURE__ */ new Date());
+    const a = t, r = z(/* @__PURE__ */ new Date());
     let i;
     W(() => {
       i = setInterval(() => {
@@ -8892,7 +8889,7 @@ const ws = /* @__PURE__ */ g({
     }), c = S(() => r.value.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })), u = S(() => {
       var m;
       try {
-        return ((m = new Intl.DateTimeFormat("en-US", { timeZone: a.timezone, timeZoneName: "short" }).formatToParts(r.value).find((T) => T.type === "timeZoneName")) == null ? void 0 : m.value) ?? a.timezone;
+        return ((m = new Intl.DateTimeFormat("en-US", { timeZone: a.timezone, timeZoneName: "short" }).formatToParts(r.value).find((k) => k.type === "timeZoneName")) == null ? void 0 : m.value) ?? a.timezone;
       } catch {
         return a.timezone;
       }
@@ -8904,32 +8901,32 @@ const ws = /* @__PURE__ */ g({
       }
     }), d = S(() => _.value >= 8 && _.value < 18), p = S(() => _.value < 7 || _.value >= 22);
     return (m, x) => (s(), o("div", {
-      class: w(["trx-tz", { "trx-tz--compact": t.compact }])
+      class: y(["trx-tz", { "trx-tz--compact": t.compact }])
     }, [
       e("div", {
-        class: w(["trx-tz__icon-wrap", p.value ? "night" : d.value ? "day" : "evening"])
+        class: y(["trx-tz__icon-wrap", p.value ? "night" : d.value ? "day" : "evening"])
       }, [
         e("i", {
-          class: w(p.value ? "pi pi-moon" : "pi pi-sun")
+          class: y(p.value ? "pi pi-moon" : "pi pi-sun")
         }, null, 2)
       ], 2),
-      e("div", qg, [
-        e("div", Fg, v(l.value), 1),
-        e("div", Og, [
-          t.compact ? h("", !0) : (s(), o("span", jg, v(n.value), 1)),
-          e("span", Hg, v(u.value), 1),
+      e("div", Eg, [
+        e("div", Rg, v(l.value), 1),
+        e("div", Ng, [
+          t.compact ? h("", !0) : (s(), o("span", qg, v(n.value), 1)),
+          e("span", Fg, v(u.value), 1),
           e("span", {
-            class: w(["trx-tz__status", p.value ? "night" : d.value ? "business" : "off"])
+            class: y(["trx-tz__status", p.value ? "night" : d.value ? "business" : "off"])
           }, v(p.value ? "Noite" : d.value ? "Horário comercial" : "Fora do horário"), 3)
         ])
       ]),
-      t.compact ? h("", !0) : (s(), o("div", Ug, [
+      t.compact ? h("", !0) : (s(), o("div", Og, [
         x[0] || (x[0] = e("span", { class: "trx-tz__local-label" }, "Seu horário:", -1)),
-        e("span", Wg, v(c.value), 1)
+        e("span", jg, v(c.value), 1)
       ]))
     ], 2));
   }
-}), a4 = /* @__PURE__ */ A(Gg, [["__scopeId", "data-v-61352836"]]), Kg = { class: "trx-split__pane trx-split__pane--second" }, Yg = /* @__PURE__ */ g({
+}), KC = /* @__PURE__ */ M(Hg, [["__scopeId", "data-v-61352836"]]), Ug = { class: "trx-split__pane trx-split__pane--second" }, Wg = /* @__PURE__ */ g({
   __name: "TrxSplitPane",
   props: {
     direction: { default: "horizontal" },
@@ -8938,7 +8935,7 @@ const ws = /* @__PURE__ */ g({
     maxSize: { default: 85 }
   },
   setup(t) {
-    const a = t, r = D(a.initialSize), i = D(!1), l = D();
+    const a = t, r = z(a.initialSize), i = z(!1), l = z();
     function n(_) {
       i.value = !0, document.addEventListener("mousemove", c), document.addEventListener("touchmove", c), document.addEventListener("mouseup", u), document.addEventListener("touchend", u), _.preventDefault();
     }
@@ -8953,7 +8950,7 @@ const ws = /* @__PURE__ */ g({
     return G(u), (_, d) => (s(), o("div", {
       ref_key: "container",
       ref: l,
-      class: w(["trx-split", [`trx-split--${t.direction}`, { "trx-split--dragging": i.value }]])
+      class: y(["trx-split", [`trx-split--${t.direction}`, { "trx-split--dragging": i.value }]])
     }, [
       e("div", {
         class: "trx-split__pane trx-split__pane--first",
@@ -8968,15 +8965,15 @@ const ws = /* @__PURE__ */ g({
       }, [...d[0] || (d[0] = [
         e("div", { class: "trx-split__handle-bar" }, null, -1)
       ])], 32),
-      e("div", Kg, [
+      e("div", Ug, [
         I(_.$slots, "second", {}, void 0, !0)
       ])
     ], 2));
   }
-}), l4 = /* @__PURE__ */ A(Yg, [["__scopeId", "data-v-146c2928"]]), Jg = {
+}), YC = /* @__PURE__ */ M(Wg, [["__scopeId", "data-v-146c2928"]]), Gg = {
   key: 0,
   class: "trx-fab-actions"
-}, Xg = { class: "trx-fab-action__label" }, Qg = ["title", "onClick"], Zg = /* @__PURE__ */ g({
+}, Kg = { class: "trx-fab-action__label" }, Yg = ["title", "onClick"], Jg = /* @__PURE__ */ g({
   __name: "TrxFloatingActionButton",
   props: {
     icon: { default: "pi pi-plus" },
@@ -8987,19 +8984,19 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["click", "action"],
   setup(t, { emit: a }) {
-    const r = a, i = D(!1);
+    const r = a, i = z(!1);
     return (l, n) => (s(), o("div", {
-      class: w(["trx-fab-wrap", `trx-fab-wrap--${t.position}`])
+      class: y(["trx-fab-wrap", `trx-fab-wrap--${t.position}`])
     }, [
       O(j, { name: "trx-fab-actions" }, {
         default: B(() => [
-          i.value && t.actions.length ? (s(), o("div", Jg, [
+          i.value && t.actions.length ? (s(), o("div", Gg, [
             (s(!0), o(V, null, b([...t.actions].reverse(), (c, u) => (s(), o("div", {
               key: c.id,
               class: "trx-fab-action",
               style: R({ "--delay": u * 0.05 + "s", "--ac": c.color ?? "var(--trx-accent-color)" })
             }, [
-              e("span", Xg, v(c.label), 1),
+              e("span", Kg, v(c.label), 1),
               e("button", {
                 class: "trx-fab-action__btn",
                 style: R({ background: c.color ?? "var(--trx-accent-color)" }),
@@ -9009,16 +9006,16 @@ const ws = /* @__PURE__ */ g({
                 }
               }, [
                 e("i", {
-                  class: w(c.icon)
+                  class: y(c.icon)
                 }, null, 2)
-              ], 12, Qg)
+              ], 12, Yg)
             ], 4))), 128))
           ])) : h("", !0)
         ]),
         _: 1
       }),
       e("button", {
-        class: w(["trx-fab", `trx-fab--${t.size}`]),
+        class: y(["trx-fab", `trx-fab--${t.size}`]),
         style: R({ background: t.color ?? "var(--trx-accent-color)" }),
         onClick: n[0] || (n[0] = (c) => t.actions.length ? i.value = !i.value : r("click"))
       }, [
@@ -9026,7 +9023,7 @@ const ws = /* @__PURE__ */ g({
           default: B(() => [
             (s(), o("i", {
               key: i.value ? "close" : "open",
-              class: w(i.value ? "pi pi-times" : t.icon)
+              class: y(i.value ? "pi pi-times" : t.icon)
             }, null, 2))
           ]),
           _: 1
@@ -9034,10 +9031,10 @@ const ws = /* @__PURE__ */ g({
       ], 6)
     ], 2));
   }
-}), n4 = /* @__PURE__ */ A(Zg, [["__scopeId", "data-v-1778a9e3"]]), tb = {
+}), JC = /* @__PURE__ */ M(Jg, [["__scopeId", "data-v-1778a9e3"]]), Xg = {
   key: 0,
   class: "trx-ctx-menu__separator"
-}, eb = ["disabled", "onClick"], sb = /* @__PURE__ */ g({
+}, Qg = ["disabled", "onClick"], Zg = /* @__PURE__ */ g({
   __name: "TrxContextMenu",
   props: {
     items: { default: () => [] },
@@ -9072,19 +9069,19 @@ const ws = /* @__PURE__ */ g({
             (s(!0), o(V, null, b(t.items, (u) => (s(), o(V, {
               key: u.id
             }, [
-              u.separator ? (s(), o("div", tb)) : (s(), o("button", {
+              u.separator ? (s(), o("div", Xg)) : (s(), o("button", {
                 key: 1,
-                class: w(["trx-ctx-menu__item", { "trx-ctx-menu__item--danger": u.danger, "trx-ctx-menu__item--disabled": u.disabled }]),
+                class: y(["trx-ctx-menu__item", { "trx-ctx-menu__item--danger": u.danger, "trx-ctx-menu__item--disabled": u.disabled }]),
                 disabled: u.disabled,
                 role: "menuitem",
                 onClick: (_) => !u.disabled && (r("select", u), i())
               }, [
                 u.icon ? (s(), o("i", {
                   key: 0,
-                  class: w([u.icon, "trx-ctx-menu__icon"])
+                  class: y([u.icon, "trx-ctx-menu__icon"])
                 }, null, 2)) : h("", !0),
                 e("span", null, v(u.label), 1)
-              ], 10, eb))
+              ], 10, Qg))
             ], 64))), 128))
           ], 4)) : h("", !0)
         ]),
@@ -9092,7 +9089,7 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), o4 = /* @__PURE__ */ A(sb, [["__scopeId", "data-v-0e16a25d"]]), ab = { class: "trx-drag-list" }, lb = ["draggable", "onDragstart", "onDragover", "onDrop"], nb = ["onDragstart"], ob = { class: "trx-drag-list__content" }, rb = /* @__PURE__ */ g({
+}), XC = /* @__PURE__ */ M(Zg, [["__scopeId", "data-v-0e16a25d"]]), tb = { class: "trx-drag-list" }, eb = ["draggable", "onDragstart", "onDragover", "onDrop"], sb = ["onDragstart"], ab = { class: "trx-drag-list__content" }, lb = /* @__PURE__ */ g({
   __name: "TrxDraggableList",
   props: {
     items: {},
@@ -9100,7 +9097,7 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["update:items", "reorder"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(null), n = D(null);
+    const r = t, i = a, l = z(null), n = z(null);
     function c(p) {
       l.value = p;
     }
@@ -9118,37 +9115,37 @@ const ws = /* @__PURE__ */ g({
     function d() {
       l.value = null, n.value = null;
     }
-    return (p, m) => (s(), o("div", ab, [
+    return (p, m) => (s(), o("div", tb, [
       (s(!0), o(V, null, b(t.items, (x, f) => (s(), o("div", {
         key: x.id,
-        class: w(["trx-drag-list__item", {
+        class: y(["trx-drag-list__item", {
           "trx-drag-list__item--dragging": l.value === f,
           "trx-drag-list__item--over": n.value === f && l.value !== f
         }]),
         draggable: !t.handle,
-        onDragstart: (T) => c(f),
-        onDragover: (T) => u(T, f),
-        onDrop: (T) => _(f),
+        onDragstart: (k) => c(f),
+        onDragover: (k) => u(k, f),
+        onDrop: (k) => _(f),
         onDragend: d
       }, [
         t.handle ? (s(), o("div", {
           key: 0,
           class: "trx-drag-list__handle",
           draggable: "true",
-          onDragstart: (T) => c(f)
+          onDragstart: (k) => c(f)
         }, [...m[0] || (m[0] = [
           e("i", { class: "pi pi-bars" }, null, -1)
-        ])], 40, nb)) : h("", !0),
-        e("div", ob, [
+        ])], 40, sb)) : h("", !0),
+        e("div", ab, [
           I(p.$slots, "default", {
             item: x,
             index: f
           }, void 0, !0)
         ])
-      ], 42, lb))), 128))
+      ], 42, eb))), 128))
     ]));
   }
-}), r4 = /* @__PURE__ */ A(rb, [["__scopeId", "data-v-b1539e37"]]), ib = /* @__PURE__ */ g({
+}), QC = /* @__PURE__ */ M(lb, [["__scopeId", "data-v-b1539e37"]]), nb = /* @__PURE__ */ g({
   __name: "TrxBackToTop",
   props: {
     threshold: { default: 300 },
@@ -9156,7 +9153,7 @@ const ws = /* @__PURE__ */ g({
     behavior: { default: "smooth" }
   },
   setup(t) {
-    const a = t, r = D(!1);
+    const a = t, r = z(!1);
     function i() {
       const n = a.scrollTarget ? document.querySelector(a.scrollTarget) : null, c = n ? n.scrollTop : window.scrollY;
       r.value = c > a.threshold;
@@ -9187,7 +9184,7 @@ const ws = /* @__PURE__ */ g({
       })
     ]));
   }
-}), i4 = /* @__PURE__ */ A(ib, [["__scopeId", "data-v-2789be87"]]), cb = ["title"], ub = { class: "trx-rsidebar__content" }, db = /* @__PURE__ */ g({
+}), ZC = /* @__PURE__ */ M(nb, [["__scopeId", "data-v-2789be87"]]), ob = ["title"], rb = { class: "trx-rsidebar__content" }, ib = /* @__PURE__ */ g({
   __name: "TrxResizableSidebar",
   props: {
     side: { default: "left" },
@@ -9198,14 +9195,14 @@ const ws = /* @__PURE__ */ g({
   },
   emits: ["collapse", "expand", "resize"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D(r.initialWidth), n = D(!1), c = D(!1), u = D(r.initialWidth);
+    const r = t, i = a, l = z(r.initialWidth), n = z(!1), c = z(!1), u = z(r.initialWidth);
     function _(x) {
       c.value = !0, document.addEventListener("mousemove", d), document.addEventListener("mouseup", p), x.preventDefault();
     }
     function d(x) {
       if (!c.value) return;
-      const f = r.side === "left" ? x.movementX : -x.movementX, T = Math.max(r.minWidth, Math.min(r.maxWidth, l.value + f));
-      l.value = T, i("resize", T);
+      const f = r.side === "left" ? x.movementX : -x.movementX, k = Math.max(r.minWidth, Math.min(r.maxWidth, l.value + f));
+      l.value = k, i("resize", k);
     }
     function p() {
       c.value = !1, document.removeEventListener("mousemove", d), document.removeEventListener("mouseup", p);
@@ -9214,11 +9211,11 @@ const ws = /* @__PURE__ */ g({
       n.value ? (n.value = !1, l.value = u.value, i("expand")) : (u.value = l.value, n.value = !0, i("collapse"));
     }
     return G(p), (x, f) => (s(), o("div", {
-      class: w(["trx-rsidebar", [`trx-rsidebar--${t.side}`, { "trx-rsidebar--collapsed": n.value, "trx-rsidebar--dragging": c.value }]]),
+      class: y(["trx-rsidebar", [`trx-rsidebar--${t.side}`, { "trx-rsidebar--collapsed": n.value, "trx-rsidebar--dragging": c.value }]]),
       style: R({ width: n.value ? "0px" : l.value + "px" })
     }, [
       e("div", {
-        class: w(["trx-rsidebar__handle", `trx-rsidebar__handle--${t.side}`]),
+        class: y(["trx-rsidebar__handle", `trx-rsidebar__handle--${t.side}`]),
         onMousedown: _
       }, [
         t.collapsible ? (s(), o("button", {
@@ -9230,23 +9227,23 @@ const ws = /* @__PURE__ */ g({
           onClick: m
         }, [
           e("i", {
-            class: w(t.side === "left" ? n.value ? "pi pi-chevron-right" : "pi pi-chevron-left" : n.value ? "pi pi-chevron-left" : "pi pi-chevron-right")
+            class: y(t.side === "left" ? n.value ? "pi pi-chevron-right" : "pi pi-chevron-left" : n.value ? "pi pi-chevron-left" : "pi pi-chevron-right")
           }, null, 2)
-        ], 40, cb)) : h("", !0)
+        ], 40, ob)) : h("", !0)
       ], 34),
-      e("div", ub, [
+      e("div", rb, [
         I(x.$slots, "default", {}, void 0, !0)
       ])
     ], 6));
   }
-}), c4 = /* @__PURE__ */ A(db, [["__scopeId", "data-v-bfeae2d6"]]), _b = { class: "trx-jv" }, pb = { class: "trx-jv__toolbar" }, vb = ["innerHTML"], mb = /* @__PURE__ */ g({
+}), t4 = /* @__PURE__ */ M(ib, [["__scopeId", "data-v-bfeae2d6"]]), cb = { class: "trx-jv" }, ub = { class: "trx-jv__toolbar" }, db = ["innerHTML"], _b = /* @__PURE__ */ g({
   __name: "TrxJsonViewer",
   props: {
     data: {},
     expandDepth: { default: 2 }
   },
   setup(t) {
-    const a = t, r = D(!1);
+    const a = t, r = z(!1);
     function i() {
       navigator.clipboard.writeText(JSON.stringify(a.data, null, 2)), r.value = !0, setTimeout(() => {
         r.value = !1;
@@ -9259,14 +9256,14 @@ const ws = /* @__PURE__ */ g({
       if (typeof _ == "string") return `<span class="trx-jv-str">"${n(_)}"</span>`;
       const p = Array.isArray(_), m = p ? _.map((F, q) => [q, F]) : Object.entries(_);
       if (m.length === 0) return p ? '<span class="trx-jv-brace">[]</span>' : '<span class="trx-jv-brace">{}</span>';
-      const x = d >= a.expandDepth, f = `jv-${Math.random().toString(36).slice(2)}`, T = p ? "[" : "{", $ = p ? "]" : "}", C = "  ".repeat(d + 1), M = "  ".repeat(d), E = m.map(([F, q]) => {
+      const x = d >= a.expandDepth, f = `jv-${Math.random().toString(36).slice(2)}`, k = p ? "[" : "{", $ = p ? "]" : "}", C = "  ".repeat(d + 1), A = "  ".repeat(d), E = m.map(([F, q]) => {
         const K = p ? "" : `<span class="trx-jv-key">"${n(String(F))}"</span><span class="trx-jv-colon">: </span>`;
         return `${C}${K}${l(q, d + 1)}`;
       }).join(`,
 `);
-      return `<span class="trx-jv-brace">${T}</span><span class="trx-jv-toggle" data-target="${f}" title="Toggle">${x ? "▸" : "▾"}</span><span class="trx-jv-count">${m.length}</span><span id="${f}" class="trx-jv-block"${x ? ' style="display:none"' : ""}>
+      return `<span class="trx-jv-brace">${k}</span><span class="trx-jv-toggle" data-target="${f}" title="Toggle">${x ? "▸" : "▾"}</span><span class="trx-jv-count">${m.length}</span><span id="${f}" class="trx-jv-block"${x ? ' style="display:none"' : ""}>
 ${E}
-${M}</span><span class="trx-jv-brace">${$}</span>`;
+${A}</span><span class="trx-jv-brace">${$}</span>`;
     }
     function n(_) {
       return _.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -9282,15 +9279,15 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       const x = m.style.display === "none";
       m.style.display = x ? "" : "none", d.textContent = x ? "▾" : "▸";
     }
-    return (_, d) => (s(), o("div", _b, [
-      e("div", pb, [
+    return (_, d) => (s(), o("div", cb, [
+      e("div", ub, [
         d[0] || (d[0] = e("span", { class: "trx-jv__badge" }, "JSON", -1)),
         e("button", {
           class: "trx-jv__copy",
           onClick: i
         }, [
           e("i", {
-            class: w(r.value ? "pi pi-check" : "pi pi-copy")
+            class: y(r.value ? "pi pi-check" : "pi pi-copy")
           }, null, 2),
           N(" " + v(r.value ? "Copiado" : "Copiar"), 1)
         ])
@@ -9299,19 +9296,19 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
         class: "trx-jv__body",
         onClick: u,
         innerHTML: c.value
-      }, null, 8, vb)
+      }, null, 8, db)
     ]));
   }
-}), u4 = /* @__PURE__ */ A(mb, [["__scopeId", "data-v-56a7e2b2"]]), fb = { class: "trx-diff" }, xb = { class: "trx-diff__header" }, hb = {
+}), e4 = /* @__PURE__ */ M(_b, [["__scopeId", "data-v-56a7e2b2"]]), pb = { class: "trx-diff" }, vb = { class: "trx-diff__header" }, mb = {
   key: 0,
   class: "trx-diff__title"
-}, $b = { class: "trx-diff__stats" }, gb = { class: "trx-diff__stat trx-diff__stat--add" }, bb = { class: "trx-diff__stat trx-diff__stat--rem" }, yb = {
+}, fb = { class: "trx-diff__stats" }, xb = { class: "trx-diff__stat trx-diff__stat--add" }, hb = { class: "trx-diff__stat trx-diff__stat--rem" }, $b = {
   key: 0,
   class: "trx-diff__unified"
-}, kb = { class: "trx-diff__gutter" }, wb = { class: "trx-diff__gutter" }, Tb = { class: "trx-diff__marker" }, Cb = { class: "trx-diff__code" }, Sb = {
+}, gb = { class: "trx-diff__gutter" }, bb = { class: "trx-diff__gutter" }, yb = { class: "trx-diff__marker" }, kb = { class: "trx-diff__code" }, wb = {
   key: 1,
   class: "trx-diff__split"
-}, Ib = { class: "trx-diff__pane" }, Vb = { class: "trx-diff__pane-title" }, Bb = { class: "trx-diff__gutter" }, Pb = { class: "trx-diff__marker" }, Ab = { class: "trx-diff__code" }, Mb = { class: "trx-diff__pane" }, Lb = { class: "trx-diff__pane-title" }, zb = { class: "trx-diff__gutter" }, Db = { class: "trx-diff__marker" }, Eb = { class: "trx-diff__code" }, Rb = /* @__PURE__ */ g({
+}, Tb = { class: "trx-diff__pane" }, Cb = { class: "trx-diff__pane-title" }, Sb = { class: "trx-diff__gutter" }, Ib = { class: "trx-diff__marker" }, Vb = { class: "trx-diff__code" }, Bb = { class: "trx-diff__pane" }, Pb = { class: "trx-diff__pane-title" }, Mb = { class: "trx-diff__gutter" }, Ab = { class: "trx-diff__marker" }, Lb = { class: "trx-diff__code" }, zb = /* @__PURE__ */ g({
   __name: "TrxDiffViewer",
   props: {
     original: {},
@@ -9330,62 +9327,62 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       for (let F = m - 1; F >= 0; F--)
         for (let q = x - 1; q >= 0; q--)
           d[F] === p[q] ? f[F][q] = f[F + 1][q + 1] + 1 : f[F][q] = Math.max(f[F + 1][q], f[F][q + 1]);
-      const T = [];
-      let $ = 0, C = 0, M = 1, E = 1;
+      const k = [];
+      let $ = 0, C = 0, A = 1, E = 1;
       for (; $ < m || C < x; )
-        $ < m && C < x && d[$] === p[C] ? (T.push({ type: "equal", content: d[$], lineOrig: M++, lineMod: E++ }), $++, C++) : C < x && ($ >= m || f[$][C + 1] >= f[$ + 1][C]) ? (T.push({ type: "add", content: p[C], lineOrig: null, lineMod: E++ }), C++) : (T.push({ type: "remove", content: d[$], lineOrig: M++, lineMod: null }), $++);
-      return T;
+        $ < m && C < x && d[$] === p[C] ? (k.push({ type: "equal", content: d[$], lineOrig: A++, lineMod: E++ }), $++, C++) : C < x && ($ >= m || f[$][C + 1] >= f[$ + 1][C]) ? (k.push({ type: "add", content: p[C], lineOrig: null, lineMod: E++ }), C++) : (k.push({ type: "remove", content: d[$], lineOrig: A++, lineMod: null }), $++);
+      return k;
     }
     const i = S(() => r(a.original, a.modified)), l = S(() => ({
       added: i.value.filter((u) => u.type === "add").length,
       removed: i.value.filter((u) => u.type === "remove").length
     })), n = S(() => i.value.filter((u) => u.type !== "add")), c = S(() => i.value.filter((u) => u.type !== "remove"));
-    return (u, _) => (s(), o("div", fb, [
-      e("div", xb, [
-        t.title ? (s(), o("span", hb, v(t.title), 1)) : h("", !0),
-        e("div", $b, [
-          e("span", gb, "+" + v(l.value.added), 1),
-          e("span", bb, "-" + v(l.value.removed), 1)
+    return (u, _) => (s(), o("div", pb, [
+      e("div", vb, [
+        t.title ? (s(), o("span", mb, v(t.title), 1)) : h("", !0),
+        e("div", fb, [
+          e("span", xb, "+" + v(l.value.added), 1),
+          e("span", hb, "-" + v(l.value.removed), 1)
         ])
       ]),
-      t.unified ? (s(), o("div", yb, [
+      t.unified ? (s(), o("div", $b, [
         (s(!0), o(V, null, b(i.value, (d, p) => (s(), o("div", {
           key: p,
-          class: w(["trx-diff__line", `trx-diff__line--${d.type}`])
+          class: y(["trx-diff__line", `trx-diff__line--${d.type}`])
         }, [
-          e("span", kb, v(d.lineOrig ?? ""), 1),
-          e("span", wb, v(d.lineMod ?? ""), 1),
-          e("span", Tb, v(d.type === "add" ? "+" : d.type === "remove" ? "-" : " "), 1),
-          e("span", Cb, v(d.content), 1)
+          e("span", gb, v(d.lineOrig ?? ""), 1),
+          e("span", bb, v(d.lineMod ?? ""), 1),
+          e("span", yb, v(d.type === "add" ? "+" : d.type === "remove" ? "-" : " "), 1),
+          e("span", kb, v(d.content), 1)
         ], 2))), 128))
-      ])) : (s(), o("div", Sb, [
-        e("div", Ib, [
-          e("div", Vb, v(t.titleOriginal), 1),
+      ])) : (s(), o("div", wb, [
+        e("div", Tb, [
+          e("div", Cb, v(t.titleOriginal), 1),
           (s(!0), o(V, null, b(n.value, (d, p) => (s(), o("div", {
             key: p,
-            class: w(["trx-diff__line", `trx-diff__line--${d.type}`])
+            class: y(["trx-diff__line", `trx-diff__line--${d.type}`])
           }, [
-            e("span", Bb, v(d.lineOrig), 1),
-            e("span", Pb, v(d.type === "remove" ? "-" : " "), 1),
-            e("span", Ab, v(d.content), 1)
+            e("span", Sb, v(d.lineOrig), 1),
+            e("span", Ib, v(d.type === "remove" ? "-" : " "), 1),
+            e("span", Vb, v(d.content), 1)
           ], 2))), 128))
         ]),
         _[0] || (_[0] = e("div", { class: "trx-diff__divider" }, null, -1)),
-        e("div", Mb, [
-          e("div", Lb, v(t.titleModified), 1),
+        e("div", Bb, [
+          e("div", Pb, v(t.titleModified), 1),
           (s(!0), o(V, null, b(c.value, (d, p) => (s(), o("div", {
             key: p,
-            class: w(["trx-diff__line", `trx-diff__line--${d.type}`])
+            class: y(["trx-diff__line", `trx-diff__line--${d.type}`])
           }, [
-            e("span", zb, v(d.lineMod), 1),
-            e("span", Db, v(d.type === "add" ? "+" : " "), 1),
-            e("span", Eb, v(d.content), 1)
+            e("span", Mb, v(d.lineMod), 1),
+            e("span", Ab, v(d.type === "add" ? "+" : " "), 1),
+            e("span", Lb, v(d.content), 1)
           ], 2))), 128))
         ])
       ]))
     ]));
   }
-}), d4 = /* @__PURE__ */ A(Rb, [["__scopeId", "data-v-cc06dd9b"]]), Nb = { class: "trx-inf__sentinel" }, qb = /* @__PURE__ */ g({
+}), s4 = /* @__PURE__ */ M(zb, [["__scopeId", "data-v-cc06dd9b"]]), Db = { class: "trx-inf__sentinel" }, Eb = /* @__PURE__ */ g({
   __name: "TrxInfiniteScroll",
   props: {
     loading: { type: Boolean, default: !1 },
@@ -9395,7 +9392,7 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
   },
   emits: ["load"],
   setup(t, { emit: a }) {
-    const r = t, i = a, l = D();
+    const r = t, i = a, l = z();
     function n(_) {
       if (r.loading || !r.hasMore) return;
       const d = _.target;
@@ -9421,7 +9418,7 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       class: "trx-inf"
     }, [
       I(_.$slots, "default", {}, void 0, !0),
-      e("div", Nb, [
+      e("div", Db, [
         t.loading ? I(_.$slots, "loader", { key: 0 }, () => [
           d[0] || (d[0] = e("div", { class: "trx-inf__loader" }, [
             e("span", { class: "trx-inf__dot" }),
@@ -9434,13 +9431,13 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       ])
     ], 512));
   }
-}), _4 = /* @__PURE__ */ A(qb, [["__scopeId", "data-v-5ed8d6bb"]]), Fb = { class: "trx-pivot" }, Ob = { class: "trx-pivot__wrap" }, jb = { class: "trx-pivot__table" }, Hb = { class: "trx-pivot__th trx-pivot__th--corner" }, Ub = {
+}), a4 = /* @__PURE__ */ M(Eb, [["__scopeId", "data-v-5ed8d6bb"]]), Rb = { class: "trx-pivot" }, Nb = { class: "trx-pivot__wrap" }, qb = { class: "trx-pivot__table" }, Fb = { class: "trx-pivot__th trx-pivot__th--corner" }, Ob = {
   key: 0,
   class: "trx-pivot__th trx-pivot__th--total"
-}, Wb = { class: "trx-pivot__td trx-pivot__td--label" }, Gb = {
+}, jb = { class: "trx-pivot__td trx-pivot__td--label" }, Hb = {
   key: 0,
   class: "trx-pivot__td trx-pivot__td--total"
-}, Kb = { key: 0 }, Yb = { class: "trx-pivot__td trx-pivot__td--grand" }, Jb = /* @__PURE__ */ g({
+}, Ub = { key: 0 }, Wb = { class: "trx-pivot__td trx-pivot__td--grand" }, Gb = /* @__PURE__ */ g({
   __name: "TrxPivotTable",
   props: {
     data: {},
@@ -9459,83 +9456,83 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
         case "count":
           return x.length;
         case "avg":
-          return x.reduce((f, T) => f + T, 0) / x.length;
+          return x.reduce((f, k) => f + k, 0) / x.length;
         case "min":
           return Math.min(...x);
         case "max":
           return Math.max(...x);
         default:
-          return x.reduce((f, T) => f + T, 0);
+          return x.reduce((f, k) => f + k, 0);
       }
     }
     function i(x) {
       return a.aggregation === "count" ? String(x) : x.toLocaleString("pt-BR", { maximumFractionDigits: 2 });
     }
     const l = S(() => [...new Set(a.data.map((x) => String(x[a.rowField])))]), n = S(() => [...new Set(a.data.map((x) => String(x[a.colField])))]), c = (x, f) => i(r(
-      a.data.filter((T) => String(T[a.rowField]) === x && String(T[a.colField]) === f).map((T) => Number(T[a.valueField]) || 0)
+      a.data.filter((k) => String(k[a.rowField]) === x && String(k[a.colField]) === f).map((k) => Number(k[a.valueField]) || 0)
     )), u = (x) => i(r(
       n.value.flatMap(
-        (f) => a.data.filter((T) => String(T[a.rowField]) === x && String(T[a.colField]) === f).map((T) => Number(T[a.valueField]) || 0)
+        (f) => a.data.filter((k) => String(k[a.rowField]) === x && String(k[a.colField]) === f).map((k) => Number(k[a.valueField]) || 0)
       )
     )), _ = (x) => i(r(
       l.value.flatMap(
-        (f) => a.data.filter((T) => String(T[a.rowField]) === f && String(T[a.colField]) === x).map((T) => Number(T[a.valueField]) || 0)
+        (f) => a.data.filter((k) => String(k[a.rowField]) === f && String(k[a.colField]) === x).map((k) => Number(k[a.valueField]) || 0)
       )
     )), d = S(() => i(r(a.data.map((x) => Number(x[a.valueField]) || 0)))), p = S(() => {
       let x = 0;
       for (const f of l.value)
-        for (const T of n.value) {
-          const $ = a.data.filter((M) => String(M[a.rowField]) === f && String(M[a.colField]) === T).map((M) => Number(M[a.valueField]) || 0), C = r($);
+        for (const k of n.value) {
+          const $ = a.data.filter((A) => String(A[a.rowField]) === f && String(A[a.colField]) === k).map((A) => Number(A[a.valueField]) || 0), C = r($);
           C > x && (x = C);
         }
       return x;
     });
     function m(x, f) {
-      const T = a.data.filter(($) => String($[a.rowField]) === x && String($[a.colField]) === f).map(($) => Number($[a.valueField]) || 0);
-      return p.value ? r(T) / p.value : 0;
+      const k = a.data.filter(($) => String($[a.rowField]) === x && String($[a.colField]) === f).map(($) => Number($[a.valueField]) || 0);
+      return p.value ? r(k) / p.value : 0;
     }
-    return (x, f) => (s(), o("div", Fb, [
-      e("div", Ob, [
-        e("table", jb, [
+    return (x, f) => (s(), o("div", Rb, [
+      e("div", Nb, [
+        e("table", qb, [
           e("thead", null, [
             e("tr", null, [
-              e("th", Hb, v(t.rowLabel), 1),
-              (s(!0), o(V, null, b(n.value, (T) => (s(), o("th", {
-                key: T,
+              e("th", Fb, v(t.rowLabel), 1),
+              (s(!0), o(V, null, b(n.value, (k) => (s(), o("th", {
+                key: k,
                 class: "trx-pivot__th"
-              }, v(T), 1))), 128)),
-              t.showTotals ? (s(), o("th", Ub, "Total")) : h("", !0)
+              }, v(k), 1))), 128)),
+              t.showTotals ? (s(), o("th", Ob, "Total")) : h("", !0)
             ])
           ]),
           e("tbody", null, [
-            (s(!0), o(V, null, b(l.value, (T) => (s(), o("tr", { key: T }, [
-              e("td", Wb, v(T), 1),
+            (s(!0), o(V, null, b(l.value, (k) => (s(), o("tr", { key: k }, [
+              e("td", jb, v(k), 1),
               (s(!0), o(V, null, b(n.value, ($) => (s(), o("td", {
                 key: $,
                 class: "trx-pivot__td trx-pivot__td--value",
-                style: R({ "--heat": m(T, $) })
-              }, v(c(T, $)), 5))), 128)),
-              t.showTotals ? (s(), o("td", Gb, v(u(T)), 1)) : h("", !0)
+                style: R({ "--heat": m(k, $) })
+              }, v(c(k, $)), 5))), 128)),
+              t.showTotals ? (s(), o("td", Hb, v(u(k)), 1)) : h("", !0)
             ]))), 128))
           ]),
-          t.showTotals ? (s(), o("tfoot", Kb, [
+          t.showTotals ? (s(), o("tfoot", Ub, [
             e("tr", null, [
               f[0] || (f[0] = e("td", { class: "trx-pivot__td trx-pivot__td--label trx-pivot__td--foot" }, "Total", -1)),
-              (s(!0), o(V, null, b(n.value, (T) => (s(), o("td", {
-                key: T,
+              (s(!0), o(V, null, b(n.value, (k) => (s(), o("td", {
+                key: k,
                 class: "trx-pivot__td trx-pivot__td--total"
-              }, v(_(T)), 1))), 128)),
-              e("td", Yb, v(d.value), 1)
+              }, v(_(k)), 1))), 128)),
+              e("td", Wb, v(d.value), 1)
             ])
           ])) : h("", !0)
         ])
       ])
     ]));
   }
-}), p4 = /* @__PURE__ */ A(Jb, [["__scopeId", "data-v-d9bac3c6"]]), Xb = { class: "trx-env-banner__label" }, Qb = {
+}), l4 = /* @__PURE__ */ M(Gb, [["__scopeId", "data-v-d9bac3c6"]]), Kb = { class: "trx-env-banner__label" }, Yb = {
   key: 0,
   class: "trx-env-banner__msg"
-}, Zb = /* @__PURE__ */ g({
+}, Jb = /* @__PURE__ */ g({
   __name: "TrxEnvironmentBanner",
   props: {
     env: { default: "development" },
@@ -9553,20 +9550,20 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       staging: "pi pi-server",
       homologation: "pi pi-check-circle",
       production: "pi pi-globe"
-    }, i = D(!0);
+    }, i = z(!0);
     return (l, n) => (s(), L(et, { to: "body" }, [
       O(j, { name: "trx-env-slide" }, {
         default: B(() => [
           i.value && t.env !== "production" ? (s(), o("div", {
             key: 0,
-            class: w(["trx-env-banner", `trx-env-banner--${t.env}`]),
+            class: y(["trx-env-banner", `trx-env-banner--${t.env}`]),
             role: "banner"
           }, [
             e("i", {
-              class: w([r[t.env], "trx-env-banner__icon"])
+              class: y([r[t.env], "trx-env-banner__icon"])
             }, null, 2),
-            e("span", Xb, v(a[t.env]), 1),
-            t.message ? (s(), o("span", Qb, "— " + v(t.message), 1)) : h("", !0),
+            e("span", Kb, v(a[t.env]), 1),
+            t.message ? (s(), o("span", Yb, "— " + v(t.message), 1)) : h("", !0),
             t.dismissible ? (s(), o("button", {
               key: 1,
               class: "trx-env-banner__close",
@@ -9581,19 +9578,19 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       })
     ]));
   }
-}), v4 = /* @__PURE__ */ A(Zb, [["__scopeId", "data-v-b7dfb3ab"]]), ty = { class: "trx-log" }, ey = { class: "trx-log__toolbar" }, sy = { class: "trx-log__filters" }, ay = ["onClick"], ly = { class: "trx-log__search-wrap" }, ny = { class: "trx-log__count" }, oy = {
+}), n4 = /* @__PURE__ */ M(Jb, [["__scopeId", "data-v-b7dfb3ab"]]), Xb = { class: "trx-log" }, Qb = { class: "trx-log__toolbar" }, Zb = { class: "trx-log__filters" }, ty = ["onClick"], ey = { class: "trx-log__search-wrap" }, sy = { class: "trx-log__count" }, ay = {
   key: 0,
   class: "trx-log__empty"
-}, ry = {
+}, ly = {
   key: 0,
   class: "trx-log__ts"
-}, iy = {
+}, ny = {
   key: 1,
   class: "trx-log__source"
-}, cy = { class: "trx-log__msg" }, uy = {
+}, oy = { class: "trx-log__msg" }, ry = {
   key: 2,
   class: "trx-log__meta"
-}, dy = /* @__PURE__ */ g({
+}, iy = /* @__PURE__ */ g({
   __name: "TrxLogViewer",
   props: {
     logs: {},
@@ -9604,7 +9601,7 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
     showSource: { type: Boolean, default: !0 }
   },
   setup(t) {
-    const a = t, r = D(""), i = D(/* @__PURE__ */ new Set(["debug", "info", "warn", "error", "success"])), l = D(), n = ["debug", "info", "warn", "error", "success"];
+    const a = t, r = z(""), i = z(/* @__PURE__ */ new Set(["debug", "info", "warn", "error", "success"])), l = z(), n = ["debug", "info", "warn", "error", "success"];
     function c(d) {
       i.value.has(d) ? i.value.delete(d) : i.value.add(d);
     }
@@ -9627,21 +9624,21 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       error: "pi pi-times-circle",
       success: "pi pi-check-circle"
     };
-    return (d, p) => (s(), o("div", ty, [
-      e("div", ey, [
-        e("div", sy, [
+    return (d, p) => (s(), o("div", Xb, [
+      e("div", Qb, [
+        e("div", Zb, [
           (s(), o(V, null, b(n, (m) => e("button", {
             key: m,
-            class: w(["trx-log__filter", [`trx-log__filter--${m}`, { "trx-log__filter--active": i.value.has(m) }]]),
+            class: y(["trx-log__filter", [`trx-log__filter--${m}`, { "trx-log__filter--active": i.value.has(m) }]]),
             onClick: (x) => c(m)
           }, [
             e("i", {
-              class: w(_[m])
+              class: y(_[m])
             }, null, 2),
             e("span", null, v(m), 1)
-          ], 10, ay)), 64))
+          ], 10, ty)), 64))
         ]),
-        e("div", ly, [
+        e("div", ey, [
           p[1] || (p[1] = e("i", { class: "pi pi-search trx-log__search-icon" }, null, -1)),
           Y(e("input", {
             "onUpdate:modelValue": p[0] || (p[0] = (m) => r.value = m),
@@ -9651,7 +9648,7 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
             [J, r.value]
           ])
         ]),
-        e("span", ny, v(u.value.length) + " / " + v(t.logs.length), 1)
+        e("span", sy, v(u.value.length) + " / " + v(t.logs.length), 1)
       ]),
       e("div", {
         ref_key: "container",
@@ -9659,18 +9656,18 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
         class: "trx-log__body",
         style: R({ maxHeight: t.maxHeight })
       }, [
-        u.value.length ? h("", !0) : (s(), o("div", oy, "Nenhum log")),
+        u.value.length ? h("", !0) : (s(), o("div", ay, "Nenhum log")),
         (s(!0), o(V, null, b(u.value, (m) => (s(), o("div", {
           key: m.id,
-          class: w(["trx-log__entry", `trx-log__entry--${m.level}`])
+          class: y(["trx-log__entry", `trx-log__entry--${m.level}`])
         }, [
           e("i", {
-            class: w([_[m.level], "trx-log__entry-icon"])
+            class: y([_[m.level], "trx-log__entry-icon"])
           }, null, 2),
-          t.showTimestamp && m.timestamp ? (s(), o("span", ry, v(m.timestamp), 1)) : h("", !0),
-          t.showSource && m.source ? (s(), o("span", iy, "[" + v(m.source) + "]", 1)) : h("", !0),
-          e("span", cy, v(m.message), 1),
-          m.meta ? (s(), o("details", uy, [
+          t.showTimestamp && m.timestamp ? (s(), o("span", ly, v(m.timestamp), 1)) : h("", !0),
+          t.showSource && m.source ? (s(), o("span", ny, "[" + v(m.source) + "]", 1)) : h("", !0),
+          e("span", oy, v(m.message), 1),
+          m.meta ? (s(), o("details", ry, [
             p[2] || (p[2] = e("summary", null, "meta", -1)),
             e("pre", null, v(JSON.stringify(m.meta, null, 2)), 1)
           ])) : h("", !0)
@@ -9678,14 +9675,14 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       ], 4)
     ]));
   }
-}), m4 = /* @__PURE__ */ A(dy, [["__scopeId", "data-v-d3d12a7f"]]), _y = /* @__PURE__ */ g({
+}), o4 = /* @__PURE__ */ M(iy, [["__scopeId", "data-v-d3d12a7f"]]), cy = /* @__PURE__ */ g({
   __name: "TrxOfflineIndicator",
   props: {
     position: { default: "top" },
     reconnectLabel: { default: "Reconectando..." }
   },
   setup(t) {
-    const a = D(!navigator.onLine), r = D(!1);
+    const a = z(!navigator.onLine), r = z(!1);
     function i() {
       a.value = !0, r.value = !1;
     }
@@ -9703,7 +9700,7 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
         default: B(() => [
           a.value || r.value ? (s(), o("div", {
             key: 0,
-            class: w(["trx-offline", [`trx-offline--${t.position}`, { "trx-offline--reconnecting": r.value }]]),
+            class: y(["trx-offline", [`trx-offline--${t.position}`, { "trx-offline--reconnecting": r.value }]]),
             role: "status",
             "aria-live": "assertive"
           }, [
@@ -9720,15 +9717,15 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       })
     ]));
   }
-}), f4 = /* @__PURE__ */ A(_y, [["__scopeId", "data-v-5caecc99"]]), py = {
+}), r4 = /* @__PURE__ */ M(cy, [["__scopeId", "data-v-5caecc99"]]), uy = {
   key: 0,
   class: "trx-upd",
   role: "dialog",
   "aria-live": "polite"
-}, vy = { class: "trx-upd__content" }, my = { class: "trx-upd__title" }, fy = { class: "trx-upd__msg" }, xy = {
+}, dy = { class: "trx-upd__content" }, _y = { class: "trx-upd__title" }, py = { class: "trx-upd__msg" }, vy = {
   key: 0,
   class: "trx-upd__ver"
-}, hy = { class: "trx-upd__actions" }, $y = /* @__PURE__ */ g({
+}, my = { class: "trx-upd__actions" }, fy = /* @__PURE__ */ g({
   __name: "TrxUpdatePrompt",
   props: {
     modelValue: { type: Boolean, default: !1 },
@@ -9750,18 +9747,18 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
     return (n, c) => (s(), L(et, { to: "body" }, [
       O(j, { name: "trx-upd-slide" }, {
         default: B(() => [
-          t.modelValue ? (s(), o("div", py, [
+          t.modelValue ? (s(), o("div", uy, [
             c[2] || (c[2] = e("div", { class: "trx-upd__icon-wrap" }, [
               e("i", { class: "pi pi-refresh trx-upd__icon" })
             ], -1)),
-            e("div", vy, [
-              e("p", my, v(t.title), 1),
-              e("p", fy, [
+            e("div", dy, [
+              e("p", _y, v(t.title), 1),
+              e("p", py, [
                 N(v(t.message), 1),
-                t.version ? (s(), o("span", xy, " v" + v(t.version), 1)) : h("", !0)
+                t.version ? (s(), o("span", vy, " v" + v(t.version), 1)) : h("", !0)
               ])
             ]),
-            e("div", hy, [
+            e("div", my, [
               e("button", {
                 class: "trx-upd__btn trx-upd__btn--update",
                 onClick: i
@@ -9787,16 +9784,16 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       })
     ]));
   }
-}), x4 = /* @__PURE__ */ A($y, [["__scopeId", "data-v-81ddfccd"]]), gy = { class: "trx-fp" }, by = { class: "trx-fp__header" }, yy = { class: "trx-fp__meta" }, ky = { class: "trx-fp__name" }, wy = {
+}), i4 = /* @__PURE__ */ M(fy, [["__scopeId", "data-v-81ddfccd"]]), xy = { class: "trx-fp" }, hy = { class: "trx-fp__header" }, $y = { class: "trx-fp__meta" }, gy = { class: "trx-fp__name" }, by = {
   key: 0,
   class: "trx-fp__size"
-}, Ty = { class: "trx-fp__actions" }, Cy = ["href", "aria-label"], Sy = ["src", "alt"], Iy = ["src"], Vy = ["src"], By = ["src"], Py = {
+}, yy = { class: "trx-fp__actions" }, ky = ["href", "aria-label"], wy = ["src", "alt"], Ty = ["src"], Cy = ["src"], Sy = ["src"], Iy = {
   key: 4,
   class: "trx-fp__text-wrap"
-}, Ay = ["src"], My = {
+}, Vy = ["src"], By = {
   key: 5,
   class: "trx-fp__unknown"
-}, Ly = { class: "trx-fp__ext" }, zy = ["href"], Dy = /* @__PURE__ */ g({
+}, Py = { class: "trx-fp__ext" }, My = ["href"], Ay = /* @__PURE__ */ g({
   __name: "TrxFilePreview",
   props: {
     url: {},
@@ -9828,16 +9825,16 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       var d;
       return ((d = (r.name ?? "").split(".").pop()) == null ? void 0 : d.toUpperCase()) ?? "FILE";
     });
-    return (d, p) => (s(), o("div", gy, [
-      e("div", by, [
+    return (d, p) => (s(), o("div", xy, [
+      e("div", hy, [
         e("i", {
-          class: w([u[n.value], "trx-fp__header-icon"])
+          class: y([u[n.value], "trx-fp__header-icon"])
         }, null, 2),
-        e("div", yy, [
-          e("span", ky, v(t.name ?? "Arquivo"), 1),
-          t.size ? (s(), o("span", wy, v(c(t.size)), 1)) : h("", !0)
+        e("div", $y, [
+          e("span", gy, v(t.name ?? "Arquivo"), 1),
+          t.size ? (s(), o("span", by, v(c(t.size)), 1)) : h("", !0)
         ]),
-        e("div", Ty, [
+        e("div", yy, [
           t.url ? (s(), o("a", {
             key: 0,
             href: t.url,
@@ -9847,7 +9844,7 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
             onClick: p[0] || (p[0] = (m) => i("download"))
           }, [...p[2] || (p[2] = [
             e("i", { class: "pi pi-download" }, null, -1)
-          ])], 8, Cy)) : h("", !0),
+          ])], 8, ky)) : h("", !0),
           e("button", {
             class: "trx-fp__action",
             onClick: p[1] || (p[1] = (m) => i("close"))
@@ -9865,32 +9862,32 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
           src: t.url,
           alt: t.name,
           class: "trx-fp__img"
-        }, null, 8, Sy)) : n.value === "pdf" ? (s(), o("iframe", {
+        }, null, 8, wy)) : n.value === "pdf" ? (s(), o("iframe", {
           key: 1,
           src: t.url,
           class: "trx-fp__iframe",
           title: "PDF Preview"
-        }, null, 8, Iy)) : n.value === "video" ? (s(), o("video", {
+        }, null, 8, Ty)) : n.value === "video" ? (s(), o("video", {
           key: 2,
           src: t.url,
           controls: "",
           class: "trx-fp__video"
-        }, " Seu browser não suporta vídeo. ", 8, Vy)) : n.value === "audio" ? (s(), o("audio", {
+        }, " Seu browser não suporta vídeo. ", 8, Cy)) : n.value === "audio" ? (s(), o("audio", {
           key: 3,
           src: t.url,
           controls: "",
           class: "trx-fp__audio"
-        }, " Seu browser não suporta áudio. ", 8, By)) : n.value === "text" ? (s(), o("div", Py, [
+        }, " Seu browser não suporta áudio. ", 8, Sy)) : n.value === "text" ? (s(), o("div", Iy, [
           I(d.$slots, "text-content", {}, () => [
             e("iframe", {
               src: t.url,
               class: "trx-fp__iframe",
               title: "Text Preview",
               sandbox: "allow-same-origin"
-            }, null, 8, Ay)
+            }, null, 8, Vy)
           ], !0)
-        ])) : (s(), o("div", My, [
-          e("span", Ly, v(_.value), 1),
+        ])) : (s(), o("div", By, [
+          e("span", Py, v(_.value), 1),
           p[5] || (p[5] = e("p", { class: "trx-fp__unknown-msg" }, "Pré-visualização não disponível para este tipo de arquivo.", -1)),
           t.url ? (s(), o("a", {
             key: 0,
@@ -9900,22 +9897,22 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
           }, [...p[4] || (p[4] = [
             e("i", { class: "pi pi-download" }, null, -1),
             N(" Baixar arquivo ", -1)
-          ])], 8, zy)) : h("", !0)
+          ])], 8, My)) : h("", !0)
         ]))
       ], 4)
     ]));
   }
-}), h4 = /* @__PURE__ */ A(Dy, [["__scopeId", "data-v-ea51c0ff"]]), Ey = {
+}), c4 = /* @__PURE__ */ M(Ay, [["__scopeId", "data-v-ea51c0ff"]]), Ly = {
   key: 0,
   class: "trx-ann__dots"
-}, Ry = ["onClick"], Ny = { class: "trx-ann__msg" }, qy = ["href"], Fy = /* @__PURE__ */ g({
+}, zy = ["onClick"], Dy = { class: "trx-ann__msg" }, Ey = ["href"], Ry = /* @__PURE__ */ g({
   __name: "TrxAnnouncementBar",
   props: {
     announcements: { default: () => [] },
     rotateInterval: { default: 0 }
   },
   setup(t) {
-    const a = t, r = D(/* @__PURE__ */ new Set()), i = D(0), l = S(() => a.announcements.filter((p) => !r.value.has(p.id))), n = S(() => l.value[i.value % Math.max(l.value.length, 1)] ?? null);
+    const a = t, r = z(/* @__PURE__ */ new Set()), i = z(0), l = S(() => a.announcements.filter((p) => !r.value.has(p.id))), n = S(() => l.value[i.value % Math.max(l.value.length, 1)] ?? null);
     function c(p) {
       r.value.add(p), i.value >= l.value.length - 1 && (i.value = 0);
     }
@@ -9941,21 +9938,21 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
         default: B(() => [
           n.value ? (s(), o("div", {
             key: 0,
-            class: w(["trx-ann", `trx-ann--${n.value.type ?? "info"}`]),
+            class: y(["trx-ann", `trx-ann--${n.value.type ?? "info"}`]),
             role: "status",
             "aria-live": "polite"
           }, [
-            l.value.length > 1 ? (s(), o("div", Ey, [
+            l.value.length > 1 ? (s(), o("div", Ly, [
               (s(!0), o(V, null, b(l.value, (x, f) => (s(), o("span", {
                 key: x.id,
-                class: w(["trx-ann__dot", { "trx-ann__dot--active": f === i.value % l.value.length }]),
-                onClick: (T) => i.value = f
-              }, null, 10, Ry))), 128))
+                class: y(["trx-ann__dot", { "trx-ann__dot--active": f === i.value % l.value.length }]),
+                onClick: (k) => i.value = f
+              }, null, 10, zy))), 128))
             ])) : h("", !0),
             e("i", {
-              class: w([d[n.value.type ?? "info"], "trx-ann__icon"])
+              class: y([d[n.value.type ?? "info"], "trx-ann__icon"])
             }, null, 2),
-            e("span", Ny, v(n.value.message), 1),
+            e("span", Dy, v(n.value.message), 1),
             n.value.link ? (s(), o("a", {
               key: 1,
               href: n.value.link.href,
@@ -9965,7 +9962,7 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
             }, [
               N(v(n.value.link.label) + " ", 1),
               m[1] || (m[1] = e("i", { class: "pi pi-external-link" }, null, -1))
-            ], 8, qy)) : h("", !0),
+            ], 8, Ey)) : h("", !0),
             n.value.dismissible !== !1 ? (s(), o("button", {
               key: 2,
               class: "trx-ann__close",
@@ -9980,25 +9977,25 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       })
     ]));
   }
-}), $4 = /* @__PURE__ */ A(Fy, [["__scopeId", "data-v-84e8d297"]]), Oy = { inheritAttrs: !1 }, g4 = /* @__PURE__ */ g({
-  ...Oy,
+}), u4 = /* @__PURE__ */ M(Ry, [["__scopeId", "data-v-84e8d297"]]), Ny = { inheritAttrs: !1 }, d4 = /* @__PURE__ */ g({
+  ...Ny,
   __name: "TrxAutoComplete",
   setup(t) {
     const a = tt(), r = S(() => ({
       placeholder: "Buscar...",
       ...a
     }));
-    return (i, l) => (s(), L(P(At), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(Mt), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), jy = { inheritAttrs: !1 }, b4 = /* @__PURE__ */ g({
-  ...jy,
+}), qy = { inheritAttrs: !1 }, _4 = /* @__PURE__ */ g({
+  ...qy,
   __name: "TrxDatePicker",
   setup(t) {
     const a = tt(), r = S(() => ({
@@ -10006,17 +10003,17 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       showIcon: !0,
       ...a
     }));
-    return (i, l) => (s(), L(P(Mt), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(At), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), Hy = { inheritAttrs: !1 }, y4 = /* @__PURE__ */ g({
-  ...Hy,
+}), Fy = { inheritAttrs: !1 }, p4 = /* @__PURE__ */ g({
+  ...Fy,
   __name: "TrxInputNumber",
   setup(t) {
     const a = tt(), r = S(() => ({
@@ -10024,17 +10021,17 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       minFractionDigits: 2,
       ...a
     }));
-    return (i, l) => (s(), L(P(Lt), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(Lt), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), Uy = { inheritAttrs: !1 }, k4 = /* @__PURE__ */ g({
-  ...Uy,
+}), Oy = { inheritAttrs: !1 }, v4 = /* @__PURE__ */ g({
+  ...Oy,
   __name: "TrxPassword",
   setup(t) {
     const a = tt(), r = S(() => ({
@@ -10043,17 +10040,17 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       strongLabel: "Forte",
       ...a
     }));
-    return (i, l) => (s(), L(P(it), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(it), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), Wy = { inheritAttrs: !1 }, w4 = /* @__PURE__ */ g({
-  ...Wy,
+}), jy = { inheritAttrs: !1 }, m4 = /* @__PURE__ */ g({
+  ...jy,
   __name: "TrxSelect",
   setup(t) {
     const a = tt(), r = S(() => ({
@@ -10061,17 +10058,17 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       emptyMessage: "Nenhum resultado",
       ...a
     }));
-    return (i, l) => (s(), L(P(zt), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(zt), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), Gy = { inheritAttrs: !1 }, T4 = /* @__PURE__ */ g({
-  ...Gy,
+}), Hy = { inheritAttrs: !1 }, f4 = /* @__PURE__ */ g({
+  ...Hy,
   __name: "TrxMultiSelect",
   setup(t) {
     const a = tt(), r = S(() => ({
@@ -10079,857 +10076,818 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       emptyMessage: "Nenhum resultado",
       ...a
     }));
-    return (i, l) => (s(), L(P(Dt), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(Dt), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), Ky = { inheritAttrs: !1 }, C4 = /* @__PURE__ */ g({
-  ...Ky,
+}), Uy = { inheritAttrs: !1 }, x4 = /* @__PURE__ */ g({
+  ...Uy,
   __name: "TrxListbox",
   setup(t) {
     const a = tt(), r = S(() => ({
       emptyMessage: "Nenhum resultado",
       ...a
     }));
-    return (i, l) => (s(), L(P(Et), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(Et), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), Yy = { inheritAttrs: !1 }, S4 = /* @__PURE__ */ g({
-  ...Yy,
+}), Wy = { inheritAttrs: !1 }, h4 = /* @__PURE__ */ g({
+  ...Wy,
   __name: "TrxCascadeSelect",
   setup(t) {
-    return (a, r) => (s(), L(P(Rt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Rt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Jy = { inheritAttrs: !1 }, I4 = /* @__PURE__ */ g({
-  ...Jy,
+}), Gy = { inheritAttrs: !1 }, $4 = /* @__PURE__ */ g({
+  ...Gy,
   __name: "TrxCheckbox",
   setup(t) {
-    return (a, r) => (s(), L(P(gt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(gt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Xy = { inheritAttrs: !1 }, V4 = /* @__PURE__ */ g({
-  ...Xy,
+}), Ky = { inheritAttrs: !1 }, g4 = /* @__PURE__ */ g({
+  ...Ky,
   __name: "TrxCheckboxGroup",
   setup(t) {
-    return (a, r) => (s(), L(P(Nt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Nt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Qy = { inheritAttrs: !1 }, B4 = /* @__PURE__ */ g({
-  ...Qy,
+}), Yy = { inheritAttrs: !1 }, b4 = /* @__PURE__ */ g({
+  ...Yy,
   __name: "TrxFloatLabel",
   setup(t) {
-    return (a, r) => (s(), L(P(qt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(qt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Zy = { inheritAttrs: !1 }, P4 = /* @__PURE__ */ g({
-  ...Zy,
+}), Jy = { inheritAttrs: !1 }, y4 = /* @__PURE__ */ g({
+  ...Jy,
   __name: "TrxFluid",
   setup(t) {
-    return (a, r) => (s(), L(P(Ft), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ft), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), t0 = { inheritAttrs: !1 }, A4 = /* @__PURE__ */ g({
-  ...t0,
+}), Xy = { inheritAttrs: !1 }, k4 = /* @__PURE__ */ g({
+  ...Xy,
   __name: "TrxIconField",
   setup(t) {
-    return (a, r) => (s(), L(P(Ot), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ot), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), e0 = { inheritAttrs: !1 }, M4 = /* @__PURE__ */ g({
-  ...e0,
+}), Qy = { inheritAttrs: !1 }, w4 = /* @__PURE__ */ g({
+  ...Qy,
   __name: "TrxIftaLabel",
   setup(t) {
-    return (a, r) => (s(), L(P(jt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(jt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), s0 = { inheritAttrs: !1 }, L4 = /* @__PURE__ */ g({
-  ...s0,
+}), Zy = { inheritAttrs: !1 }, T4 = /* @__PURE__ */ g({
+  ...Zy,
   __name: "TrxInputChips",
   setup(t) {
-    return (a, r) => (s(), L(P(Ht), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ht), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), a0 = { inheritAttrs: !1 }, z4 = /* @__PURE__ */ g({
-  ...a0,
+}), t0 = { inheritAttrs: !1 }, C4 = /* @__PURE__ */ g({
+  ...t0,
   __name: "TrxInputGroup",
   setup(t) {
-    return (a, r) => (s(), L(P(Ut), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ut), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), l0 = { inheritAttrs: !1 }, D4 = /* @__PURE__ */ g({
-  ...l0,
+}), e0 = { inheritAttrs: !1 }, S4 = /* @__PURE__ */ g({
+  ...e0,
   __name: "TrxInputGroupAddon",
   setup(t) {
-    return (a, r) => (s(), L(P(Wt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Wt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), n0 = { inheritAttrs: !1 }, E4 = /* @__PURE__ */ g({
-  ...n0,
+}), s0 = { inheritAttrs: !1 }, I4 = /* @__PURE__ */ g({
+  ...s0,
   __name: "TrxInputIcon",
   setup(t) {
-    return (a, r) => (s(), L(P(Gt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Gt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), o0 = { inheritAttrs: !1 }, R4 = /* @__PURE__ */ g({
-  ...o0,
+}), a0 = { inheritAttrs: !1 }, V4 = /* @__PURE__ */ g({
+  ...a0,
   __name: "TrxInputMask",
   setup(t) {
-    return (a, r) => (s(), L(P(Kt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Kt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), r0 = { inheritAttrs: !1 }, N4 = /* @__PURE__ */ g({
-  ...r0,
+}), l0 = { inheritAttrs: !1 }, B4 = /* @__PURE__ */ g({
+  ...l0,
   __name: "TrxInputOtp",
   setup(t) {
-    return (a, r) => (s(), L(P(Yt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Yt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), i0 = { inheritAttrs: !1 }, q4 = /* @__PURE__ */ g({
-  ...i0,
+}), n0 = { inheritAttrs: !1 }, P4 = /* @__PURE__ */ g({
+  ...n0,
   __name: "TrxInputText",
   setup(t) {
-    return (a, r) => (s(), L(P(rt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(rt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), c0 = { inheritAttrs: !1 }, F4 = /* @__PURE__ */ g({
-  ...c0,
+}), o0 = { inheritAttrs: !1 }, M4 = /* @__PURE__ */ g({
+  ...o0,
   __name: "TrxKnob",
   setup(t) {
-    return (a, r) => (s(), L(P(Jt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Jt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), u0 = { inheritAttrs: !1 }, O4 = /* @__PURE__ */ g({
-  ...u0,
+}), r0 = { inheritAttrs: !1 }, A4 = /* @__PURE__ */ g({
+  ...r0,
   __name: "TrxRadioButton",
   setup(t) {
-    return (a, r) => (s(), L(P(Xt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Xt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), d0 = { inheritAttrs: !1 }, j4 = /* @__PURE__ */ g({
-  ...d0,
+}), i0 = { inheritAttrs: !1 }, L4 = /* @__PURE__ */ g({
+  ...i0,
   __name: "TrxRadioButtonGroup",
   setup(t) {
-    return (a, r) => (s(), L(P(Qt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Qt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), _0 = { inheritAttrs: !1 }, H4 = /* @__PURE__ */ g({
-  ..._0,
+}), c0 = { inheritAttrs: !1 }, z4 = /* @__PURE__ */ g({
+  ...c0,
   __name: "TrxRating",
   setup(t) {
-    return (a, r) => (s(), L(P(Zt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Zt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), p0 = { inheritAttrs: !1 }, U4 = /* @__PURE__ */ g({
-  ...p0,
+}), u0 = { inheritAttrs: !1 }, D4 = /* @__PURE__ */ g({
+  ...u0,
   __name: "TrxSelectButton",
   setup(t) {
-    return (a, r) => (s(), L(P(te), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(te), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), v0 = { inheritAttrs: !1 }, W4 = /* @__PURE__ */ g({
-  ...v0,
+}), d0 = { inheritAttrs: !1 }, E4 = /* @__PURE__ */ g({
+  ...d0,
   __name: "TrxSlider",
   setup(t) {
-    return (a, r) => (s(), L(P(ee), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ee), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), m0 = { inheritAttrs: !1 }, G4 = /* @__PURE__ */ g({
-  ...m0,
+}), _0 = { inheritAttrs: !1 }, R4 = /* @__PURE__ */ g({
+  ..._0,
   __name: "TrxTextarea",
   setup(t) {
-    return (a, r) => (s(), L(P(se), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(se), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), f0 = { inheritAttrs: !1 }, K4 = /* @__PURE__ */ g({
-  ...f0,
+}), p0 = { inheritAttrs: !1 }, N4 = /* @__PURE__ */ g({
+  ...p0,
   __name: "TrxToggleButton",
   setup(t) {
-    return (a, r) => (s(), L(P(ae), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ae), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), x0 = { inheritAttrs: !1 }, Y4 = /* @__PURE__ */ g({
-  ...x0,
+}), v0 = { inheritAttrs: !1 }, q4 = /* @__PURE__ */ g({
+  ...v0,
   __name: "TrxToggleSwitch",
   setup(t) {
-    return (a, r) => (s(), L(P(le), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(le), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), h0 = { inheritAttrs: !1 }, J4 = /* @__PURE__ */ g({
-  ...h0,
+}), m0 = { inheritAttrs: !1 }, F4 = /* @__PURE__ */ g({
+  ...m0,
   __name: "TrxTreeSelect",
   setup(t) {
-    return (a, r) => (s(), L(P(ne), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ne), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), $0 = { inheritAttrs: !1 }, X4 = /* @__PURE__ */ g({
-  ...$0,
+}), f0 = { inheritAttrs: !1 }, O4 = /* @__PURE__ */ g({
+  ...f0,
   __name: "TrxButton",
   setup(t) {
-    return (a, r) => (s(), L(P(st), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(st), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), g0 = { inheritAttrs: !1 }, Q4 = /* @__PURE__ */ g({
-  ...g0,
+}), x0 = { inheritAttrs: !1 }, j4 = /* @__PURE__ */ g({
+  ...x0,
   __name: "TrxButtonGroup",
   setup(t) {
-    return (a, r) => (s(), L(P(oe), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(oe), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), b0 = { inheritAttrs: !1 }, Z4 = /* @__PURE__ */ g({
-  ...b0,
+}), h0 = { inheritAttrs: !1 }, H4 = /* @__PURE__ */ g({
+  ...h0,
   __name: "TrxSpeedDial",
   setup(t) {
-    return (a, r) => (s(), L(P(re), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(re), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), y0 = { inheritAttrs: !1 }, t3 = /* @__PURE__ */ g({
-  ...y0,
+}), $0 = { inheritAttrs: !1 }, U4 = /* @__PURE__ */ g({
+  ...$0,
   __name: "TrxSplitButton",
   setup(t) {
-    return (a, r) => (s(), L(P(ie), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ie), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), k0 = { inheritAttrs: !1 }, e3 = /* @__PURE__ */ g({
-  ...k0,
+}), g0 = { inheritAttrs: !1 }, W4 = /* @__PURE__ */ g({
+  ...g0,
   __name: "TrxPaginator",
   setup(t) {
     const a = tt(), r = S(() => ({
       rowsPerPageOptions: [10, 25, 50],
       ...a
     }));
-    return (i, l) => (s(), L(P(ce), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(ce), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), w0 = { inheritAttrs: !1 }, s3 = /* @__PURE__ */ g({
-  ...w0,
-  __name: "TrxColumn",
-  setup(t) {
-    return (a, r) => (s(), L(P(ue), y(k(a.$attrs)), z({ _: 2 }, [
-      b(a.$slots, (i, l) => ({
-        name: l,
-        fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
-        ])
-      }))
-    ]), 1040));
-  }
-}), T0 = { inheritAttrs: !1 }, a3 = /* @__PURE__ */ g({
-  ...T0,
-  __name: "TrxColumnGroup",
-  setup(t) {
-    return (a, r) => (s(), L(P(de), y(k(a.$attrs)), z({ _: 2 }, [
-      b(a.$slots, (i, l) => ({
-        name: l,
-        fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
-        ])
-      }))
-    ]), 1040));
-  }
-}), C0 = { inheritAttrs: !1 }, l3 = /* @__PURE__ */ g({
-  ...C0,
+}), b0 = { inheritAttrs: !1 }, G4 = /* @__PURE__ */ g({
+  ...b0,
   __name: "TrxDataView",
   setup(t) {
-    return (a, r) => (s(), L(P(_e), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ue), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), S0 = { inheritAttrs: !1 }, n3 = /* @__PURE__ */ g({
-  ...S0,
+}), y0 = { inheritAttrs: !1 }, K4 = /* @__PURE__ */ g({
+  ...y0,
   __name: "TrxOrderList",
   setup(t) {
-    return (a, r) => (s(), L(P(pe), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(de), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), I0 = { inheritAttrs: !1 }, o3 = /* @__PURE__ */ g({
-  ...I0,
+}), k0 = { inheritAttrs: !1 }, Y4 = /* @__PURE__ */ g({
+  ...k0,
   __name: "TrxOrganizationChart",
   setup(t) {
-    return (a, r) => (s(), L(P(ve), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(_e), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), V0 = { inheritAttrs: !1 }, r3 = /* @__PURE__ */ g({
-  ...V0,
+}), w0 = { inheritAttrs: !1 }, J4 = /* @__PURE__ */ g({
+  ...w0,
   __name: "TrxPickList",
   setup(t) {
-    return (a, r) => (s(), L(P(me), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(pe), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), B0 = { inheritAttrs: !1 }, i3 = /* @__PURE__ */ g({
-  ...B0,
-  __name: "TrxRow",
-  setup(t) {
-    return (a, r) => (s(), L(P(fe), y(k(a.$attrs)), z({ _: 2 }, [
-      b(a.$slots, (i, l) => ({
-        name: l,
-        fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
-        ])
-      }))
-    ]), 1040));
-  }
-}), P0 = { inheritAttrs: !1 }, c3 = /* @__PURE__ */ g({
-  ...P0,
+}), T0 = { inheritAttrs: !1 }, X4 = /* @__PURE__ */ g({
+  ...T0,
   __name: "TrxTimeline",
   setup(t) {
-    return (a, r) => (s(), L(P(xe), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ve), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), A0 = { inheritAttrs: !1 }, u3 = /* @__PURE__ */ g({
-  ...A0,
+}), C0 = { inheritAttrs: !1 }, Q4 = /* @__PURE__ */ g({
+  ...C0,
   __name: "TrxTree",
   setup(t) {
-    return (a, r) => (s(), L(P(he), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(me), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), M0 = { inheritAttrs: !1 }, d3 = /* @__PURE__ */ g({
-  ...M0,
+}), S0 = { inheritAttrs: !1 }, Z4 = /* @__PURE__ */ g({
+  ...S0,
   __name: "TrxTreeTable",
   setup(t) {
-    return (a, r) => (s(), L(P($e), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(fe), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), L0 = { inheritAttrs: !1 }, _3 = /* @__PURE__ */ g({
-  ...L0,
+}), I0 = { inheritAttrs: !1 }, t3 = /* @__PURE__ */ g({
+  ...I0,
   __name: "TrxVirtualScroller",
   setup(t) {
-    return (a, r) => (s(), L(P(ge), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(xe), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), z0 = { inheritAttrs: !1 }, p3 = /* @__PURE__ */ g({
-  ...z0,
+}), V0 = { inheritAttrs: !1 }, e3 = /* @__PURE__ */ g({
+  ...V0,
   __name: "TrxAccordion",
   setup(t) {
-    return (a, r) => (s(), L(P(be), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(he), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), D0 = { inheritAttrs: !1 }, v3 = /* @__PURE__ */ g({
-  ...D0,
+}), B0 = { inheritAttrs: !1 }, s3 = /* @__PURE__ */ g({
+  ...B0,
   __name: "TrxAccordionContent",
   setup(t) {
-    return (a, r) => (s(), L(P(ye), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P($e), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), E0 = { inheritAttrs: !1 }, m3 = /* @__PURE__ */ g({
-  ...E0,
+}), P0 = { inheritAttrs: !1 }, a3 = /* @__PURE__ */ g({
+  ...P0,
   __name: "TrxAccordionHeader",
   setup(t) {
-    return (a, r) => (s(), L(P(ke), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ge), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), R0 = { inheritAttrs: !1 }, f3 = /* @__PURE__ */ g({
-  ...R0,
+}), M0 = { inheritAttrs: !1 }, l3 = /* @__PURE__ */ g({
+  ...M0,
   __name: "TrxAccordionPanel",
   setup(t) {
-    return (a, r) => (s(), L(P(we), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(be), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), N0 = { inheritAttrs: !1 }, x3 = /* @__PURE__ */ g({
-  ...N0,
+}), A0 = { inheritAttrs: !1 }, n3 = /* @__PURE__ */ g({
+  ...A0,
   __name: "TrxDeferredContent",
   setup(t) {
-    return (a, r) => (s(), L(P(Te), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ye), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), q0 = { inheritAttrs: !1 }, h3 = /* @__PURE__ */ g({
-  ...q0,
+}), L0 = { inheritAttrs: !1 }, o3 = /* @__PURE__ */ g({
+  ...L0,
   __name: "TrxDivider",
   setup(t) {
-    return (a, r) => (s(), L(P(Ce), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ke), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), F0 = { inheritAttrs: !1 }, $3 = /* @__PURE__ */ g({
-  ...F0,
+}), z0 = { inheritAttrs: !1 }, r3 = /* @__PURE__ */ g({
+  ...z0,
   __name: "TrxFieldset",
   setup(t) {
-    return (a, r) => (s(), L(P(Se), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(we), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), O0 = { inheritAttrs: !1 }, g3 = /* @__PURE__ */ g({
-  ...O0,
+}), D0 = { inheritAttrs: !1 }, i3 = /* @__PURE__ */ g({
+  ...D0,
   __name: "TrxPanel",
   setup(t) {
-    return (a, r) => (s(), L(P(Ie), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Te), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), j0 = { inheritAttrs: !1 }, b3 = /* @__PURE__ */ g({
-  ...j0,
+}), E0 = { inheritAttrs: !1 }, c3 = /* @__PURE__ */ g({
+  ...E0,
   __name: "TrxScrollPanel",
   setup(t) {
-    return (a, r) => (s(), L(P(Ve), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ce), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), H0 = { inheritAttrs: !1 }, y3 = /* @__PURE__ */ g({
-  ...H0,
+}), R0 = { inheritAttrs: !1 }, u3 = /* @__PURE__ */ g({
+  ...R0,
   __name: "TrxSplitter",
   setup(t) {
-    return (a, r) => (s(), L(P(Be), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Se), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), U0 = { inheritAttrs: !1 }, k3 = /* @__PURE__ */ g({
-  ...U0,
+}), N0 = { inheritAttrs: !1 }, d3 = /* @__PURE__ */ g({
+  ...N0,
   __name: "TrxSplitterPanel",
   setup(t) {
-    return (a, r) => (s(), L(P(Pe), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ie), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), W0 = { inheritAttrs: !1 }, w3 = /* @__PURE__ */ g({
-  ...W0,
+}), q0 = { inheritAttrs: !1 }, _3 = /* @__PURE__ */ g({
+  ...q0,
   __name: "TrxStepper",
   setup(t) {
-    return (a, r) => (s(), L(P(Ae), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ve), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), G0 = { inheritAttrs: !1 }, T3 = /* @__PURE__ */ g({
-  ...G0,
+}), F0 = { inheritAttrs: !1 }, p3 = /* @__PURE__ */ g({
+  ...F0,
   __name: "TrxStep",
   setup(t) {
-    return (a, r) => (s(), L(P(Me), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Be), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), K0 = { inheritAttrs: !1 }, C3 = /* @__PURE__ */ g({
-  ...K0,
+}), O0 = { inheritAttrs: !1 }, v3 = /* @__PURE__ */ g({
+  ...O0,
   __name: "TrxStepItem",
   setup(t) {
-    return (a, r) => (s(), L(P(Le), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Pe), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Y0 = { inheritAttrs: !1 }, S3 = /* @__PURE__ */ g({
-  ...Y0,
+}), j0 = { inheritAttrs: !1 }, m3 = /* @__PURE__ */ g({
+  ...j0,
   __name: "TrxStepList",
   setup(t) {
-    return (a, r) => (s(), L(P(ze), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Me), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), J0 = { inheritAttrs: !1 }, I3 = /* @__PURE__ */ g({
-  ...J0,
+}), H0 = { inheritAttrs: !1 }, f3 = /* @__PURE__ */ g({
+  ...H0,
   __name: "TrxStepPanel",
   setup(t) {
-    return (a, r) => (s(), L(P(De), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ae), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), X0 = { inheritAttrs: !1 }, V3 = /* @__PURE__ */ g({
-  ...X0,
+}), U0 = { inheritAttrs: !1 }, x3 = /* @__PURE__ */ g({
+  ...U0,
   __name: "TrxStepPanels",
   setup(t) {
-    return (a, r) => (s(), L(P(Ee), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Le), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Q0 = { inheritAttrs: !1 }, B3 = /* @__PURE__ */ g({
-  ...Q0,
+}), W0 = { inheritAttrs: !1 }, h3 = /* @__PURE__ */ g({
+  ...W0,
   __name: "TrxTabs",
   setup(t) {
-    return (a, r) => (s(), L(P(Re), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ze), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Z0 = { inheritAttrs: !1 }, P3 = /* @__PURE__ */ g({
-  ...Z0,
+}), G0 = { inheritAttrs: !1 }, $3 = /* @__PURE__ */ g({
+  ...G0,
   __name: "TrxTab",
   setup(t) {
-    return (a, r) => (s(), L(P(Ne), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(De), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), tk = { inheritAttrs: !1 }, A3 = /* @__PURE__ */ g({
-  ...tk,
+}), K0 = { inheritAttrs: !1 }, g3 = /* @__PURE__ */ g({
+  ...K0,
   __name: "TrxTabList",
   setup(t) {
-    return (a, r) => (s(), L(P(qe), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ee), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), ek = { inheritAttrs: !1 }, M3 = /* @__PURE__ */ g({
-  ...ek,
+}), Y0 = { inheritAttrs: !1 }, b3 = /* @__PURE__ */ g({
+  ...Y0,
   __name: "TrxTabPanel",
   setup(t) {
-    return (a, r) => (s(), L(P(Fe), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Re), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), sk = { inheritAttrs: !1 }, L3 = /* @__PURE__ */ g({
-  ...sk,
+}), J0 = { inheritAttrs: !1 }, y3 = /* @__PURE__ */ g({
+  ...J0,
   __name: "TrxTabPanels",
   setup(t) {
-    return (a, r) => (s(), L(P(Oe), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ne), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), ak = { inheritAttrs: !1 }, z3 = /* @__PURE__ */ g({
-  ...ak,
+}), X0 = { inheritAttrs: !1 }, k3 = /* @__PURE__ */ g({
+  ...X0,
   __name: "TrxToolbar",
   setup(t) {
-    return (a, r) => (s(), L(P(je), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(qe), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), lk = { inheritAttrs: !1 }, D3 = /* @__PURE__ */ g({
-  ...lk,
+}), Q0 = { inheritAttrs: !1 }, w3 = /* @__PURE__ */ g({
+  ...Q0,
   __name: "TrxDialog",
   setup(t) {
     const a = tt(), r = S(() => ({
@@ -10938,17 +10896,17 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       draggable: !1,
       ...a
     }));
-    return (i, l) => (s(), L(P(He), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(Fe), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), nk = { inheritAttrs: !1 }, E3 = /* @__PURE__ */ g({
-  ...nk,
+}), Z0 = { inheritAttrs: !1 }, T3 = /* @__PURE__ */ g({
+  ...Z0,
   __name: "TrxConfirmDialog",
   setup(t) {
     const a = tt(), r = S(() => ({
@@ -10956,281 +10914,281 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       rejectLabel: "Não",
       ...a
     }));
-    return (i, l) => (s(), L(P(Ue), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(Oe), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), ok = { inheritAttrs: !1 }, R3 = /* @__PURE__ */ g({
-  ...ok,
+}), tk = { inheritAttrs: !1 }, C3 = /* @__PURE__ */ g({
+  ...tk,
   __name: "TrxConfirmPopup",
   setup(t) {
-    return (a, r) => (s(), L(P(We), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(je), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), rk = { inheritAttrs: !1 }, N3 = /* @__PURE__ */ g({
-  ...rk,
+}), ek = { inheritAttrs: !1 }, S3 = /* @__PURE__ */ g({
+  ...ek,
   __name: "TrxDrawer",
   setup(t) {
-    return (a, r) => (s(), L(P(Ge), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(He), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), ik = { inheritAttrs: !1 }, q3 = /* @__PURE__ */ g({
-  ...ik,
+}), sk = { inheritAttrs: !1 }, I3 = /* @__PURE__ */ g({
+  ...sk,
   __name: "TrxDynamicDialog",
   setup(t) {
-    return (a, r) => (s(), L(P(Ke), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ue), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), ck = { inheritAttrs: !1 }, F3 = /* @__PURE__ */ g({
-  ...ck,
+}), ak = { inheritAttrs: !1 }, V3 = /* @__PURE__ */ g({
+  ...ak,
   __name: "TrxPopover",
   setup(t) {
-    return (a, r) => (s(), L(P(Ye), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(We), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), uk = { inheritAttrs: !1 }, O3 = /* @__PURE__ */ g({
-  ...uk,
+}), lk = { inheritAttrs: !1 }, B3 = /* @__PURE__ */ g({
+  ...lk,
   __name: "TrxBreadcrumb",
   setup(t) {
-    return (a, r) => (s(), L(P(Je), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ge), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), dk = { inheritAttrs: !1 }, j3 = /* @__PURE__ */ g({
-  ...dk,
+}), nk = { inheritAttrs: !1 }, P3 = /* @__PURE__ */ g({
+  ...nk,
   __name: "TrxDock",
   setup(t) {
-    return (a, r) => (s(), L(P(Xe), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ke), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), _k = { inheritAttrs: !1 }, H3 = /* @__PURE__ */ g({
-  ..._k,
+}), ok = { inheritAttrs: !1 }, M3 = /* @__PURE__ */ g({
+  ...ok,
   __name: "TrxMegaMenu",
   setup(t) {
-    return (a, r) => (s(), L(P(Qe), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ye), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), pk = { inheritAttrs: !1 }, U3 = /* @__PURE__ */ g({
-  ...pk,
+}), rk = { inheritAttrs: !1 }, A3 = /* @__PURE__ */ g({
+  ...rk,
   __name: "TrxMenu",
   setup(t) {
-    return (a, r) => (s(), L(P(Ze), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Je), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), vk = { inheritAttrs: !1 }, W3 = /* @__PURE__ */ g({
-  ...vk,
+}), ik = { inheritAttrs: !1 }, L3 = /* @__PURE__ */ g({
+  ...ik,
   __name: "TrxMenubar",
   setup(t) {
-    return (a, r) => (s(), L(P(ts), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Xe), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), mk = { inheritAttrs: !1 }, G3 = /* @__PURE__ */ g({
-  ...mk,
+}), ck = { inheritAttrs: !1 }, z3 = /* @__PURE__ */ g({
+  ...ck,
   __name: "TrxPanelMenu",
   setup(t) {
-    return (a, r) => (s(), L(P(es), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Qe), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), fk = { inheritAttrs: !1 }, K3 = /* @__PURE__ */ g({
-  ...fk,
+}), uk = { inheritAttrs: !1 }, D3 = /* @__PURE__ */ g({
+  ...uk,
   __name: "TrxSteps",
   setup(t) {
-    return (a, r) => (s(), L(P(ss), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(Ze), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), xk = { inheritAttrs: !1 }, Y3 = /* @__PURE__ */ g({
-  ...xk,
+}), dk = { inheritAttrs: !1 }, E3 = /* @__PURE__ */ g({
+  ...dk,
   __name: "TrxTabMenu",
   setup(t) {
-    return (a, r) => (s(), L(P(as), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ts), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), hk = { inheritAttrs: !1 }, J3 = /* @__PURE__ */ g({
-  ...hk,
+}), _k = { inheritAttrs: !1 }, R3 = /* @__PURE__ */ g({
+  ..._k,
   __name: "TrxTieredMenu",
   setup(t) {
-    return (a, r) => (s(), L(P(ls), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(es), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), $k = { inheritAttrs: !1 }, X3 = /* @__PURE__ */ g({
-  ...$k,
+}), pk = { inheritAttrs: !1 }, N3 = /* @__PURE__ */ g({
+  ...pk,
   __name: "TrxToast",
   setup(t) {
     const a = tt(), r = S(() => ({
       position: "top-right",
       ...a
     }));
-    return (i, l) => (s(), L(P(ns), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(ss), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), gk = { inheritAttrs: !1 }, Q3 = /* @__PURE__ */ g({
-  ...gk,
+}), vk = { inheritAttrs: !1 }, q3 = /* @__PURE__ */ g({
+  ...vk,
   __name: "TrxInlineMessage",
   setup(t) {
-    return (a, r) => (s(), L(P(os), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(as), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), bk = { inheritAttrs: !1 }, Z3 = /* @__PURE__ */ g({
-  ...bk,
+}), mk = { inheritAttrs: !1 }, F3 = /* @__PURE__ */ g({
+  ...mk,
   __name: "TrxMessage",
   setup(t) {
-    return (a, r) => (s(), L(P(ct), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ct), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), yk = { inheritAttrs: !1 }, t8 = /* @__PURE__ */ g({
-  ...yk,
+}), fk = { inheritAttrs: !1 }, O3 = /* @__PURE__ */ g({
+  ...fk,
   __name: "TrxCarousel",
   setup(t) {
-    return (a, r) => (s(), L(P(rs), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ls), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), kk = { inheritAttrs: !1 }, e8 = /* @__PURE__ */ g({
-  ...kk,
+}), xk = { inheritAttrs: !1 }, j3 = /* @__PURE__ */ g({
+  ...xk,
   __name: "TrxGalleria",
   setup(t) {
-    return (a, r) => (s(), L(P(is), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ns), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), wk = { inheritAttrs: !1 }, s8 = /* @__PURE__ */ g({
-  ...wk,
+}), hk = { inheritAttrs: !1 }, H3 = /* @__PURE__ */ g({
+  ...hk,
   __name: "TrxImage",
   setup(t) {
-    return (a, r) => (s(), L(P(cs), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(os), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Tk = { inheritAttrs: !1 }, a8 = /* @__PURE__ */ g({
-  ...Tk,
+}), $k = { inheritAttrs: !1 }, U3 = /* @__PURE__ */ g({
+  ...$k,
   __name: "TrxImageCompare",
   setup(t) {
-    return (a, r) => (s(), L(P(us), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(rs), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Ck = { inheritAttrs: !1 }, l8 = /* @__PURE__ */ g({
-  ...Ck,
+}), gk = { inheritAttrs: !1 }, W3 = /* @__PURE__ */ g({
+  ...gk,
   __name: "TrxFileUpload",
   setup(t) {
     const a = tt(), r = S(() => ({
@@ -11239,458 +11197,455 @@ ${M}</span><span class="trx-jv-brace">${$}</span>`;
       cancelLabel: "Cancelar",
       ...a
     }));
-    return (i, l) => (s(), L(P(ds), y(k(r.value)), z({ _: 2 }, [
+    return (i, l) => (s(), L(P(is), w(T(r.value)), D({ _: 2 }, [
       b(i.$slots, (n, c) => ({
         name: c,
         fn: B((u) => [
-          I(i.$slots, c, y(k(u || {})))
+          I(i.$slots, c, w(T(u || {})))
         ])
       }))
     ]), 1040));
   }
-}), Sk = { inheritAttrs: !1 }, n8 = /* @__PURE__ */ g({
-  ...Sk,
+}), bk = { inheritAttrs: !1 }, G3 = /* @__PURE__ */ g({
+  ...bk,
   __name: "TrxChart",
   setup(t) {
-    return (a, r) => (s(), L(P(_s), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(cs), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Ik = { inheritAttrs: !1 }, o8 = /* @__PURE__ */ g({
-  ...Ik,
+}), yk = { inheritAttrs: !1 }, K3 = /* @__PURE__ */ g({
+  ...yk,
   __name: "TrxAvatar",
   setup(t) {
-    return (a, r) => (s(), L(P($t), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P($t), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Vk = { inheritAttrs: !1 }, r8 = /* @__PURE__ */ g({
-  ...Vk,
+}), kk = { inheritAttrs: !1 }, Y3 = /* @__PURE__ */ g({
+  ...kk,
   __name: "TrxAvatarGroup",
   setup(t) {
-    return (a, r) => (s(), L(P(ps), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(us), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Bk = { inheritAttrs: !1 }, i8 = /* @__PURE__ */ g({
-  ...Bk,
+}), wk = { inheritAttrs: !1 }, J3 = /* @__PURE__ */ g({
+  ...wk,
   __name: "TrxBadge",
   setup(t) {
-    return (a, r) => (s(), L(P(vs), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ds), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Pk = { inheritAttrs: !1 }, c8 = /* @__PURE__ */ g({
-  ...Pk,
+}), Tk = { inheritAttrs: !1 }, X3 = /* @__PURE__ */ g({
+  ...Tk,
   __name: "TrxBlockUI",
   setup(t) {
-    return (a, r) => (s(), L(P(ms), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(_s), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Ak = { inheritAttrs: !1 }, u8 = /* @__PURE__ */ g({
-  ...Ak,
+}), Ck = { inheritAttrs: !1 }, Q3 = /* @__PURE__ */ g({
+  ...Ck,
   __name: "TrxChip",
   setup(t) {
-    return (a, r) => (s(), L(P(fs), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ps), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Mk = { inheritAttrs: !1 }, d8 = /* @__PURE__ */ g({
-  ...Mk,
+}), Sk = { inheritAttrs: !1 }, Z3 = /* @__PURE__ */ g({
+  ...Sk,
   __name: "TrxInplace",
   setup(t) {
-    return (a, r) => (s(), L(P(xs), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(vs), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Lk = { inheritAttrs: !1 }, _8 = /* @__PURE__ */ g({
-  ...Lk,
+}), Ik = { inheritAttrs: !1 }, t8 = /* @__PURE__ */ g({
+  ...Ik,
   __name: "TrxMeterGroup",
   setup(t) {
-    return (a, r) => (s(), L(P(hs), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ms), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), zk = { inheritAttrs: !1 }, p8 = /* @__PURE__ */ g({
-  ...zk,
+}), Vk = { inheritAttrs: !1 }, e8 = /* @__PURE__ */ g({
+  ...Vk,
   __name: "TrxOverlayBadge",
   setup(t) {
-    return (a, r) => (s(), L(P($s), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(fs), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Dk = { inheritAttrs: !1 }, v8 = /* @__PURE__ */ g({
-  ...Dk,
+}), Bk = { inheritAttrs: !1 }, s8 = /* @__PURE__ */ g({
+  ...Bk,
   __name: "TrxProgressBar",
   setup(t) {
-    return (a, r) => (s(), L(P(gs), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(xs), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Ek = { inheritAttrs: !1 }, m8 = /* @__PURE__ */ g({
-  ...Ek,
+}), Pk = { inheritAttrs: !1 }, a8 = /* @__PURE__ */ g({
+  ...Pk,
   __name: "TrxProgressSpinner",
   setup(t) {
-    return (a, r) => (s(), L(P(ht), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(ht), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Rk = { inheritAttrs: !1 }, f8 = /* @__PURE__ */ g({
-  ...Rk,
+}), Mk = { inheritAttrs: !1 }, l8 = /* @__PURE__ */ g({
+  ...Mk,
   __name: "TrxScrollTop",
   setup(t) {
-    return (a, r) => (s(), L(P(bs), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(hs), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Nk = { inheritAttrs: !1 }, x8 = /* @__PURE__ */ g({
-  ...Nk,
+}), Ak = { inheritAttrs: !1 }, n8 = /* @__PURE__ */ g({
+  ...Ak,
   __name: "TrxSkeleton",
   setup(t) {
-    return (a, r) => (s(), L(P(ys), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P($s), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), qk = { inheritAttrs: !1 }, h8 = /* @__PURE__ */ g({
-  ...qk,
+}), Lk = { inheritAttrs: !1 }, o8 = /* @__PURE__ */ g({
+  ...Lk,
   __name: "TrxTag",
   setup(t) {
-    return (a, r) => (s(), L(P(xt), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(xt), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
-}), Fk = { inheritAttrs: !1 }, $8 = /* @__PURE__ */ g({
-  ...Fk,
+}), zk = { inheritAttrs: !1 }, r8 = /* @__PURE__ */ g({
+  ...zk,
   __name: "TrxTerminal",
   setup(t) {
-    return (a, r) => (s(), L(P(ks), y(k(a.$attrs)), z({ _: 2 }, [
+    return (a, r) => (s(), L(P(gs), w(T(a.$attrs)), D({ _: 2 }, [
       b(a.$slots, (i, l) => ({
         name: l,
         fn: B((n) => [
-          I(a.$slots, l, y(k(n || {})))
+          I(a.$slots, l, w(T(n || {})))
         ])
       }))
     ]), 1040));
   }
 });
 export {
-  jT as $,
-  io as A,
-  $T as B,
-  gT as C,
-  bT as D,
-  yT as E,
-  kT as F,
-  wT as G,
-  sr as H,
-  TT as I,
-  CT as J,
-  ST as K,
-  IT as L,
-  VT as M,
-  BT as N,
-  PT as O,
-  AT as P,
-  MT as Q,
-  LT as R,
-  zT as S,
-  Ww as T,
-  DT as U,
-  ET as V,
-  RT as W,
-  NT as X,
-  qT as Y,
-  FT as Z,
-  OT as _,
-  Gw as a,
-  XC as a$,
-  HT as a0,
-  UT as a1,
-  WT as a2,
-  GT as a3,
-  KT as a4,
-  iu as a5,
-  YT as a6,
+  LT as $,
+  no as A,
+  uT as B,
+  dT as C,
+  _T as D,
+  pT as E,
+  vT as F,
+  mT as G,
+  Zo as H,
+  fT as I,
+  xT as J,
+  hT as K,
+  $T as L,
+  gT as M,
+  bT as N,
+  yT as O,
+  kT as P,
+  wT as Q,
+  TT as R,
+  CT as S,
+  Ew as T,
+  ST as U,
+  IT as V,
+  VT as W,
+  BT as X,
+  PT as Y,
+  MT as Z,
+  AT as _,
+  Rw as a,
+  OC as a$,
+  zT as a0,
+  DT as a1,
+  ET as a2,
+  RT as a3,
+  NT as a4,
+  nu as a5,
+  qT as a6,
   ut as a7,
-  JT as a8,
-  XT as a9,
-  wC as aA,
-  TC as aB,
-  CC as aC,
-  SC as aD,
-  IC as aE,
-  VC as aF,
-  BC as aG,
-  PC as aH,
-  AC as aI,
-  MC as aJ,
-  LC as aK,
-  zC as aL,
-  DC as aM,
-  EC as aN,
-  RC as aO,
-  NC as aP,
-  qC as aQ,
-  FC as aR,
-  OC as aS,
-  jC as aT,
-  HC as aU,
-  UC as aV,
-  WC as aW,
-  GC as aX,
-  KC as aY,
-  YC as aZ,
-  JC as a_,
-  QT as aa,
-  ZT as ab,
-  tC as ac,
-  eC as ad,
-  sC as ae,
-  aC as af,
-  lC as ag,
-  nC as ah,
-  oC as ai,
-  rC as aj,
-  iC as ak,
-  cC as al,
-  uC as am,
-  dC as an,
-  _C as ao,
-  pC as ap,
-  vC as aq,
-  mC as ar,
-  fC as as,
-  xC as at,
-  hC as au,
-  $C as av,
-  gC as aw,
-  bC as ax,
-  yC as ay,
-  kC as az,
-  Kw as b,
-  r3 as b$,
-  QC as b0,
-  ZC as b1,
-  t4 as b2,
-  e4 as b3,
-  s4 as b4,
-  a4 as b5,
-  l4 as b6,
-  n4 as b7,
-  o4 as b8,
-  r4 as b9,
-  L4 as bA,
-  z4 as bB,
-  D4 as bC,
-  E4 as bD,
-  R4 as bE,
-  N4 as bF,
-  q4 as bG,
-  F4 as bH,
-  O4 as bI,
-  j4 as bJ,
-  H4 as bK,
-  U4 as bL,
-  W4 as bM,
-  G4 as bN,
-  K4 as bO,
-  Y4 as bP,
-  J4 as bQ,
-  X4 as bR,
-  Q4 as bS,
-  Z4 as bT,
-  t3 as bU,
-  e3 as bV,
-  s3 as bW,
-  a3 as bX,
-  l3 as bY,
-  n3 as bZ,
-  o3 as b_,
-  i4 as ba,
-  c4 as bb,
-  u4 as bc,
-  d4 as bd,
-  _4 as be,
-  p4 as bf,
-  v4 as bg,
-  m4 as bh,
-  f4 as bi,
-  x4 as bj,
-  h4 as bk,
-  $4 as bl,
-  g4 as bm,
-  b4 as bn,
-  y4 as bo,
-  k4 as bp,
-  w4 as bq,
-  T4 as br,
-  C4 as bs,
-  S4 as bt,
-  I4 as bu,
-  V4 as bv,
-  B4 as bw,
-  P4 as bx,
-  A4 as by,
-  M4 as bz,
-  Yw as c,
-  x8 as c$,
-  i3 as c0,
-  c3 as c1,
-  u3 as c2,
-  d3 as c3,
-  _3 as c4,
-  p3 as c5,
-  v3 as c6,
-  m3 as c7,
-  f3 as c8,
-  x3 as c9,
-  H3 as cA,
-  U3 as cB,
-  W3 as cC,
-  G3 as cD,
-  K3 as cE,
-  Y3 as cF,
-  J3 as cG,
-  X3 as cH,
-  Q3 as cI,
-  Z3 as cJ,
-  t8 as cK,
-  e8 as cL,
-  s8 as cM,
-  a8 as cN,
-  l8 as cO,
-  n8 as cP,
-  o8 as cQ,
-  r8 as cR,
-  i8 as cS,
-  c8 as cT,
-  u8 as cU,
-  d8 as cV,
-  _8 as cW,
-  p8 as cX,
-  v8 as cY,
-  m8 as cZ,
-  f8 as c_,
-  h3 as ca,
-  $3 as cb,
-  g3 as cc,
-  b3 as cd,
-  y3 as ce,
-  k3 as cf,
-  w3 as cg,
-  T3 as ch,
-  C3 as ci,
-  S3 as cj,
-  I3 as ck,
-  V3 as cl,
-  B3 as cm,
-  P3 as cn,
-  A3 as co,
-  M3 as cp,
-  L3 as cq,
-  z3 as cr,
-  D3 as cs,
-  E3 as ct,
-  R3 as cu,
-  N3 as cv,
-  q3 as cw,
-  F3 as cx,
-  O3 as cy,
-  j3 as cz,
-  Jw as d,
-  h8 as d0,
-  $8 as d1,
-  Xw as e,
-  Qw as f,
-  Zw as g,
-  tT as h,
-  eT as i,
-  sT as j,
-  aT as k,
-  lT as l,
-  nT as m,
-  oT as n,
-  rT as o,
-  iT as p,
-  cT as q,
-  uT as r,
-  dT as s,
-  _T as t,
-  pT as u,
-  vT as v,
-  mT as w,
-  fT as x,
-  xT as y,
-  hT as z
+  FT as a8,
+  OT as a9,
+  mC as aA,
+  fC as aB,
+  xC as aC,
+  hC as aD,
+  $C as aE,
+  gC as aF,
+  bC as aG,
+  yC as aH,
+  kC as aI,
+  wC as aJ,
+  TC as aK,
+  CC as aL,
+  SC as aM,
+  IC as aN,
+  VC as aO,
+  BC as aP,
+  PC as aQ,
+  MC as aR,
+  AC as aS,
+  LC as aT,
+  zC as aU,
+  DC as aV,
+  EC as aW,
+  RC as aX,
+  NC as aY,
+  qC as aZ,
+  FC as a_,
+  jT as aa,
+  HT as ab,
+  UT as ac,
+  WT as ad,
+  GT as ae,
+  KT as af,
+  YT as ag,
+  JT as ah,
+  XT as ai,
+  QT as aj,
+  ZT as ak,
+  tC as al,
+  eC as am,
+  sC as an,
+  aC as ao,
+  lC as ap,
+  nC as aq,
+  oC as ar,
+  rC as as,
+  iC as at,
+  cC as au,
+  uC as av,
+  dC as aw,
+  _C as ax,
+  pC as ay,
+  vC as az,
+  Nw as b,
+  Q4 as b$,
+  jC as b0,
+  HC as b1,
+  UC as b2,
+  WC as b3,
+  GC as b4,
+  KC as b5,
+  YC as b6,
+  JC as b7,
+  XC as b8,
+  QC as b9,
+  T4 as bA,
+  C4 as bB,
+  S4 as bC,
+  I4 as bD,
+  V4 as bE,
+  B4 as bF,
+  P4 as bG,
+  M4 as bH,
+  A4 as bI,
+  L4 as bJ,
+  z4 as bK,
+  D4 as bL,
+  E4 as bM,
+  R4 as bN,
+  N4 as bO,
+  q4 as bP,
+  F4 as bQ,
+  O4 as bR,
+  j4 as bS,
+  H4 as bT,
+  U4 as bU,
+  W4 as bV,
+  G4 as bW,
+  K4 as bX,
+  Y4 as bY,
+  J4 as bZ,
+  X4 as b_,
+  ZC as ba,
+  t4 as bb,
+  e4 as bc,
+  s4 as bd,
+  a4 as be,
+  l4 as bf,
+  n4 as bg,
+  o4 as bh,
+  r4 as bi,
+  i4 as bj,
+  c4 as bk,
+  u4 as bl,
+  d4 as bm,
+  _4 as bn,
+  p4 as bo,
+  v4 as bp,
+  m4 as bq,
+  f4 as br,
+  x4 as bs,
+  h4 as bt,
+  $4 as bu,
+  g4 as bv,
+  b4 as bw,
+  y4 as bx,
+  k4 as by,
+  w4 as bz,
+  qw as c,
+  Z4 as c0,
+  t3 as c1,
+  e3 as c2,
+  s3 as c3,
+  a3 as c4,
+  l3 as c5,
+  n3 as c6,
+  o3 as c7,
+  r3 as c8,
+  i3 as c9,
+  z3 as cA,
+  D3 as cB,
+  E3 as cC,
+  R3 as cD,
+  N3 as cE,
+  q3 as cF,
+  F3 as cG,
+  O3 as cH,
+  j3 as cI,
+  H3 as cJ,
+  U3 as cK,
+  W3 as cL,
+  G3 as cM,
+  K3 as cN,
+  Y3 as cO,
+  J3 as cP,
+  X3 as cQ,
+  Q3 as cR,
+  Z3 as cS,
+  t8 as cT,
+  e8 as cU,
+  s8 as cV,
+  a8 as cW,
+  l8 as cX,
+  n8 as cY,
+  o8 as cZ,
+  r8 as c_,
+  c3 as ca,
+  u3 as cb,
+  d3 as cc,
+  _3 as cd,
+  p3 as ce,
+  v3 as cf,
+  m3 as cg,
+  f3 as ch,
+  x3 as ci,
+  h3 as cj,
+  $3 as ck,
+  g3 as cl,
+  b3 as cm,
+  y3 as cn,
+  k3 as co,
+  w3 as cp,
+  T3 as cq,
+  C3 as cr,
+  S3 as cs,
+  I3 as ct,
+  V3 as cu,
+  B3 as cv,
+  P3 as cw,
+  M3 as cx,
+  A3 as cy,
+  L3 as cz,
+  Fw as d,
+  Ow as e,
+  jw as f,
+  Hw as g,
+  Uw as h,
+  Ww as i,
+  Gw as j,
+  Kw as k,
+  Yw as l,
+  Jw as m,
+  Xw as n,
+  Qw as o,
+  Zw as p,
+  tT as q,
+  eT as r,
+  sT as s,
+  aT as t,
+  lT as u,
+  nT as v,
+  oT as w,
+  rT as x,
+  iT as y,
+  cT as z
 };
